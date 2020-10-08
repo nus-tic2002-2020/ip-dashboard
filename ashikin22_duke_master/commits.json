@@ -1,0 +1,87 @@
+{
+  "authorDailyContributionsMap": {
+    "ashikin22": [
+      {
+        "date": "2020-09-11",
+        "commitResults": [
+          {
+            "hash": "bdc7ddce72a1acf58be35c7e4dee8ab783b2ebf8",
+            "messageTitle": "add Level-1",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 28,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-13",
+        "commitResults": [
+          {
+            "hash": "b48fc1fe40226ce669110d6f80070aa1d1255010",
+            "messageTitle": "Add Level 2 - Greet, Echo and Exit",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 45,
+                "deletions": 4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-18",
+        "commitResults": [
+          {
+            "hash": "3a0cdb910b81334750c9dfbc721e14437cfa3b7f",
+            "messageTitle": "Level 3: Mark as Done",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 51,
+                "deletions": 8
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-27",
+        "commitResults": [
+          {
+            "hash": "0217dce3161d6648db29716f154c246c592fc0ea",
+            "messageTitle": "Level 4: ToDos, Events, Deadlines",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 121,
+                "deletions": 28
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "ashikin22": {
+      "java": 204,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "ashikin22": 602.3624
+  },
+  "authorDisplayNameMap": {
+    "ashikin22": "NORM..HANI"
+  }
+}

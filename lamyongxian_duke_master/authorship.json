@@ -1,0 +1,2743 @@
+[
+  {
+    "path": "src/main/java/Deadline.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "public class Deadline extends Task {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    protected String by;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public Deadline(String description, String by) {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        super(description);"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        this.by \u003d by;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return \"[D]\" + super.toString() + \" (by: \" + by + \")\";"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "lamyongxian": 14
+    }
+  },
+  {
+    "path": "src/main/java/Duke.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "import java.lang.reflect.Array;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "import java.util.Arrays;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "import java.util.Scanner;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class Duke {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    private static final int MAX_TASKS \u003d 100;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    private static ArrayList\u003cTask\u003e tasks \u003d new ArrayList\u003cTask\u003e();"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void main(String[] args) {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        String logo \u003d \"  ___    *   *    ____        *\\n\""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                        + \"|  _  | | | | |  |  _ \\\\ _   _| | _____\\n\""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                        + \"| |_| | | |_| |  | | | | | | | |/ / _ \\\\\\n\""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                        + \"|  _  | |  _  |  | |_| | |_| |   \u003c  __/\\n\""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                        + \"| | | | | | | |  |____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        System.out.println(\"Hello from\\n\" + logo);"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        Scanner in \u003d new Scanner(System.in);"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        boolean exit \u003d false;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        greet();"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        while(!exit \u0026\u0026 in.hasNextLine()) { // If no error, continue"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            String input \u003d in.nextLine();"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            try {"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                exit \u003d call(input.trim());"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            } catch (DukeException e) {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                e.printError();"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public static void greet() {"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    Oei! I\u0027m Ah Duke\");"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    What can I do for you leh?\");"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public static void bye() {"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    Bye bye. Hope to see you again soon!\");"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public static void errorTaskFull() {"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    Peiseh, my task list is full!\");"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public static boolean call(String input) throws DukeException {"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        String[] args \u003d input.split(\" \");"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        String text \u003d \"\";"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (args.length \u003e 0 \u0026\u0026 !args[0].isBlank()) {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            String command \u003d args[0];"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            switch (command) {"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                case \"list\":"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    printTasks();"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                case \"done\":"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    doneTasks(args);"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                case \"delete\":"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    deleteTasks(args);"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                case \"todo\":"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    text \u003d readInputParameter(args, null);"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    if (text.isBlank()) {"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                        throw new DukeException(\"The description of a todo cannot be empty.\","
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                                DukeException.DukeError.MISSING_ARGUMENT);"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    addTask(new Todo(text));"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                case \"deadline\":"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    text \u003d readInputParameter(args, \"/by\");"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    if (text.isBlank()) {"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                        throw new DukeException(\"The description of a todo cannot be empty.\","
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                                DukeException.DukeError.MISSING_ARGUMENT);"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    String by \u003d readSlashParameter(args, \"/by\");"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    if (by.isBlank()) {"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                        throw new DukeException(\"The argument for /by cannot be empty.\","
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                                DukeException.DukeError.MISSING_ARGUMENT);"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    addTask(new Deadline(text, by));"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                case \"event\":"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    text \u003d readInputParameter(args, \"/at\");"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    if (text.isBlank()) {"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                        throw new DukeException(\"The description of an event cannot be empty.\","
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                                DukeException.DukeError.MISSING_ARGUMENT);"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    String at \u003d readSlashParameter(args, \"/at\");"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    if (at.isBlank()) {"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                        throw new DukeException(\"The argument for /by cannot be empty.\","
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                                DukeException.DukeError.MISSING_ARGUMENT);"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    addTask(new Event(text, at));"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                case \"bye\":"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    bye();"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    return true;"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                default:"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    throw new DukeException(\"Sorli, but I dunno what that means :-(\","
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                            DukeException.DukeError.UNKNOWN_COMMAND);"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return false;"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    private static String readInputParameter(String[] args, String until) {"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        String value \u003d \"\";"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        int index \u003d args.length;"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (until !\u003d null \u0026\u0026 !until.isBlank()) {"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            int new_index \u003d indexOf(args, until);"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            index \u003d new_index \u003e\u003d 0 ? new_index : index; // If new_index is negative, revert to use args length"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        for(int i \u003d 1; i \u003c args.length \u0026\u0026 i \u003c index; i++) { // add strings between command to until"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            value +\u003d  args[i] + \" \";"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return value.trim();"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    private static String readSlashParameter(String[] args, String param) throws DukeException {"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        String value \u003d \"\";"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        int index \u003d indexOf(args, param);"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (index \u003c 0) {"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            throw new DukeException(String.format(\"Cannot find required %s in args. (index \u003d %d)!\", param, index),"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    DukeException.DukeError.MISSING_ARGUMENT);"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        for(int i \u003d index+1; i \u003c args.length; i++) { // add strings between slash to end of args"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            value +\u003d  args[i] + \" \";"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return value.trim();"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    private static int indexOf(Object[] arr, Object o) {"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        int index \u003d -1;"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (arr !\u003d null)  {"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            for(int i \u003d 0; i \u003c arr.length; i++) {"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                if(arr[i].equals(o)) {"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    index \u003d i;"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return index;"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public static void echo(String message) {"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.printf(\"     %s\\n\", message);"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public static void deleteTasks(String[] args) throws DukeException {"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    Song la! Lim peh help you remove this task(s):\");"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        ArrayList\u003cTask\u003e tasksToRemove \u003d new ArrayList\u003cTask\u003e();"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        ArrayList\u003cInteger\u003e errorIndices \u003d new ArrayList\u003cInteger\u003e();"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        // Create a collection of index to delete"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        for (int i \u003d 1; i \u003c args.length; i++) { // Skip first: \"delete\" command"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            try {"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                int intTask \u003d Integer.parseInt(args[i]) - 1;"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                if (intTask \u003c MAX_TASKS \u0026\u0026 tasks.size() \u003e intTask) { // Has task at list index"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    Task t \u003d tasks.get(intTask);"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    tasksToRemove.add(t);"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                } else {"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    errorIndices.add(intTask); // add index to error collection"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            } catch (NumberFormatException ex) {"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                // Do nothing, skip number"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        // Print deleted task"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        for (Task t: tasksToRemove) {"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            System.out.printf(\"       %s\\n\", t.toString());"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        // Delete all tasks in collection"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        tasks.removeAll(tasksToRemove);"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.printf(\"    Now you have %d tasks in the list.\\n\", tasks.size());"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (errorIndices.size() \u003e 0) { // raise exception for wrong index"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            throw new DukeException(String.format(\"Err... cannot find these task(s) leh - %s\", errorIndices.toString()),"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    DukeException.DukeError.TASK_NOT_FOUND);"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public static void doneTasks(String[] args) {"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    Power la! I\u0027ve marked this task(s) as done:\");"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        for (int i \u003d 1; i \u003c args.length; i++) { // Skip first: command"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            try {"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                int intTask \u003d Integer.parseInt(args[i])-1;"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                if (intTask \u003c MAX_TASKS \u0026\u0026 tasks.size() \u003e intTask) { // Has task at list index"
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    Task t \u003d tasks.get(intTask);"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    t.markAsDone();"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    // Print done task"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    System.out.printf(\"       %s\\n\", t.toString());"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            } catch (NumberFormatException ex) {"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                // Do nothing, skip number"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public static void addTask(Task t) throws DukeException {"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        boolean ok \u003d true;"
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        int intCount \u003d tasks.size();"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    Got it. I\u0027ve added this task:\");"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (intCount \u003c MAX_TASKS) {"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            //tasks[countTasks++] \u003d t;"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            tasks.add(t);"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            intCount \u003d tasks.size();"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            //countTasks++;"
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            System.out.printf(\"      %s\\n\", t);"
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            ok \u003d false;"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.printf(\"    Now you have %d tasks in the list.\\n\", intCount);"
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (!ok) {"
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            throw new DukeException(\"Peiseh, my task list is full!\", DukeException.DukeError.MEMORY_FULL);"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public static void printTasks() {"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    Here are the tasks in your list:\");"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        int intCount \u003d tasks.size();"
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        for(int i \u003d 0; i \u003c intCount; i++) {"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            Task t \u003d tasks.get(i);"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            System.out.printf(\"     %d.%s\\n\", i+1, t);"
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "lamyongxian": 250,
+      "-": 6
+    }
+  },
+  {
+    "path": "src/main/java/DukeException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "public class DukeException extends Exception {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public enum DukeError {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        NONE,"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        MISSING_ARGUMENT,"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        MEMORY_FULL,"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        TASK_NOT_FOUND,"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        UNKNOWN_COMMAND"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    private DukeError code;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public DukeException(String message, DukeError code) {"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        this(message, null, code);"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public DukeException(String message, Throwable cause, DukeError code) {"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        super(message, cause);"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        this.code \u003d code;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public void printError() {"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.printf(\"     ☹ OOPS!!! %s\\n\", super.getMessage());"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public DukeError getErrorCode() {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return this.code;"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "lamyongxian": 32
+    }
+  },
+  {
+    "path": "src/main/java/Event.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "public class Event extends Task {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    protected String at;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public Event(String description, String at) {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        super(description);"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        this.at \u003d at;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return \"[E]\" + super.toString() + \" (at: \" + at + \")\";"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "lamyongxian": 14
+    }
+  },
+  {
+    "path": "src/main/java/Task.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "public class Task {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    protected String description;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    protected boolean isDone;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public Task(String description) {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        this.description \u003d description;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        this.isDone \u003d false;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public String getStatusIcon() {"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return (isDone ? \"\\u2713\" : \"\\u2718\"); //return tick or X symbols"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public void markAsDone() {"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        this.isDone \u003d true;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return String.format(\"[%s] %s\", this.getStatusIcon(), this.description);"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "lamyongxian": 22
+    }
+  },
+  {
+    "path": "src/main/java/Todo.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "public class Todo extends Task {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public Todo(String description) {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        super(description);"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return \"[T]\" + super.toString();"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "lamyongxian": 11
+    }
+  },
+  {
+    "path": "text-ui-test/input.txt",
+    "fileType": "txt",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "todo read book"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "deadline return book /by June 6th"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "event project meeting /at Aug 6th 2-4pm"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "todo join sports club"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "todo borrow book"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "done 1 3"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "list"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "deadline return book /by Sunday"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "event project meeting /at Mon 2-4pm"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "deadline do homework /by no idea :-p"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "delete 3"
+      }
+    ],
+    "authorContributionMap": {
+      "lamyongxian": 11
+    }
+  },
+  {
+    "path": "text-ui-test/runtest.bat",
+    "fileType": "bat",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "@ECHO OFF"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "REM create bin directory if it doesn\u0027t exist"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "if not exist ..\\bin mkdir ..\\bin"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "REM delete output from previous run"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "if exist ACTUAL.TXT del ACTUAL.TXT"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "REM compile the code into the bin folder"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "javac  -cp ..\\src\\main\\java -Xlint:none -d ..\\bin ..\\src\\main\\java\\Duke.java"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "IF ERRORLEVEL 1 ("
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    echo ********** BUILD FAILURE **********"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    exit /b 1"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ")"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "REM no error here, errorlevel \u003d\u003d 0"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "REM run the program, feed commands from input.txt file and redirect the output to the ACTUAL.TXT"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "java -Dfile.encoding\u003dUTF-8 -classpath ..\\bin Duke \u003c input.txt \u003e ACTUAL.TXT"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "REM compare the output to the expected output"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "FC ACTUAL.TXT EXPECTED.TXT"
+      }
+    ],
+    "authorContributionMap": {
+      "lamyongxian": 2,
+      "-": 19
+    }
+  }
+]

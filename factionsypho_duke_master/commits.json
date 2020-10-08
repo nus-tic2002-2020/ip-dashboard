@@ -1,0 +1,39 @@
+{
+  "authorDailyContributionsMap": {
+    "factionsypho": [
+      {
+        "date": "2020-09-09",
+        "commitResults": [
+          {
+            "hash": "c81968b6e63400737aa5cdbe1a120dd8b5a14845",
+            "messageTitle": "this is a test for commit status",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "md": {
+                "insertions": 1,
+                "deletions": 0
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "factionsypho": {
+      "java": 0,
+      "md": 1,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "factionsypho": 0.035665296
+  },
+  "authorDisplayNameMap": {
+    "factionsypho": "CHAN..RETT"
+  }
+}

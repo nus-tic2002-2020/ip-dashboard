@@ -1,0 +1,146 @@
+{
+  "authorDailyContributionsMap": {
+    "zarifahz": [
+      {
+        "date": "2020-09-01",
+        "commitResults": [
+          {
+            "hash": "5cb9821ba115e01466ccb7a6f861489208953116",
+            "messageTitle": "Commit Level-1",
+            "messageBody": "",
+            "tags": [
+              "Level-1"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 43,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "0968ff0f71612948bfbe2750fbc223d1c5c5c31d",
+            "messageTitle": "Commit Level- 2",
+            "messageBody": "",
+            "tags": [
+              "Level-2"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 23,
+                "deletions": 14
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-02",
+        "commitResults": [
+          {
+            "hash": "be9cce4356975a5a64a623d8232d99414deec25f",
+            "messageTitle": "Task class",
+            "messageBody": "",
+            "tags": [
+              "TaskClass"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 41,
+                "deletions": 8
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-09",
+        "commitResults": [
+          {
+            "hash": "10d52c0d26f4a5ccb290e7f274dc7a14925678d9",
+            "messageTitle": "Commit Level - 4",
+            "messageBody": "",
+            "tags": [
+              "Level-4"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 104,
+                "deletions": 18
+              }
+            }
+          },
+          {
+            "hash": "23ee8b513ec8f813657c2ad6965bcbd3e82a7edf",
+            "messageTitle": "Level - 5 DukeException",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 56,
+                "deletions": 48
+              }
+            }
+          },
+          {
+            "hash": "02d1133e7b45c49faf7ba56ee5fd75f04fd82f61",
+            "messageTitle": "Revert \"Level - 5 DukeException\"",
+            "messageBody": "This reverts commit 23ee8b513ec8f813657c2ad6965bcbd3e82a7edf.\n",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 48,
+                "deletions": 56
+              }
+            }
+          },
+          {
+            "hash": "7e6228ef27111c9fb462a3550b5e39fb523e0b40",
+            "messageTitle": "Commit Level - 5",
+            "messageBody": "",
+            "tags": [
+              "Level-5"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-22",
+        "commitResults": [
+          {
+            "hash": "9c3280fdc575c684fb5c13a6716715b9c8c101dc",
+            "messageTitle": "Level 6 : Delete",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 63,
+                "deletions": 47
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "zarifahz": {
+      "java": 187,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "zarifahz": 3074.3486
+  },
+  "authorDisplayNameMap": {
+    "zarifahz": "ZARI..IFLI"
+  }
+}

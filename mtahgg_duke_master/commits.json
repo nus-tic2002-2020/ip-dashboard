@@ -1,0 +1,135 @@
+{
+  "authorDailyContributionsMap": {
+    "mtahgg": [
+      {
+        "date": "2020-09-08",
+        "commitResults": [
+          {
+            "hash": "9969b8221af3b792a9b1f90a77005b56bfc2644c",
+            "messageTitle": "no message",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 1,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "0e742a239bb390e455cdcaf729e6c90350e7b680",
+            "messageTitle": "no message",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-14",
+        "commitResults": [
+          {
+            "hash": "ab7902bc2fd78b5adea9dcf6aa9e34c6b90fb2c9",
+            "messageTitle": "level1\u00262",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 33,
+                "deletions": 2
+              }
+            }
+          },
+          {
+            "hash": "5620d548f1b427c2847317cb1e23be2628e0815d",
+            "messageTitle": "Level3",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 32,
+                "deletions": 15
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-15",
+        "commitResults": [
+          {
+            "hash": "253c8f690fd5205ee74aca76707fddc10eb68757",
+            "messageTitle": "Level 4",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 133,
+                "deletions": 23
+              }
+            }
+          },
+          {
+            "hash": "3a52b593c9d032d522383e83ff6aab032d17b472",
+            "messageTitle": "level 4",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 32,
+                "deletions": 5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-20",
+        "commitResults": [
+          {
+            "hash": "5cb1b78f3adb55650ca7ec2caef67ddc9f546452",
+            "messageTitle": "level 5",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 49,
+                "deletions": 36
+              }
+            }
+          },
+          {
+            "hash": "3d705a1447a04e2373354d9a01dd0c7d94ba6952",
+            "messageTitle": "level 5",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 9,
+                "deletions": 4
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "mtahgg": {
+      "java": 206,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "mtahgg": 1312.2521
+  },
+  "authorDisplayNameMap": {
+    "mtahgg": "ZHAN..TONG"
+  }
+}

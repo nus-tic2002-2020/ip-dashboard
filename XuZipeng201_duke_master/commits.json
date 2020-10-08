@@ -1,0 +1,104 @@
+{
+  "authorDailyContributionsMap": {
+    "XuZipeng201": [
+      {
+        "date": "2020-09-20",
+        "commitResults": [
+          {
+            "hash": "fd8133e924ff9fc726f0ab1ca7e6175e29cac71e",
+            "messageTitle": "Level 1. Greet, Echo, Exit",
+            "messageBody": "",
+            "tags": [
+              "Level-1"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 27,
+                "deletions": 2
+              }
+            }
+          },
+          {
+            "hash": "7e997837284bd390faa54d93bd6270e954f5692f",
+            "messageTitle": "Level 2. Add, List",
+            "messageBody": "",
+            "tags": [
+              "Level-2"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 22,
+                "deletions": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-27",
+        "commitResults": [
+          {
+            "hash": "2fc709dd9df53607b6a921b89a8101181743f222",
+            "messageTitle": "Level 3. Mark as Done",
+            "messageBody": "",
+            "tags": [
+              "Level-3"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 44,
+                "deletions": 7
+              }
+            }
+          },
+          {
+            "hash": "69e8e736c71c5516e63180b53d8db353ba6a3c83",
+            "messageTitle": "Level 4. ToDos, Events, Deadlines",
+            "messageBody": "",
+            "tags": [
+              "Level-4"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 12,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 78,
+                "deletions": 6
+              }
+            }
+          },
+          {
+            "hash": "67f6738c29ecf46f602b1d74a4eaa01adb3575ea",
+            "messageTitle": "Level 5. Handle Errors",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 62,
+                "deletions": 13
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "XuZipeng201": {
+      "java": 205,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 12
+    }
+  },
+  "authorContributionVariance": {
+    "XuZipeng201": 1120.2766
+  },
+  "authorDisplayNameMap": {
+    "XuZipeng201": "XU Z..PENG"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "authorDailyContributionsMap": {
+    "kuoshengang": [
+      {
+        "date": "2020-10-06",
+        "commitResults": [
+          {
+            "hash": "3a27fd020238dc2b318f28b4ab41d9fa3d6a9f16",
+            "messageTitle": "no message",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 43,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "30674efd7bd899aac4b0eae6ab849dca6010ef6d",
+            "messageTitle": "new changes",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 191,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "7e31772b12490ca5b60dd6317b0f1785d6ed0181",
+            "messageTitle": "new updates",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 2,
+                "deletions": 17
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-07",
+        "commitResults": [
+          {
+            "hash": "11c64a5c56e0a4ea63ff1e0e2b43ef45e809a65a",
+            "messageTitle": "changes done",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 177,
+                "deletions": 93
+              },
+              "md": {
+                "insertions": 7,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "af5c342bce8d2658813cf71749c823d905a9cb48",
+            "messageTitle": "no message",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 2,
+                "deletions": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-08",
+        "commitResults": [
+          {
+            "hash": "0f2d9ca2d350ff964a9ec1e5b5351860620248ca",
+            "messageTitle": "modifications added",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 1,
+                "deletions": 8
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "kuoshengang": {
+      "java": 296,
+      "md": 7,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "kuoshengang": 2460.4612
+  },
+  "authorDisplayNameMap": {
+    "kuoshengang": "ANG ..MENT"
+  }
+}

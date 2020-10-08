@@ -1,0 +1,99 @@
+{
+  "authorDailyContributionsMap": {
+    "Jayde-issexy": [
+      {
+        "date": "2020-09-17",
+        "commitResults": [
+          {
+            "hash": "946bf6482b0cdb4424351949a4ea6fa23cc0aa5b",
+            "messageTitle": "add fruits.txt 20200917",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "3db127f19e3279786b8737ff1cbf005d9a9d5724",
+            "messageTitle": "update fruit.txt 20200917",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 2,
+                "deletions": 2
+              }
+            }
+          },
+          {
+            "hash": "c7cb82078f9529ed5f3fdb8db12e2862cc4569c2",
+            "messageTitle": "Add colors.txt Add shapes.txt",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 7,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "b7f88c2a201254da8531f386f04e6214857d7140",
+            "messageTitle": "Added watermelon to fruits.txt 20200917",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 2,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-20",
+        "commitResults": [
+          {
+            "hash": "e08f18143cd56b51619293ae6cd73994c42e8e86",
+            "messageTitle": "level 1 - 20200920",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 24,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "a25b51f00747f19468c49a8291a9ce4a48f6bd3a",
+            "messageTitle": "Level 2 - 20200920",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 29,
+                "deletions": 7
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "Jayde-issexy": {
+      "java": 46,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 11
+    }
+  },
+  "authorContributionVariance": {
+    "Jayde-issexy": 98.23615
+  },
+  "authorDisplayNameMap": {
+    "Jayde-issexy": "TAN .. MIN"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "authorDailyContributionsMap": {
+    "aloysiuswwc": [
+      {
+        "date": "2020-08-30",
+        "commitResults": [
+          {
+            "hash": "dffac4c03b6c8c93e4dbcb4292dd7293d1204e30",
+            "messageTitle": "Level-1 increment",
+            "messageBody": "",
+            "tags": [
+              "Level-1"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 22,
+                "deletions": 6
+              }
+            }
+          },
+          {
+            "hash": "0fea0a20df9f0fcf68ed6c665df52ebbed0eea5c",
+            "messageTitle": "Add \u0026 List functions added",
+            "messageBody": "",
+            "tags": [
+              "Level-2"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 25,
+                "deletions": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-06",
+        "commitResults": [
+          {
+            "hash": "a51c2d2bf8ef6969f4ab5e4d888e6716f315b14f",
+            "messageTitle": "Level 3 (Added \"Task\" Class, Updated \"list\" method, Implemented \"done\" method)",
+            "messageBody": "",
+            "tags": [
+              "Level-3"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 44,
+                "deletions": 6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-13",
+        "commitResults": [
+          {
+            "hash": "b024d460d197062879a2bb57a8fc1191d3aac195",
+            "messageTitle": "Level 4 (ToDo, Deadline \u0026 Event class implementation)",
+            "messageBody": "",
+            "tags": [
+              "Level-4"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 150,
+                "deletions": 17
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-20",
+        "commitResults": [
+          {
+            "hash": "ff6d4fe78e92063444112dce902a35c7b0dfc6b0",
+            "messageTitle": "Level 5 (Duke-\u003eLisa; done\u0026add functions exceptions added)",
+            "messageBody": "",
+            "tags": [
+              "Level-5"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 159,
+                "deletions": 105
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-27",
+        "commitResults": [
+          {
+            "hash": "ac50c3581cd4c5321ea920ad82051ba766f17c60",
+            "messageTitle": "Level 6 (implemented CommandEnum; if-else statements to switch-case; implemented delete task;)",
+            "messageBody": "",
+            "tags": [
+              "Level-6"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 115,
+                "deletions": 68
+              }
+            }
+          },
+          {
+            "hash": "50339e02d4c28e8b828292139acbbb1ece9f6337",
+            "messageTitle": "Sorted classes, exceptions and enumerations into packages",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 24,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "aloysiuswwc": {
+      "java": 343,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "aloysiuswwc": 2981.1355
+  },
+  "authorDisplayNameMap": {
+    "aloysiuswwc": "WONG..SIUS"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "authorDailyContributionsMap": {
+    "erictongg": [
+      {
+        "date": "2020-08-25",
+        "commitResults": [
+          {
+            "hash": "322f8ea96d7bcc922d7f0cb9deb25faed79a7a87",
+            "messageTitle": "added level 1",
+            "messageBody": "",
+            "tags": [
+              "v1.1"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 27,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "99bb8b6b19631bf7a5488b890f8e33ac404c2dbf",
+            "messageTitle": "added level 2",
+            "messageBody": "",
+            "tags": [
+              "v1.2"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 52,
+                "deletions": 11
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-01",
+        "commitResults": [
+          {
+            "hash": "0e35871f742a80f4fa10952de8e1dbf026b0acc2",
+            "messageTitle": "added level 3 \u0026 created List class",
+            "messageBody": "",
+            "tags": [
+              "v1.3"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 100,
+                "deletions": 65
+              }
+            }
+          },
+          {
+            "hash": "7e822b007b88fb857e12ce30966dc5e8622c3276",
+            "messageTitle": "added level 4",
+            "messageBody": "",
+            "tags": [
+              "v1.4"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 78,
+                "deletions": 22
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-14",
+        "commitResults": [
+          {
+            "hash": "cd6cf7892325ed870dd57fe2ef4119bd44528bbe",
+            "messageTitle": "added level 5 \u0026 created IllegalInputException class",
+            "messageBody": "",
+            "tags": [
+              "v1.5"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 26,
+                "deletions": 9
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-30",
+        "commitResults": [
+          {
+            "hash": "eff27b751a66ee90eaca501ae70aa9fa2c994563",
+            "messageTitle": "added level 6, implemented delete \u0026 change datatype to array list",
+            "messageBody": "",
+            "tags": [
+              "v1.6"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 48,
+                "deletions": 43
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "erictongg": {
+      "java": 182,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "erictongg": 1729.3937
+  },
+  "authorDisplayNameMap": {
+    "erictongg": "ERIC.. GUO"
+  }
+}

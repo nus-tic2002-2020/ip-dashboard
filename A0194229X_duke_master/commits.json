@@ -1,0 +1,93 @@
+{
+  "authorDailyContributionsMap": {
+    "A0194229X": [
+      {
+        "date": "2020-09-08",
+        "commitResults": [
+          {
+            "hash": "41a7b2fadf30aba12107da103175f3301d90e84c",
+            "messageTitle": "ya",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-15",
+        "commitResults": [
+          {
+            "hash": "5b20e3409428991ac65e7a77b82785f2fc0a6af0",
+            "messageTitle": "level-1",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 16,
+                "deletions": 6
+              }
+            }
+          },
+          {
+            "hash": "19c35c617cc820207762ad8c86cef456f401b0a6",
+            "messageTitle": "level-2",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 11,
+                "deletions": 4
+              }
+            }
+          },
+          {
+            "hash": "643f301a5fbf50fad3f722022286ac30722f4161",
+            "messageTitle": "level-3",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 76,
+                "deletions": 18
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-19",
+        "commitResults": [
+          {
+            "hash": "96d809b7e03bd56bcd0068974e4c7476f504662d",
+            "messageTitle": "level-4",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 71,
+                "deletions": 6
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "A0194229X": {
+      "java": 145,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "A0194229X": 591.9489
+  },
+  "authorDisplayNameMap": {
+    "A0194229X": "WANG..UWEI"
+  }
+}

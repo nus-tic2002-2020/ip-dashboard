@@ -1,0 +1,300 @@
+{
+  "authorDailyContributionsMap": {
+    "roshankumar1991": [
+      {
+        "date": "2020-09-02",
+        "commitResults": [
+          {
+            "hash": "2db454d3959c4280e91207b2eb283cb2abbdd89e",
+            "messageTitle": "Level-1",
+            "messageBody": "",
+            "tags": [
+              "Level-1"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 19,
+                "deletions": 6
+              }
+            }
+          },
+          {
+            "hash": "a37840b74f1d080eaffcec2abe49165616cf8072",
+            "messageTitle": "Level-2",
+            "messageBody": "",
+            "tags": [
+              "Level-2"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 18,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-03",
+        "commitResults": [
+          {
+            "hash": "4933a6becaac0aed1f9d010f5c8d72ddf1e1c192",
+            "messageTitle": "Level-3",
+            "messageBody": "",
+            "tags": [
+              "Level-3"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 50,
+                "deletions": 4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-04",
+        "commitResults": [
+          {
+            "hash": "5ba297364998e58bd8005168bf496610ecde9745",
+            "messageTitle": "Level-4",
+            "messageBody": "",
+            "tags": [
+              "Level-4"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 83,
+                "deletions": 4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-07",
+        "commitResults": [
+          {
+            "hash": "ca708161824819e5d9647b5d963e633911ab42c1",
+            "messageTitle": "Level-5",
+            "messageBody": "",
+            "tags": [
+              "Level-5"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 45,
+                "deletions": 26
+              }
+            }
+          },
+          {
+            "hash": "f7966c266a857ce576e34a469ea783345cb918ac",
+            "messageTitle": "Level-6",
+            "messageBody": "",
+            "tags": [
+              "Level-6"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 35,
+                "deletions": 21
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-08",
+        "commitResults": [
+          {
+            "hash": "b0d6e2cb78fe63e9ec5f9f8851f0421e0f6a0ea6",
+            "messageTitle": "Level-7",
+            "messageBody": "",
+            "tags": [
+              "Level-7"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 113,
+                "deletions": 30
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-11",
+        "commitResults": [
+          {
+            "hash": "c206edd867cbdc82b4cb0b8ad296e12d6492db8f",
+            "messageTitle": "A-MoreOOP",
+            "messageBody": "",
+            "tags": [
+              "A-MoreOOP"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 262,
+                "deletions": 215
+              }
+            }
+          },
+          {
+            "hash": "30fae43c5e8e5a8ffc09c7b98f493342ff2d344b",
+            "messageTitle": "A-Packages",
+            "messageBody": "",
+            "tags": [
+              "A-Packages"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 25,
+                "deletions": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-15",
+        "commitResults": [
+          {
+            "hash": "393b42c56b2beb35d891cf6ad9a7eb998040245d",
+            "messageTitle": "Level-8",
+            "messageBody": "",
+            "tags": [
+              "Level-8"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 223,
+                "deletions": 43
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-16",
+        "commitResults": [
+          {
+            "hash": "084359e50bfc543df71ad107e6f3918f46ca010d",
+            "messageTitle": "A-JavaDoc",
+            "messageBody": "",
+            "tags": [
+              "A-JavaDoc"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 243,
+                "deletions": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-17",
+        "commitResults": [
+          {
+            "hash": "09e66752a1cc08429971c60de223a7c60352145f",
+            "messageTitle": "File Confiq",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 24,
+                "deletions": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-20",
+        "commitResults": [
+          {
+            "hash": "0ac1cc124cba1ae214e9fe401bf14bd3365eedda",
+            "messageTitle": "Individual Feature 1 - C-Undo",
+            "messageBody": "",
+            "tags": [
+              "Individual_Feature_1_C-Undo"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 150,
+                "deletions": 85
+              }
+            }
+          },
+          {
+            "hash": "0751c4eb0e73634a246e08cf87c6873dcd524118",
+            "messageTitle": "Level-9",
+            "messageBody": "",
+            "tags": [
+              "Level-9"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 17,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "5b692463fae4b9b2c4ff9c5b69b3075c5b8b85f0",
+            "messageTitle": "Individual Feature 2 - C-FlexibleDataSource",
+            "messageBody": "",
+            "tags": [
+              "Individual_Feature_2_C-FlexibleDataSource"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 154,
+                "deletions": 9
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "roshankumar1991": {
+      "java": 1024,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "roshankumar1991": 13500.679
+  },
+  "authorDisplayNameMap": {
+    "roshankumar1991": "ROSH..UMAR"
+  }
+}

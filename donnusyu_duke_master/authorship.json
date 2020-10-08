@@ -1,0 +1,476 @@
+[
+  {
+    "path": "src/main/java/Duke.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "import java.util.Scanner;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "import java.util.List;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class Duke {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void main(String[] args) {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "        List\u003cTask\u003e taskList \u003d new ArrayList\u003cTask\u003e();"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "        System.out.println(\"Hello! I\u0027m Duke\\nWhat can I do for you?\\n\");"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "        while (true) {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            Scanner scan \u003d new Scanner(System.in);"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            String echo \u003d scan.nextLine();"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            if (!echo.equals(\"list\") \u0026\u0026 !echo.contains(\"done\")) {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                Task newTask \u003d new Task(echo);"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                taskList.add(newTask);"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            if (echo.contains(\"done\")) {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                String doneSplit[] \u003d echo.split(\" \");"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                int item \u003d Integer.parseInt(doneSplit[1]) - 1;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                taskList.get(item).markAsDone();"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                System.out.println(\"Nice! I\u0027ve marked this task as done:\");"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                System.out.println(\"  [\" + taskList.get(item).getStatusIcon() + \"] \" + taskList.get(item).toString());"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            else if (echo.equals(\"bye\")) {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                System.out.println(\"Bye. Hope to see you again soon!\");"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            else if (echo.equals(\"list\")) {"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                System.out.println(\"Here are the tasks in your list:\");"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                for (int i \u003d 0; i \u003c taskList.size(); i++) {"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                    System.out.println(i+1 + \".\" + \"[\" + taskList.get(i).getStatusIcon() + \"] \" + taskList.get(i));"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            else {"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "                System.out.println(echo);"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "donnusyu": 39,
+      "-": 4
+    }
+  },
+  {
+    "path": "src/main/java/Task.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "public class Task {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "    protected String description;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "    protected boolean isDone;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "    public Task(String description) {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "        this.description \u003d description;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "        this.isDone \u003d false;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "    public String getStatusIcon() {"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "        return (isDone ? \"\\u2713\" : \"\\u2718\"); //return tick or X symbols"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "    public void markAsDone() {"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "        this.isDone \u003d true;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "        return description;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "donnusyu"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "donnusyu": 22
+    }
+  }
+]

@@ -1,0 +1,890 @@
+{
+  "authorDailyContributionsMap": {
+    "tanqiuyu": [
+      {
+        "date": "2020-08-25",
+        "commitResults": [
+          {
+            "hash": "b5b403016769b1c075dcedeea9ed0ee32118ec8f",
+            "messageTitle": "This is Level-1",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 18,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "6c5cf0f7fedc08761f390ec0afd482b596099920",
+            "messageTitle": "This is a further enhancement to Level-1.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 5,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "1e37643e6f6fe60a91c356ae43c7be29dfad26de",
+            "messageTitle": "Revert \"This is a further enhancement to Level-1.\"",
+            "messageBody": "This reverts commit 6c5cf0f7fedc08761f390ec0afd482b596099920.\n",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 5
+              }
+            }
+          },
+          {
+            "hash": "a26eb098e6f7b94a76c79da9e357e3b08c4ec15b",
+            "messageTitle": "Revert \"This is Level-1\"",
+            "messageBody": "This reverts commit b5b403016769b1c075dcedeea9ed0ee32118ec8f.\n",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 18
+              }
+            }
+          },
+          {
+            "hash": "4c16349dae1ff16f08f7e233212713655716dd1a",
+            "messageTitle": "Revert \"Revert \"This is Level-1\"\"",
+            "messageBody": "This reverts commit a26eb098e6f7b94a76c79da9e357e3b08c4ec15b.\n",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 18,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "e6702b0b2df261391a29f689bf215cb114be6c4e",
+            "messageTitle": "Finalised Level-1",
+            "messageBody": "",
+            "tags": [
+              "Level-1"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 5,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "56504f9c98a5d4f969b6d674a3d452e65f64c402",
+            "messageTitle": "This is Level-2.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 10,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-08-26",
+        "commitResults": [
+          {
+            "hash": "7f0c8fab85bc75e71a0e1ab95ebe0b62b9424bb9",
+            "messageTitle": "Enhanced version of Level-2 functionalities.",
+            "messageBody": "",
+            "tags": [
+              "Level-2"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 33,
+                "deletions": 14
+              }
+            }
+          },
+          {
+            "hash": "b7b64f5a3828e21652d5031124accb6f0e32adc1",
+            "messageTitle": "Level 3, with many improvements to the text interface and Task object.",
+            "messageBody": "",
+            "tags": [
+              "Level-3",
+              "A-Classes"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 123,
+                "deletions": 12
+              }
+            }
+          },
+          {
+            "hash": "90a768f25b23df7ede9c106ad3448ebecc937107",
+            "messageTitle": "I\u0027ve tried the text UI testing, and successfully initiated it. However, as my design of Duke includes a time-stamp component specific up to the second, it is operationally not possible to update the EXPECTED.TXT such that the ACTUAL.TXT matches exactly during the testing.",
+            "messageBody": "",
+            "tags": [
+              "A-TextUiTesting"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 10,
+                "deletions": 0
+              },
+              "bat": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-08-27",
+        "commitResults": [
+          {
+            "hash": "fafc9894b2fa603bf0a7830570ea37f5442f9e0b",
+            "messageTitle": "draft version of Level-4",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 506,
+                "deletions": 47
+              }
+            }
+          },
+          {
+            "hash": "1a3d86c06f95fa5ce8abf5a9eb6474b0a68a227a",
+            "messageTitle": "Level-4 complete with refactoring done, and methods streamlined.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 110,
+                "deletions": 198
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-08-28",
+        "commitResults": [
+          {
+            "hash": "f540d5890ee714d608e0cc2621b41d7e5047912c",
+            "messageTitle": "Changes to text interface, including the change of command \"@task\" to \"@todo\".",
+            "messageBody": "",
+            "tags": [
+              "Level-4",
+              "A-Inheritance"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 36,
+                "deletions": 34
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-01",
+        "commitResults": [
+          {
+            "hash": "c1e6b35e6a46d60e84898d31ff81dd84a51628fa",
+            "messageTitle": "Even more refactoring and streamlining done. Implemented an enhancement to the \"Mark Done\" function to mark multiple tasks as done at a single time.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 106,
+                "deletions": 79
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-02",
+        "commitResults": [
+          {
+            "hash": "50406e355b90034ae3111f55308178ca8ca18c65",
+            "messageTitle": "Even more refactoring and streamlining. Implemented error handling with the aim to handle all possible errors. Enhanced object classes to have tighter rules so as to minimise errors.",
+            "messageBody": "",
+            "tags": [
+              "Level-5",
+              "A-Exceptions"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 404,
+                "deletions": 139
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-03",
+        "commitResults": [
+          {
+            "hash": "88271fbf0d67f0cf20ff1aca25bad059b82f83f4",
+            "messageTitle": "Implemented the delete function, and completely overhauled the data structures and classes.",
+            "messageBody": "",
+            "tags": [
+              "Level-6",
+              "C-MassOps",
+              "A-Collections"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 621,
+                "deletions": 406
+              }
+            }
+          },
+          {
+            "hash": "37278d2a6a06b83e2eb7e047fcd192b0ab2081a8",
+            "messageTitle": "Implemented Enums for Chinese Zodiac Year and western Horoscope month. The enhancements to the new Budget Class object from the previous commit is still in progress.",
+            "messageBody": "",
+            "tags": [
+              "A-Enums"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 131,
+                "deletions": 37
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-04",
+        "commitResults": [
+          {
+            "hash": "7a98dad749bbc99628c1fb85e38b841676e43fd8",
+            "messageTitle": "Implemented the save feature, and allowed Duke to search and load any saved data upon startup. The full implementation of the Budget class is still work-in-progress.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 2,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 413,
+                "deletions": 65
+              }
+            }
+          },
+          {
+            "hash": "9a58c781d56d845da51c8962bf0c15323ed43d18",
+            "messageTitle": "Fully implemented the Budget related function. Also created a new class of task known as \"Bills\", a task with both a deadline and budget/money component.",
+            "messageBody": "",
+            "tags": [
+              "D-Expenses"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 2
+              },
+              "java": {
+                "insertions": 278,
+                "deletions": 32
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-06",
+        "commitResults": [
+          {
+            "hash": "4059a8f1c1854febe83aab2d8d434206d07b2973",
+            "messageTitle": "Implement auto-saving upon changes to tasks. Multiple improvements throughout.",
+            "messageBody": "",
+            "tags": [
+              "Level-7",
+              "A-Packages",
+              "A-MoreOOP"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 3
+              },
+              "java": {
+                "insertions": 1134,
+                "deletions": 529
+              }
+            }
+          },
+          {
+            "hash": "ae87652ca0947c7a06052c41953a1c31063bca73",
+            "messageTitle": "Implemented packages",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 133,
+                "deletions": 5
+              }
+            }
+          },
+          {
+            "hash": "b3b974c4bd0fd2741733c11b07ae76bc76149efa",
+            "messageTitle": "some improvements made.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 5,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 364,
+                "deletions": 57
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-07",
+        "commitResults": [
+          {
+            "hash": "f300cd73caad2b09cfd6a2701d52064da99b2a4d",
+            "messageTitle": "fixed glitch in file loading on startup, reading an empty file returns the same message as when no file was found, as well as many others. Added \"edit description\" and \"extend deadline\" functions.",
+            "messageBody": "",
+            "tags": [
+              "B-Snooze"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 5
+              },
+              "java": {
+                "insertions": 216,
+                "deletions": 36
+              }
+            }
+          },
+          {
+            "hash": "78bde58dcb8893ec64ff81e36aa63a0fbb91c146",
+            "messageTitle": "implemented an undo function.",
+            "messageBody": "",
+            "tags": [
+              "C-Undo",
+              "C-Archive"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 69,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 171,
+                "deletions": 4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-08",
+        "commitResults": [
+          {
+            "hash": "b5b10620224fcf9aa8860f156c74ae59ab952da9",
+            "messageTitle": "implemented functions to list tasks with deadlines, events, and tasks with budgets attached. Used data \u0026 time to sort deadlines and events. java.util.Date was used instead of java.time.LocalDate.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 231,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 137,
+                "deletions": 17
+              }
+            }
+          },
+          {
+            "hash": "ee38e377059cdeee609b621a6ee0076ce913f276",
+            "messageTitle": "overhauled the whole mechanism to filter and list specfic categories of notes, by type, date-time and budget.",
+            "messageBody": "",
+            "tags": [
+              "C-Sort",
+              "B-ViewSchedules"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 473,
+                "deletions": 5
+              },
+              "java": {
+                "insertions": 723,
+                "deletions": 177
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-14",
+        "commitResults": [
+          {
+            "hash": "a257220843da42fb68e253fb51d40f1488320a45",
+            "messageTitle": "enhancements to ensure events do not clash, events are not marked done before they start, and to filter notes for a specfic date.",
+            "messageBody": "",
+            "tags": [
+              "Level-8",
+              "B-DetectAnomalies"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 729
+              },
+              "java": {
+                "insertions": 225,
+                "deletions": 356
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-15",
+        "commitResults": [
+          {
+            "hash": "6ad3568aed2b566a27529ba34caec78638db8a4e",
+            "messageTitle": "implemented new enums.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 99,
+                "deletions": 4
+              }
+            }
+          },
+          {
+            "hash": "9393c49d41b6dfb8ca3edca73cba43ebb0fd66ca",
+            "messageTitle": "Implemented function to edit dates of existing deadlines and events.",
+            "messageBody": "",
+            "tags": [
+              "C-Update"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 212,
+                "deletions": 2
+              },
+              "java": {
+                "insertions": 312,
+                "deletions": 59
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-17",
+        "commitResults": [
+          {
+            "hash": "c35c2b12179cf4f942568692aef17bc618c10b5e",
+            "messageTitle": "added JavaDocs for some of the classes and methods",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 383,
+                "deletions": 50
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-18",
+        "commitResults": [
+          {
+            "hash": "a501403397355f8366ae60a5c1dd3b997f3c9704",
+            "messageTitle": "Overhauled the parser object class and command object classes, written JavaDocs for the command object classes.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 994,
+                "deletions": 943
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-20",
+        "commitResults": [
+          {
+            "hash": "1b5366a4a0570e04010a9ee89a00e42db8b62a11",
+            "messageTitle": "More JavaDocs written.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 43,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 1320,
+                "deletions": 272
+              }
+            }
+          },
+          {
+            "hash": "a64ddc0a27a8f3d0e79dc8679b225e649db400e1",
+            "messageTitle": "Completed JavaDocs for all.",
+            "messageBody": "",
+            "tags": [
+              "A-JavaDoc"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 195,
+                "deletions": 61
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-22",
+        "commitResults": [
+          {
+            "hash": "aebac0610cf5fb6d33ed54795ee2b47a7921247d",
+            "messageTitle": "implemented JUnit testing.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 342,
+                "deletions": 3
+              }
+            }
+          },
+          {
+            "hash": "2e7264202565b78808f4bcd231d15392fce719dd",
+            "messageTitle": "More JUnit tests done.",
+            "messageBody": "",
+            "tags": [
+              "A-JUnit"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 258,
+                "deletions": 149
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-23",
+        "commitResults": [
+          {
+            "hash": "bba916a196f8621bcd7fae0abb877e147aa6abc9",
+            "messageTitle": "Overhauled the command features for friendlier syntax. Implemented a search function for specific text in descriptions. Double-check coding standards and code quality, which were improved throughout the past commits.",
+            "messageBody": "",
+            "tags": [
+              "Level-9",
+              "C-FriendlierSyntax",
+              "A-CodingStandard",
+              "A-CodeQuality"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 178,
+                "deletions": 4
+              },
+              "java": {
+                "insertions": 582,
+                "deletions": 242
+              }
+            }
+          },
+          {
+            "hash": "9c7ab73df449d0ef83bf597ddaf24e043e165772",
+            "messageTitle": "Used the java.util.Base64 library to encode data saved into text file so that it might not be read by anyone with access to the text file but without access to Duke. Also added a JUnit method to test the encoder and decoder.",
+            "messageBody": "",
+            "tags": [
+              "A-Libraries"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 136,
+                "deletions": 45
+              },
+              "java": {
+                "insertions": 81,
+                "deletions": 39
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-24",
+        "commitResults": [
+          {
+            "hash": "a70b41016bdde87cc73e72bb167c50eee8ae0ce0",
+            "messageTitle": "Began implementation of JavaFX.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 170,
+                "deletions": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-25",
+        "commitResults": [
+          {
+            "hash": "186f8f423bb428e474aa0cabd9d3a3084e690236",
+            "messageTitle": "Began implementation of JavaFX GUI.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "fxml": {
+                "insertions": 66,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 145,
+                "deletions": 121
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-26",
+        "commitResults": [
+          {
+            "hash": "05990fc4231df3fc72eb7fc88d7dc86cd5237cbc",
+            "messageTitle": "Implemented GUI.",
+            "messageBody": "",
+            "tags": [
+              "Level-10",
+              "C-Help"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1279,
+                "deletions": 6
+              },
+              "fxml": {
+                "insertions": 151,
+                "deletions": 5
+              },
+              "java": {
+                "insertions": 1025,
+                "deletions": 416
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-27",
+        "commitResults": [
+          {
+            "hash": "0593c31a546052f3b3389cf90698e08f7139d471",
+            "messageTitle": "Added Assertions, corrected bug pertaining to static variables in Budget Class, and many other small corrections and checks.",
+            "messageBody": "",
+            "tags": [
+              "A-Assertions"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 281,
+                "deletions": 0
+              },
+              "fxml": {
+                "insertions": 26,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 237,
+                "deletions": 68
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-28",
+        "commitResults": [
+          {
+            "hash": "91110d134cb84f832d6ea92e1e5c4e89419f23ea",
+            "messageTitle": "Designed a date parser from ground up to understand natural dates.",
+            "messageBody": "",
+            "tags": [
+              "C-NaturalDates"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 298,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 433,
+                "deletions": 22
+              }
+            }
+          },
+          {
+            "hash": "1f877f38c4a50e5e024d6d199bf954945d452365",
+            "messageTitle": "Cleared some small bugs.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 61,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 0,
+                "deletions": 9
+              }
+            }
+          },
+          {
+            "hash": "4cb524ff0c9be3c6ddef00d03dd22ec957f1f0d6",
+            "messageTitle": "Fixed yet a small bug",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 186,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 8,
+                "deletions": 8
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-30",
+        "commitResults": [
+          {
+            "hash": "8aa875df1422c1555ee6421bfc29c9b6c02ba168",
+            "messageTitle": "Added a new list filter - Date Added. Cleaned up the codes and fixed some minor bugs.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "fxml": {
+                "insertions": 2,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 237,
+                "deletions": 222
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-01",
+        "commitResults": [
+          {
+            "hash": "65f0a44963e9851df87da798359c62a9b762ebbb",
+            "messageTitle": "Small improvement to Date Parser to understand \"today\", \"yesterday\" and \"tomorrow\".",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 47,
+                "deletions": 22
+              }
+            }
+          },
+          {
+            "hash": "1ec6360e138da46b719c3d2dafca029becca299d",
+            "messageTitle": "Made changes to JavaFX GUI for better GUI.",
+            "messageBody": "",
+            "tags": [
+              "A-BetterGui"
+            ],
+            "fileTypesAndContributionMap": {
+              "fxml": {
+                "insertions": 2,
+                "deletions": 2
+              },
+              "java": {
+                "insertions": 217,
+                "deletions": 202
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-06",
+        "commitResults": [
+          {
+            "hash": "8664f47949d271159a172092d488a2ebc9682b30",
+            "messageTitle": "removed unnecessary data files",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 2535
+              },
+              "java": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          },
+          {
+            "hash": "ef2cc7e62f68763866f57e1a6c35aae4353457e0",
+            "messageTitle": "Consolidated the Task Interface with Note Abstract Class to form a single Note Abstract Class. Renamed the Todo Class (which extends Note) to the Task Class. Cleared up the confusing names and streamlined the structure with this change.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 62
+              },
+              "java": {
+                "insertions": 212,
+                "deletions": 299
+              }
+            }
+          },
+          {
+            "hash": "81548cd8b1ff90c402f9206b85065f2eed09913c",
+            "messageTitle": "removed data files.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 63
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "tanqiuyu": {
+      "java": 7744,
+      "md": 0,
+      "fxml": 239,
+      "sh": 0,
+      "bat": 1,
+      "gradle": 0,
+      "txt": 10
+    }
+  },
+  "authorContributionVariance": {
+    "tanqiuyu": 583218.0
+  },
+  "authorDisplayNameMap": {
+    "tanqiuyu": "TAN ..U YU"
+  }
+}

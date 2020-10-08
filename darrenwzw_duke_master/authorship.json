@@ -1,0 +1,1366 @@
+[
+  {
+    "path": "src/main/java/Deadline.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "public class Deadline extends Task {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    protected String by;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public Deadline(String description, String by) {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        super(description);"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        this.by \u003d by;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        return \"[D]\" + super.toString() + \" (by: \" + by + \")\";"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "darrenwzw": 14
+    }
+  },
+  {
+    "path": "src/main/java/Duke.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "import java.util.Scanner;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class Duke {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public static void main(String[] args) throws DukeException {"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        int i\u003d0;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        Task task[] \u003d new Task[100];"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        String logo \u003d \" ____        _        \\n\""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        System.out.println(\"Hello from\\n\" + logo);"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        while(true) {"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            Scanner input \u003d new Scanner(System.in);  // Create a Scanner object"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            System.out.println(\"What can I do for you?\");"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            String command \u003d input.nextLine();  // Read user input"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            if (command.equals(\"bye\"))"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            {"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                System.out.println(\"Bye. Hope to see you again soon!\");"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            else if (command.equals(\"list\"))"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            {"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                System.out.println(\"Here are the tasks in your list: \");"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                for(int z\u003d0; z\u003ci; z++)"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    System.out.println(z+1+\".\"+task[z].toString());"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                //System.out.println(command);"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            else if(command.startsWith(\"done\"))"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            {"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                String[] optionInput \u003d command.split(\" \");"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                int option \u003d Integer.parseInt(optionInput[1]);"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                task[option-1].markAsDone();"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                System.out.println(\"Nice! I\u0027ve marked this task as done: \");"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                System.out.println(\"[\"+task[option-1].getStatusIcon()+\"]\"+task[option-1].description);"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            else if(command.startsWith(\"todo\"))"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            {"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                String[] descInput \u003d command.split(\" \",2);"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                if(descInput.length\u003c2)"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                {"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    throw new DukeException(\"☹ OOPS!!! The description of a todo cannot be empty.\");"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    //System.out.println(\"Please ensure that input is in correct format. (e.g. deadline [description] /by [date/time]\");"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    //continue;"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                String desc \u003d descInput[1];"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                System.out.println(\"Got it. I\u0027ve added this task: \");"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                task[i]\u003dnew Todo(desc);"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                System.out.println(task[i].toString());"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                i++;"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                if(i\u003d\u003d1) {"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    System.out.println(\"Now you have \" + i + \" task in the list.\");"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                else"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                {"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    System.out.println(\"Now you have \" + i + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                //System.out.println(\"[\"+task[i].getStatusIcon()+\"]\"+task[option-1].description);"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            else if(command.startsWith(\"deadline\"))"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            {"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                if(command.contains(\" /by \")\u003d\u003dfalse)"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                {"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    throw new DukeException(\"Please ensure that input is in correct format. (e.g. deadline [description] /by [date/time]\");"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    //System.out.println(\"Please ensure that input is in correct format. (e.g. deadline [description] /by [date/time]\");"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    //continue;"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                String[] descInput \u003d command.split(\" \",2);"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                String[] desc \u003d descInput[1].split(\" /by \");"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                System.out.println(\"Got it. I\u0027ve added this task: \");"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                task[i]\u003dnew Deadline(desc[0],desc[1]);"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                System.out.println(task[i].toString());"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                i++;"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                if(i\u003d\u003d1) {"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    System.out.println(\"Now you have \" + i + \" task in the list.\");"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                else"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                {"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    System.out.println(\"Now you have \" + i + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                //System.out.println(\"[\"+task[i].getStatusIcon()+\"]\"+task[option-1].description);"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            else if(command.startsWith(\"event\"))"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            {"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                if(command.contains(\" /at \")\u003d\u003dfalse)"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                {"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    throw new DukeException(\"Please ensure that input is in correct format. (e.g. event [description] /at [date/time]\");"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    //System.out.println(\"Please ensure that input is in correct format. (e.g. event [description] /at [date/time]\");"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                String[] descInput \u003d command.split(\" \",2);"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                String[] desc \u003d descInput[1].split(\" /at \");"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                System.out.println(\"Got it. I\u0027ve added this task: \");"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                task[i]\u003dnew Event(desc[0],desc[1]);"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                System.out.println(task[i].toString());"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                i++;"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                if(i\u003d\u003d1) {"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    System.out.println(\"Now you have \" + i + \" task in the list.\");"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                else"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                {"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                    System.out.println(\"Now you have \" + i + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                //System.out.println(\"[\"+task[i].getStatusIcon()+\"]\"+task[option-1].description);"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            else"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            {"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                throw new DukeException(\"☹ OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                //task[i]\u003d new Task(command);"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                //System.out.println(task[i].description);"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                //i++;"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "darrenwzw": 112,
+      "-": 9
+    }
+  },
+  {
+    "path": "src/main/java/DukeException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "public class DukeException extends Exception {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public DukeException(String errorMessage) {"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        super(errorMessage);"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "darrenwzw": 5
+    }
+  },
+  {
+    "path": "src/main/java/Event.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "public class Event extends Task {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    protected String at;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public Event(String description, String at) {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        super(description);"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        this.at \u003d at;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        return \"[E]\" + super.toString() + \" (at: \" + at + \")\";"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "darrenwzw": 14
+    }
+  },
+  {
+    "path": "src/main/java/Task.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "public class Task {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    protected String description;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    protected boolean isDone;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public Task(String description) {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        this.description \u003d description;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        this.isDone \u003d false;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public String getStatusIcon() {"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        return (isDone ? \"\\u2713\" : \"\\u2718\"); //return tick or X symbols"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public void markAsDone() {"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        isDone \u003d true;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        return \"[\"+this.getStatusIcon()+\"]\"+this.description;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    //..."
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "darrenwzw": 20
+    }
+  },
+  {
+    "path": "src/main/java/Todo.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "public class Todo extends Task {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public Todo(String description) {"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        super(description);"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        return \"[T]\" + super.toString();"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "darrenwzw": 13
+    }
+  }
+]

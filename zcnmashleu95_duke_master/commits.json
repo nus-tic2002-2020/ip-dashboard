@@ -1,0 +1,106 @@
+{
+  "authorDailyContributionsMap": {
+    "zcnmashleu95": [
+      {
+        "date": "2020-08-29",
+        "commitResults": [
+          {
+            "hash": "c1647cf040c95a91387c6a56c7cb028fad0f5de2",
+            "messageTitle": "test branch and commit",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 3,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "ad2e991900d78765bce557c48ead803ea70eb5cf",
+            "messageTitle": "testing 2nd commit",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-08-30",
+        "commitResults": [
+          {
+            "hash": "57eba22cb3d3b7783a69ec9f55565fe3139fb849",
+            "messageTitle": "Contains level 1 and 2 commits",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 68,
+                "deletions": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-06",
+        "commitResults": [
+          {
+            "hash": "62f29cd03c9730e9d5778a356ae01c62275673ac",
+            "messageTitle": "finish level 3",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 71,
+                "deletions": 11
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-30",
+        "commitResults": [
+          {
+            "hash": "0f965cdf88c96c416920192cd0e8d5dfd8a1bfdd",
+            "messageTitle": "Finished level 4",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 5,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 107,
+                "deletions": 11
+              },
+              "bat": {
+                "insertions": 2,
+                "deletions": 0
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "zcnmashleu95": {
+      "java": 225,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 2,
+      "gradle": 0,
+      "txt": 5
+    }
+  },
+  "authorContributionVariance": {
+    "zcnmashleu95": 533.6927
+  },
+  "authorDisplayNameMap": {
+    "zcnmashleu95": "LAM ..CHUN"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "authorDailyContributionsMap": {
+    "needsmorechilli": [
+      {
+        "date": "2020-09-01",
+        "commitResults": [
+          {
+            "hash": "2ef229410498cf1ede227e60c32e579f1678287e",
+            "messageTitle": "level-1",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 11,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "1084a492e349068296d5c177fc86d24123284ec8",
+            "messageTitle": "level-2",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 14,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "needsmorechilli": {
+      "java": 24,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "needsmorechilli": 33.70637
+  },
+  "authorDisplayNameMap": {
+    "needsmorechilli": "YEO ..ALIE"
+  }
+}

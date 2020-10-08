@@ -1,0 +1,1089 @@
+[
+  {
+    "path": "src/main/java/Deadline.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "public class Deadline extends Task{"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t  protected String by;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t    public Deadline(String description, String by) {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t        super(description);"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t        this.by \u003d by;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t    @Override"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t    public String toString() {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t        return \"[D]\" + \"[\"+icon()+\"] \"+getTitle() + \" (by: \" + by + \")\";"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t    }"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "A0194229X": 16
+    }
+  },
+  {
+    "path": "src/main/java/Duke.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "import java.util.Scanner;  //"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class Duke {"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\tprivate static Task[] task\u003d new Task[100];"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\tprivate static int count\u003d0;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    private static String ln\u003d\"  ____________________________________________________________\\n\";"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    "
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void main(String[] args) {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        System.out.println(\"Hello! I\u0027m Duke\\nWhat can I do for you?\");"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        chat();"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    public static void printAdded(String content) {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    \tint a\u003dcount+1;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    \tSystem.out.println(ln+\" Got it. I\u0027ve added this task: \");"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t\tSystem.out.println(content);"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    \tSystem.out.println(\"Now you have \"+a+\" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t\tSystem.out.println(ln);"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    public static void chat() {"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    \tScanner scan \u003d new Scanner(System.in);  // Create a Scanner object"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        String userinput\u003d(scan.nextLine()).trim();"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        "
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        if(userinput.length()\u003d\u003d0) {"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \tSystem.out.println(\"Invalid input\");"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \tchat();"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        "
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        String[] _userinput \u003d userinput.split(\" \",2);"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        String input_type\u003d(_userinput[0]).trim();"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        "
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        switch(input_type) {"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \tcase \"bye\":{"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tSystem.out.println(ln+\"   Bye. Hope to see you again soon!\\n\"+ln);"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t} break;"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \tcase \"done\":{"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tint Tasknum\u003d0;"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\ttry {"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\t\tTasknum \u003d Integer.parseInt(_userinput[1]);"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    \t\t\t}"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    \t\t\tcatch (NumberFormatException e)"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    \t\t\t{"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    \t\t\t\tSystem.out.println(\"Invalid task number\");"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    \t\t\t\tchat();"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    \t\t\t}"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tif(Tasknum\u003ecount)"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\t\tSystem.out.println(\"Invalid task number\");"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\ttask[Tasknum-1].markDone();"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tSystem.out.println(ln+\" Nice! I\u0027ve marked this task as done:\\n\""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\t\t\t+\"[\" + task[Tasknum-1].icon()+\"] \"+ task[Tasknum-1].getTitle()"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\t\t\t+\"\\n\""
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\t\t\t+ln);"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "            \tchat();"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t} break;"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \tcase \"list\":{"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tint n\u003d1;"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tfor (int a \u003d 0; a\u003ccount; a++) {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "                    System.out.println(n + \". [\" + task[a].icon()+\"] \"+ task[a].getTitle());"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "                    n++;"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "            \tchat();"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t} break;"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \tcase \"deadline\":{"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tString[] dl\u003d_userinput[1].split(\"/\");"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tString by[]\u003d(dl[1].split(\" \",2));"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\ttask[count]\u003dnew Deadline((dl[0]).trim(),by[1].trim());"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tprintAdded(task[count].toString());"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "            \tcount++;"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "            \tchat();"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t} break;"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \tcase \"event\":{"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tString[] dl\u003d_userinput[1].split(\"/\");"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tString at[]\u003d(dl[1].split(\" \",2));"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\ttask[count]\u003dnew Event((dl[0]).trim(),at[1].trim());"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tprintAdded(task[count].toString());"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "            \tcount++;"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "            \tchat();"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t} break;"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \tcase \"todo\":{"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\ttask[count]\u003dnew Task(_userinput[1]);"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tprintAdded(task[count].toString());"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "            \tcount++;"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\tchat();"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t}"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \tdefault:{        \t\t"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t\ttask[count]\u003dnew Task(userinput);"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "            \tcount++;"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "            \tSystem.out.println(ln+\"  added: \" +userinput+\"\\n\"+ln);        \t\t"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "            \tchat();"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        \t}        \t"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     }"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "A0194229X": 86,
+      "-": 5
+    }
+  },
+  {
+    "path": "src/main/java/Event.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "public class Event extends Task{"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t  protected String at;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t    public Event(String description, String at) {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t        super(description);"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t        this.at \u003d at;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t    @Override"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t    public String toString() {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t        return \"[E]\" + \"[\"+icon()+\"] \"+getTitle() + \" (at: \" + at + \")\";"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t    }"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "A0194229X": 16
+    }
+  },
+  {
+    "path": "src/main/java/Task.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "public class Task {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\tprotected boolean isDone;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\tprotected String title;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "//\tprotected int count;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\tpublic Task(String title) {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t\tthis.isDone\u003dfalse;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t\tthis.title\u003dtitle;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t}"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\tpublic void markDone() {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t\tthis.isDone\u003dtrue;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t}"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\tpublic String getTitle() {"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t\treturn this.title;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t}"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\tpublic String icon() {"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t\t return (isDone ? \"��\" : \"X\");"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "\t}"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "        return \"[T]\"+\"[\"+icon()+\"] \" + getTitle();"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "A0194229X"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "A0194229X": 27
+    }
+  }
+]

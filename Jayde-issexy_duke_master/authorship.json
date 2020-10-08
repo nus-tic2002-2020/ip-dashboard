@@ -1,0 +1,517 @@
+[
+  {
+    "path": "src/main/java/main/Duke.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "package main;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "import java.util.Scanner;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "//import parser.InputText;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class Duke {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void main(String[] args) {"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        ArrayList\u003cString\u003e list \u003d new ArrayList\u003cString\u003e();"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        String logo \u003d \" ____        _        \\n\""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        System.out.println(\"Hello from\\n\" + logo);"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        System.out.println(\"What can I do for you?\");"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        Scanner in \u003d new Scanner(System.in);"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        /*level 1*/"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        while (true) {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "            String input \u003d in.nextLine();"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "            if(!input.equals(\"list\")){"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                list.add(input);"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "            if(input.equals(\"list\")) {"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                int i\u003d0;"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                for(String name:list) {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(++i + \". \" + name);"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "            if(!input.equals(\"bye\") \u0026\u0026 !input.equals(\"list\")){"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                System.out.println(\"added: \" + input);"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "             if(input.equals(\"bye\")) {"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                System.out.println(\"Bye. Hope to see you again soon!\");"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Jayde-issexy": 31,
+      "-": 10
+    }
+  },
+  {
+    "path": "src/main/java/parser/InputText.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "package parser;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "import java.time.LocalDate;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "import java.util.Scanner;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "public class InputText {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    /*"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "     * input - User Input to the application"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "     * @throws DukeException - catches Duke exceptions and returns a suitable message to the user"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "     * @throws IOException"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public static void parseInput(String input) {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Jayde-issexy": 15
+    }
+  },
+  {
+    "path": "things/colors.txt",
+    "fileType": "txt",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "Blue"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "Pink"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "Black"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "Purple"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "Orange"
+      }
+    ],
+    "authorContributionMap": {
+      "Jayde-issexy": 5
+    }
+  },
+  {
+    "path": "things/fruits.txt",
+    "fileType": "txt",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "Peach"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "Melon"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "Banananananaana"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "Watermelon"
+      }
+    ],
+    "authorContributionMap": {
+      "Jayde-issexy": 4
+    }
+  },
+  {
+    "path": "things/shapes.txt",
+    "fileType": "txt",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "Circle"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "Triangle"
+      }
+    ],
+    "authorContributionMap": {
+      "Jayde-issexy": 2
+    }
+  }
+]

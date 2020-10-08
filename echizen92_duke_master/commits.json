@@ -1,0 +1,260 @@
+{
+  "authorDailyContributionsMap": {
+    "echizen92": [
+      {
+        "date": "2020-08-31",
+        "commitResults": [
+          {
+            "hash": "aeed1b0637a915aae536f72fd4a50ef301aa11fa",
+            "messageTitle": "level 1 of Duke",
+            "messageBody": "",
+            "tags": [
+              "Level-1"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 69,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "6736ba3d992503fa8fdfcb1db10f36db6fa806c9",
+            "messageTitle": "Level-2 commit",
+            "messageBody": "",
+            "tags": [
+              "Level-2"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 51,
+                "deletions": 7
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-13",
+        "commitResults": [
+          {
+            "hash": "5e6e443f25a87378520e08fec32e8a93a840f9e4",
+            "messageTitle": "Level-3 still in works",
+            "messageBody": "",
+            "tags": [
+              "Level-3.1",
+              "Level-3"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 31,
+                "deletions": 25
+              }
+            }
+          },
+          {
+            "hash": "efecfdcdfb76768edbbd1db46c2bc02986787d3e",
+            "messageTitle": "task.java",
+            "messageBody": "",
+            "tags": [
+              "level-3.2-task.java"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 14,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "0165d62fbb1f950bb9071581a154d9a380f316a7",
+            "messageTitle": "Level-3 out of bound error",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 52,
+                "deletions": 50
+              }
+            }
+          },
+          {
+            "hash": "3ccf2cb1e001fedac67ad657136650f70425ac8d",
+            "messageTitle": "Remove constructor",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 8,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "d9a8aa0968582e322984dfd3ed4f53a8c61f1b53",
+            "messageTitle": "Level-3 storing breaks",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 6,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-14",
+        "commitResults": [
+          {
+            "hash": "9f7c8088433f3c1132751683fb60f3642ec5728b",
+            "messageTitle": "Level-3 storing works",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 3,
+                "deletions": 3
+              }
+            }
+          },
+          {
+            "hash": "d7b1c914e6e543be4eb9912f7fbfa3e830e4c56e",
+            "messageTitle": "Level-3 return a false for task",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-25",
+        "commitResults": [
+          {
+            "hash": "d674e7a27991fcb029a6f2386e4b6ba37527a87e",
+            "messageTitle": "fixed issue where after inputting list it adds\"list\"",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 8,
+                "deletions": 6
+              }
+            }
+          },
+          {
+            "hash": "1bd0ddb1230eda2398af771bb7da0f00dd631bd0",
+            "messageTitle": "Level 4",
+            "messageBody": "",
+            "tags": [
+              "Level-4"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 18,
+                "deletions": 17
+              }
+            }
+          },
+          {
+            "hash": "218ec5cd9ae1adb8ea6de21b6bf02272a10447a8",
+            "messageTitle": "Updated task.java for level 4 implementation",
+            "messageBody": "",
+            "tags": [
+              "Task-level-4"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 28,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-26",
+        "commitResults": [
+          {
+            "hash": "f976fc43e1eb366960c9c78c001016ee8e065882",
+            "messageTitle": "Updated task.java for level 4 implementation without use of inheritance",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 24,
+                "deletions": 4
+              }
+            }
+          },
+          {
+            "hash": "b2747a1459114c52dbc18d1e2267a25be4223c33",
+            "messageTitle": "Level-4",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 3,
+                "deletions": 10
+              }
+            }
+          },
+          {
+            "hash": "dc061cb8ac691805be086b5c8ebfde30403c229f",
+            "messageTitle": "exception class",
+            "messageBody": "",
+            "tags": [
+              "exceptions"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 5,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "2f9a07cfaad603cb3bf648363052ae7290eb4992",
+            "messageTitle": "Level 5",
+            "messageBody": "",
+            "tags": [
+              "Level-5"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 16,
+                "deletions": 12
+              }
+            }
+          },
+          {
+            "hash": "ea42f51a0a8dd1689342da7ccc20a8c3f51016a1",
+            "messageTitle": "throws illegalinputexceptions",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 5,
+                "deletions": 5
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "echizen92": {
+      "java": 200,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "echizen92": 1340.409
+  },
+  "authorDisplayNameMap": {
+    "echizen92": "MOHA..SHID"
+  }
+}

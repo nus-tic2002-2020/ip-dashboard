@@ -1,0 +1,212 @@
+{
+  "repoSenseVersion": "abbabb3afe",
+  "reportGeneratedTime": "Thu Oct 8 23:05:42 2020 UTC+08:00",
+  "reportGenerationTime": " 24.26 second(s)",
+  "repos": [
+    {
+      "location": {
+        "location": "https://github.com/needsmorechilli/duke.git",
+        "repoName": "duke",
+        "organization": "needsmorechilli"
+      },
+      "branch": "master",
+      "displayName": "needsmorechilli/duke[master]",
+      "outputFolderName": "needsmorechilli_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/roshankumar1991/duke.git",
+        "repoName": "duke",
+        "organization": "roshankumar1991"
+      },
+      "branch": "master",
+      "displayName": "roshankumar1991/duke[master]",
+      "outputFolderName": "roshankumar1991_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/kuoshengang/duke.git",
+        "repoName": "duke",
+        "organization": "kuoshengang"
+      },
+      "branch": "master",
+      "displayName": "kuoshengang/duke[master]",
+      "outputFolderName": "kuoshengang_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/tanqiuyu/duke.git",
+        "repoName": "duke",
+        "organization": "tanqiuyu"
+      },
+      "branch": "master",
+      "displayName": "tanqiuyu/duke[master]",
+      "outputFolderName": "tanqiuyu_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/echizen92/duke.git",
+        "repoName": "duke",
+        "organization": "echizen92"
+      },
+      "branch": "master",
+      "displayName": "echizen92/duke[master]",
+      "outputFolderName": "echizen92_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/e0262191/duke.git",
+        "repoName": "duke",
+        "organization": "e0262191"
+      },
+      "branch": "master",
+      "displayName": "e0262191/duke[master]",
+      "outputFolderName": "e0262191_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/aiqianchee/duke.git",
+        "repoName": "duke",
+        "organization": "aiqianchee"
+      },
+      "branch": "master",
+      "displayName": "aiqianchee/duke[master]",
+      "outputFolderName": "aiqianchee_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/darrenwzw/duke.git",
+        "repoName": "duke",
+        "organization": "darrenwzw"
+      },
+      "branch": "master",
+      "displayName": "darrenwzw/duke[master]",
+      "outputFolderName": "darrenwzw_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/factionsypho/duke.git",
+        "repoName": "duke",
+        "organization": "factionsypho"
+      },
+      "branch": "master",
+      "displayName": "factionsypho/duke[master]",
+      "outputFolderName": "factionsypho_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/lamyongxian/duke.git",
+        "repoName": "duke",
+        "organization": "lamyongxian"
+      },
+      "branch": "master",
+      "displayName": "lamyongxian/duke[master]",
+      "outputFolderName": "lamyongxian_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/zarifahz/duke.git",
+        "repoName": "duke",
+        "organization": "zarifahz"
+      },
+      "branch": "master",
+      "displayName": "zarifahz/duke[master]",
+      "outputFolderName": "zarifahz_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/erictongg/duke.git",
+        "repoName": "duke",
+        "organization": "erictongg"
+      },
+      "branch": "master",
+      "displayName": "erictongg/duke[master]",
+      "outputFolderName": "erictongg_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/aloysiuswwc/duke.git",
+        "repoName": "duke",
+        "organization": "aloysiuswwc"
+      },
+      "branch": "master",
+      "displayName": "aloysiuswwc/duke[master]",
+      "outputFolderName": "aloysiuswwc_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/A0194229X/duke.git",
+        "repoName": "duke",
+        "organization": "A0194229X"
+      },
+      "branch": "master",
+      "displayName": "A0194229X/duke[master]",
+      "outputFolderName": "A0194229X_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/XuZipeng201/duke.git",
+        "repoName": "duke",
+        "organization": "XuZipeng201"
+      },
+      "branch": "master",
+      "displayName": "XuZipeng201/duke[master]",
+      "outputFolderName": "XuZipeng201_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/mtahgg/duke.git",
+        "repoName": "duke",
+        "organization": "mtahgg"
+      },
+      "branch": "master",
+      "displayName": "mtahgg/duke[master]",
+      "outputFolderName": "mtahgg_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/Jayde-issexy/duke.git",
+        "repoName": "duke",
+        "organization": "Jayde-issexy"
+      },
+      "branch": "master",
+      "displayName": "Jayde-issexy/duke[master]",
+      "outputFolderName": "Jayde-issexy_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/donnusyu/duke.git",
+        "repoName": "duke",
+        "organization": "donnusyu"
+      },
+      "branch": "master",
+      "displayName": "donnusyu/duke[master]",
+      "outputFolderName": "donnusyu_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/ashikin22/duke.git",
+        "repoName": "duke",
+        "organization": "ashikin22"
+      },
+      "branch": "master",
+      "displayName": "ashikin22/duke[master]",
+      "outputFolderName": "ashikin22_duke_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/zcnmashleu95/duke.git",
+        "repoName": "duke",
+        "organization": "zcnmashleu95"
+      },
+      "branch": "master",
+      "displayName": "zcnmashleu95/duke[master]",
+      "outputFolderName": "zcnmashleu95_duke_master"
+    }
+  ],
+  "errorList": [],
+  "sinceDate": "2020-08-14",
+  "untilDate": "2020-10-08",
+  "isSinceDateProvided": true,
+  "isUntilDateProvided": false
+}

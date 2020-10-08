@@ -1,0 +1,214 @@
+{
+  "authorDailyContributionsMap": {
+    "aiqianchee": [
+      {
+        "date": "2020-08-26",
+        "commitResults": [
+          {
+            "hash": "9e249a2dd68b5a13801a182aac84cbdc9ea15cde",
+            "messageTitle": "level-1",
+            "messageBody": "",
+            "tags": [
+              "Level-1"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 32,
+                "deletions": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-08-29",
+        "commitResults": [
+          {
+            "hash": "fccdd3314a43a376954ae888a5636a041e8483fe",
+            "messageTitle": "commit for level-2",
+            "messageBody": "",
+            "tags": [
+              "Level-2"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 30,
+                "deletions": 6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-07",
+        "commitResults": [
+          {
+            "hash": "cde9a2af5beaf082d8757f255dc4e0be7873b4e8",
+            "messageTitle": "commit level 3 - unable to mark particular task as done (to fix ltr)",
+            "messageBody": "",
+            "tags": [
+              "level-3"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 44,
+                "deletions": 11
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-12",
+        "commitResults": [
+          {
+            "hash": "a94cf91262d34082ac34db59ca5f03f5c4599649",
+            "messageTitle": "fixed issue for level 3",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 17,
+                "deletions": 13
+              }
+            }
+          },
+          {
+            "hash": "80defde74358335ade0d1b8676e56492ef9132b1",
+            "messageTitle": "commit and fixed textUI test issue",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 2,
+                "deletions": 1
+              },
+              "bat": {
+                "insertions": 2,
+                "deletions": 2
+              },
+              "sh": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-15",
+        "commitResults": [
+          {
+            "hash": "a7872bfc8e09af787d2df85da30a46341a1f64e6",
+            "messageTitle": "level-4 is not ready",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 13,
+                "deletions": 7
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-16",
+        "commitResults": [
+          {
+            "hash": "e1093fcaa1938fe207cbdf364f457900aa282eca",
+            "messageTitle": "commit for level-4",
+            "messageBody": "",
+            "tags": [
+              "level-4"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 52,
+                "deletions": 21
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-20",
+        "commitResults": [
+          {
+            "hash": "655f942152e9c349bc6c461a99329c1ce00df713",
+            "messageTitle": "commit level 5",
+            "messageBody": "",
+            "tags": [
+              "level-5"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 44,
+                "deletions": 8
+              }
+            }
+          },
+          {
+            "hash": "ecb611511736dec9748f3de38be243b53e5d2784",
+            "messageTitle": "fixed typo",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 2,
+                "deletions": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-28",
+        "commitResults": [
+          {
+            "hash": "2ad87f56af859199ae568d12bf929c1d6a9c0357",
+            "messageTitle": "commit level 6 - having issue with catching non-numeric task number",
+            "messageBody": "",
+            "tags": [
+              "level-6"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 36,
+                "deletions": 9
+              }
+            }
+          },
+          {
+            "hash": "7869a67b3feebf98998f173795baeb08ea012b93",
+            "messageTitle": "added numberFormatException, removed extra space",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 28,
+                "deletions": 10
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "aiqianchee": {
+      "java": 211,
+      "md": 0,
+      "fxml": 0,
+      "sh": 1,
+      "bat": 2,
+      "gradle": 0,
+      "txt": 1
+    }
+  },
+  "authorContributionVariance": {
+    "aiqianchee": 421.84167
+  },
+  "authorDisplayNameMap": {
+    "aiqianchee": "CHEE..QIAN"
+  }
+}

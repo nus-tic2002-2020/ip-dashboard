@@ -1,0 +1,107 @@
+{
+  "authorDailyContributionsMap": {
+    "donnusyu": [
+      {
+        "date": "2020-09-15",
+        "commitResults": [
+          {
+            "hash": "a3ff5535abf379a040386dbb8fa428a79f187fc3",
+            "messageTitle": "add Level-1 increment",
+            "messageBody": "",
+            "tags": [
+              "Level-1"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 17,
+                "deletions": 6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-16",
+        "commitResults": [
+          {
+            "hash": "4c382ed8b33544d28b35e31960f0f8aee06277ca",
+            "messageTitle": "add Level-2 increment",
+            "messageBody": "",
+            "tags": [
+              "Level-2"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 13,
+                "deletions": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-28",
+        "commitResults": [
+          {
+            "hash": "fb0289c5065ae2b101fd6ebf9f276e14feca8063",
+            "messageTitle": "add Task class",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 17,
+                "deletions": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-09-29",
+        "commitResults": [
+          {
+            "hash": "0d410840227bfc2a056e8d1ffe7dbce8f384622e",
+            "messageTitle": "override toString() method",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 5,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "44ef67eedd13392a51a78dc42708dc0133e85e2e",
+            "messageTitle": "add Level-3 increment",
+            "messageBody": "",
+            "tags": [
+              "Level-3"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 15,
+                "deletions": 6
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "authorFileTypeContributionMap": {
+    "donnusyu": {
+      "java": 61,
+      "md": 0,
+      "fxml": 0,
+      "sh": 0,
+      "bat": 0,
+      "gradle": 0,
+      "txt": 0
+    }
+  },
+  "authorContributionVariance": {
+    "donnusyu": 32.55772
+  },
+  "authorDisplayNameMap": {
+    "donnusyu": "YU H.. HUI"
+  }
+}

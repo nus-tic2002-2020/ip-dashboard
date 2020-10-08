@@ -1,0 +1,2493 @@
+[
+  {
+    "path": "src/main/java/Lisa.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "import exceptions.*;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "import classes.*;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "import enumerations.*;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "import exceptions.Exception;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "import java.util.Scanner;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "public class Lisa {"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public static int getIndex(String input)  {"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        String[] temp \u003d input.split(\" \");"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        return (Integer.parseInt(temp[1]) - 1);"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public static void list(ArrayList\u003cTask\u003e store) {"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        if (store.size() \u003d\u003d 0) {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            System.out.println(\"There are no tasks in your list\");"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            return;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Here are the tasks in your list:\");"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        int index \u003d 1;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        for (Task i : store) {"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            String Symbol \u003d i.getSymbol();"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            switch (Symbol) {"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                case \"[T]\": {"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    System.out.println(index + \". \" + i.getSymbol() + i.getDone() + \" \" + i.getDescription());"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    index++;"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                case \"[D]\": {"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    System.out.println(index + \". \" + i.getSymbol() + i.getDone() + \" \" + i.getDescription() + \" (by: \" + i.getDateAndTime() +\")\");"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    index++;"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                case \"[E]\": {"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    System.out.println(index + \". \" + i.getSymbol() + i.getDone() + \" \" + i.getDescription() + \" (at: \" + i.getDateAndTime() +\")\");"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    index++;"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public static boolean catcher(String input) {"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        input \u003d input.toLowerCase();"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        String[] split \u003d input.split(\" \");"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        return input.trim().length() \u003d\u003d split[0].length();"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public static void add(ArrayList\u003cTask\u003e store, String input) throws Exception {"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        int function \u003d 0;"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        if (input.toLowerCase().startsWith(\"todo\")) { function \u003d 1; }"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        if (input.toLowerCase().startsWith(\"deadline\")) { function \u003d 2; }"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        if (input.toLowerCase().startsWith(\"event\")) { function \u003d 3; }"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        switch (function) {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            case 1: {"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                if (catcher(input)) { throw new NoDescriptionException(); }"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                input \u003d input.substring(4).trim();"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                store.add(new ToDo(input));"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                store.get(store.size()-1).printAdd(store.size());"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            case 2: {"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                if (catcher(input)) { throw new NoDescriptionException(); }"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                String[] split \u003d input.split(\"/by\");"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                if (catcher(split[1])) { throw new NoDeadlineException(); }"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                split[0] \u003d split[0].substring(8).trim();"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                split[1] \u003d split[1].trim();"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                store.add(new Deadline(split[0], split[1]));"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                store.get(store.size()-1).printAdd(store.size());"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            case 3: {"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                if (catcher(input)) { throw new NoDescriptionException(); }"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                String[] split \u003d input.split(\"/at\");"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                if (catcher(split[1])) { throw new NoTimeframeException(); }"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                split[0] \u003d split[0].substring(5).trim();"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                split[1] \u003d split[1].trim();"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                store.add(new Event(split[0], split[1]));"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                store.get(store.size()-1).printAdd(store.size());"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public static void runProgramme(String input, ArrayList\u003cTask\u003e store) throws Exception {"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        Scanner in \u003d new Scanner(System.in);"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        while (!input.toLowerCase().equals(\"bye\")) {"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            input \u003d in.nextLine();"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            String[] temp \u003d input.split(\" \", 2);"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            try {"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                CommandEnum cmd \u003d CommandEnum.valueOf(temp[0].toUpperCase());"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                switch (cmd) {"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    case TODO:"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    case DEADLINE:"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    case EVENT: {"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        try {"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                            add(store, input);"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        } catch (NoDescriptionException e) {"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                            System.out.println(\"Error~ The description can\u0027t be left blank!\");"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        } catch (NoDeadlineException e) {"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                            System.out.println(\"Error~ The deadline can\u0027t be left blank!\");"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        } catch (NoTimeframeException e) {"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                            System.out.println(\"Error~ The time frame can\u0027t be left blank!\");"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        } catch (ArrayIndexOutOfBoundsException e) {"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                            System.out.println(\"Error~ Check identifier \\\"/by\\\" or \\\"/at\\\" is not misspelled\");"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        break;"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    case LIST: {"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        list(store);"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        break;"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    case DELETE: {"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        try {"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                            store.get(getIndex(input)).printDelete(store.size()-1);"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                            store.remove(getIndex(input));"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        } catch (NumberFormatException | NullPointerException | IndexOutOfBoundsException e) {"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                            System.out.println(\"Error~ Invalid function number.\");"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        break;"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    case DONE: {"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        try {"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                            store.get(getIndex(input)).setDone();"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        } catch (NumberFormatException | NullPointerException | IndexOutOfBoundsException e) {"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                            System.out.println(\"Error~ Invalid function number.\");"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        break;"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    case BYE: {"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        System.out.println(\"Goodbye~ Hope to see you again soon! :3\");"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        break;"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            } catch (IllegalArgumentException e) {"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                System.out.println(\"Invalid input :( Please try again and follow the template closely!\\n\" +"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        \"-ToDo (description)\\n\" +"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        \"-Deadline (description) /by (date)\\n\" +"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        \"-List\\n\" +"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        \"-Delete (item number)\\n\" +"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        \"-Done (item number)\\n\" +"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        \"-Bye\");"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public static void main(String[] args) throws Exception {"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        String logo \u003d \" _       ___     ____       _____      \\n\""
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                + \"| |     |_ _|   | ___|     /  _  \\\\        \\n\""
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                + \"| |      | |    | |__     /  /_\\\\  \\\\      \\n\""
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                + \"| |      | |    |___ |   /  ____   \\\\      \\n\""
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                + \"| |__   _| |_    __| |  /  /     \\\\  \\\\    \\n\""
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                + \"|____| |_____|  |____| /__/       \\\\__\\\\   \\n\";"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        String input \u003d \"blank\";"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        ArrayList\u003cTask\u003e store \u003d new ArrayList\u003c\u003e();"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(logo + \"\\nHello, Lisa here~\\nHow can I help you today?\");"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        runProgramme(input, store);"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aloysiuswwc": 162
+    }
+  },
+  {
+    "path": "src/main/java/classes/Deadline.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "package classes;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "public class Deadline extends Task {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    private String dateAndTime;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public Deadline(String description, String dateAndTime) {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        super(description);"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        this.dateAndTime \u003d dateAndTime;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void setDone() {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        this.done \u003d true;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Nice! I\u0027ve marked this task as done:\");"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"[D][✓] \" + this.description + \" (by: \" + getDateAndTime() + \")\");"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void printAdd(int storeSize) {"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Got it. I\u0027ve added this task:\");"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(getSymbol() + \"[✗] \" + getDescription() + \" (by: \" + getDateAndTime() +\")\");"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Now you have \" + (storeSize) + \" tasks in the list\");"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void printDelete(int storeSize) {"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Noted. I\u0027ve removed this task:\");"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(getSymbol() + getDone() + \" \" + getDescription() + \" (by: \" + getDateAndTime() +\")\");"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Now you have \" + (storeSize) + \" tasks in the list\");"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void setSymbol() {"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        symbol \u003d \"[D]\";"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public String getSymbol() {"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        return symbol;"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public String getDateAndTime() {"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        return dateAndTime;"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aloysiuswwc": 41
+    }
+  },
+  {
+    "path": "src/main/java/classes/Event.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "package classes;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "public class Event extends Task {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    private String dateAndTime;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public Event(String description, String dateAndTime) {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        super(description);"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        this.dateAndTime \u003d dateAndTime;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void setDone() {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        this.done \u003d true;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Nice! I\u0027ve marked this task as done:\");"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"[D][✓] \" + this.description + \" (at: \" + getDateAndTime() + \")\");"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void printAdd(int storeSize) {"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Got it. I\u0027ve added this task:\");"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(getSymbol() + \"[✗] \" + getDescription() + \" (at: \" + getDateAndTime() +\")\");"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Now you have \" + (storeSize) + \" tasks in the list\");"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void printDelete(int storeSize) {"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Noted. I\u0027ve removed this task:\");"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(getSymbol() + getDone() + \" \" + getDescription() + \" (at: \" + getDateAndTime() +\")\");"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Now you have \" + (storeSize) + \" tasks in the list\");"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void setSymbol() {"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        symbol \u003d \"[E]\";"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public String getSymbol() {"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        return symbol;"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public String getDateAndTime() {"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        return dateAndTime;"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aloysiuswwc": 41
+    }
+  },
+  {
+    "path": "src/main/java/classes/Task.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "package classes;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "public abstract class Task {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    protected String description;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    protected boolean done;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    protected String symbol;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public Task(String description) {"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        setDescription(description);"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        this.done \u003d false;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        setSymbol();"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public String getDone() {"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        if (done \u003d\u003d false) {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            return (\"[✗]\");"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        else {"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            return (\"[✓]\");"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void setDescription(String description) {"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        this.description \u003d description;"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public String getDescription() {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        return(description);"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    //empty method for overriding"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public String getDateAndTime() {"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        return null;"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public abstract void printAdd(int storeSize);"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public abstract void printDelete(int storeSize);"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public abstract void setDone();"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public abstract String getSymbol();"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public abstract void setSymbol();"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aloysiuswwc": 43
+    }
+  },
+  {
+    "path": "src/main/java/classes/ToDo.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "package classes;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "public class ToDo extends Task {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public ToDo(String description) {"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        super(description);"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        setSymbol();"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void setDone() {"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        this.done \u003d true;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Nice! I\u0027ve marked this task as done:\");"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"[T][✓] \" + this.description);"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void printAdd(int storeSize) {"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Got it. I\u0027ve added this task:\");"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(getSymbol() + \"[✗] \" + getDescription());"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Now you have \" + (storeSize) + \" tasks in the list\");"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void printDelete(int storeSize) {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Noted. I\u0027ve removed this task:\");"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(getSymbol() + getDone() + \" \" + getDescription());"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        System.out.println(\"Now you have \" + (storeSize) + \" tasks in the list\");"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void setSymbol() {"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        symbol \u003d \"[T]\";"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public String getSymbol() {"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        return symbol;"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aloysiuswwc": 35
+    }
+  },
+  {
+    "path": "src/main/java/enumerations/CommandEnum.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "package enumerations;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "public enum CommandEnum {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    TODO, DEADLINE, EVENT, LIST, DELETE, DONE, BYE"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aloysiuswwc": 5
+    }
+  },
+  {
+    "path": "src/main/java/exceptions/Exception.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "package exceptions;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "public class Exception extends Throwable {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aloysiuswwc": 4
+    }
+  },
+  {
+    "path": "src/main/java/exceptions/NoDeadlineException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "package exceptions;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "public class NoDeadlineException extends Exception {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aloysiuswwc": 4
+    }
+  },
+  {
+    "path": "src/main/java/exceptions/NoDescriptionException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "package exceptions;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "public class NoDescriptionException extends Exception {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aloysiuswwc": 4
+    }
+  },
+  {
+    "path": "src/main/java/exceptions/NoTimeframeException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "package exceptions;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "public class NoTimeframeException extends Exception {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aloysiuswwc": 4
+    }
+  }
+]
