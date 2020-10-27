@@ -237,12 +237,47 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-26",
+        "commitResults": [
+          {
+            "hash": "0a176e11090d8d2f49492d983b6275461d305847",
+            "messageTitle": "level 6",
+            "messageBody": "",
+            "tags": [
+              "Level-6"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 18,
+                "deletions": 5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-27",
+        "commitResults": [
+          {
+            "hash": "f3d393a2ad759b8b8faf9ea27baef1ced1b2fa75",
+            "messageTitle": "level 6 fixed bugs with storing and delete",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 56,
+                "deletions": 34
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "echizen92": {
-      "java": 200,
+      "java": 235,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -252,7 +287,7 @@
     }
   },
   "authorContributionVariance": {
-    "echizen92": 1340.409
+    "echizen92": 909.0525
   },
   "authorDisplayNameMap": {
     "echizen92": "MOHA..SHID"

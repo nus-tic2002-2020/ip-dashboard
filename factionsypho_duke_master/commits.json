@@ -16,22 +16,107 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-09",
+        "commitResults": [
+          {
+            "hash": "0a81deba48577e62f5d493d3f47090a489548f14",
+            "messageTitle": "Level 1 \u0026 Level 2 done",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 45,
+                "deletions": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-11",
+        "commitResults": [
+          {
+            "hash": "652f60309de92ad2cbdc11eb32db020787df750f",
+            "messageTitle": "Changes to Level 1 and Level 2.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 24,
+                "deletions": 26
+              }
+            }
+          },
+          {
+            "hash": "44b0d8d90eb63e01158e03cbee52d9b84d4f1884",
+            "messageTitle": "Completed level 3",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 39,
+                "deletions": 12
+              }
+            }
+          },
+          {
+            "hash": "2154815651d8d686bdb268350c94e6eb4d744bb3",
+            "messageTitle": "Completed Level 4",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 62,
+                "deletions": 5
+              }
+            }
+          },
+          {
+            "hash": "1f7cfc3198e043efd71c06d8fa5d051b5f2dfe9a",
+            "messageTitle": "Completed level 5",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 37,
+                "deletions": 9
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-20",
+        "commitResults": [
+          {
+            "hash": "8a330479f165796c811b10ddf6abd1b18508bb71",
+            "messageTitle": "Level 6 completed.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 79,
+                "deletions": 32
+              },
+              "bat": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "factionsypho": {
-      "java": 0,
+      "java": 203,
       "md": 1,
       "fxml": 0,
       "sh": 0,
-      "bat": 0,
+      "bat": 1,
       "gradle": 0,
       "txt": 0
     }
   },
   "authorContributionVariance": {
-    "factionsypho": 0.035665296
+    "factionsypho": 860.9559
   },
   "authorDisplayNameMap": {
     "factionsypho": "CHAN..RETT"

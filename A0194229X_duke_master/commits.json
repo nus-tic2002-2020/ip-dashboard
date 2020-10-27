@@ -70,22 +70,69 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-10",
+        "commitResults": [
+          {
+            "hash": "22dc05cf99ec06fcfa1bfbb4aab0aa8981bdaa43",
+            "messageTitle": "level-5",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 168,
+                "deletions": 87
+              }
+            }
+          },
+          {
+            "hash": "634c628005c0ee8e91e42b7a8954a4f7afa627ce",
+            "messageTitle": "level-6",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 39,
+                "deletions": 16
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-18",
+        "commitResults": [
+          {
+            "hash": "8e703b85fa8adf32537fe8a6e8a6ffbd095a4034",
+            "messageTitle": "level-7",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 2,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 141,
+                "deletions": 77
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "A0194229X": {
-      "java": 145,
+      "java": 315,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 0
+      "txt": 2
     }
   },
   "authorContributionVariance": {
-    "A0194229X": 591.9489
+    "A0194229X": 2413.5908
   },
   "authorDisplayNameMap": {
     "A0194229X": "WANG..UWEI"

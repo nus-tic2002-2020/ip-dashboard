@@ -1,5 +1,119 @@
 [
   {
+    "path": "src/main/java/main/Deadline.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "package main;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "public class Deadline extends Task{"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    protected String by;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public Deadline (String description, boolean isDone, String by)"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        super(description, isDone); // calls the parent constructor"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        this.by \u003d by;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public String toString()"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        return \"[D][\" + \"\\u2718\" + \"] \" + super.toString() + \" (by : \"+ by + \")\";"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Jayde-issexy": 15
+    }
+  },
+  {
     "path": "src/main/java/main/Duke.java",
     "fileType": "java",
     "lines": [
@@ -15,21 +129,21 @@
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "import java.util.Scanner;"
+        "content": "import java.util.ArrayList;"
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "import java.util.ArrayList;"
+        "content": "import java.util.Scanner;"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "//import parser.InputText;"
+        "content": "//new branch named addintro 20200920"
       },
       {
         "lineNumber": 5,
@@ -50,254 +164,926 @@
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": ""
+        "content": "    //private static final String OUTPUT_DELIMITER \u003d \"\\\\|\";"
       },
       {
         "lineNumber": 8,
         "author": {
-          "gitId": "-"
+          "gitId": "Jayde-issexy"
         },
-        "content": "    public static void main(String[] args) {"
+        "content": "    //private static final String INPUT_DELIMITER \u003d \" \";"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": ""
+        "content": "    //ArrayList\u003cString\u003e list \u003d new ArrayList\u003cString\u003e();"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "        ArrayList\u003cString\u003e list \u003d new ArrayList\u003cString\u003e();"
+        "content": ""
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "-"
         },
-        "content": "        String logo \u003d \" ____        _        \\n\""
+        "content": "    public static void main(String[] args) {"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "-"
         },
-        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
+        "content": "        String logo \u003d \" ____        _        \\n\""
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "-"
         },
-        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
+        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "-"
         },
-        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
+        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "-"
         },
-        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "-"
         },
-        "content": "        System.out.println(\"Hello from\\n\" + logo);"
+        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
       },
       {
         "lineNumber": 17,
         "author": {
-          "gitId": "Jayde-issexy"
+          "gitId": "-"
         },
-        "content": "        System.out.println(\"What can I do for you?\");"
+        "content": "        System.out.println(\"Hello from\\n\" + logo);"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": ""
+        "content": "        System.out.println(\"What can I do for you?\");"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "        Scanner in \u003d new Scanner(System.in);"
+        "content": ""
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "        /*level 1*/"
+        "content": "        Scanner sc \u003d new Scanner(System.in);"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "        while (true) {"
+        "content": "        //Task[] task \u003d new Task[100];"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "            String input \u003d in.nextLine();"
+        "content": "        ArrayList\u003cTask\u003e task \u003d new ArrayList\u003cTask\u003e();"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "            if(!input.equals(\"list\")){"
+        "content": "        String input \u003d \"\";"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "                list.add(input);"
+        "content": "        int count \u003d 0;"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "            }"
+        "content": "        //so long input is not bye"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "            if(input.equals(\"list\")) {"
+        "content": "        while (!input.equals(\"bye\")) {"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "                int i\u003d0;"
+        "content": "            try {"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "                for(String name:list) {"
+        "content": "                //get user input"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "                    System.out.println(++i + \". \" + name);"
+        "content": "                input \u003d sc.nextLine();"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "                }"
+        "content": "                //split into array"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "            }"
+        "content": "                String[] arrValue;"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "            if(!input.equals(\"bye\") \u0026\u0026 !input.equals(\"list\")){"
+        "content": "                arrValue \u003d input.split(\" \");"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "                System.out.println(\"added: \" + input);"
+        "content": "                if (input.equals(\"list\")) {"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "            }"
+        "content": "                    //loop everything in the array"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": ""
+        "content": "                    System.out.println(\"_______________________________________________\");"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "             if(input.equals(\"bye\")) {"
+        "content": "                    for (int i \u003d 0; i \u003c count; i++) {"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "                System.out.println(\"Bye. Hope to see you again soon!\");"
+        "content": "                        System.out.println(i+1 + \". [\"+ \"\\u2718\" + \"] \" + task.get(i));"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "            }"
+        "content": "                    }"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "        }"
+        "content": "                    System.out.println(\"Now you have \" + count + \" tasks in the list.\");"
       },
       {
         "lineNumber": 40,
         "author": {
-          "gitId": "-"
+          "gitId": "Jayde-issexy"
         },
-        "content": "    }"
+        "content": "                    System.out.println(\"_______________________________________________\");"
       },
       {
         "lineNumber": 41,
         "author": {
-          "gitId": "-"
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                } else if (arrValue[0].equals(\"done\")) {"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    if (arrValue.length \u003c 2) {"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        throw new EmptyDescriptionException(\"OOOPS!!! The description of a done cannot be empty\");"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    int index \u003d Integer.parseInt(arrValue[1]);"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    task.get(index-1).markAsDone();"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"_______________________________________________\");"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"Nice! I\u0027ve marked this task as done: \");"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"\\t[\" + task.get(index-1).getStatusIcon() + \"] \" + task.get(index-1));"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"_______________________________________________\");"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                } else if (arrValue[0].equals(\"todo\")) {"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    if (arrValue.length \u003c 2) {"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        throw new EmptyDescriptionException(\"OOOPS!!! The description of a todo cannot be empty\");"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    String replaceString \u003d input.replace(\"todo \", \"\");"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    ToDo t \u003d new ToDo(replaceString, false);"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    task.add(t);"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"_______________________________________________\");"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"Got it. I\u0027ve added this task:\");"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"\\t\" + task.get(count));"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    count++;"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"Now you have \" + count + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"_______________________________________________\");"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                } else if (arrValue[0].equals(\"deadline\")) {"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    if (arrValue.length \u003c 2) {"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        throw new EmptyDescriptionException(\"OOOPS!!! The description of a deadline cannot be empty\");"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    String replaceString \u003d input.replace(\"deadline \", \"\");"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    String[] splitBy \u003d replaceString.split(\" /by \");"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    if(splitBy.length \u003c 2)"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    {"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        throw new EmptyDescriptionException(\"OOOPS!!! The date of a event cannot be empty\");"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    Deadline d \u003d new Deadline(splitBy[0], false, splitBy[1]);"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    task.add(d);"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"_______________________________________________\");"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"Got it. I\u0027ve added this task:\");"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"\\t\" + task.get(count));"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    count++;"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"Now you have \" + count + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"_______________________________________________\");"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                } else if (arrValue[0].equals(\"event\")) {"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    if (arrValue.length \u003c 2) {"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        throw new EmptyDescriptionException(\"OOOPS!!! The description of a event cannot be empty\");"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    String replaceString \u003d input.replace(\"event\", \"\");"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    String[] splitAt \u003d replaceString.split(\" /at \");"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    if (splitAt.length \u003c 2) {"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        throw new EmptyDescriptionException(\"OOOPS!!! The date of a event cannot be empty\");"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    else if(splitAt.length\u003e\u003d2) {"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        Event e \u003d new Event(splitAt[0], false, splitAt[1]);"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        task.add(e);"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        System.out.println(\"_______________________________________________\");"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        System.out.println(\"Got it. I\u0027ve added this task:\");"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        System.out.println(\"\\t\" + task.get(count));"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        count++;"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        System.out.println(\"Now you have \" + count + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        System.out.println(\"_______________________________________________\");"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    else"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    {"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        throw new InvalidCommandException(\"OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                else if (arrValue[0].equals(\"delete\"))"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                {"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    if(arrValue.length \u003c 2)"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    {"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                        throw new EmptyDescriptionException(\"OOPS!!! The description of a done cannot be empty\");"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    int index \u003d Integer.parseInt(arrValue[1]);"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"_______________________________________________\");"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"Noted. I\u0027ve removed this task:\");"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(index + \". \" + task.get(index-1));"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    task.remove(index-1);"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    count --;"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"Now you have \" + count + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"_______________________________________________\");"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                else {"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    Task t \u003d new Task(input, false);"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    task.add(t);"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    System.out.println(\"added: \" + task.get(count));"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                    count++;"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "            } catch (EmptyDescriptionException | InvalidCommandException e) {"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "                System.out.println(e.getMessage());"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        System.out.println(\"Bye. Hope to see you again soon !\");"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "Jayde-issexy"
         },
         "content": "}"
       }
     ],
     "authorContributionMap": {
-      "Jayde-issexy": 31,
-      "-": 10
+      "Jayde-issexy": 129,
+      "-": 8
     }
   },
   {
-    "path": "src/main/java/parser/InputText.java",
+    "path": "src/main/java/main/EmptyDescriptionException.java",
     "fileType": "java",
     "lines": [
       {
@@ -305,21 +1091,575 @@
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "package parser;"
+        "content": "package main;"
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "import java.time.LocalDate;"
+        "content": ""
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "import java.util.Scanner;"
+        "content": "public class EmptyDescriptionException extends Exception"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "{"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public EmptyDescriptionException(String message)"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        super(message);"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Jayde-issexy": 9
+    }
+  },
+  {
+    "path": "src/main/java/main/Event.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "package main;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "public class Event extends Task{"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    protected String at;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public Event (String taskName, boolean taskDone, String at)"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        super(taskName, taskDone); // calls the parent constructor"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        this.at \u003d at;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public String toString()"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        return \"[E][\" + \"\\u2718\" + \"] \" + super.toString() + \" (at : \"+ at + \")\";"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Jayde-issexy": 16
+    }
+  },
+  {
+    "path": "src/main/java/main/InvalidCommandException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "package main;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "public class InvalidCommandException extends Exception {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public InvalidCommandException(String message)"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        super(message);"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Jayde-issexy": 8
+    }
+  },
+  {
+    "path": "src/main/java/main/Task.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "package main;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "public class Task {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    protected String description;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    protected boolean isDone;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public Task (String description, boolean isDone)"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        this.description \u003d description;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        this.isDone \u003d isDone;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public String Description()"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        return description;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public void Description(String description)"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        this.description \u003d description;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public boolean getIsDone()"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        return isDone;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public void setIsDone(boolean isDone)"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        this.isDone \u003d isDone;"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public String toString()"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        //return description;"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        return description;"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public String getStatusIcon()"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        return (isDone ? \"\\u2713\" : \"\\u2718\"); //return tick or X symbols"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    public void markAsDone() {"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "        isDone \u003d true;"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Jayde-issexy": 41
+    }
+  },
+  {
+    "path": "src/main/java/main/ToDo.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "package main;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jayde-issexy"
+        },
+        "content": "public class ToDo extends Task {"
       },
       {
         "lineNumber": 4,
@@ -333,73 +1673,66 @@
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "public class InputText {"
+        "content": "    public ToDo(String taskName, boolean taskDone)"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": ""
+        "content": "    {"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "    /*"
+        "content": "        super(taskName, taskDone); // calls the parent constructor"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "     * input - User Input to the application"
+        "content": "    }"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "     * @throws DukeException - catches Duke exceptions and returns a suitable message to the user"
+        "content": ""
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "     * @throws IOException"
+        "content": "    public String toString()"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "     */"
+        "content": "    {"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": "    public static void parseInput(String input) {"
+        "content": "        return \"[T][\" + \"\\u2718\" + \"] \" + super.toString();"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "Jayde-issexy"
         },
-        "content": ""
-      },
-      {
-        "lineNumber": 14,
-        "author": {
-          "gitId": "Jayde-issexy"
-        },
         "content": "    }"
       },
       {
-        "lineNumber": 15,
+        "lineNumber": 14,
         "author": {
           "gitId": "Jayde-issexy"
         },
@@ -407,7 +1740,7 @@
       }
     ],
     "authorContributionMap": {
-      "Jayde-issexy": 15
+      "Jayde-issexy": 14
     }
   },
   {

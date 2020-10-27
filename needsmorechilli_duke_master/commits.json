@@ -27,12 +27,39 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-26",
+        "commitResults": [
+          {
+            "hash": "ce789bce60ccc67c628ba4d505240e74ffd26e92",
+            "messageTitle": "A-classes",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 21,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "3cb4d5ad0a1861b367f91bd9218bf38e9e400754",
+            "messageTitle": "Level-3",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 52,
+                "deletions": 15
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "needsmorechilli": {
-      "java": 24,
+      "java": 82,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -42,7 +69,7 @@
     }
   },
   "authorContributionVariance": {
-    "needsmorechilli": 33.70637
+    "needsmorechilli": 111.41052
   },
   "authorDisplayNameMap": {
     "needsmorechilli": "YEO ..ALIE"

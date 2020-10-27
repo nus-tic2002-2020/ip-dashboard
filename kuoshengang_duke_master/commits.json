@@ -85,12 +85,109 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-11",
+        "commitResults": [
+          {
+            "hash": "3a292a6bd9dd29daeadbdf6caa2a67d90f83b87e",
+            "messageTitle": "update Level 4",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 124,
+                "deletions": 71
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-12",
+        "commitResults": [
+          {
+            "hash": "a7a060ecf6a3deb0633f842f3bee3bca7c18d7e7",
+            "messageTitle": "Level 4 new updates",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 154,
+                "deletions": 130
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-13",
+        "commitResults": [
+          {
+            "hash": "afcaee187d5725f710d723cf2f05c2a3ca8aa1a3",
+            "messageTitle": "Level 4 new changes to simplified version",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 27,
+                "deletions": 18
+              }
+            }
+          },
+          {
+            "hash": "10069fe96c76474f6143e6cb1c505502e20c287b",
+            "messageTitle": "Correction made to Level 4",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 73,
+                "deletions": 12
+              }
+            }
+          },
+          {
+            "hash": "44fccca245e6cb7e037e4753ab7f261a325edd92",
+            "messageTitle": "Exception Handling",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 3,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "e9f07c2bf3b0b17214e9e7bbd69277fda1f38c4f",
+            "messageTitle": "Level 5 commits",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 12,
+                "deletions": 12
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-17",
+        "commitResults": [
+          {
+            "hash": "a70f6f0a5137030448af367d4d1fcccf57ed83d0",
+            "messageTitle": "Level 5 updates",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 209,
+                "deletions": 69
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "kuoshengang": {
-      "java": 296,
+      "java": 587,
       "md": 7,
       "fxml": 0,
       "sh": 0,
@@ -100,7 +197,7 @@
     }
   },
   "authorContributionVariance": {
-    "kuoshengang": 2460.4612
+    "kuoshengang": 5092.396
   },
   "authorDisplayNameMap": {
     "kuoshengang": "ANG ..MENT"

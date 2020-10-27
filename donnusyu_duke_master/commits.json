@@ -84,12 +84,113 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-24",
+        "commitResults": [
+          {
+            "hash": "4dd7dde999c3d331816a4feec9bf410a456b92cf",
+            "messageTitle": "add addTask()",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 11,
+                "deletions": 7
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-25",
+        "commitResults": [
+          {
+            "hash": "2dfc95d56f7a6453636d05cb1ddf01c12a5dfd9b",
+            "messageTitle": "add printList(), taskDone(), numberOfTask() \u0026 Deadline class; modify main() \u0026 addTask()",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 67,
+                "deletions": 23
+              }
+            }
+          },
+          {
+            "hash": "bf9685da540f53e888ae34e900da43f7ec9156df",
+            "messageTitle": "add Event class, Todo class",
+            "messageBody": "",
+            "tags": [
+              "Level-4"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 25,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "acaed61ddf3ff630545bf9c8f4745d7635f5794e",
+            "messageTitle": "add createNewTask()",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 17,
+                "deletions": 6
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-26",
+        "commitResults": [
+          {
+            "hash": "4111b5bcb5c82f768be26faaf80ebae09ec4e5f5",
+            "messageTitle": "add keywords field \u0026 checkForError() method",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 29,
+                "deletions": 3
+              }
+            }
+          },
+          {
+            "hash": "a76266410988718b8bc8dd8f8d3d8d2a02f23807",
+            "messageTitle": "add DukeException class",
+            "messageBody": "",
+            "tags": [
+              "Level-5"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 7,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "61ffaa1320823bf4db5edd472238d70076a42d61",
+            "messageTitle": "add deleteTask(), messageSplitter() \u0026 modify main()",
+            "messageBody": "",
+            "tags": [
+              "Level-6"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 17,
+                "deletions": 2
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "donnusyu": {
-      "java": 61,
+      "java": 194,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -99,7 +200,7 @@
     }
   },
   "authorContributionVariance": {
-    "donnusyu": 32.55772
+    "donnusyu": 313.98486
   },
   "authorDisplayNameMap": {
     "donnusyu": "YU H.. HUI"

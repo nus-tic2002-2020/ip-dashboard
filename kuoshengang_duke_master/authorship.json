@@ -241,6 +241,57 @@
     }
   },
   {
+    "path": "src/main/java/Calender.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "public enum Calender {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    January, Jan, Febuary, Feb, March, Mar, April, Apr, May, June, Jun, July, Jul,"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    August, Aug, September, Sep, October, Oct, November, Nov, December, Dec,"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    Mon, Monday, Tue, Tues, Tuesday, Wed, Wednesday, Thu, Thur, Thursday, Fri, Friday, Sat, Saturday, Sun, Sunday"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "kuoshengang": 6
+    }
+  },
+  {
     "path": "src/main/java/Deadline.java",
     "fileType": "java",
     "lines": [
@@ -298,28 +349,28 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    protected Date dueDate;"
+        "content": "    protected String dueDate;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    protected Date addDate;"
+        "content": "//    protected boolean advance \u003d false;"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    protected boolean advance \u003d false;"
+        "content": "//    protected int timesExtended \u003d 0;"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    protected int timesExtended \u003d 0;"
+        "content": ""
       },
       {
         "lineNumber": 12,
@@ -333,126 +384,126 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    public Deadline(String description,  String dueDate) {"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Deadline(String description, Date dueDate, Date addDate) {"
+        "content": "        super(description);"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        super(description, addDate);"
+        "content": "        this.dueDate \u003d dueDate;"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.dueDate \u003d dueDate;"
+        "content": ""
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this addDate \u003d addDate;"
+        "content": "    }"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//    public Deadline(String description, Date addDate, Date doneDate,"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Deadline(String description, Date addDate, Date doneDate,"
+        "content": "//                    boolean isDone, Date dueDate) {"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                    boolean isDone, Date dueDate) {"
+        "content": "//        super(description, addDate, doneDate, isDone);"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        super(description, addDate, doneDate, isDone);"
+        "content": "//        this.dueDate \u003d dueDate;"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.dueDate \u003d dueDate;"
+        "content": "//"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//    }"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    @Override"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    @Override"
+        "content": "    public String toString() {"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public String toString() {"
+        "content": "        return  super.toString() + \" (by: \" + dueDate + \")\";"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return \"[D]\" + super.toString() + \" (by: \" + by + \")\";"
+        "content": "    }"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 31,
@@ -466,217 +517,217 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    public void setDueDate(String dueDate) {"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public void setDueDate(Date dueDate) {"
+        "content": "        this.dueDate \u003d dueDate;"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.dueDate \u003d dueDate;"
+        "content": "    }"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//    public boolean markAsDone(String doneDate) {"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public boolean markAsDone(Date doneDate) throws CommandException {"
+        "content": "//        super.markAsDone(doneDate);"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        super.markAsDone(doneDate);"
+        "content": "//        if(doneDate.compareTo(this.dueDate) \u003c 0) {"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        if(doneDate.compareTo(this.targetDate) \u003c 0) {"
+        "content": "//            this.doneAhead \u003d true;"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            this.doneAhead \u003d true;"
+        "content": "//        }"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        }"
+        "content": "//        return false;"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return false;"
+        "content": "//    }"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    public String getDueDate() {"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Date getDueDate() {"
+        "content": "        return dueDate;"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return dueDate;"
+        "content": "    }"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    public void printList(){"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public void printList(){"
+        "content": "        System.out.print(this.getTaskIcon());"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        System.out.print(this.getTaskIcon());"
+        "content": "        System.out.print(this.getStatusIcon() + \" \");"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        System.out.print(this.getStatusIcon() + \" \");"
+        "content": "        System.out.println(String.format(\"%s\","
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        System.out.println(String.format(\"%s\","
+        "content": "                super.getDescription(), \"Added: \" +"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                this.getDescription(), \"Added: \" +"
+        "content": "                        taskDate.format(this.getAddDate())));"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                        taskDate.format(this.getAddDate())));"
+        "content": "        System.out.println(\"\\t\\t\\tDeadline : \" +"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        System.out.println(\"\\t\\t\\tDeadline : \" +"
+        "content": "                taskDate.format(this.getDueDate()));"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                taskDate.format(this.getDueDate()));"
+        "content": "        if (this.isDone) {"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        if (this.isDone) {"
+        "content": "            System.out.println(\"\\t\\t\\tDone     : \" +"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            System.out.println(\"\\t\\t\\tDone     : \" +"
+        "content": "                    this.getDoneDate());"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                    taskDate.format(this.getDoneDate()) + \" \" +"
+        "content": "        }"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                    this.getDoneAhead());"
+        "content": "    }"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "    public String getTaskIcon() {"
       },
       {
         "lineNumber": 63,
@@ -690,66 +741,52 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public String getTaskIcon() {"
+        "content": "        return(\"[D]\");"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return(\"[D]\");"
+        "content": ""
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "//    public String getObjectClass() {"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//        return \"Deadline\";"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public String getObjectClass() {"
+        "content": "//    }"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return \"Deadline\";"
-      },
-      {
-        "lineNumber": 71,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 72,
-        "author": {
-          "gitId": "kuoshengang"
-        },
         "content": ""
       },
       {
-        "lineNumber": 73,
+        "lineNumber": 71,
         "author": {
           "gitId": "kuoshengang"
         },
@@ -757,7 +794,7 @@
       }
     ],
     "authorContributionMap": {
-      "kuoshengang": 73
+      "kuoshengang": 71
     }
   },
   {
@@ -767,107 +804,107 @@
       {
         "lineNumber": 1,
         "author": {
-          "gitId": "-"
+          "gitId": "kuoshengang"
         },
-        "content": "public class Duke {"
+        "content": ""
       },
       {
         "lineNumber": 2,
         "author": {
-          "gitId": "-"
+          "gitId": "kuoshengang"
         },
-        "content": "    public static void main(String[] args) {"
+        "content": "import java.util.Scanner;"
       },
       {
         "lineNumber": 3,
         "author": {
-          "gitId": "-"
+          "gitId": "kuoshengang"
         },
-        "content": "        String logo \u003d \" ____        _        \\n\""
+        "content": "import java.text.SimpleDateFormat;"
       },
       {
         "lineNumber": 4,
         "author": {
-          "gitId": "-"
+          "gitId": "kuoshengang"
         },
-        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
+        "content": "import java.text.ParseException;"
       },
       {
         "lineNumber": 5,
         "author": {
-          "gitId": "-"
+          "gitId": "kuoshengang"
         },
-        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
+        "content": "import java.util.Date;"
       },
       {
         "lineNumber": 6,
         "author": {
-          "gitId": "-"
+          "gitId": "kuoshengang"
         },
-        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
+        "content": "import java.util.ArrayList;"
       },
       {
         "lineNumber": 7,
         "author": {
-          "gitId": "-"
+          "gitId": "kuoshengang"
         },
-        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+        "content": "import java.time.LocalDate;"
       },
       {
         "lineNumber": 8,
         "author": {
-          "gitId": "-"
+          "gitId": "kuoshengang"
         },
-        "content": "        System.out.println(\"Hello from\\n\" + logo);"
+        "content": "import java.time.format.DateTimeFormatter;"
       },
       {
         "lineNumber": 9,
         "author": {
-          "gitId": "-"
+          "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "import java.time.format.DateTimeParseException;"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "import java.util.*;"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    int taskIndex \u003d Integer.parseInt(input.substring(10)) - 1;"
+        "content": "import java.text.DateFormat;"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    Task[] tasks \u003d new Task[100];"
+        "content": "import java.util.TimeZone;"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    int taskCount \u003d 0;"
+        "content": ""
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    int taskOutstanding \u003d 0;"
+        "content": ""
       },
       {
         "lineNumber": 15,
         "author": {
-          "gitId": "kuoshengang"
+          "gitId": "-"
         },
-        "content": ""
+        "content": "public class Duke {"
       },
       {
         "lineNumber": 16,
@@ -881,54 +918,2128 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    Task t \u003d new Task(input, addDate);"
+        "content": "    public static Scanner getInput \u003d new Scanner(System.in);"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    tasks[taskCount] \u003d t;"
+        "content": "    private static ArrayList\u003cTask\u003e taskList \u003d new ArrayList\u003cTask\u003e(100);"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    System.out.println(String.format(\"\", \"\\tAdded: \" +"
+        "content": "    private static int num_of_task \u003d 0;"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    tasks[taskCount].getDescription(),"
+        "content": "    private static int taskOutstanding \u003d 0;"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                                taskDate.format(tasks[taskCount].getAddDate())));"
+        "content": "    protected static int done_item;"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    taskCount++;"
+        "content": "    private static String event_details, calender_phrase;"
       },
       {
         "lineNumber": 23,
         "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    public static String input;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    Date now \u003d new Date();"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    public static String dukeDivider \u003d \"\\t----------------------------------------------------------------------------\";"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
           "gitId": "-"
+        },
+        "content": "    public static void main(String[] args) {"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        SimpleDateFormat taskDate \u003d new SimpleDateFormat(\"dd-MMM-yyyy (E), HH:mm:ss\");"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        SimpleDateFormat inputDate \u003d new SimpleDateFormat(\"dd-MMM-yyyy HH:mm\");"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        String logo \u003d \" ____        _        \\n\""
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(\"\\n Welcome to Task Organizer App - 2020\\n\" + logo);"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        //    int taskIndex \u003d Integer.parseInt(input.substring(10) - 1);"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(\"\\tHello! I\u0027m Duke\");"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(\"\\tWhat can I do for you?\");"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        //next() place cursor within same line after reading input. nextLine() reads input including space between the words till\\n"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        while (input !\u003d null) {"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            if (input.split(\" \")[0].equalsIgnoreCase(\"bye\")) {"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                System.out.println(\"\\tBye. Hope to see you again soon!\");"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            } else if (input.split(\" \")[0].equalsIgnoreCase(\"list\")) {"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                getTaskList();"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            } else if (input.split(\" \")[0].equalsIgnoreCase(\"todo\")) {"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                //do something"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                try {"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    if (input.substring(4).equals(\"\")) {"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        throw new DukeException();"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    setTaskList(new Todo(input.substring(5)));"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                } catch (DukeException e) {"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of a todo cannot be empty.\");"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            } else if (input.split(\" \")[0].equalsIgnoreCase(\"deadline\")) {"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                try {"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    if (input.substring(8).equals(\"\")) {"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        throw new DukeException();"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    } else if (input.substring(8).contains(\"at\")) {"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        throw new Duke_ErrorException();"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    setTaskList(new Deadline(input.substring(8, input.indexOf(\"by\") - 2), input.substring(input.indexOf(\"by\") + 3)));"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                } catch (DukeException e) {"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of a deadline cannot be empty.\");"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                } catch (Duke_ErrorException e) {"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(\"\\t OOPS!!! A task deadline must contain keyphrase \u0027by\u0027.\");"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            } else if (input.split(\" \")[0].equalsIgnoreCase(\"event\")) {"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                try {"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    event_details \u003d input.substring(input.indexOf(\"at\") + 3);"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    calender_phrase \u003d input.substring(input.indexOf(\"at\") + 3);"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                  DateTimeFormatter dateFormatter \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy\")"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                            .withResolverStyle(ResolverStyle.STRICT);"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                    LocalDate parsedLocalDate \u003d validateAndParseDateJava8(calender_phrase, dateFormatter);"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(isValidFormat(event_details));"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    if (input.substring(5).equals(\"\")) {"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        throw new DukeException();"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    } else if (input.substring(5).contains(\"at\") \u0026\u0026 event_details.length() \u003e\u003d 3 \u0026\u0026 input.substring(5).contains(event_details) \u0026\u0026 !isValidFormat(event_details)) {"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        for (Calender event : Calender.values()) {"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                            if (calender_phrase.equalsIgnoreCase(event.toString())) {"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                                setTaskList(new Event(input.substring(5, input.indexOf(\"at\") - 1), event_details));"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                                input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                            }"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                            input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        for (Calender event : Calender.values()) {"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                            if (!event_details.equalsIgnoreCase(event.toString())) {"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                                throw new Duke_Error_EventException();"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                            }"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    } else if (input.substring(5).contains(\"at\") \u0026\u0026 event_details.length() \u003e\u003d 3 \u0026\u0026 input.substring(5).contains(event_details) \u0026\u0026 isValidFormat(event_details)) {"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                                String validDate \u003d StrDateFormat(event_details);"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                                setTaskList(new Event(input.substring(5, input.indexOf(\"at\") - 1), validDate));"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                                input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    } else if ((!input.substring(5).contains(\"at\")) \u0026\u0026 event_details.length() \u003e\u003d 3 \u0026\u0026 input.substring(5).contains(event_details) \u0026\u0026 isValidFormat(event_details)) {"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        throw new Duke_ErrorException();"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    } else {"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        throw new Duke_Error_EventException();"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                } catch (DukeException e) {"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of a event cannot be empty.\");"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                } catch (Duke_ErrorException e) {"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(\"\\t OOPS!!! An event must contain keyphrase \u0027at\u0027.\");"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                } catch (Duke_Error_EventException e) {"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(\"\\t OOPS!!! An event must contain a calender phrase (ie: Tue, Sun, Jan, January).\");"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            } else if (input.split(\" \")[0].equalsIgnoreCase(\"delete\")) {"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                try {"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    if (input.substring(7).equals(\"\")) {"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        throw new DukeException();"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    RemoveTask(Integer.parseInt(input.substring(7)) - 1);"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                } catch (DukeException e) {"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of number cannot be empty.\");"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                } catch (NumberFormatException e) {"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of number must be numeric.\");"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            } else if (input.split(\" \")[0].equalsIgnoreCase(\"DONE\")) {"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                try {"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    if (input.substring(4).equals(\"\")) {"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                        throw new DukeException();"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    String task_done \u003d input.split(\" \")[1];"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    done_item \u003d Integer.parseInt(task_done) - 1;"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    taskList.get(done_item).markAsDone();"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                } catch (DukeException e) {"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of number cannot be empty.\");"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                } catch (NumberFormatException e) {"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of number must be numeric.\");"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                    input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            } else {"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                System.out.println(\"\\t☹ OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        }    //end of while loop"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    public static void setTaskList(Task description) {"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        taskList.add(description);"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(\"\\tGot it. I\u0027ve added this task: \");"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//      System.out.println(\"\\t\\t\"  taskList[num_of_task].getDescription());"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(\"\\t\\t\" + taskList.get(num_of_task).toString());"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        num_of_task++;"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(\"\\tNow you have \" + num_of_task + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    public static void getTaskList() {"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(\"\\tHere are the tasks in your list: \");"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        for (int i \u003d 0; i \u003c num_of_task; i++) {"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            System.out.println(\"\\t\" + (i + 1) + taskList.get(i).toString());"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    public static void RemoveTask(int Task_idx) {"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        taskList.remove(Task_idx);"
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(\"\\tNow you have \" + --num_of_task + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(dukeDivider);"
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    public static String StrDateFormat(String dateStr) {"
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//             * Set preferred date format,"
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//             * For example MM-dd-yyyy, MM.dd.yyyy,dd.MM.yyyy etc.*/"
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//            SimpleDateFormat sdfrmt \u003d new SimpleDateFormat(\"dd/MM/yyyy\");"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                DateTimeFormatter formatter \u003d DateTimeFormatter.BASIC_ISO_DATE;"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy\");"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                String formattedDate \u003d formatter.format(dateStr);"
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                return formattedDate;"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                LocalDate date \u003d LocalDate.now();"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"dd-M-yyyy\");"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                  DateTimeFormatter formatter \u003d DateTimeFormatter.forPattern(\"yyyy/mm/dd HH:mm:ss\");"
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                  DateTime dateTime \u003d DateTime.parse(dateStr, formatter);"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        String formatted_date\u003dnull;"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            DateFormat shortdate \u003d new SimpleDateFormat(\"yyyy/MM/dd\");"
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            shortdate.setLenient(false);"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//            formatted_date \u003d formatter.parse(dateStr);"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            formatted_date \u003d shortdate.format(new Date()).toString();"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        } catch (DateTimeParseException e) {"
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            System.out.println(\"Invalid date format, pls try again.\");"
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            input \u003d getInput.nextLine();"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        return formatted_date;"
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    public static boolean isValidFormat(String dateStr) {"
+      },
+      {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 273,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//             * Set preferred date format,"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//             * For example MM-dd-yyyy, MM.dd.yyyy,dd.MM.yyyy etc.*/"
+      },
+      {
+        "lineNumber": 275,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//            SimpleDateFormat sdfrmt \u003d new SimpleDateFormat(\"MM/dd/yyyy\");"
+      },
+      {
+        "lineNumber": 276,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            DateTimeFormatter dateFormatter \u003d DateTimeFormatter.ofPattern(\"yyyy/MM/dd\", Locale.US);"
+      },
+      {
+        "lineNumber": 277,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                .withResolverStyle(ResolverStyle.STRICT);"
+      },
+      {
+        "lineNumber": 278,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//            DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"yyyy/MM/dd\", Locale.ENGLISH);"
+      },
+      {
+        "lineNumber": 279,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//            sdfrmt.setLenient(false);"
+      },
+      {
+        "lineNumber": 280,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            try"
+      },
+      {
+        "lineNumber": 281,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            {"
+      },
+      {
+        "lineNumber": 282,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                 dateFormatter.parse(dateStr);"
+      },
+      {
+        "lineNumber": 283,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                Date javaDate \u003d sdfrmt.parse(strDate);"
+      },
+      {
+        "lineNumber": 284,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                System.out.println(strDate+\" is valid date format\");"
+      },
+      {
+        "lineNumber": 285,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 286,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            /* Date format is invalid */"
+      },
+      {
+        "lineNumber": 287,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            catch (DateTimeParseException e)"
+      },
+      {
+        "lineNumber": 288,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            {"
+      },
+      {
+        "lineNumber": 289,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                System.out.println(dateStr+\" is Invalid Date format (ie: yyyy/MM/dd)\");"
+      },
+      {
+        "lineNumber": 290,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "                return false;"
+      },
+      {
+        "lineNumber": 291,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 292,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 293,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            /* Return true if date format is valid */"
+      },
+      {
+        "lineNumber": 294,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            return true;"
+      },
+      {
+        "lineNumber": 295,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 296,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 297,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 298,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                 isoFormat.setTimeZone.atZone(ZoneId.of(\"Asia/Singapore\"));"
+      },
+      {
+        "lineNumber": 299,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                 Date dateTimeZoned \u003d isoFormat.parse(dateStr);"
+      },
+      {
+        "lineNumber": 300,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//"
+      },
+      {
+        "lineNumber": 301,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                DateTimeZone timeZone \u003d DateTimeZone.forID( \"Asia/Kolkata\" );"
+      },
+      {
+        "lineNumber": 302,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                DateTime dateTimeIndia \u003d new DateTime( input, timeZone );"
+      },
+      {
+        "lineNumber": 303,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                DateTime dateTimeUtcGmt \u003d dateTimeIndia.withZone( DateTimeZone.UTC );"
+      },
+      {
+        "lineNumber": 304,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 305,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                String formattedDate \u003d date.format(formatter);"
+      },
+      {
+        "lineNumber": 306,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                LocalDate parsedDate \u003d LocalDate.parse(formattedDate, formatter);"
+      },
+      {
+        "lineNumber": 307,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//"
+      },
+      {
+        "lineNumber": 308,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                DateFormat df \u003d new SimpleDateFormat(\"dd/MM/yyyy\");"
+      },
+      {
+        "lineNumber": 309,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//"
+      },
+      {
+        "lineNumber": 310,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                Date date_valid \u003d df.parse(dateStr);"
+      },
+      {
+        "lineNumber": 311,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                Calendar calendar_dte \u003d new GregorianCalendar();"
+      },
+      {
+        "lineNumber": 312,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                calendar_dte.setTime(date_valid);"
+      },
+      {
+        "lineNumber": 313,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//                return calendar_dte;"
+      },
+      {
+        "lineNumber": 314,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 315,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      }
+    ],
+    "authorContributionMap": {
+      "kuoshengang": 306,
+      "-": 9
+    }
+  },
+  {
+    "path": "src/main/java/DukeException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "public class DukeException extends Exception {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    //no other code needed"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "kuoshengang"
         },
         "content": "}"
       }
     ],
     "authorContributionMap": {
-      "kuoshengang": 13,
-      "-": 10
+      "kuoshengang": 3
     }
   },
   {
@@ -982,7 +3093,7 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    SimpleDateFormat taskDate \u003d new SimpleDateFormat(\"dd-MMM-yyyy (E)\");"
+        "content": "    SimpleDateFormat taskDate \u003d new SimpleDateFormat(\"dd-MMM-yyyy (E), HH:mm:ss\");"
       },
       {
         "lineNumber": 8,
@@ -1010,7 +3121,7 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    public static String at;"
       },
       {
         "lineNumber": 12,
@@ -1024,56 +3135,56 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Event(String description, Date startDate, Date endDate, Date addDate) {"
+        "content": ""
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//    public Event(String description, Date startDate, Date endDate, Date addDate) {"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        super(description, addDate);"
+        "content": "//"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.startDate \u003d startDate;"
+        "content": "//        super(description, addDate);"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.endDate \u003d endDate;"
+        "content": "//        this.startDate \u003d startDate;"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.durationMinutes \u003d (endDate.getTime() - startDate.getTime())/60000;"
+        "content": "//        this.endDate \u003d endDate;"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "//        this.durationMinutes \u003d (endDate.getTime() - startDate.getTime())/60000;"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//    }"
       },
       {
         "lineNumber": 21,
@@ -1087,21 +3198,21 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public void setStartDate(Date startDate) {"
+        "content": "    public Event(String description, String at) {"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "        super(description);"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.startDate \u003d startDate;"
+        "content": "        this.at \u003d at;"
       },
       {
         "lineNumber": 25,
@@ -1122,21 +3233,21 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public void setEndDate(Date endDate) {"
+        "content": ""
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    public String toString() {"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.endDate \u003d endDate;"
+        "content": "        return getTaskIcon() + super.toString() + \" (at: \" + at + \")\";"
       },
       {
         "lineNumber": 30,
@@ -1157,231 +3268,231 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    //GET STATEMENTS------------------------------------"
+        "content": "    public void setEndDate(Date endDate) {"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Date getStartDate() {"
+        "content": ""
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        public void printList(){"
+        "content": "        this.endDate \u003d endDate;"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            System.out.print(this.getTaskIcon());"
+        "content": "    }"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            System.out.print(this.getStatusIcon() + \" \");"
+        "content": ""
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            System.out.println(String.format(\"%1$-30s%2$29s\","
+        "content": "    public void setStartDate(Date startDate) {"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                    this.getDescription() + \" (\" +"
+        "content": ""
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                            this.getDurationMinutes() +"
+        "content": "        this.startDate \u003d startDate;"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                            \"mins)\", \"Added: \" +"
+        "content": "    }"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                            taskDate.format(this.getAddDate())));"
+        "content": ""
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            System.out.println(\"\\t\\t\\tFrom     : \" +"
+        "content": "    public void printList(){"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                    taskDate.format(this.getStartDate()));"
+        "content": "        System.out.print(this.getTaskIcon());"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            System.out.println(\"\\t\\t\\tTo       : \" +"
+        "content": "        System.out.print(this.getStatusIcon() + \" \");"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                    taskDate.format(this.getEndDate()));"
+        "content": "        System.out.println(String.format(\"%s\","
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            if (this.isDone) {"
+        "content": "                this.getDescription() + \" (\" +"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                System.out.println(\"\\t\\t\\tDone     : \" +"
+        "content": "                        this.getDuration() +"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                        taskDate.format(this.getDoneDate()));"
+        "content": "                        \"mins)\", \"Added: \" +"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            }"
+        "content": "                        taskDate.format(this.getAddDate())));"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        }"
+        "content": "        System.out.println(\"\\t\\t\\tFrom     : \" +"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "                taskDate.format(this.getStartDate()));"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        public Date getStartDate() {"
+        "content": "        System.out.println(\"\\t\\t\\tTo       : \" +"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            return (this.startDate);"
+        "content": "                taskDate.format(this.getEndDate()));"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        }"
+        "content": "        if (this.isDone) {"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "            System.out.println(\"\\t\\t\\tDone     : \" +"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        public Date getEndDate() {"
+        "content": "                    taskDate.format(this.getDoneDate()));"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            return (this.endDate);"
+        "content": "    }"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    public Date getStartDate() {"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        public long getDurationMinutes() {"
+        "content": "        return (this.startDate);"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            return (this.durationMinutes);"
+        "content": ""
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        }"
+        "content": "    public Date getEndDate() {"
       },
       {
         "lineNumber": 65,
@@ -1395,28 +3506,28 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        public String getTaskIcon() {"
+        "content": "        return (this.endDate);"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            return(\"[E]\");"
+        "content": ""
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        }"
+        "content": "    public String getTaskIcon() {"
       },
       {
         "lineNumber": 70,
@@ -1430,28 +3541,28 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        public String getTaskIcon() { }"
+        "content": "        return(\"[E]\");"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        public String getDoneAhead() {"
+        "content": "    }"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            return null;"
+        "content": ""
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 75,
@@ -1465,165 +3576,11 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        @Override"
-      },
-      {
-        "lineNumber": 77,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        public Double getItemBudget() {"
-      },
-      {
-        "lineNumber": 78,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "            return null;"
-      },
-      {
-        "lineNumber": 79,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 80,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 81,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        @Override"
-      },
-      {
-        "lineNumber": 82,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        public Double getItemPrice() {"
-      },
-      {
-        "lineNumber": 83,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "            return null;"
-      },
-      {
-        "lineNumber": 84,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 85,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 86,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        @Override"
-      },
-      {
-        "lineNumber": 87,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        public Date getTargetDate() {"
-      },
-      {
-        "lineNumber": 88,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "            return null;"
-      },
-      {
-        "lineNumber": 89,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 90,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 91,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        @Override"
-      },
-      {
-        "lineNumber": 92,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        public void markAsDone(Date doneDate, Double itemPrice){"
-      },
-      {
-        "lineNumber": 93,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 94,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 95,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        public void markAsDone(Date doneDate, Double itemPrice){ }"
-      },
-      {
-        "lineNumber": 96,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 97,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 98,
-        "author": {
-          "gitId": "kuoshengang"
-        },
-        "content": "        }"
+        "content": "}"
       }
     ],
     "authorContributionMap": {
-      "kuoshengang": 98
+      "kuoshengang": 76
     }
   },
   {
@@ -1663,7 +3620,7 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    protected String description;"
+        "content": "    public String description;"
       },
       {
         "lineNumber": 6,
@@ -1677,126 +3634,126 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    protected Date doneDate;"
+        "content": "    protected String doneDate;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    protected boolean isDone;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    protected boolean isDone;"
+        "content": ""
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    String TaskDivider \u003d \"\\t----------------------------------------------------------------------------\";"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Task(String description, Date addDate) {"
+        "content": ""
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.addDate \u003d addDate;"
+        "content": "    public Task(String description) {"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.isDone \u003d false;"
+        "content": "//        this.addDate \u003d addDate;"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.description \u003d description;"
+        "content": "        this.isDone \u003d false;"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "        this.description \u003d description;"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Date getAddDate() {"
+        "content": ""
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return (this.addDate);"
+        "content": "    public Date getAddDate() {"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "        return (this.addDate);"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Date getDoneDate() {"
+        "content": "    }"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return (this.doneDate);"
+        "content": ""
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "    public String getDoneDate() {"
       },
       {
         "lineNumber": 25,
@@ -1810,14 +3767,14 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public String getDescription() {"
+        "content": "        return (this.doneDate);"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return (this.description.toString());"
+        "content": "    }"
       },
       {
         "lineNumber": 28,
@@ -1831,7 +3788,7 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "    public String getDescription() {"
       },
       {
         "lineNumber": 30,
@@ -1845,42 +3802,42 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public String getStatusIcon() {"
+        "content": "        return this.description;"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        if(this.isDone){"
+        "content": "    }"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            return (\"[\\u2713]\");"
+        "content": ""
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        } else {"
+        "content": "    public String toString() {"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            return (\"[\\u2718]\");"
+        "content": ""
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        }"
+        "content": "        return \"\" + getStatusIcon() + \"\" + this.description;"
       },
       {
         "lineNumber": 37,
@@ -1901,31 +3858,115 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public void markAsDone(Date doneDate) {"
+        "content": "    public String getStatusIcon() {"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.isDone \u003d true;"
+        "content": "        if(this.isDone){"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.doneDate \u003d doneDate;"
+        "content": "            return (\"[\\u2713]\");"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "        } else {"
       },
       {
         "lineNumber": 43,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "            return (\"[\\u2718]\");"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    public void markAsDone() {"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        this.isDone \u003d true;"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "//        this.doneDate \u003d doneDate;"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(TaskDivider);"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(\"\\tNice! I\u0027ve marked this task as done: \");"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(\"\\t\" + getStatusIcon() + this.description ); //ticked symbols"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "        System.out.println(TaskDivider);"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "kuoshengang"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 55,
         "author": {
           "gitId": "kuoshengang"
         },
@@ -1933,7 +3974,7 @@
       }
     ],
     "authorContributionMap": {
-      "kuoshengang": 43
+      "kuoshengang": 55
     }
   },
   {
@@ -1980,7 +4021,7 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    SimpleDateFormat taskDate \u003d new SimpleDateFormat(\"dd-MMM-yyyy\");"
+        "content": "    SimpleDateFormat taskDate \u003d new SimpleDateFormat(\"dd-MMM-yyyy (E), HH:mm:ss\");"
       },
       {
         "lineNumber": 7,
@@ -1994,7 +4035,7 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Todo(String description, Date Dateadded) {"
+        "content": "    public Todo(String description) {"
       },
       {
         "lineNumber": 9,
@@ -2008,7 +4049,7 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        super(description, Dateadded);"
+        "content": "        super(description);"
       },
       {
         "lineNumber": 11,
@@ -2057,105 +4098,105 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                this.getDescription(), \"Added: \" +"
+        "content": "                super.getDescription()));"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                        taskDate.format(this.getAddDate())));"
+        "content": "        System.out.print(this.getTaskIcon());"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        System.out.print(this.getTaskIcon());"
+        "content": "//        if (this.isDone) {"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        if (this.isDone) {"
+        "content": "//            System.out.println(\"\\t\\t\\tDone     : \" +"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "            System.out.println(\"\\t\\t\\tDone     : \" +"
+        "content": "//                    taskDate.format(this.getDoneDate()));"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "                    taskDate.format(this.getDoneDate()));"
+        "content": "//        }"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        }"
+        "content": "    }"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    public String toString() {"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public String getTaskIcon () {"
+        "content": "        return getTaskIcon() + super.toString();"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return (\"[T]\");"
+        "content": "    }"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "    public String getTaskIcon() {"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    @Override"
+        "content": "        return (\"[T]\");"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public void markAsDone (Date doneDate){"
+        "content": "    }"
       },
       {
         "lineNumber": 32,
@@ -2169,245 +4210,245 @@
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.isDone \u003d true;"
+        "content": "//    @Override"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        this.doneDate \u003d doneDate;"
+        "content": "//    public void markAsDone (Date doneDate){"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "//"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//        this.isDone \u003d true;"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//        this.doneDate \u003d doneDate;"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    @Override"
+        "content": "//    }"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Date getEndDate () {"
+        "content": ""
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return null;"
+        "content": "//"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "//    @Override"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//    public Date getEndDate () {"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    @Override"
+        "content": "//        return null;"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Date getStartDate () {"
+        "content": "//    }"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return null;"
+        "content": "//"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "//    @Override"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//    public Date getStartDate () {"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    @Override"
+        "content": "//        return null;"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Date getTargetDate () {"
+        "content": "//    }"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return null;"
+        "content": "//"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "//    @Override"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//    public Date getTargetDate () {"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public String getDoneAhead () {"
+        "content": "//        return null;"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return null;"
+        "content": "//    }"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "//"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Date getEndDate () {"
+        "content": "//"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return null;"
+        "content": "//    public Date getEndDate () {"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "//        return null;"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//    }"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Date getStartDate () {"
+        "content": "//"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return null;"
+        "content": "//    public Date getStartDate () {"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "//        return null;"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    public Date getTargetDate () {"
+        "content": "//    }"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "        return null;"
+        "content": "//    public Date getTargetDate () {"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": "    }"
+        "content": "//        return null;"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "kuoshengang"
         },
-        "content": ""
+        "content": "//    }"
       },
       {
         "lineNumber": 68,
@@ -2421,11 +4462,18 @@
         "author": {
           "gitId": "kuoshengang"
         },
+        "content": ""
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "kuoshengang"
+        },
         "content": "}"
       }
     ],
     "authorContributionMap": {
-      "kuoshengang": 69
+      "kuoshengang": 70
     }
   }
 ]

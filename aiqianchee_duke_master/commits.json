@@ -191,22 +191,45 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-16",
+        "commitResults": [
+          {
+            "hash": "30fd25519f59532bac3ea95a43def4a7885385cb",
+            "messageTitle": "level 7-able to write, save and read data from file. Undone for OOP and package",
+            "messageBody": "",
+            "tags": [
+              "level-7.0"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 5,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 32,
+                "deletions": 0
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "aiqianchee": {
-      "java": 211,
+      "java": 243,
       "md": 0,
       "fxml": 0,
       "sh": 1,
       "bat": 2,
       "gradle": 0,
-      "txt": 1
+      "txt": 6
     }
   },
   "authorContributionVariance": {
-    "aiqianchee": 421.84167
+    "aiqianchee": 332.1394
   },
   "authorDisplayNameMap": {
     "aiqianchee": "CHEE..QIAN"

@@ -83,12 +83,116 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-11",
+        "commitResults": [
+          {
+            "hash": "657b56377b4fb892fd370b66bd23a1375606c222",
+            "messageTitle": "Finished level 5",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 33,
+                "deletions": 13
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-15",
+        "commitResults": [
+          {
+            "hash": "3ef6ff0391d791752e453dee2194e0d79156ce93",
+            "messageTitle": "Finished Level 6. Changed array to ArrayList. Added deleteMemo function. Would want to refactor the addMemo and deleteMemo, workout the Exceptions better.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 66,
+                "deletions": 45
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-20",
+        "commitResults": [
+          {
+            "hash": "2736006782611d7463ae16e2b7862db55410634e",
+            "messageTitle": "Added File Access Write, but haven\u0027t complete File Access Read",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 4,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 120,
+                "deletions": 7
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-21",
+        "commitResults": [
+          {
+            "hash": "91d7b240cad5ce9181055a47bb34ce16e45d5c56",
+            "messageTitle": "Finished level7, and completed load from file. Haven\u0027t Refactor yet.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 4
+              },
+              "java": {
+                "insertions": 25,
+                "deletions": 7
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-22",
+        "commitResults": [
+          {
+            "hash": "e7c8ff7ba6df8d9b25c2506e9b3a632401501911",
+            "messageTitle": "Finished Level 8. Added Date Time. Works with loading from file and writing on File. Also works with print. TODO: Refactors, Exceptions, Testings, Package. All this, probably do after Level 9",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 35,
+                "deletions": 17
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-25",
+        "commitResults": [
+          {
+            "hash": "bac7078cf0bfe84b4b9ccdd11cc7eb42d4804810",
+            "messageTitle": "Finished Level 9, added find feature",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 20,
+                "deletions": 0
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "zcnmashleu95": {
-      "java": 225,
+      "java": 436,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -98,7 +202,7 @@
     }
   },
   "authorContributionVariance": {
-    "zcnmashleu95": 533.6927
+    "zcnmashleu95": 780.479
   },
   "authorDisplayNameMap": {
     "zcnmashleu95": "LAM ..CHUN"

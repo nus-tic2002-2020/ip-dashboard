@@ -844,6 +844,9 @@
             "hash": "ef2cc7e62f68763866f57e1a6c35aae4353457e0",
             "messageTitle": "Consolidated the Task Interface with Note Abstract Class to form a single Note Abstract Class. Renamed the Todo Class (which extends Note) to the Task Class. Cleared up the confusing names and streamlined the structure with this change.",
             "messageBody": "",
+            "tags": [
+              "A-AbstractClasses"
+            ],
             "fileTypesAndContributionMap": {
               "txt": {
                 "insertions": 1,
@@ -867,12 +870,142 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-20",
+        "commitResults": [
+          {
+            "hash": "b4122c2676c85b614e45290821a662afc569b5ab",
+            "messageTitle": "fixed a bug",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 15,
+                "deletions": 5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-21",
+        "commitResults": [
+          {
+            "hash": "7ae4e7e4bb386e5d5fe9382b1051aeae48ef2812",
+            "messageTitle": "Fixed some bugs found.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "fxml": {
+                "insertions": 1,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 26,
+                "deletions": 18
+              }
+            }
+          },
+          {
+            "hash": "d8850acce4e81a2ee34e9369733ea433b7071ba3",
+            "messageTitle": "Fixed Bugs",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 8,
+                "deletions": 3
+              }
+            }
+          },
+          {
+            "hash": "dbc2608902b6dae3d95b1dc144ceffb5fd22d7c2",
+            "messageTitle": "Fixed bugs",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 12,
+                "deletions": 15
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-22",
+        "commitResults": [
+          {
+            "hash": "6738fe6d37080ee83bbe93a8fc6a529c4dc79eef",
+            "messageTitle": "Fixed bugs",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 2,
+                "deletions": 10
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-25",
+        "commitResults": [
+          {
+            "hash": "550c1ff1e9925ae9fbd9fe339681207e9374a177",
+            "messageTitle": "Improved code quality and fixed some bugs.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "fxml": {
+                "insertions": 1,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 427,
+                "deletions": 502
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-26",
+        "commitResults": [
+          {
+            "hash": "b25bb4ec3d84ba1c5d3e75660f7da725ac3eac45",
+            "messageTitle": "fixed some bugs.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 56,
+                "deletions": 44
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-27",
+        "commitResults": [
+          {
+            "hash": "ea0e8fd8bc4a2e443ebd61ce1f5b5a345a6a01f3",
+            "messageTitle": "fixed some bugs",
+            "messageBody": "",
+            "tags": [
+              "A-Jar_JavaFX",
+              "A-Jar"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 24,
+                "deletions": 14
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "tanqiuyu": {
-      "java": 7744,
+      "java": 7703,
       "md": 0,
       "fxml": 239,
       "sh": 0,
@@ -882,7 +1015,7 @@
     }
   },
   "authorContributionVariance": {
-    "tanqiuyu": 583218.0
+    "tanqiuyu": 466920.38
   },
   "authorDisplayNameMap": {
     "tanqiuyu": "TAN ..U YU"

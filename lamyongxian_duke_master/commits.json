@@ -155,12 +155,35 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-15",
+        "commitResults": [
+          {
+            "hash": "f170f79ce065103cde149a6ba4278ab826e5a26b",
+            "messageTitle": "Divide classes into packages",
+            "messageBody": "",
+            "tags": [
+              "A-Packages"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 13,
+                "deletions": 0
+              },
+              "bat": {
+                "insertions": 2,
+                "deletions": 2
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "lamyongxian": {
-      "java": 343,
+      "java": 357,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -170,7 +193,7 @@
     }
   },
   "authorContributionVariance": {
-    "lamyongxian": 821.58057
+    "lamyongxian": 715.27875
   },
   "authorDisplayNameMap": {
     "lamyongxian": "LAM ..XIAN"
