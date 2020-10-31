@@ -199,6 +199,199 @@
     }
   },
   {
+    "path": "src/main/java/Bye.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class Bye extends Command{"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public Bye(boolean isExit, String commandLine){"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        super(isExit, commandLine);"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void execute(TaskList taskList, UI ui, Storage storage) throws DukeException{"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        ui.showGoodbye();"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 9
+    }
+  },
+  {
+    "path": "src/main/java/Command.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.io.*;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class Command {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public boolean isExit;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    protected String commandLine;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public Command(boolean isExit, String commandLine){"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        this.isExit \u003d isExit;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        this.commandLine \u003d commandLine;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void execute(TaskList taskList, UI ui, Storage storage) throws DukeException, DukeIOException, IOException {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        throw new UnsupportedOperationException(\"Requested operation is not supported.\");"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 16
+    }
+  },
+  {
     "path": "src/main/java/Deadline.java",
     "fileType": "java",
     "lines": [
@@ -306,6 +499,733 @@
     }
   },
   {
+    "path": "src/main/java/DeadlineCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.io.IOException;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.util.Arrays;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class DeadlineCommand extends Command{"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    protected Deadline deadline;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public DeadlineCommand(boolean isExit, String commandLine){"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        super(isExit,commandLine);"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void execute(TaskList taskList, UI ui, Storage storage) throws DukeIOException, DukeException, IOException{"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        int index \u003d 0;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        if((commandLine.substring(8).trim()).isEmpty()){"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeIOException(\"deadline\");"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        if(!commandLine.contains(\"by\")){"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeException(\"The date of a deadline cannot be empty.\");"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        for(String word : commandLine.split(\" \")){"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            ++index;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            if(word.equals(\"by\")){"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                if(String.join(\" \", Arrays.copyOfRange(commandLine.split(\" \"), index, commandLine.split(\" \").length)).isEmpty()){"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    throw new DukeException(\"The date of a deadline cannot be empty.\");"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                else {"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    deadline \u003d new Deadline(String.join(\" \", Arrays.copyOfRange(commandLine.split(\" \"), 1, index-1)), String.join(\" \", Arrays.copyOfRange(commandLine.split(\" \"), index, commandLine.split(\" \").length)));"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    taskList.addToTaskList(deadline);"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    ui.showOutput(\"Got it. I\u0027ve added this task:\\n\\t  \" + deadline.toString() + \"\\n\\t Now you have \" + taskList.getSize() + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    storage.saveToFile();"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 34
+    }
+  },
+  {
+    "path": "src/main/java/DeleteCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.io.IOException;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class DeleteCommand extends Command{"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private int index;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public DeleteCommand(boolean isExit, String input){"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        super(isExit, input);"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void execute(TaskList taskList, UI ui, Storage storage) throws DukeException, IOException{"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        if((commandLine.substring(6).trim()).isEmpty()){"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeException(\"Cannot delete empty values.\");"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        try{"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            index \u003d searchIndex(commandLine);"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            ui.showOutput(\"Noted. I\u0027ve removed this task:\\n\\t  \" + taskList.getTasks(index).toString());"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            taskList.deleteFromTaskList(index);"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            storage.saveToFile();"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        catch (IndexOutOfBoundsException e){"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeException(\"The list cannot be empty.\");"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        catch (NumberFormatException e){"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeException(\"Please input an integer.\");"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private int searchIndex(String args){"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return Integer.parseInt(commandLine.split(\" \")[1])-1;"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 33
+    }
+  },
+  {
+    "path": "src/main/java/DoneCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.io.IOException;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class DoneCommand extends Command{"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private int index;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public DoneCommand(boolean isExit, String input){"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        super(isExit, input);"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void execute(TaskList taskList, UI ui, Storage storage) throws DukeException, IOException{"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        if((commandLine.substring(4).trim()).isEmpty()){"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeException(\"Cannot mark empty values as done.\");"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        try{"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            index \u003d searchIndex(commandLine);"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            (taskList.getTasks(index)).setDone();"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            ui.showOutput(\"Nice! I\u0027ve marked this task as done:\\n\\t  \" + taskList.getTasks(index).toString());"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            storage.saveToFile();"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        catch (IndexOutOfBoundsException e){"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeException(\"The list cannot be empty.\");"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        catch (NumberFormatException e){"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeException(\"Please input an integer.\");"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private int searchIndex(String args){"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return Integer.parseInt(commandLine.split(\" \")[1])-1;"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 33
+    }
+  },
+  {
     "path": "src/main/java/Duke.java",
     "fileType": "java",
     "lines": [
@@ -349,28 +1269,28 @@
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    //private static Task[] t \u003d new Task[100];"
+        "content": ""
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    private static int arrCounter \u003d 0;"
+        "content": "    private Storage storage;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    private static ArrayList\u003cTask\u003e taskList \u003d new ArrayList\u003cTask\u003e(100);"
+        "content": "    private TaskList tasks;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    private static String formatLine \u003d \"____________________________________________________________\";"
+        "content": "    private UI ui;"
       },
       {
         "lineNumber": 10,
@@ -384,154 +1304,154 @@
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    public static void setTask(Task description){"
+        "content": "    public Duke(String filePath) throws IOException, DukeException {"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        taskList.add(description);"
+        "content": "        ui \u003d new UI();"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        //t[arrCounter] \u003d description;"
+        "content": "        storage \u003d new Storage(filePath);"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        System.out.println(\"Got it. I\u0027ve added this task:\");"
+        "content": "        tasks \u003d new TaskList(storage.load());"
       },
       {
         "lineNumber": 15,
         "author": {
-          "gitId": "factionsypho"
+          "gitId": "-"
         },
-        "content": "        //System.out.println(t[arrCounter].toString());"
+        "content": "    }"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        System.out.println(taskList.get(arrCounter));"
+        "content": ""
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        arrCounter++;"
+        "content": "    public void run() {"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        System.out.println(\"Now you have \" + arrCounter +  \" tasks in the list.\");"
+        "content": "        ui.showWelcome();"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": ""
+        "content": "        boolean isExit \u003d false;"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    }"
+        "content": "        while (!isExit) {"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": ""
+        "content": "            try {"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    public static String markAsDone(int taskNumber){"
+        "content": "                String fullCommand \u003d ui.readCommand();"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        return taskList.get(taskNumber).setDone();"
+        "content": "                ui.showLine(fullCommand); // show the divider line (\"_______\")"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    }"
+        "content": "                Command c \u003d Parser.parse(fullCommand);"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": ""
+        "content": "                c.execute(tasks, ui, storage);"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    public static String deleteItem(int taskNumber){"
+        "content": "                isExit \u003d c.isExit;"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        System.out.println(\"Noted. I\u0027ve removed this task:\");"
+        "content": "            } catch (DukeException | IOException | DukeIOException e) {"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        System.out.println(taskList.get(taskNumber).toString());"
+        "content": "                ui.showError(e.getMessage());"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        //taskList.get(taskNumber).deleteItem();"
+        "content": "            } finally {"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        taskList.remove(taskNumber);"
+        "content": "                //ui.showLine(ui.readCommand());"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        arrCounter--;"
+        "content": "            }"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        return \"Now you have \" + arrCounter + \" tasks in the list\";"
+        "content": "        }"
       },
       {
         "lineNumber": 33,
@@ -545,773 +1465,24 @@
         "author": {
           "gitId": "factionsypho"
         },
-        "content": ""
+        "content": "    public static void main(String[] args) throws IOException, DukeException {"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    public static void commandInput() throws DukeException {"
+        "content": "        new Duke(\"E:\\\\_BackupNUS\\\\TIC2002\\\\duke\\\\src\\\\main\\\\java\\\\data\\\\duke.txt\").run();"
       },
       {
         "lineNumber": 36,
         "author": {
-          "gitId": "factionsypho"
+          "gitId": "-"
         },
-        "content": "        int arrSize \u003d 100;"
+        "content": "    }"
       },
       {
         "lineNumber": 37,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "        String[] commands \u003d new String[arrSize];"
-      },
-      {
-        "lineNumber": 38,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "        Scanner sc \u003d new Scanner(System.in);"
-      },
-      {
-        "lineNumber": 39,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "        String userCommand;"
-      },
-      {
-        "lineNumber": 40,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "        do {"
-      },
-      {
-        "lineNumber": 41,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "            userCommand \u003d sc.nextLine();"
-      },
-      {
-        "lineNumber": 42,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 43,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "            switch (userCommand) {"
-      },
-      {
-        "lineNumber": 44,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                case \"bye\":"
-      },
-      {
-        "lineNumber": 45,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    System.out.println(\"Bye. Hope to see you again soon!\");"
-      },
-      {
-        "lineNumber": 46,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    break;"
-      },
-      {
-        "lineNumber": 47,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                case \"list\":"
-      },
-      {
-        "lineNumber": 48,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 49,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    System.out.println(\"Here are the tasks in your list:\");"
-      },
-      {
-        "lineNumber": 50,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    for (int i \u003d 0; i \u003c arrCounter; i++) {"
-      },
-      {
-        "lineNumber": 51,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(i + 1 + \".\" + taskList.get(i).toString());"
-      },
-      {
-        "lineNumber": 52,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    }"
-      },
-      {
-        "lineNumber": 53,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 54,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    break;"
-      },
-      {
-        "lineNumber": 55,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                default:"
-      },
-      {
-        "lineNumber": 56,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    if (userCommand.contains(\"mark\")) {"
-      },
-      {
-        "lineNumber": 57,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 58,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        try {"
-      },
-      {
-        "lineNumber": 59,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            if ((userCommand.substring(userCommand.indexOf(\"mark\") + 5, userCommand.length()).trim()).equals(\"\")) {"
-      },
-      {
-        "lineNumber": 60,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                                throw new DukeException();"
-      },
-      {
-        "lineNumber": 61,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            }"
-      },
-      {
-        "lineNumber": 62,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            System.out.println(markAsDone(Integer.parseInt(userCommand.split(\" \")[1]) - 1));"
-      },
-      {
-        "lineNumber": 63,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        } catch (StringIndexOutOfBoundsException | DukeException e) {"
-      },
-      {
-        "lineNumber": 64,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            System.out.println(\"☹ OOPS!!! Item to be marked cannot be empty.\");"
-      },
-      {
-        "lineNumber": 65,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        }"
-      },
-      {
-        "lineNumber": 66,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 67,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        break;"
-      },
-      {
-        "lineNumber": 68,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    }"
-      },
-      {
-        "lineNumber": 69,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    if (userCommand.contains(\"todo\")) {"
-      },
-      {
-        "lineNumber": 70,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 71,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        try {"
-      },
-      {
-        "lineNumber": 72,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            if ((userCommand.substring(userCommand.indexOf(\"todo\") + 5, userCommand.length()).trim()).equals(\"\")) {"
-      },
-      {
-        "lineNumber": 73,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                                throw new DukeException();"
-      },
-      {
-        "lineNumber": 74,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            }"
-      },
-      {
-        "lineNumber": 75,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            setTask(new Todo(userCommand.substring(userCommand.indexOf(\"todo\") + 5, userCommand.length())));"
-      },
-      {
-        "lineNumber": 76,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        } catch (StringIndexOutOfBoundsException | DukeException e) {"
-      },
-      {
-        "lineNumber": 77,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            System.out.println(\"☹ OOPS!!! The description of a todo cannot be empty.\");"
-      },
-      {
-        "lineNumber": 78,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        }"
-      },
-      {
-        "lineNumber": 79,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 80,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        break;"
-      },
-      {
-        "lineNumber": 81,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    }"
-      },
-      {
-        "lineNumber": 82,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 83,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    if (userCommand.contains(\"deadline\")) {"
-      },
-      {
-        "lineNumber": 84,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 85,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        try {"
-      },
-      {
-        "lineNumber": 86,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            if ((userCommand.substring(userCommand.indexOf(\"deadline\") + 9, userCommand.length()).trim()).equals(\"\")) {"
-      },
-      {
-        "lineNumber": 87,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                                throw new DukeException();"
-      },
-      {
-        "lineNumber": 88,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            }"
-      },
-      {
-        "lineNumber": 89,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            setTask(new Deadline(userCommand.substring(userCommand.indexOf(\"deadline\") + 9, userCommand.indexOf(\"by\") - 1), userCommand.substring(userCommand.indexOf(\"by\") + 3, userCommand.length())));"
-      },
-      {
-        "lineNumber": 90,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        } catch (StringIndexOutOfBoundsException | DukeException e) {"
-      },
-      {
-        "lineNumber": 91,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            System.out.println(\"☹ OOPS!!! The description of a deadline cannot be empty.\");"
-      },
-      {
-        "lineNumber": 92,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        }"
-      },
-      {
-        "lineNumber": 93,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 94,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        break;"
-      },
-      {
-        "lineNumber": 95,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    }"
-      },
-      {
-        "lineNumber": 96,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 97,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    if (userCommand.contains(\"event\")) {"
-      },
-      {
-        "lineNumber": 98,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 99,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        try {"
-      },
-      {
-        "lineNumber": 100,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            if ((userCommand.substring(userCommand.indexOf(\"event\") + 6, userCommand.length()).trim()).equals(\"\")) {"
-      },
-      {
-        "lineNumber": 101,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                                throw new DukeException();"
-      },
-      {
-        "lineNumber": 102,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            }"
-      },
-      {
-        "lineNumber": 103,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            setTask(new Event(userCommand.substring(userCommand.indexOf(\"event\") + 6, userCommand.indexOf(\"at\") - 1), userCommand.substring(userCommand.indexOf(\"at\") + 3, userCommand.length())));"
-      },
-      {
-        "lineNumber": 104,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        } catch (StringIndexOutOfBoundsException | DukeException e) {"
-      },
-      {
-        "lineNumber": 105,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            System.out.println(\"☹ OOPS!!! The description of an event cannot be empty.\");"
-      },
-      {
-        "lineNumber": 106,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        }"
-      },
-      {
-        "lineNumber": 107,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 108,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        break;"
-      },
-      {
-        "lineNumber": 109,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    }"
-      },
-      {
-        "lineNumber": 110,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 111,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    if (userCommand.contains(\"delete\")) {"
-      },
-      {
-        "lineNumber": 112,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 113,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        try {"
-      },
-      {
-        "lineNumber": 114,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            if ((userCommand.substring(userCommand.indexOf(\"delete\") + 7, userCommand.length()).trim()).equals(\"\")) {"
-      },
-      {
-        "lineNumber": 115,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                                throw new DukeException();"
-      },
-      {
-        "lineNumber": 116,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            }"
-      },
-      {
-        "lineNumber": 117,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            System.out.println(deleteItem(Integer.parseInt(userCommand.split(\" \")[1]) - 1));"
-      },
-      {
-        "lineNumber": 118,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        } catch (StringIndexOutOfBoundsException | DukeException e) {"
-      },
-      {
-        "lineNumber": 119,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                            System.out.println(\"☹ OOPS!!! Item to be deleted cannot be empty.\");"
-      },
-      {
-        "lineNumber": 120,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        }"
-      },
-      {
-        "lineNumber": 121,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 122,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        break;"
-      },
-      {
-        "lineNumber": 123,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    } else {"
-      },
-      {
-        "lineNumber": 124,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 125,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(\"☹ OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
-      },
-      {
-        "lineNumber": 126,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                        System.out.println(formatLine);"
-      },
-      {
-        "lineNumber": 127,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "                    }"
-      },
-      {
-        "lineNumber": 128,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "            }"
-      },
-      {
-        "lineNumber": 129,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 130,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "        while (!(userCommand.equals(\"bye\"))) ;"
-      },
-      {
-        "lineNumber": 131,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 132,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 133,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "    public static void main(String[] args) throws DukeException {"
-      },
-      {
-        "lineNumber": 134,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        String logo \u003d \" ____        _        \\n\""
-      },
-      {
-        "lineNumber": 135,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
-      },
-      {
-        "lineNumber": 136,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
-      },
-      {
-        "lineNumber": 137,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
-      },
-      {
-        "lineNumber": 138,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
-      },
-      {
-        "lineNumber": 139,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        System.out.println(\"Hello from\\n\" + logo);"
-      },
-      {
-        "lineNumber": 140,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "        System.out.println(\"Hello! I\u0027m Duke\");"
-      },
-      {
-        "lineNumber": 141,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "        System.out.println(\"What can I do for you?\");"
-      },
-      {
-        "lineNumber": 142,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "        commandInput();"
-      },
-      {
-        "lineNumber": 143,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 144,
         "author": {
           "gitId": "-"
         },
@@ -1319,8 +1490,8 @@
       }
     ],
     "authorContributionMap": {
-      "-": 9,
-      "factionsypho": 135
+      "-": 4,
+      "factionsypho": 33
     }
   },
   {
@@ -1339,11 +1510,76 @@
         "author": {
           "gitId": "factionsypho"
         },
+        "content": "    public DukeException(String message){"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        super(message);"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
         "content": "}"
       }
     ],
     "authorContributionMap": {
-      "factionsypho": 2
+      "factionsypho": 5
+    }
+  },
+  {
+    "path": "src/main/java/DukeIOException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class DukeIOException extends Exception{"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public DukeIOException(String message){"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        super(\"The input of \" + message + \" cannot be empty\");"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 5
     }
   },
   {
@@ -1369,7 +1605,7 @@
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    private String at;"
+        "content": "    protected String at;"
       },
       {
         "lineNumber": 4,
@@ -1451,6 +1687,1442 @@
     ],
     "authorContributionMap": {
       "factionsypho": 14
+    }
+  },
+  {
+    "path": "src/main/java/EventCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.io.IOException;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.util.Arrays;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class EventCommand extends Command{"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    protected Event event;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public EventCommand(boolean isExit, String commandLine){"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        super(isExit,commandLine);"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void execute(TaskList taskList, UI ui, Storage storage) throws DukeIOException, DukeException, IOException{"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        if((commandLine.substring(5).trim()).isEmpty()){"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeIOException(\"event\");"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        if(!commandLine.contains(\"at\")){"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeException(\"The date of a event cannot be empty.\");"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        int index \u003d 0;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        for(String command : commandLine.split(\" \")){"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            ++index;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            if(command.equals(\"at\")){"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                if(String.join(\" \", Arrays.copyOfRange(commandLine.split(\" \"), index, commandLine.split(\" \").length)).isEmpty()){"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    throw new DukeException(\"The date of a event cannot be empty.\");"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                else {"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    event \u003d new Event (String.join(\" \", Arrays.copyOfRange(commandLine.split(\" \"), 1, index-1)), String.join(\" \", Arrays.copyOfRange(commandLine.split(\" \"), index, commandLine.split(\" \").length)));"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    taskList.addToTaskList(event);"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    ui.showOutput(\"Got it. I\u0027ve added this task:\\n\\t  \" + event.toString() + \"\\n\\t Now you have \" + taskList.getSize() + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    storage.saveToFile();"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 35
+    }
+  },
+  {
+    "path": "src/main/java/ListCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.util.List;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class ListCommand extends Command{"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private static final String FORMAT \u003d \"%1$d. %2$s\";"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private static String output;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public static final int TASK_NUMBER \u003d 1;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public ListCommand(boolean isExit, String commandLine){"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        super(isExit, commandLine);"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private String showTaskListView(TaskList taskList) {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        List\u003cString\u003e newTaskList \u003d new ArrayList\u003c\u003e();"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        output \u003d \"\";"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        for (int i \u003d 0; i \u003c taskList.getSize(); i++) {"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            newTaskList.add(taskList.getTasks(i).toString());"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return indexedList(newTaskList);"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private String indexedList(List\u003cString\u003e newTaskList) {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return newList(newTaskList);"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private static String getItem(int index, String task) {"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return String.format(FORMAT, index, task);"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private static String newList(List\u003cString\u003e newTaskList) {"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        int taskNumber \u003d 0 + TASK_NUMBER;"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        output +\u003d \" Here are the tasks in your list:\";"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        for (String item : newTaskList) {"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            output +\u003d \" \\n\\t\" + getItem(taskNumber, item);"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            taskNumber++;"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return output;"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void execute(TaskList taskList, UI ui, Storage storage) throws DukeException{"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        if(taskList.getSize() \u003d\u003d 0){"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeException(\"The tasks list cannot be empty.\");"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        ui.showOutput(showTaskListView(taskList));"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 46
+    }
+  },
+  {
+    "path": "src/main/java/Parser.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class Parser {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public static Command parse(String commandLine) throws DukeException{"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        switch(commandLine.split(\" \")[0]){"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            case \"todo\":"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                return new TodoCommand(false,commandLine);"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            case \"deadline\":"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                return new DeadlineCommand(false, commandLine);"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            case \"event\":"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                return new EventCommand(false, commandLine);"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            case \"bye\":"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                return new Bye(true, \"\");"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            case \"list\":"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                return new ListCommand(false, commandLine);"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            case \"delete\":"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                return new DeleteCommand(false, commandLine);"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            case \"done\":"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                return new DoneCommand(false, commandLine);"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            default:"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                throw new DukeException(\"I\u0027m Sorry, but I don\u0027t know what that means :-(\");"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 22
+    }
+  },
+  {
+    "path": "src/main/java/Storage.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.io.*;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.util.*;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class Storage {"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private String filePath;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private File file;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private Scanner fileReader;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public Storage(String filePath) throws IOException {"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        try{"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            this.filePath \u003d filePath;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            this.file \u003d new File(filePath);"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            fileReader \u003d new Scanner(file);"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }catch(FileNotFoundException e){"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            file.getParentFile().mkdir();"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            file.createNewFile();"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public ArrayList\u003cTask\u003e load() throws DukeException, IOException {"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        ArrayList\u003cTask\u003e taskList \u003d new ArrayList\u003c\u003e();"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        try{"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            while (fileReader.hasNextLine()) {"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                String line \u003d fileReader.nextLine();"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                String[] split_Value \u003d line.split(\" \\\\| \");"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                switch (split_Value[0]) {"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    case \"E\":"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        Event event \u003d new Event(split_Value[2], split_Value[3]);"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        if (split_Value[1].equals(\"1\")) {"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                            event.setDone();"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        taskList.add(event);"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        break;"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    case \"D\":"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        Deadline deadline \u003d new Deadline(split_Value[2], split_Value[3]);"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        if (split_Value[1].equals(\"1\")) {"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                            deadline.setDone();"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        taskList.add(deadline);"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        break;"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                    case \"T\":"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        Todo todo \u003d new Todo(split_Value[2]);"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        if (split_Value[1].equals(\"1\")) {"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                            todo.setDone();"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                        taskList.add(todo);"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }catch(NullPointerException e){"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            this.file \u003d new File(filePath);"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            file.getParentFile().mkdir();"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            file.createNewFile();"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return taskList;"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void saveToFile() throws IOException{"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        PrintWriter printWriter \u003d new PrintWriter(file);"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        String output \u003d \"\";"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        for (int i \u003d 0; i \u003c TaskList.getSize(); i++) {"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            Task task \u003d TaskList.getTasks(i);"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            String description \u003d task.description;"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            String taskCommand \u003d \"\";"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            String when \u003d \"\";"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            boolean done \u003d false;"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            if(task instanceof Todo){"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                taskCommand \u003d \"T\";"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            else if(task instanceof Event){"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                taskCommand \u003d \"E\";"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                when \u003d ((Event)task).at;"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            else if(task instanceof Deadline){"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                taskCommand \u003d \"D\";"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                when \u003d ((Deadline)task).by;"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            if (task.isDone){"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                done \u003d true;"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            int val \u003d (done) ? 1 : 0;"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            if (when.equals(\"\")){"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                output +\u003d taskCommand + \" | \" + val + \" | \" + description + \"\\n\";"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            else {"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "                output +\u003d taskCommand + \" | \" + val + \" | \" + description + \" | \" + when + \"\\n\";"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        printWriter.write(output);"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        printWriter.close();"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 97
     }
   },
   {
@@ -1581,66 +3253,38 @@
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    public String deleteItem(){"
+        "content": "    public String setDone(){"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "        return \"Noted. I\u0027ve removed this task: \\n\\t \" + toString();"
+        "content": "        this.isDone \u003d true;"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    }"
+        "content": "        return \"Nice! I\u0027ve marked this task as done: \\n\\t [\\u2713] \" + this.description;"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "factionsypho"
         },
-        "content": "    public String setDone(){"
-      },
-      {
-        "lineNumber": 23,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "        this.isDone \u003d true;"
-      },
-      {
-        "lineNumber": 24,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "        return \"Nice! I\u0027ve marked this task as done: \\n\\t [\\u2713] \" + this.description;"
-      },
-      {
-        "lineNumber": 25,
-        "author": {
-          "gitId": "factionsypho"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 26,
-        "author": {
-          "gitId": "factionsypho"
-        },
         "content": ""
       },
       {
-        "lineNumber": 27,
+        "lineNumber": 23,
         "author": {
           "gitId": "factionsypho"
         },
@@ -1648,7 +3292,226 @@
       }
     ],
     "authorContributionMap": {
-      "factionsypho": 27
+      "factionsypho": 23
+    }
+  },
+  {
+    "path": "src/main/java/TaskList.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class TaskList{"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private static ArrayList\u003cTask\u003e taskList;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public TaskList(){"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        this.taskList \u003d new ArrayList\u003c\u003e();"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public TaskList(ArrayList\u003cTask\u003e tasks){"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        this.taskList \u003d tasks;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void addToTaskList(Task tasks){"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        this.taskList.add(tasks);"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public Task deleteFromTaskList(int tasks){"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return this.taskList.remove(tasks);"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public static int getSize(){"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return taskList.size();"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public static Task getTasks(int tasks){"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return taskList.get(tasks);"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 30
     }
   },
   {
@@ -1735,6 +3598,467 @@
     ],
     "authorContributionMap": {
       "factionsypho": 11
+    }
+  },
+  {
+    "path": "src/main/java/TodoCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.io.IOException;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class TodoCommand extends Command{"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    protected Todo todo;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public TodoCommand(boolean isExit, String commandLine){"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        super(isExit, commandLine);"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void execute(TaskList taskList, UI ui, Storage storage) throws DukeException, IOException{"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        if((commandLine.substring(4).trim()).isEmpty()){"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "            throw new DukeException(\"todo\");"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        todo \u003d new Todo(commandLine.substring(5));"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        taskList.addToTaskList(todo);"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        ui.showOutput(\"Got it. I\u0027ve added this task:\\n\\t  \" + todo.toString() + \"\\n\\t Now you have \" + taskList.getSize() + \" tasks in the list.\");"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        storage.saveToFile();"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 20
+    }
+  },
+  {
+    "path": "src/main/java/UI.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.util.*;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "import java.io.*;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "public class UI {"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    private final Scanner commandline;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public UI(){"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        this(System.in);"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public UI(InputStream in){"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        this.commandline \u003d new Scanner(in);"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public String readCommand(){"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        String command \u003d commandline.nextLine();"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return command;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void showWelcome(){"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        System.out.println(showLine(\"Hello! I\u0027m Duke\\n\\tWhat can I do for you?\"));"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void showGoodbye(){"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        System.out.println(showLine(\"Bye. Hope to see you again soon!\"));"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        System.exit(0);"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public String showLine(String message){"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        return \"\\t____________________________________________________________\\n\\t\" + message + \"\\n\\t____________________________________________________________ \";"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void showOutput(String output) {"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        System.out.println(showLine(output));"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    public void showError(String errorMessage){"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "        System.out.println(showLine(\"☹ OOPS!!! \" + errorMessage));"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 40
+    }
+  },
+  {
+    "path": "src/main/java/data/duke.txt",
+    "fileType": "txt",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "T | 0 | one more task"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "factionsypho"
+        },
+        "content": "D | 1 | finish level 7 | tonight"
+      }
+    ],
+    "authorContributionMap": {
+      "factionsypho": 2
     }
   },
   {

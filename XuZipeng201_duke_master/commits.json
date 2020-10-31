@@ -73,10 +73,36 @@
             "hash": "67f6738c29ecf46f602b1d74a4eaa01adb3575ea",
             "messageTitle": "Level 5. Handle Errors",
             "messageBody": "",
+            "tags": [
+              "Level-5"
+            ],
             "fileTypesAndContributionMap": {
               "java": {
                 "insertions": 62,
                 "deletions": 13
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-30",
+        "commitResults": [
+          {
+            "hash": "47b835ff03623dcb42315550ff25dbe336ee48d4",
+            "messageTitle": "level 6: Delete",
+            "messageBody": "",
+            "tags": [
+              "Level-6"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 8,
+                "deletions": 8
+              },
+              "java": {
+                "insertions": 43,
+                "deletions": 36
               }
             }
           }
@@ -86,7 +112,7 @@
   },
   "authorFileTypeContributionMap": {
     "XuZipeng201": {
-      "java": 205,
+      "java": 212,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -96,7 +122,7 @@
     }
   },
   "authorContributionVariance": {
-    "XuZipeng201": 1120.2766
+    "XuZipeng201": 761.06177
   },
   "authorDisplayNameMap": {
     "XuZipeng201": "XU Z..PENG"
