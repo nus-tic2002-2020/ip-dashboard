@@ -131,10 +131,79 @@
             "hash": "8f7078c52cb11eb3c41eecce9cd8ab92c54b83b4",
             "messageTitle": "Level 8 : Date and Time",
             "messageBody": "",
+            "tags": [
+              "Level8"
+            ],
             "fileTypesAndContributionMap": {
               "java": {
                 "insertions": 115,
                 "deletions": 10
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-31",
+        "commitResults": [
+          {
+            "hash": "aa3ec1e2e3dbf25ae14c9d1cbeb4da47cd553f25",
+            "messageTitle": "no message",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 232,
+                "deletions": 26
+              }
+            }
+          },
+          {
+            "hash": "edfe39bbbedde90798e87ffaa6ff9b85ba24764e",
+            "messageTitle": "Revert \"no message\"",
+            "messageBody": "This reverts commit aa3ec1e2e3dbf25ae14c9d1cbeb4da47cd553f25.\n",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 3
+              },
+              "java": {
+                "insertions": 26,
+                "deletions": 232
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-01",
+        "commitResults": [
+          {
+            "hash": "f4748d0eda0bca30e27b742ae4d7d7767bd9408f",
+            "messageTitle": "Make Duke More OOP",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 230,
+                "deletions": 53
+              }
+            }
+          },
+          {
+            "hash": "5dd6be1f23813c040c49637ee48f785f7c9735a2",
+            "messageTitle": "A - Junit : Includes EvenTest \u0026 TaskTest",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 45,
+                "deletions": 2
               }
             }
           }
@@ -144,17 +213,17 @@
   },
   "authorFileTypeContributionMap": {
     "zarifahz": {
-      "java": 292,
+      "java": 519,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 0
+      "txt": 3
     }
   },
   "authorContributionVariance": {
-    "zarifahz": 2275.555
+    "zarifahz": 6250.6616
   },
   "authorDisplayNameMap": {
     "zarifahz": "ZARI..IFLI"

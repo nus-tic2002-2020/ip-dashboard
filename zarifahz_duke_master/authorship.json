@@ -1,5 +1,35 @@
 [
   {
+    "path": "data/duke.txt",
+    "fileType": "txt",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      }
+    ],
+    "authorContributionMap": {
+      "zarifahz": 3
+    }
+  },
+  {
     "path": "src/main/java/Deadline.java",
     "fileType": "java",
     "lines": [
@@ -50,140 +80,140 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    protected LocalDateTime timecheck;"
+        "content": ""
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "    protected LocalDateTime timecheck;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    public Deadline (String description, LocalDateTime timecheck) {"
+        "content": ""
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        super(description);"
+        "content": "    public Deadline (String description, LocalDateTime timecheck) {"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        this.timecheck \u003d timecheck;"
+        "content": "        super(description);"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": "        this.timecheck \u003d timecheck;"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    private String generateDateAndTimeString() {"
+        "content": ""
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        String dateAndTime \u003d \"\" + timecheck.getDayOfMonth();"
+        "content": "    public Deadline(String description, Boolean status) { //check"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    int day \u003d timecheck.getDayOfMonth();"
+        "content": "        super(description, status);"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        if (day \u003d\u003d 1 || day \u003d\u003d 21 || day \u003d\u003d 31) {"
+        "content": ""
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        dateAndTime +\u003d \"st\";"
+        "content": "    public Deadline(String description, Boolean status, LocalDateTime timecheck) {"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    } else if (day \u003d\u003d 2 || day \u003d\u003d 22) {"
+        "content": "        super(description, status);"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        dateAndTime +\u003d \"nd\";"
+        "content": "        this.timecheck \u003d timecheck;"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    } else if (day \u003d\u003d 3 || day \u003d\u003d 23) {"
+        "content": "    }"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        dateAndTime +\u003d \"rd\";"
+        "content": ""
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    } else {"
+        "content": "    private String generateDateAndTimeString() {"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        dateAndTime +\u003d \"th\";"
+        "content": "        String dateAndTime \u003d \"\" + timecheck.getDayOfMonth();"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": "    int day \u003d timecheck.getDayOfMonth();"
       },
       {
         "lineNumber": 27,
@@ -197,199 +227,304 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    dateAndTime +\u003d \" of \" + timecheck.getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH)"
+        "content": "        if (day \u003d\u003d 1 || day \u003d\u003d 21 || day \u003d\u003d 31) {"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                + \" \" + timecheck.getYear() + \", \";"
+        "content": "        dateAndTime +\u003d \"st\";"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "    } else if (day \u003d\u003d 2 || day \u003d\u003d 22) {"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        if (timecheck.getHour() \u003e 12) {"
+        "content": "        dateAndTime +\u003d \"nd\";"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        dateAndTime +\u003d (timecheck.getHour() % 12) + \"\""
+        "content": "    } else if (day \u003d\u003d 3 || day \u003d\u003d 23) {"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                + (timecheck.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (timecheck.getMinute() \u003c 10 ? \"0\" : \"\")"
+        "content": "        dateAndTime +\u003d \"rd\";"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                + timecheck.getMinute()) + \"pm\";"
+        "content": "    } else {"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    } else if (timecheck.getHour() \u003d\u003d 12) {"
+        "content": "        dateAndTime +\u003d \"th\";"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        dateAndTime +\u003d timecheck.getHour() + \"\""
+        "content": "    }"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                + (timecheck.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (timecheck.getMinute() \u003c 10 ? \"0\" : \"\")"
+        "content": ""
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                + timecheck.getMinute()) + \"pm\";"
+        "content": "    dateAndTime +\u003d \" of \" + timecheck.getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH)"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    } else if (timecheck.getHour() \u003d\u003d 0) {"
+        "content": "                + \" \" + timecheck.getYear() + \", \";"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        dateAndTime +\u003d 12 + \"\""
+        "content": ""
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                + (timecheck.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (timecheck.getMinute() \u003c 10 ? \"0\" : \"\")"
+        "content": "        if (timecheck.getHour() \u003e 12) {"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                + timecheck.getMinute()) + \"am\";"
+        "content": "        dateAndTime +\u003d (timecheck.getHour() % 12) + \"\""
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    } else {"
+        "content": "                + (timecheck.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (timecheck.getMinute() \u003c 10 ? \"0\" : \"\")"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        dateAndTime +\u003d timecheck.getHour() + \"\""
+        "content": "                + timecheck.getMinute()) + \"pm\";"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                + (timecheck.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (timecheck.getMinute() \u003c 10 ? \"0\" : \"\") + timecheck.getMinute()) + \"am\";"
+        "content": "    } else if (timecheck.getHour() \u003d\u003d 12) {"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": "        dateAndTime +\u003d timecheck.getHour() + \"\""
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                + (timecheck.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (timecheck.getMinute() \u003c 10 ? \"0\" : \"\")"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        return dateAndTime;"
+        "content": "                + timecheck.getMinute()) + \"pm\";"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "}"
+        "content": "    } else if (timecheck.getHour() \u003d\u003d 0) {"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "        dateAndTime +\u003d 12 + \"\""
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    @Override"
+        "content": "                + (timecheck.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (timecheck.getMinute() \u003c 10 ? \"0\" : \"\")"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    public String toString(){"
+        "content": "                + timecheck.getMinute()) + \"am\";"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        return \"[D]\" + super.toString() + \" (by: \" + generateDateAndTimeString() + \")\";"
+        "content": "    } else {"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": "        dateAndTime +\u003d timecheck.getHour() + \"\""
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                + (timecheck.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (timecheck.getMinute() \u003c 10 ? \"0\" : \"\") + timecheck.getMinute()) + \"am\";"
       },
       {
         "lineNumber": 56,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        return dateAndTime;"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public String toString(){"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        return \"[D]\" + super.toString() + \" (by: \" + generateDateAndTimeString() + \")\";"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public String toSaveString() {"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        return \"D | \" + super.toSaveString() + \" | \" + timecheck;"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 71,
         "author": {
           "gitId": "zarifahz"
         },
@@ -397,7 +532,7 @@
       }
     ],
     "authorContributionMap": {
-      "zarifahz": 56
+      "zarifahz": 71
     }
   },
   {
@@ -493,91 +628,91 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    public static void greet() {"
+        "content": "    protected static TaskList tasks;"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        System.out.print(\"Hello! I\u0027m Duke\\n\" + \"What can I do for you?\\n\");"
+        "content": "    // public static ArrayList\u003cTask\u003e tasks \u003d new ArrayList\u003cTask\u003e(); //change to Array"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": "    public TaskList tasklist;"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "    public static UI ui;"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    public static void printLine() {"
+        "content": ""
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        System.out.println(\"    ____________________________________________________________\");"
+        "content": "    public static void main(String[] args) throws DukeException, FileNotFoundException {"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": "     "
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "        tasks \u003d new TaskList();"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    public static void bye() {"
+        "content": "        "
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        System.out.println(\"   Bye. Hope to see you again soon!\");"
+        "content": "        Storage.loadFile();"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": "        ui \u003d new UI();"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "        ui.showWelcome();"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    public static void command() {"
+        "content": "        Scanner scn \u003d new Scanner(System.in);"
       },
       {
         "lineNumber": 26,
@@ -598,7 +733,7 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        ArrayList\u003cTask\u003e tasks \u003d new ArrayList\u003cTask\u003e(); //change to Array"
+        "content": "        //ArrayList\u003cTask\u003e tasks \u003d new ArrayList\u003cTask\u003e(); //change to Array"
       },
       {
         "lineNumber": 29,
@@ -703,14 +838,14 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    bye();"
+        "content": "                    ui.showClosing();"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    printLine();"
+        "content": "                    //printLine();"
       },
       {
         "lineNumber": 45,
@@ -738,28 +873,28 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    System.out.println(\"   Here are the tasks in your lists: \");"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(\"   Here are the tasks in your lists: \");"
+        "content": "                    for (int i \u003d 0; i \u003c tasks.taskList.size(); i++) {"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    for (int i \u003d 0; i \u003c tasks.size(); i++) {"
+        "content": "                        System.out.println(i + 1 + \". \" + tasks.get(i).toString()); //shows tasklist"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                        System.out.println(i + 1 + \". \" + tasks.get(i).toString()); //shows tasklist"
+        "content": "                    }//printLine();"
       },
       {
         "lineNumber": 52,
@@ -773,7 +908,7 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    }//printLine();"
+        "content": "                } else if (line.contains(\"done\")) {"
       },
       {
         "lineNumber": 54,
@@ -787,84 +922,84 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                } else if (line.contains(\"done\")) {"
+        "content": "                    int j \u003d Integer.parseInt(line.substring(5)) - 1; //refer to which list is done and mark it"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    Task currenttask \u003d tasks.taskList.get(j);"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    int j \u003d Integer.parseInt(line.substring(5)) - 1; //refer to which list is done and mark it"
+        "content": "                    currenttask.markDone();"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    Task currenttask \u003d tasks.get(j);"
+        "content": ""
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    currenttask.markDone();"
+        "content": "                    System.out.println(\"   Nice! I\u0027ve marked this task as done:\\n \" + currenttask.toString());"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(\"   Nice! I\u0027ve marked this task as done:\\n \" + currenttask.toString());"
+        "content": ""
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                } else if (line.contains(\"delete\")) {"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                } else if (line.contains(\"delete\")) {"
+        "content": ""
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    int delete \u003d Integer.parseInt(line.substring(7)) - 1; //delete"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    int delete \u003d Integer.parseInt(line.substring(7)) - 1; //delete"
+        "content": "                    Task currenttask \u003d tasks.taskList.get(delete);"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    Task currenttask \u003d tasks.get(delete);"
+        "content": "                    tasks.removeTask(delete);"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    tasks.remove(delete);"
+        "content": "                    System.out.println(\"Deleted!\");"
       },
       {
         "lineNumber": 67,
@@ -878,35 +1013,35 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(\"   Noted. I\u0027ve removed this task:\\n \" + currenttask.toString());"
+        "content": "                    pointer++;"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(\"   Now you have \" + (tasks.size()) + \" tasks in the list.\");"
+        "content": ""
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    pointer++;"
+        "content": "                } else if (line.contains(\"todo\")) { //try to combine all three classes"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    Task todo \u003d new ToDo(line.substring(5));"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                } else if (line.contains(\"todo\")) { //try to combine all three classes"
+        "content": "                    tasks.addTask(todo);"
       },
       {
         "lineNumber": 73,
@@ -920,49 +1055,49 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    tasks.add(new ToDo(line.substring(5)));"
+        "content": "                    System.out.println(\"Got it. I\u0027ve added this task:\");"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    System.out.println(tasks.get(tasks.taskList.size() - 1).toString());"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(\"Got it. I\u0027ve added this task:\");"
+        "content": "                    System.out.println(\"Now you have \" + (tasks.taskList.size()) + \" tasks in the list.\");"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(tasks.get(tasks.size() - 1).toString());"
+        "content": "                    pointer++;"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(\"Now you have \" + (tasks.size()) + \" tasks in the list.\");"
+        "content": "                    //System.out.println(\"added: \" + line);"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    pointer++;"
+        "content": ""
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    //System.out.println(\"added: \" + line);"
+        "content": "                } else if (line.contains(\"event\")) {"
       },
       {
         "lineNumber": 81,
@@ -976,7 +1111,7 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                } else if (line.contains(\"event\")) {"
+        "content": "                    int separator \u003d line.indexOf(\u0027/\u0027);"
       },
       {
         "lineNumber": 83,
@@ -990,77 +1125,77 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    int separator \u003d line.indexOf(\u0027/\u0027);"
+        "content": "                    String dateAndTime \u003d line.substring(separator + 4);"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    DateTimeFormatter format \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy HHmm\");"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    String dateAndTime \u003d line.substring(separator + 4);"
+        "content": "                    LocalDateTime dateTime \u003d LocalDateTime.parse(dateAndTime, format);"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    DateTimeFormatter format \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy HHmm\");"
+        "content": "                    Task event \u003d new Event(line.substring(6, separator - 1), dateTime);"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    LocalDateTime dateTime \u003d LocalDateTime.parse(dateAndTime, format);"
+        "content": "                    tasks.addTask(event);"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    tasks.add(new Event(line.substring(6, separator - 1), dateTime));"
+        "content": ""
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    System.out.println(\"Got it. I\u0027ve added this task:\");"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(\"Got it. I\u0027ve added this task:\");"
+        "content": "                    System.out.println(tasks.get(tasks.taskList.size() - 1).toString());"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(tasks.get(tasks.size() - 1).toString());"
+        "content": "                    System.out.println(\"Now you have \" + (tasks.taskList.size()) + \" tasks in the list.\");"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(\"Now you have \" + (tasks.size()) + \" tasks in the list.\");"
+        "content": "                    pointer++;"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    pointer++;"
+        "content": ""
       },
       {
         "lineNumber": 95,
@@ -1074,7 +1209,7 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                } else if (line.contains(\"deadline\")) {"
       },
       {
         "lineNumber": 97,
@@ -1088,7 +1223,7 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                } else if (line.contains(\"deadline\")) {"
+        "content": "                    int separator \u003d line.indexOf(\"/\");"
       },
       {
         "lineNumber": 99,
@@ -1102,301 +1237,301 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    int separator \u003d line.indexOf(\"/\");"
+        "content": "                    String dateAndTime \u003d line.substring(separator + 4);"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    DateTimeFormatter format \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy HHmm\");"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    String dateAndTime \u003d line.substring(separator + 4);"
+        "content": "                    LocalDateTime dateTime \u003d LocalDateTime.parse(dateAndTime, format);"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    DateTimeFormatter format \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy HHmm\");"
+        "content": "                    Task deadline \u003d new Deadline(line.substring(9, separator - 1), dateTime);"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    LocalDateTime dateTime \u003d LocalDateTime.parse(dateAndTime, format);"
+        "content": "                    tasks.addTask(deadline);"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    tasks.add(new Deadline(line.substring(9, separator - 1), dateTime));"
+        "content": ""
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    System.out.println(\"Got it. I\u0027ve added this task:\");"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    System.out.println(tasks.get(tasks.taskList.size() - 1).toString());"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(\"Got it. I\u0027ve added this task:\");"
+        "content": "                    System.out.println(\"Now you have \" + (tasks.taskList.size()) + \" tasks in the list.\");"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(tasks.get(tasks.size() - 1).toString());"
+        "content": "                    pointer++;"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(\"Now you have \" + (tasks.size()) + \" tasks in the list.\");"
+        "content": ""
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    pointer++;"
+        "content": "                } else if (line.equals(\"save\")) {"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    save();"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                } else {"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                } else {"
+        "content": "                    Task newtask \u003d new Task(line);"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    newtask.description \u003d line;"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    System.out.println(\"   added: \" + line); //add to the list"
+        "content": "                    //tasks.get(pointer) \u003d newtask;"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    Task newtask \u003d new Task(line);"
+        "content": "                    pointer++;"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    newtask.description \u003d line;"
+        "content": "                }"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    //tasks.get(pointer) \u003d newtask;"
+        "content": ""
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    pointer++;"
+        "content": "            } catch (StringIndexOutOfBoundsException e) {"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                System.out.println(\"☹ OOPS!!! The description of a todo cannot be empty.\");"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                }"
+        "content": ""
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "            } catch (DateTimeParseException ex) {"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                System.out.println(\"Invalid date and time format\\n\""
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "            } catch (StringIndexOutOfBoundsException e) {"
+        "content": "                        + \"Please enter date and time as \u0027dd/MM/yyyy HHmm\u0027\");"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                System.out.println(\"☹ OOPS!!! The description of a todo cannot be empty.\");"
+        "content": "            }"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "            } catch (DateTimeParseException ex) {"
+        "content": ""
       },
       {
         "lineNumber": 129,
         "author": {
-          "gitId": "zarifahz"
+          "gitId": "-"
         },
-        "content": "                System.out.println(\"Invalid date and time format\\n\""
+        "content": "    }"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                        + \"Please enter date and time as \u0027dd/MM/yyyy HHmm\u0027\");"
+        "content": ""
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "            }"
+        "content": "    static void save() throws FileNotFoundException {"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        }"
+        "content": "        String list \u003d \"\";"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": "        for (int i \u003d 0; i \u003c tasks.taskList.size(); i++) {"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "            list +\u003d tasks.get(i).toSaveString() + \"\\n\";"
       },
       {
         "lineNumber": 135,
         "author": {
-          "gitId": "-"
+          "gitId": "zarifahz"
         },
-        "content": "    public static void main(String[] args) {"
+        "content": "        }"
       },
       {
         "lineNumber": 136,
         "author": {
-          "gitId": "-"
+          "gitId": "zarifahz"
         },
-        "content": "        String logo \u003d \" ____        _        \\n\""
+        "content": "        Storage.writeToFile(list);"
       },
       {
         "lineNumber": 137,
         "author": {
-          "gitId": "-"
+          "gitId": "zarifahz"
         },
-        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
+        "content": "        System.out.println(\"Saved to file.\");"
       },
       {
         "lineNumber": 138,
         "author": {
-          "gitId": "-"
+          "gitId": "zarifahz"
         },
-        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
+        "content": "    }"
       },
       {
         "lineNumber": 139,
         "author": {
-          "gitId": "-"
+          "gitId": "zarifahz"
         },
-        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
+        "content": ""
       },
       {
         "lineNumber": 140,
         "author": {
-          "gitId": "-"
+          "gitId": "zarifahz"
         },
-        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+        "content": ""
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "-"
         },
-        "content": "        System.out.println(\"Hello from\\n\" + logo);"
+        "content": "}"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        //System.out.print(\"Hello! I\u0027m Duke\\n\" + \"What can I do for you?\\n\");"
+        "content": ""
       },
       {
         "lineNumber": 143,
@@ -1410,47 +1545,26 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        greet();"
+        "content": ""
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        printLine();"
+        "content": ""
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        command();"
-      },
-      {
-        "lineNumber": 147,
-        "author": {
-          "gitId": "zarifahz"
-        },
         "content": ""
-      },
-      {
-        "lineNumber": 148,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 149,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "}"
       }
     ],
     "authorContributionMap": {
-      "zarifahz": 139,
-      "-": 10
+      "zarifahz": 143,
+      "-": 3
     }
   },
   {
@@ -1604,91 +1718,91 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    private String generateDateAndTimeString() {"
+        "content": ""
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        String dateAndTime \u003d \"\" + time.getDayOfMonth();"
+        "content": "    public Event(String description, Boolean status) {"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        int day \u003d time.getDayOfMonth();"
+        "content": "        super(description,status);"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        if (day \u003d\u003d 1 || day \u003d\u003d 21 || day \u003d\u003d 31) {"
+        "content": ""
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "            dateAndTime +\u003d \"st\";"
+        "content": "    public Event(String description,Boolean status, LocalDateTime time) {"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        } else if (day \u003d\u003d 2 || day \u003d\u003d 22) {"
+        "content": "        super(description,status);"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "            dateAndTime +\u003d \"nd\";"
+        "content": "        this.time \u003d time;"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        } else if (day \u003d\u003d 3 || day \u003d\u003d 23) {"
+        "content": "    }"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "            dateAndTime +\u003d \"rd\";"
+        "content": ""
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        } else {"
+        "content": "    protected String generateDateAndTimeString() {"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "            dateAndTime +\u003d \"th\";"
+        "content": "        String dateAndTime \u003d \"\" + time.getDayOfMonth();"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        }"
+        "content": "        int day \u003d time.getDayOfMonth();"
       },
       {
         "lineNumber": 26,
@@ -1702,199 +1816,311 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        dateAndTime +\u003d \" of \" + time.getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH)"
+        "content": "        if (day \u003d\u003d 1 || day \u003d\u003d 21 || day \u003d\u003d 31) {"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                + \" \" + time.getYear() + \", \";"
+        "content": "            dateAndTime +\u003d \"st\";"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "        } else if (day \u003d\u003d 2 || day \u003d\u003d 22) {"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        if (time.getHour() \u003e 12) {"
+        "content": "            dateAndTime +\u003d \"nd\";"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "            dateAndTime +\u003d (time.getHour() % 12) + \"\""
+        "content": "        } else if (day \u003d\u003d 3 || day \u003d\u003d 23) {"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    + (time.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (time.getMinute() \u003c 10 ? \"0\" : \"\")"
+        "content": "            dateAndTime +\u003d \"rd\";"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    + time.getMinute()) + \"pm\";"
+        "content": "        } else {"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        } else if (time.getHour() \u003d\u003d 12) {"
+        "content": "            dateAndTime +\u003d \"th\";"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "            dateAndTime +\u003d time.getHour() + \"\""
+        "content": "        }"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    + (time.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (time.getMinute() \u003c 10 ? \"0\" : \"\")"
+        "content": ""
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    + time.getMinute()) + \"pm\";"
+        "content": "        dateAndTime +\u003d \" of \" + time.getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH)"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        } else if (time.getHour() \u003d\u003d 0) {"
+        "content": "                + \" \" + time.getYear() + \", \";"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "            dateAndTime +\u003d 12 + \"\""
+        "content": ""
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    + (time.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (time.getMinute() \u003c 10 ? \"0\" : \"\")"
+        "content": "        if (time.getHour() \u003e 12) {"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    + time.getMinute()) + \"am\";"
+        "content": "            dateAndTime +\u003d (time.getHour() % 12) + \"\""
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        } else {"
+        "content": "                    + (time.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (time.getMinute() \u003c 10 ? \"0\" : \"\")"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "            dateAndTime +\u003d time.getHour() + \"\""
+        "content": "                    + time.getMinute()) + \"pm\";"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "                    + (time.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (time.getMinute() \u003c 10 ? \"0\" : \"\") + time.getMinute()) + \"am\";"
+        "content": "        } else if (time.getHour() \u003d\u003d 12) {"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        }"
+        "content": "            dateAndTime +\u003d time.getHour() + \"\""
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    + (time.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (time.getMinute() \u003c 10 ? \"0\" : \"\")"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        return dateAndTime;"
+        "content": "                    + time.getMinute()) + \"pm\";"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": "        } else if (time.getHour() \u003d\u003d 0) {"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "            dateAndTime +\u003d 12 + \"\""
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    @Override"
+        "content": "                    + (time.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (time.getMinute() \u003c 10 ? \"0\" : \"\")"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    public String toString() {"
+        "content": "                    + time.getMinute()) + \"am\";"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        return ( \"[E]\" + super.toString() + \" (at: \" + generateDateAndTimeString() + \")\");"
+        "content": "        } else {"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": "            dateAndTime +\u003d time.getHour() + \"\""
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "                    + (time.getMinute() \u003d\u003d 0 ? \"\" : \".\" + (time.getMinute() \u003c 10 ? \"0\" : \"\") + time.getMinute()) + \"am\";"
       },
       {
         "lineNumber": 55,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        return dateAndTime;"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        return ( \"[E]\" + super.toString() + \" (at: \" + generateDateAndTimeString() + \")\");"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public String toSaveString() {"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        return \"E | \" + super.toSaveString() + \" | \" + time;"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 71,
         "author": {
           "gitId": "zarifahz"
         },
@@ -1902,7 +2128,627 @@
       }
     ],
     "authorContributionMap": {
-      "zarifahz": 55
+      "zarifahz": 71
+    }
+  },
+  {
+    "path": "src/main/java/Parser.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "public class Parser {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "zarifahz": 2
+    }
+  },
+  {
+    "path": "src/main/java/Storage.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import java.io.File;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import java.io.FileNotFoundException;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import java.io.PrintWriter;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import java.time.LocalDate;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import java.time.LocalDateTime;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import java.time.Month;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import java.time.format.DateTimeFormatter;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import java.util.Scanner;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "public class Storage {"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    //Write tasks to file"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    /****"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "     * @param fileContent the tasks stored in the file"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "     * @throws FileNotFoundException if file can\u0027t be found"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    static void writeToFile(String fileContent) throws FileNotFoundException {"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        File f \u003d new File(\"D:\\\\ZaZa\u0027s Programming\\\\TIC2002\\\\Clone\\\\data\\\\duke.txt\");"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        PrintWriter pw \u003d new PrintWriter(f);"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        pw.println(fileContent);"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        pw.close();"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    //Load tasks from file"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    /****"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "     * @throws FileNotFoundException if file can\u0027t be found"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    static void loadFile() throws FileNotFoundException {"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        File f \u003d new File(\"D:\\\\ZaZa\u0027s Programming\\\\TIC2002\\\\Clone\\\\data\\\\duke.txt\");"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        Scanner sc \u003d new Scanner(f);"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        while (sc.hasNextLine()) {"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "            loadFormat(sc.nextLine());"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    //Add tasks to taskList from file"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    /****"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "     * @param fileContent the tasks stored in the file"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    static void loadFormat(String fileContent) {"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        System.out.println(fileContent);"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        String str \u003d fileContent;"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        String[] storeArray \u003d str.split(\" \\\\| \");"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "            if (storeArray[0].equals(\"T\")){"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                Task t\u003d new ToDo(storeArray[2], Boolean.valueOf(storeArray[1]));"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                Duke.tasks.addTask(t);"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "            } else if (storeArray[0].equals(\"D\")){"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                try {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    DateTimeFormatter inputFormatter \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy HHmm\");"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    LocalDateTime date \u003d LocalDateTime.of(2020, Month.APRIL,3,12,30);"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    String formattedDate \u003d date.format(inputFormatter);"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    Task t\u003d new Deadline(storeArray[2], Boolean.valueOf(storeArray[1]),date);"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    Duke.tasks.taskList.add(t);"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                }catch (ArrayIndexOutOfBoundsException e){"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    Task t\u003d new Deadline(storeArray[2], Boolean.valueOf(storeArray[1]));"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    Duke.tasks.addTask(t);"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "            } else if (storeArray[0].equals(\"E\")){"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                try {"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    DateTimeFormatter inputFormatter \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy HHmm\");"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    LocalDateTime date \u003d LocalDateTime.of(2020, Month.APRIL,3,12,30);"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    String formattedDate \u003d date.format(inputFormatter);"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    Task t\u003d new Event(storeArray[2], Boolean.valueOf(storeArray[1]),date);"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    Duke.tasks.addTask(t);"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                }catch (ArrayIndexOutOfBoundsException e){"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    Task t\u003d new Event(storeArray[2], Boolean.valueOf(storeArray[1]));"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                    Duke.tasks.addTask(t);"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        catch (Exception e) {"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "            e.printStackTrace();"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "zarifahz": 84
     }
   },
   {
@@ -1977,21 +2823,21 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "    public Task(String description, boolean status) {"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    public String symbols() {"
+        "content": "        this.description \u003d description;"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        return (isdone ? \"\\u2713\" : \"\\u2718\"); // tick for yes and x for no"
+        "content": "        this.isdone \u003d status;"
       },
       {
         "lineNumber": 13,
@@ -2012,49 +2858,49 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    public void markDone() { //mark task as done"
+        "content": "    public String symbols() {"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        this.isdone \u003d true;"
+        "content": "        return (isdone ? \"\\u2713\" : \"\\u2718\"); // tick for yes and x for no"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        this.symbols();"
+        "content": "    }"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": ""
+        "content": "    public void markDone() { //mark task as done"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    public String toString() {"
+        "content": "        this.isdone \u003d true;"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        return ( \"[\" + this.symbols() + \"]\" + description);"
+        "content": "        this.symbols();"
       },
       {
         "lineNumber": 22,
@@ -2068,11 +2914,307 @@
         "author": {
           "gitId": "zarifahz"
         },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        return ( \"[\" + this.symbols() + \"]\" + description);"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public String toSaveString() {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        assert !description.isEmpty() : \"Description field is empty\";"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "       return  (isdone ? 1 : 0) + \" | \" + description;"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "zarifahz"
+        },
         "content": "}"
       }
     ],
     "authorContributionMap": {
-      "zarifahz": 23
+      "zarifahz": 32
+    }
+  },
+  {
+    "path": "src/main/java/TaskList.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "public class TaskList {"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public ArrayList\u003cTask\u003e taskList;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public TaskList() {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        this.taskList \u003d new ArrayList\u003cTask\u003e();"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public TaskList(ArrayList\u003cTask\u003e tasks) {"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        this.taskList \u003d tasks;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public Task get(int i){"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        return taskList.get(i);"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public void removeTask(int i){"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        taskList.remove(i);"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public void addTask(Task task){"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        taskList.add(task);"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public Task getTask(int i) {"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        return taskList.get(i);"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public int getNumOfTasks(){"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        return taskList.size();"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "} "
+      }
+    ],
+    "authorContributionMap": {
+      "zarifahz": 32
     }
   },
   {
@@ -2126,31 +3268,59 @@
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    @Override"
+        "content": "    public ToDo(String description, Boolean status) {"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    public String toString() {"
+        "content": "        super(description, status);"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "        return ( \"[T]\" + super.toString()); // T acronym \u003d t0d0"
+        "content": "    }"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "zarifahz"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 11,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        return ( \"[T]\" + super.toString()); // T acronym \u003d t0d0"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 15,
         "author": {
           "gitId": "zarifahz"
         },
@@ -2158,7 +3328,7 @@
       }
     ],
     "authorContributionMap": {
-      "zarifahz": 11
+      "zarifahz": 15
     }
   },
   {
@@ -2171,10 +3341,464 @@
           "gitId": "zarifahz"
         },
         "content": ""
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "public class UI{"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public void showLoadingError(){"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        System.out.println(\"No previous sessions detected. Please create a file called \u0027duke.txt\u0027 under data folder.\");"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public void showWelcome(){"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        String logo \u003d \" ____        _        \\n\""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        System.out.println(\"Hello from\\n\" + logo);"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        System.out.println(\"Hello! I\u0027m Duke\\n\" + \"What can I do for you?\");"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public void showClosing() {"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        System.out.println(\"Bye. Hope to see you again soon!\");"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "}"
       }
     ],
     "authorContributionMap": {
-      "zarifahz": 1
+      "zarifahz": 20
+    }
+  },
+  {
+    "path": "src/main/java/test.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import org.junit.jupiter.api.Test;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "public class test {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public void dummyTest(){"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        assertEquals(2, 2);"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "zarifahz": 10
+    }
+  },
+  {
+    "path": "src/main/test/EventTest.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import java.time.LocalDateTime;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import java.time.format.DateTimeFormatter;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import org.junit.jupiter.api.Test;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "public class EventTest {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "     @Test"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public void toSaveString_format() {"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        String dateTime \u003d \"22/02/2020 1230\";"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        DateTimeFormatter inputFormatter \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy HHmm\");"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        LocalDateTime date \u003d LocalDateTime.parse(dateTime, inputFormatter);"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        Task event \u003d new Event(\"Eat\", date);"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "  "
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "zarifahz": 18
+    }
+  },
+  {
+    "path": "src/main/test/TaskTest.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import org.junit.jupiter.api.Test;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "public class TaskTest {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    public void testStringConversion() {"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        Task t \u003d new Task(\"Sleep\");"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "        assertEquals(\"[✓] Sleep\", t.toString()); //"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "zarifahz"
+        },
+        "content": "//Tests use Assert.assertEquals(expected, actual) methods to compare the expected output with the actual output."
+      }
+    ],
+    "authorContributionMap": {
+      "zarifahz": 14
     }
   }
 ]

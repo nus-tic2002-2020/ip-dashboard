@@ -54,12 +54,39 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-31",
+        "commitResults": [
+          {
+            "hash": "cc5e3263645b8e62a19dcb66d40a3f7ca319dd5a",
+            "messageTitle": "Deadline, Event and ToDo class",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 56,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "457b61c10255fa35ad29ede2c44c23ac887add48",
+            "messageTitle": "Level-4",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 42,
+                "deletions": 3
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "needsmorechilli": {
-      "java": 82,
+      "java": 175,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -69,7 +96,7 @@
     }
   },
   "authorContributionVariance": {
-    "needsmorechilli": 111.41052
+    "needsmorechilli": 228.30217
   },
   "authorDisplayNameMap": {
     "needsmorechilli": "YEO ..ALIE"
