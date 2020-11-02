@@ -214,22 +214,85 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-20",
+        "commitResults": [
+          {
+            "hash": "97e4950b88159aed89fc8f4e4f1409a9e0e4416f",
+            "messageTitle": "level 7-oop and package-undone",
+            "messageBody": "",
+            "tags": [
+              "level-7.1"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 5,
+                "deletions": 5
+              },
+              "java": {
+                "insertions": 502,
+                "deletions": 189
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-23",
+        "commitResults": [
+          {
+            "hash": "534311771efc28bd197b3b5575160111d1fbed17",
+            "messageTitle": "level 7-oop and package-undone",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 27,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 48,
+                "deletions": 86
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-26",
+        "commitResults": [
+          {
+            "hash": "c8d6b891274920166cdddcc0d121680a413505a1",
+            "messageTitle": "have problem with delete and done command",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 52,
+                "deletions": 18
+              },
+              "java": {
+                "insertions": 87,
+                "deletions": 25
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "aiqianchee": {
-      "java": 243,
+      "java": 589,
       "md": 0,
       "fxml": 0,
       "sh": 1,
       "bat": 2,
       "gradle": 0,
-      "txt": 6
+      "txt": 67
     }
   },
   "authorContributionVariance": {
-    "aiqianchee": 332.1394
+    "aiqianchee": 7366.567
   },
   "authorDisplayNameMap": {
     "aiqianchee": "CHEE..QIAN"

@@ -112,12 +112,47 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-01",
+        "commitResults": [
+          {
+            "hash": "add4ce3df2cc8b1a0e21017419b0f908ec8ebf85",
+            "messageTitle": "update",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 205,
+                "deletions": 48
+              }
+            }
+          },
+          {
+            "hash": "8404438dbd629926ce1955a56a63523771087b4d",
+            "messageTitle": "B-FixedDurationTasks, level 9",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 512,
+                "deletions": 171
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "mtahgg": {
-      "java": 206,
+      "java": 708,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -127,7 +162,7 @@
     }
   },
   "authorContributionVariance": {
-    "mtahgg": 1312.2521
+    "mtahgg": 11398.096
   },
   "authorDisplayNameMap": {
     "mtahgg": "ZHAN..TONG"

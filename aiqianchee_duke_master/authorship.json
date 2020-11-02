@@ -1,6 +1,6 @@
 [
   {
-    "path": "data/duke.txt",
+    "path": "data/taskList.txt",
     "fileType": "txt",
     "lines": [
       {
@@ -8,43 +8,470 @@
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "[T][✘]1"
+        "content": "[T][✘]eat"
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "[T][✘]2"
+        "content": "[T][✘]eat more"
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "[T][✘]one "
+        "content": "[T][✘]sleep "
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "[T][✘]two"
+        "content": "[T][✘]sleep more"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "[T][✘]satu"
+        "content": "[T][✘]repeat"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Deadline@27c20538"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Deadline@27c20538"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@3159c4b8"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Deadline@27c20538"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@3159c4b8"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Deadline@27c20538"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Deadline@27c20538"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@3159c4b8"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Deadline@27c20538"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@3159c4b8"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Deadline@27c20538"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@3159c4b8"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@2f686d1f"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@2f686d1f"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@2f686d1f"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Todo@59ec2012"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "seedu.duke.commands.Event@27c20538"
       }
     ],
     "authorContributionMap": {
-      "aiqianchee": 5
+      "aiqianchee": 66
     }
   },
   {
-    "path": "src/main/java/Deadline.java",
+    "path": "src/main/java/seedu/duke/Duke.java",
     "fileType": "java",
     "lines": [
       {
@@ -52,80 +479,290 @@
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "public class Deadline extends Task {"
+        "content": "package seedu.duke;"
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    protected String by;"
+        "content": ""
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": ""
+        "content": "import seedu.duke.commands.*;"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    public Deadline(String description, String by) {"
+        "content": "import seedu.duke.exception.*;"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        super(description);"
+        "content": "import seedu.duke.parser.*;"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        this.by \u003d by;"
+        "content": "import seedu.duke.storage.*;"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    }"
+        "content": "import seedu.duke.ui.*;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    //@Override"
+        "content": ""
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    public String getDescription() {"
+        "content": "public class Duke {"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        return \"[D]\" + super.getDescription() + \" (by: \" + by + \")\";"
+        "content": "    private Storage storage;"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    }"
+        "content": "    private TaskList taskList;"
       },
       {
         "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    private Ui ui;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public Duke(String filePath){"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        ui \u003d new Ui();"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        storage \u003d new Storage(filePath);"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        taskList \u003d new TaskList(storage.load());"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void run() {"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        Ui.showWelcomeMessage();"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        boolean isExit \u003d false;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        while (!isExit) {"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            try {"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                String fullCommand \u003d ui.getUserCommand();"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                //Ui.showLine(); // show the divider line (\"_______\")"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                Command c \u003d Parser.parserCommand(fullCommand);"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                c.execute(taskList, ui, storage);"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                isExit \u003d c.isExit();"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            } catch (DukeException e) {"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                Ui.showLoadingError(e.getMessage());"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            } //finally {"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            //Ui.showLine();"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            //}"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static void main(String[] args) {"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        new Duke(\"data/taskList.txt\").run();"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 42,
         "author": {
           "gitId": "aiqianchee"
         },
@@ -133,11 +770,11 @@
       }
     ],
     "authorContributionMap": {
-      "aiqianchee": 12
+      "aiqianchee": 42
     }
   },
   {
-    "path": "src/main/java/Duke.java",
+    "path": "src/main/java/seedu/duke/commands/AddDeadlineCommand.java",
     "fileType": "java",
     "lines": [
       {
@@ -145,133 +782,133 @@
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "import java.util.Scanner;"
+        "content": "package seedu.duke.commands;"
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "import java.util.ArrayList;"
+        "content": ""
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "import java.io.File;"
+        "content": "import seedu.duke.exception.DukeException;"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "import java.io.FileNotFoundException;"
+        "content": "import seedu.duke.storage.Storage;"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "import java.io.FileWriter;"
+        "content": "import seedu.duke.ui.Ui;"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "import java.io.IOException;"
+        "content": ""
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": ""
+        "content": "public class AddDeadlineCommand extends Command {"
       },
       {
         "lineNumber": 8,
         "author": {
-          "gitId": "-"
+          "gitId": "aiqianchee"
         },
-        "content": "public class Duke {"
+        "content": "    public static final String COMMAND_WORD \u003d \"deadline\";"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    static Scanner getInput \u003d new Scanner(System.in);"
+        "content": "    public static final String DEADLINE_MSG \u003d \"Got it. I\u0027ve added this task:\\n\\t\";"
       },
       {
         "lineNumber": 10,
         "author": {
-          "gitId": "-"
+          "gitId": "aiqianchee"
         },
-        "content": "    public static void main(String[] args) {"
+        "content": "    public static final String DEADLINE_MSG1 \u003d \"\\n\\tNow you have \";"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        /*String logo \u003d \" ____        _        \\n\""
+        "content": "    public static final String DEADLINE_MSG2 \u003d \" in task list.\";"
       },
       {
         "lineNumber": 12,
         "author": {
-          "gitId": "-"
+          "gitId": "aiqianchee"
         },
-        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
+        "content": "    protected Deadline deadline;"
       },
       {
         "lineNumber": 13,
         "author": {
-          "gitId": "-"
+          "gitId": "aiqianchee"
         },
-        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
+        "content": ""
       },
       {
         "lineNumber": 14,
         "author": {
-          "gitId": "-"
+          "gitId": "aiqianchee"
         },
-        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
+        "content": "    public AddDeadlineCommand(boolean isExit, String description) {"
       },
       {
         "lineNumber": 15,
         "author": {
-          "gitId": "-"
+          "gitId": "aiqianchee"
         },
-        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+        "content": "        super(isExit, description);"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        System.out.println(\"Hello from\\n\" + logo); */"
+        "content": "    }"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        greeting();"
+        "content": ""
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        ifBye();"
+        "content": "    @Override"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        String file \u003d \"data/duke.txt\";"
+        "content": "    public void execute(TaskList taskList, Ui ui, Storage storage) throws DukeException {"
       },
       {
         "lineNumber": 20,
@@ -285,1158 +922,108 @@
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "            writeToFile(file);"
+        "content": "            if (description.substring(8).equals(\"\")){ //if after keywords is empty"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        } catch (IOException e) {"
+        "content": "                throw new DukeException(\"\\t☹ OOPS!!! The description of deadline cannot be empty.\\n\");"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "            System.out.println(\"Something went wrong: \" + e.getMessage());"
+        "content": "            }else if (description.contains(\"by  \")){ //if after keywords is empty"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        }"
+        "content": "                throw new DukeException(\"\\t☹ OOPS!!! The event date cannot be empty.\\n\");"
       },
       {
         "lineNumber": 25,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 26,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 27,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "//    private static void printFilePath(){"
-      },
-      {
-        "lineNumber": 28,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "//        File f \u003d new File(\"data/duke.txt\");"
-      },
-      {
-        "lineNumber": 29,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "//        System.out.println(\"full path: \" + f.getAbsolutePath());"
-      },
-      {
-        "lineNumber": 30,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "//    }"
-      },
-      {
-        "lineNumber": 31,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 32,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    private static void printFileContents(String filePath) throws FileNotFoundException {"
-      },
-      {
-        "lineNumber": 33,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        File f \u003d new File(filePath); // create a File for the given file path"
-      },
-      {
-        "lineNumber": 34,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        Scanner s \u003d new Scanner(f); // create a Scanner using the File as the source"
-      },
-      {
-        "lineNumber": 35,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        while (s.hasNext()) {"
-      },
-      {
-        "lineNumber": 36,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "            System.out.println(s.nextLine());"
-      },
-      {
-        "lineNumber": 37,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 38,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 39,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 40,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    private static void writeToFile(String filePath) throws IOException {"
-      },
-      {
-        "lineNumber": 41,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        FileWriter fw \u003d new FileWriter(filePath, true);"
-      },
-      {
-        "lineNumber": 42,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        for (int i \u003d 0; i\u003c numberOfTask; i++){"
-      },
-      {
-        "lineNumber": 43,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "            fw.write(taskList.get(i).getDescription() + System.lineSeparator());"
-      },
-      {
-        "lineNumber": 44,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 45,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        fw.close();"
-      },
-      {
-        "lineNumber": 46,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        printFileContents(filePath);"
-      },
-      {
-        "lineNumber": 47,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 48,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 49,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    public static void greeting(){"
-      },
-      {
-        "lineNumber": 50,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 51,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\tHello! I\u0027m Duke\");"
-      },
-      {
-        "lineNumber": 52,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\tWhat can I do for you?\");"
-      },
-      {
-        "lineNumber": 53,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 54,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 55,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 56,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    private static ArrayList\u003cTask\u003e taskList \u003d new ArrayList\u003cTask\u003e(100); //use Task file"
-      },
-      {
-        "lineNumber": 57,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    private static int numberOfTask \u003d 0;"
-      },
-      {
-        "lineNumber": 58,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 59,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    //add"
-      },
-      {
-        "lineNumber": 60,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    public static void setTaskList(Task description){"
-      },
-      {
-        "lineNumber": 61,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        taskList.add(description);"
-      },
-      {
-        "lineNumber": 62,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 63,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\tGot it. I\u0027ve added this task: \");"
-      },
-      {
-        "lineNumber": 64,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\t\\t\" + taskList.get(numberOfTask).getDescription() );"
-      },
-      {
-        "lineNumber": 65,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        numberOfTask++;"
-      },
-      {
-        "lineNumber": 66,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\tNow you have \" + numberOfTask + \" tasks in the list.\");"
-      },
-      {
-        "lineNumber": 67,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 68,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 69,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 70,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    //list"
-      },
-      {
-        "lineNumber": 71,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    public static void getTaskList(){"
-      },
-      {
-        "lineNumber": 72,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 73,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\tHere are the tasks in your list: \");"
-      },
-      {
-        "lineNumber": 74,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        for (int i \u003d 0; i\u003c numberOfTask; i++){"
-      },
-      {
-        "lineNumber": 75,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "            System.out.println(\"\\t\" + (i+1) + \". \" +taskList.get(i).getDescription());"
-      },
-      {
-        "lineNumber": 76,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 77,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 78,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 79,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 80,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    public static void itIsDone(int thatTask){"
-      },
-      {
-        "lineNumber": 81,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        taskList.get(thatTask).setDone();"
-      },
-      {
-        "lineNumber": 82,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 83,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 84,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    public static void toDelete(int thatTask){"
-      },
-      {
-        "lineNumber": 85,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        taskList.remove(thatTask).setDelete();"
-      },
-      {
-        "lineNumber": 86,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\tNow you have \" + --numberOfTask + \" tasks in the list.\");"
-      },
-      {
-        "lineNumber": 87,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 88,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 89,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 90,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    public static void ifBye(){"
-      },
-      {
-        "lineNumber": 91,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        String input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 92,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 93,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        while (input !\u003d null) { //only \"bye\" will end the loop"
-      },
-      {
-        "lineNumber": 94,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "            if (input.equals(\"bye\")) {"
-      },
-      {
-        "lineNumber": 95,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 96,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                System.out.println(\"\\tBye. Hope to see you again soon!\");"
-      },
-      {
-        "lineNumber": 97,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 98,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                break;"
-      },
-      {
-        "lineNumber": 99,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "            } else if (input.equals(\"list\")) {"
-      },
-      {
-        "lineNumber": 100,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                getTaskList();"
-      },
-      {
-        "lineNumber": 101,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 102,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "            } else if (input.split(\" \")[0].equals(\"done\")) {"
-      },
-      {
-        "lineNumber": 103,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                try{"
-      },
-      {
-        "lineNumber": 104,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    if (input.substring(4).equals(\"\")){"
-      },
-      {
-        "lineNumber": 105,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                        throw new DukeException();"
-      },
-      {
-        "lineNumber": 106,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    }"
-      },
-      {
-        "lineNumber": 107,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    String part2 \u003d input.split(\" \")[1];"
-      },
-      {
-        "lineNumber": 108,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    itIsDone(Integer.parseInt(part2) - 1); //easier to see"
-      },
-      {
-        "lineNumber": 109,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 110,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }catch(DukeException e){"
-      },
-      {
-        "lineNumber": 111,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 112,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of number cannot be empty.\");"
-      },
-      {
-        "lineNumber": 113,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 114,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 115,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }catch(NumberFormatException e){"
-      },
-      {
-        "lineNumber": 116,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 117,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of number must be numeric.\");"
-      },
-      {
-        "lineNumber": 118,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 119,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 120,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }"
-      },
-      {
-        "lineNumber": 121,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "            }else if (input.split(\" \")[0].equals(\"todo\")){"
-      },
-      {
-        "lineNumber": 122,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                try {"
-      },
-      {
-        "lineNumber": 123,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    if (input.substring(4).equals(\"\")){"
-      },
-      {
-        "lineNumber": 124,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                        throw new DukeException();"
-      },
-      {
-        "lineNumber": 125,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    }"
-      },
-      {
-        "lineNumber": 126,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    setTaskList(new Todo(input.substring(5)));"
-      },
-      {
-        "lineNumber": 127,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 128,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }catch (DukeException e){"
-      },
-      {
-        "lineNumber": 129,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 130,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of a todo cannot be empty.\");"
-      },
-      {
-        "lineNumber": 131,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 132,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 133,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }"
-      },
-      {
-        "lineNumber": 134,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "            }else if (input.split(\" \")[0].equals(\"deadline\")){"
-      },
-      {
-        "lineNumber": 135,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                try{"
-      },
-      {
-        "lineNumber": 136,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    if (input.substring(8).equals(\"\")){"
-      },
-      {
-        "lineNumber": 137,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                        throw new DukeException();"
-      },
-      {
-        "lineNumber": 138,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    }"
-      },
-      {
-        "lineNumber": 139,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    setTaskList(new Deadline(input.substring(9, input.indexOf(\"by\")-2), input.substring(input.indexOf(\"by\")+3)));"
-      },
-      {
-        "lineNumber": 140,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 141,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }catch(DukeException e){"
-      },
-      {
-        "lineNumber": 142,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 143,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of a deadline cannot be empty.\");"
-      },
-      {
-        "lineNumber": 144,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 145,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 146,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }"
-      },
-      {
-        "lineNumber": 147,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "            }else if (input.split(\" \")[0].equals(\"event\")){"
-      },
-      {
-        "lineNumber": 148,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                try{"
-      },
-      {
-        "lineNumber": 149,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    if (input.substring(5).equals(\"\")){"
-      },
-      {
-        "lineNumber": 150,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                        throw new DukeException();"
-      },
-      {
-        "lineNumber": 151,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    }"
-      },
-      {
-        "lineNumber": 152,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    setTaskList(new Event(input.substring(6, input.indexOf(\"at\")-2), input.substring(input.indexOf(\"at\")+3)));"
-      },
-      {
-        "lineNumber": 153,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 154,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }catch(DukeException e){"
-      },
-      {
-        "lineNumber": 155,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 156,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of a event cannot be empty.\");"
-      },
-      {
-        "lineNumber": 157,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 158,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 159,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }"
-      },
-      {
-        "lineNumber": 160,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "            }else if (input.split(\" \")[0].equals(\"delete\")){"
-      },
-      {
-        "lineNumber": 161,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                try{"
-      },
-      {
-        "lineNumber": 162,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    if (input.substring(7).equals(\"\")){"
-      },
-      {
-        "lineNumber": 163,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                        throw new DukeException();"
-      },
-      {
-        "lineNumber": 164,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    }"
-      },
-      {
-        "lineNumber": 165,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    toDelete(Integer.parseInt(input.substring(7))-1);"
-      },
-      {
-        "lineNumber": 166,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 167,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }catch(DukeException e){"
-      },
-      {
-        "lineNumber": 168,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 169,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of number cannot be empty.\");"
-      },
-      {
-        "lineNumber": 170,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 171,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 172,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }catch(NumberFormatException e){"
-      },
-      {
-        "lineNumber": 173,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 174,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t☹ OOPS!!! The description of number must be numeric.\");"
-      },
-      {
-        "lineNumber": 175,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 176,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                    input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 177,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                }"
-      },
-      {
-        "lineNumber": 178,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "            }else{"
-      },
-      {
-        "lineNumber": 179,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 180,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                System.out.println(\"\\t☹ OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
-      },
-      {
-        "lineNumber": 181,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                System.out.println(\"\\t____________________________________________________________\");"
-      },
-      {
-        "lineNumber": 182,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "                input \u003d getInput.nextLine();"
-      },
-      {
-        "lineNumber": 183,
         "author": {
           "gitId": "aiqianchee"
         },
         "content": "            }"
       },
       {
-        "lineNumber": 184,
+        "lineNumber": 26,
         "author": {
-          "gitId": "-"
+          "gitId": "aiqianchee"
+        },
+        "content": "            deadline \u003d new Deadline(description.substring(9, description.indexOf(\"by\")-2), description.substring(description.indexOf(\"by\")+3));"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            taskList.setTaskList(deadline);"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            ui.showOutputToUser(DEADLINE_MSG + deadline.getDescription() + DEADLINE_MSG1 + taskList.length() + DEADLINE_MSG2);"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            storage.save();"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }catch (DukeException | Storage.StorageOperationException e){"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t☹ OOPS!!! The description of deadline cannot be empty.2\");"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aiqianchee"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 185,
+        "lineNumber": 35,
         "author": {
-          "gitId": "-"
+          "gitId": "aiqianchee"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 186,
+        "lineNumber": 36,
         "author": {
           "gitId": "aiqianchee"
         },
@@ -1444,12 +1031,11 @@
       }
     ],
     "authorContributionMap": {
-      "aiqianchee": 177,
-      "-": 9
+      "aiqianchee": 36
     }
   },
   {
-    "path": "src/main/java/DukeException.java",
+    "path": "src/main/java/seedu/duke/commands/AddEventCommand.java",
     "fileType": "java",
     "lines": [
       {
@@ -1457,200 +1043,84 @@
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "public class DukeException extends Exception{"
+        "content": "package seedu.duke.commands;"
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "}"
-      }
-    ],
-    "authorContributionMap": {
-      "aiqianchee": 2
-    }
-  },
-  {
-    "path": "src/main/java/Event.java",
-    "fileType": "java",
-    "lines": [
-      {
-        "lineNumber": 1,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "public class Event extends Task {"
-      },
-      {
-        "lineNumber": 2,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    protected String at;"
+        "content": ""
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": ""
+        "content": "import seedu.duke.exception.DukeException;"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    public Event(String description, String at) {"
+        "content": "import seedu.duke.storage.Storage;"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        super(description);"
+        "content": "import seedu.duke.ui.Ui;"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        this.at \u003d at;"
+        "content": ""
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    }"
+        "content": "public class AddEventCommand extends Command {"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    //@Override"
+        "content": "    public static final String COMMAND_WORD \u003d \"event\";"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    public String getDescription() {"
+        "content": "    public static final String EVENT_MSG \u003d \"Got it. I\u0027ve added this task:\\n\\t\";"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        return \"[E]\" + super.getDescription() + \" (at: \" + at + \")\";"
+        "content": "    public static final String EVENT_MSG1 \u003d \"Now you have \";"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    }"
+        "content": "    public static final String EVENT_MSG2 \u003d \" in task list.\";"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "}"
-      }
-    ],
-    "authorContributionMap": {
-      "aiqianchee": 12
-    }
-  },
-  {
-    "path": "src/main/java/Task.java",
-    "fileType": "java",
-    "lines": [
-      {
-        "lineNumber": 1,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "public class Task {"
-      },
-      {
-        "lineNumber": 2,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    protected String description;"
-      },
-      {
-        "lineNumber": 3,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    protected boolean isDone;"
-      },
-      {
-        "lineNumber": 4,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 5,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    public Task(String description) {"
-      },
-      {
-        "lineNumber": 6,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        this.description \u003d description;"
-      },
-      {
-        "lineNumber": 7,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        this.isDone \u003d false;"
-      },
-      {
-        "lineNumber": 8,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 9,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 10,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    public String getStatusIcon() {"
-      },
-      {
-        "lineNumber": 11,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "        return (isDone ? \"\\u2713\" : \"\\u2718\"); //return tick or X symbols"
-      },
-      {
-        "lineNumber": 12,
-        "author": {
-          "gitId": "aiqianchee"
-        },
-        "content": "    }"
+        "content": "    protected Event event;"
       },
       {
         "lineNumber": 13,
@@ -1664,14 +1134,14 @@
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    public String getDescription() {"
+        "content": "    public AddEventCommand(boolean isExit, String description) {"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        return \"[\" + getStatusIcon() + \"]\" + this.description;"
+        "content": "        super(isExit, description);"
       },
       {
         "lineNumber": 16,
@@ -1692,84 +1162,2120 @@
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    public void setDone(){"
+        "content": "    @Override"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        isDone \u003d true;"
+        "content": "    public void execute(TaskList taskList, Ui ui, Storage storage) throws DukeException {"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "        try {"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        System.out.println(\"\\tNice! I\u0027ve marked this task as done: \");"
+        "content": "            if (description.substring(5).equals(\"\")){ //if after keywords is empty"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        System.out.println(\"\\t\" + getDescription() ); //ticked symbols"
+        "content": "                throw new DukeException(\"\\t☹ OOPS!!! The description of event cannot be empty.\\n\");"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "            }else if (description.contains(\"at  \")){ //if after keywords is empty"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    }"
+        "content": "                throw new DukeException(\"\\t☹ OOPS!!! The event date cannot be empty.\\n\");"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": ""
+        "content": "            }"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    public void setDelete(){"
+        "content": "            event \u003d new Event(description.substring(6, description.indexOf(\"at\")-2), description.substring(description.indexOf(\"at\")+3));"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "            taskList.setTaskList(event);"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        System.out.println(\"\\tNoted. I\u0027ve removed this task:\");"
+        "content": "            ui.showOutputToUser(EVENT_MSG  + EVENT_MSG1 + taskList.length() + EVENT_MSG2);"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        System.out.println(\"\\t\" + getDescription() ); //ticked symbols"
+        "content": "            storage.save();"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }catch (DukeException | Storage.StorageOperationException e){"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t☹ OOPS!!! The description of event cannot be empty.2\");"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 36
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/commands/AddTodoCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.exception.DukeException;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.storage.Storage;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.ui.Ui;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class AddTodoCommand extends Command {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String COMMAND_WORD \u003d \"todo\";"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String TODO_MSG \u003d \"Got it. I\u0027ve added this task:\\n\\t\";"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String TODO_MSG1 \u003d \"\\n\\tNow you have \";"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String TODO_MSG2 \u003d \" in task list.\";"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    protected Todo todo;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public AddTodoCommand(boolean isExit, String description) {"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        super(isExit, description);"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void execute(TaskList taskList, Ui ui, Storage storage) throws DukeException {"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            try {"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                if (description.substring(4).equals(\"\")){ //if after keywords is empty"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                    throw new DukeException(\"\\t☹ OOPS!!! The description of todo cannot be empty.\\n\");"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                todo \u003d new Todo(description.substring(5));"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                taskList.setTaskList(todo);"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                ui.showOutputToUser(TODO_MSG + todo.getDescription() + TODO_MSG1 + taskList.length() + TODO_MSG2);"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                storage.save();"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            }catch (DukeException | Storage.StorageOperationException e){"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                System.out.println(\"\\t☹ OOPS!!! The description of todo cannot be empty.2\");"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 37
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/commands/ByeCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.exception.DukeException;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.storage.Storage;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.ui.Ui;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class ByeCommand extends Command {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String COMMAND_WORD \u003d \"bye\";"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public ByeCommand(boolean isExit, String description) {"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        super(isExit, description);"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void execute(TaskList taskList, Ui ui, Storage storage) throws DukeException {"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            ui.showGoodbyeMessage();"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 19
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/commands/Command.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.exception.DukeException;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.storage.Storage;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.ui.Ui;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class Command{"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    boolean isExit \u003d false;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    protected String description;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public Command(boolean isExit, String description){"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        this.isExit \u003d isExit;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        this.description \u003d description;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public boolean isExit (){"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return isExit;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void execute(TaskList taskList, Ui ui, Storage storage) throws DukeException {"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        throw new DukeException(\"No such function yet.\");"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 24
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/commands/Deadline.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class Deadline extends Task {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    protected String by;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public Deadline(String description, String by) {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        super(description);"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        this.by \u003d by;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public String getDescription() {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return \"[D]\" + super.getDescription() + \" (by: \" + by + \")\";"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 14
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/commands/DeleteCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.exception.DukeException;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.storage.Storage;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.ui.Ui;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class DeleteCommand extends Command{"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String COMMAND_WORD \u003d \"delete\";"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String DELETE_MSG \u003d \"Noted. I\u0027ve removed this task: \\n\";"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String DELETE_MSG1 \u003d \"\\n\\tNow you have \";"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String DELETE_MSG2 \u003d \" in task list.\\n\";"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public DeleteCommand(boolean isExit, String description) {"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        super(isExit, description);"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void execute(TaskList taskList, Ui ui, Storage storage) throws DukeException {"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        int index \u003d 0;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            if (description.substring(7).equals(\"\")){ //if after keywords is empty"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                throw new DukeException(\"\\t☹ OOPS!!! Which task to delete? \\n\");"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            index \u003d Integer.parseInt(description.substring(7))-1;"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            ui.showOutputToUser(DELETE_MSG + \"\\t\" + taskList.getATask(index));"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            taskList.toDelete(index);"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            //ui.showOutputToUser(DELETE_MSG1 + taskList.length() + DELETE_MSG2);"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            storage.save();"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }catch (DukeException | Storage.StorageOperationException e){"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t☹ OOPS!!! Provide a task number.2\");"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 36
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/commands/DoneCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.exception.DukeException;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.storage.Storage;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.ui.Ui;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class DoneCommand extends Command {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String COMMAND_WORD \u003d \"done\";"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String DONE_MSG \u003d \"Nice! I have marked this task as done: \\n\\t\";"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public DoneCommand(boolean isExit, String description) {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        super(isExit, description);"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void execute(TaskList taskList, Ui ui, Storage storage) throws DukeException {"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        int index \u003d 0;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            if (description.substring(4).equals(\"\")){ //if after keywords is empty"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                throw new DukeException(\"\\t☹ OOPS!!! The description of todo cannot be empty.\\n\");"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            index \u003d Integer.parseInt(description.substring(5))-1;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            (taskList.getATask(index)).setDone();"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            ui.showOutputToUser(DONE_MSG + taskList.getATask(index));"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            storage.save();"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }catch (DukeException | Storage.StorageOperationException e){"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t☹ OOPS!!! The number of task cannot be empty.2\");"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 33
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/commands/Event.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class Event extends Task {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    protected String at;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public Event(String description, String at) {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        super(description);"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        this.at \u003d at;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public String getDescription() {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return \"[E]\" + super.getDescription() + \" (at: \" + at + \")\";"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 14
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/commands/ListCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.exception.DukeException;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.storage.Storage;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.ui.Ui;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.util.List;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class ListCommand extends Command {"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String COMMAND_WORD \u003d \"list\";"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String LIST_MSG \u003d \"Here are the tasks in your list:\\n\\t\";"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    //private static ArrayList\u003cTask\u003e taskList \u003d new ArrayList\u003cTask\u003e(100);"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public ListCommand(boolean isExit, String description) {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        super(isExit, description);"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static void getTaskList(){"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        System.out.println(\"\\tHere are the tasks in your list: \");"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        for (int i \u003d 0; i\u003c TaskList.length(); i++){"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t\" + (i+1) + \". \" +TaskList.getATask(i).getDescription());"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void execute(TaskList taskList, Ui ui, Storage storage) throws DukeException{"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        if(TaskList.length() \u003d\u003d 0){"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            throw new DukeException(\"The task list cannot be displayed.\");"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        getTaskList();"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 36
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/commands/Task.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class Task {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    protected String description;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    protected boolean isDone;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public Task(String description) {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        this.description \u003d description;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        this.isDone \u003d false;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public String getStatusIcon() {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return (isDone ? \"\\u2713\" : \"\\u2718\"); //return tick or X symbols"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public String getDescription() {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return \"[\" + getStatusIcon() + \"]\" + this.description;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void setDone(){"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        isDone \u003d true;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "//    public void setDelete(){"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "//        System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "//        System.out.println(\"\\tNoted. I\u0027ve removed this task:\");"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "//        System.out.println(\"\\t\" + getDescription() ); //ticked symbols"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "//    }"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 29
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/commands/TaskList.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class TaskList{"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static ArrayList\u003cTask\u003e taskList;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public TaskList(){"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        this.taskList \u003d new ArrayList\u003c\u003e();"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public TaskList(ArrayList\u003cTask\u003e tasks){"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        this.taskList \u003d tasks;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static void setTaskList(Task description){"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        taskList.add(description);"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static Task toDelete(int description){"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return taskList.remove(description);"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static int length(){"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return taskList.size();"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static Task getATask(int description){"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return taskList.get(description);"
       },
       {
         "lineNumber": 30,
@@ -1791,7 +3297,7 @@
     }
   },
   {
-    "path": "src/main/java/Todo.java",
+    "path": "src/main/java/seedu/duke/commands/Todo.java",
     "fileType": "java",
     "lines": [
       {
@@ -1799,59 +3305,80 @@
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "public class Todo extends Task {"
+        "content": "package seedu.duke.commands;"
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    public Todo(String description) {"
+        "content": ""
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        super(description);"
+        "content": "public class Todo extends Task {"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    }"
+        "content": "    public Todo(String description) {"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    //@Override"
+        "content": "        super(description);"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    public String getDescription() {"
+        "content": "    }"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "        return \"[T]\" + super.getDescription();"
+        "content": ""
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "aiqianchee"
         },
-        "content": "    }"
+        "content": "    @Override"
       },
       {
         "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public String getDescription() {"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return \"[T]\" + super.getDescription();"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 12,
         "author": {
           "gitId": "aiqianchee"
         },
@@ -1859,7 +3386,1382 @@
       }
     ],
     "authorContributionMap": {
-      "aiqianchee": 9
+      "aiqianchee": 12
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/exception/DukeException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.exception;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class DukeException extends Exception{"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public DukeException(String message){"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        super(message);"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 7
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/exception/IllegalValueException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.exception;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class IllegalValueException extends DukeException {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public IllegalValueException(String message) {"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        super(message);"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 7
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/parser/Parser.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.parser;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.commands.*;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class Parser {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static Command parserCommand(String userInput) {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        switch (userInput.split(\" \")[0]) {"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            case AddTodoCommand.COMMAND_WORD:"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                return new AddTodoCommand(false, userInput);"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            case AddEventCommand.COMMAND_WORD:"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                return new AddEventCommand(false, userInput);"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            case AddDeadlineCommand.COMMAND_WORD:"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                return new AddDeadlineCommand(false, userInput);"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            case DoneCommand.COMMAND_WORD:"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                return new DoneCommand(false, userInput);"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            case ListCommand.COMMAND_WORD:"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                return new ListCommand(false, \"\"); //just print"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            case DeleteCommand.COMMAND_WORD:"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                return new DeleteCommand(false, userInput);"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            case ByeCommand.COMMAND_WORD:"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                return new ByeCommand(true, userInput);"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            default:"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                System.out.println(\"\\t☹ OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                return new Command (false, userInput);"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 28
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/storage/Storage.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.storage;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.io.File;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.nio.file.Files;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.io.FileNotFoundException;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.io.IOException;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.nio.file.Path;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.nio.file.Paths;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.util.Scanner;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.io.FileWriter;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.commands.*;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import seedu.duke.exception.*;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class Storage {"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static final String DEFAULT_STORAGE_FILEPATH \u003d \"data/taskList.txt\";"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    //public final Path path;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    private String filePath;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    private File file;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    Scanner s;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public Storage () throws InvalidStorageFilePathException {"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        this(DEFAULT_STORAGE_FILEPATH);"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public Storage(String filePath) {//throws InvalidStorageFilePathException{"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            if (!isValidPath(filePath)) {"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                //createFileAndDirectory();"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                //throw new InvalidStorageFilePathException(\"New file is created.\\n Storage file should end with \u0027.txt\u0027\");"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            } else {"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                this.filePath \u003d filePath;"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                this.file \u003d new File(filePath);"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                s \u003d new Scanner(file);"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }catch(FileNotFoundException e){"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            createFileAndDirectory();"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    private static boolean isValidPath(String filePath) {"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return filePath.toString().endsWith(\".txt\");"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void createFileAndDirectory(){"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        try{"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            file.createNewFile();"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            throw new IOException();"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }catch (IOException e){"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t☹ OOPS!!! Error creating file.\");"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void save() throws StorageOperationException {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            FileWriter fw \u003d new FileWriter(filePath, true);"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            for (int i \u003d 0; i\u003c TaskList.length(); ++i){"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                fw.write(TaskList.getATask(i) + System.lineSeparator());"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            fw.close();"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            //throw new IOException();"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }catch (IOException ioe) {"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            System.out.println(\"\\t☹ OOPS!!! Error saving the file.\");"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }//catch (StorageOperationException ioe) {"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        //    System.out.println(\"\\t☹ OOPS!!! Error writing the file.\");"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        //}"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public ArrayList\u003cTask\u003e load() {//throws StorageOperationException {"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        ArrayList\u003cTask\u003e taskList \u003d new ArrayList\u003c\u003e();"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        if (!file.exists() || !file.isFile()) {"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            return new ArrayList\u003cTask\u003e();"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }else{"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            while (s.hasNext()){"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                System.out.println(s.nextLine());"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return taskList;"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static class InvalidStorageFilePathException extends IllegalValueException {"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        public InvalidStorageFilePathException(String message) {"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            super(message);"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static class StorageOperationException extends Exception {"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        public StorageOperationException(String message) {"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            super(message);"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 93
+    }
+  },
+  {
+    "path": "src/main/java/seedu/duke/ui/Ui.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "package seedu.duke.ui;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.io.InputStream;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "import java.util.Scanner;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "public class Ui{"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    private static final String LS \u003d System.lineSeparator();"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    private static final String DIVIDER \u003d \"\\n\\t____________________________________________________________\\n\";"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    private final Scanner input;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public Ui() {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        this(System.in);"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public Ui(InputStream input) {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        this.input \u003d new Scanner(input);"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    private static boolean shouldIgnore(String rawInputLine) {"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return rawInputLine.trim().isEmpty();"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public String getUserCommand() {"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        String fullInputLine \u003d input.nextLine();"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        // silently consume all ignored lines"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        while (shouldIgnore(fullInputLine)) {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "            fullInputLine \u003d input.nextLine();"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        return fullInputLine;"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static void showWelcomeMessage() {"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        String logo"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                \u003d \"\\t ____        _        \\n\""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                + \"\\t|  _ \\\\ _   _| | _____ \\n\""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                + \"\\t| | | | | | | |/ / _ \\\\\\n\""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                + \"\\t| |_| | |_| |   \u003c  __/\\n\""
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "                + \"\\t|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        System.out.println(DIVIDER + \"\\tHello from\\n\" + logo + \"\\tWhat can I do for you?\");"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void showGoodbyeMessage() {"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        System.out.println(DIVIDER + \"\\tBye. Hope to see you again soon.\" + DIVIDER);"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public void showOutputToUser(String output) {"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        System.out.println(DIVIDER + \"\\t\" + output + DIVIDER);"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    public static void showLoadingError(String errorMessage){"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "        System.out.println(DIVIDER + \"\\t☹ OOPS!!! \" + \"\\t\" + errorMessage + DIVIDER);"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "aiqianchee"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aiqianchee": 55
     }
   },
   {
