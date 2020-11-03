@@ -64,12 +64,28 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-03",
+        "commitResults": [
+          {
+            "hash": "0ef681dc0888cbc3fef36ef792caf0f5a0ebef8c",
+            "messageTitle": "Level 5: Handle Errors",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 48,
+                "deletions": 17
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "ashikin22": {
-      "java": 204,
+      "java": 235,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -79,7 +95,7 @@
     }
   },
   "authorContributionVariance": {
-    "ashikin22": 602.3624
+    "ashikin22": 385.9334
   },
   "authorDisplayNameMap": {
     "ashikin22": "NORM..HANI"

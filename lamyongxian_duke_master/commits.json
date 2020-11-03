@@ -178,22 +178,62 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-02",
+        "commitResults": [
+          {
+            "hash": "b02fac5be9a3e22470fb3dde1473bdf9d1e72dd5",
+            "messageTitle": "Add OOP Change",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 688,
+                "deletions": 234
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-03",
+        "commitResults": [
+          {
+            "hash": "3bf72bf355dbc0e35d62786e494f3eaeebeef83f",
+            "messageTitle": "Level 7. Save",
+            "messageBody": "",
+            "tags": [
+              "Level-7",
+              "A-MoreOOP"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 286,
+                "deletions": 49
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "lamyongxian": {
-      "java": 357,
+      "java": 1051,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 2,
       "gradle": 0,
-      "txt": 11
+      "txt": 14
     }
   },
   "authorContributionVariance": {
-    "lamyongxian": 715.27875
+    "lamyongxian": 11888.482
   },
   "authorDisplayNameMap": {
     "lamyongxian": "LAM ..XIAN"

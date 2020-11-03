@@ -182,12 +182,39 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-03",
+        "commitResults": [
+          {
+            "hash": "efec5d452e8a48502349709c0b5c4875b73e8e85",
+            "messageTitle": "Level 5",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 80,
+                "deletions": 109
+              }
+            }
+          },
+          {
+            "hash": "0fb84063d253fb250cab8e828e9c12ad7aa8c1d5",
+            "messageTitle": "Level 6",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 109,
+                "deletions": 0
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "kuoshengang": {
-      "java": 587,
+      "java": 667,
       "md": 7,
       "fxml": 0,
       "sh": 0,
@@ -197,7 +224,7 @@
     }
   },
   "authorContributionVariance": {
-    "kuoshengang": 5092.396
+    "kuoshengang": 5059.8496
   },
   "authorDisplayNameMap": {
     "kuoshengang": "ANG ..MENT"

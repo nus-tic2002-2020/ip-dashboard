@@ -121,22 +121,62 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-02",
+        "commitResults": [
+          {
+            "hash": "71d1c0006aa69f7a7ee92edc4a06e7aae93d0b52",
+            "messageTitle": "level 8...?",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 140,
+                "deletions": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-03",
+        "commitResults": [
+          {
+            "hash": "4343dddb6772c7b618c1ce94548824e74ac4da77",
+            "messageTitle": "Level 9...?",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 2,
+                "deletions": 3
+              },
+              "java": {
+                "insertions": 148,
+                "deletions": 34
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "factionsypho": {
-      "java": 520,
+      "java": 771,
       "md": 1,
       "fxml": 0,
       "sh": 0,
       "bat": 1,
       "gradle": 0,
-      "txt": 2
+      "txt": 3
     }
   },
   "authorContributionVariance": {
-    "factionsypho": 5057.6284
+    "factionsypho": 5395.872
   },
   "authorDisplayNameMap": {
     "factionsypho": "CHAN..RETT"

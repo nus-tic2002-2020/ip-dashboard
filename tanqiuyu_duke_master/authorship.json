@@ -7404,7 +7404,7 @@
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "     * This method executes the function of the {@code EditDateCommand} object."
+        "content": "     * This method changes the Target Date of the {@code Note} object."
       },
       {
         "lineNumber": 54,
@@ -7425,787 +7425,1074 @@
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "     * @param dukeStorage The {@code DukeStorage} object that holds access to the saved files of {@code Duke}."
+        "content": "     * @param i The index of the {@code Note} object in the {@code DukeList} object to change."
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "     * @exception CommandException If there are errors in the command input."
+        "content": "     * @return boolean Whether the change has been successful."
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "     * @exception IndexOutOfBoundsException If the note specified does not exist."
+        "content": "     * @exception DateException If there are errors in the formats or substance of {@code Date} objects."
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "     * @exception DateException If there are errors in the formats or substance of {@code Date} objects."
+        "content": "     */"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "     */"
+        "content": "    private boolean changeTargetDate(DukeList dukeNotes, int i) throws DateException {"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "    public void execute(DukeList dukeNotes, DukeStorage dukeStorage)"
+        "content": "        if(!(dukeNotes.getNotes().get(i) instanceof Deadline)) {"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "            throws CommandException, IndexOutOfBoundsException, DateException {"
+        "content": "            throw new DateException(this.newDate, \"NoTarget\");"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "        for(int i\u003d0; i\u003cdukeNotes.getNotes().size(); i++) {"
+        "content": "        if (dukeNotes.getNotes().get(i).getIsDone()) {"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "            if(dukeNotes.getNotes().get(i).getSerialNum() \u003d\u003d this.targetNote) {"
+        "content": "            DukeUI.printDivider();"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": ""
+        "content": "            System.out.println(\"    The task had already been completed.\");"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                switch (this.dateToChange) {"
+        "content": "            System.out.println(\"    The date shouldn\u0027t be edited anymore.\");"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                    case \"target\":"
+        "content": "            return false;"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        if(dukeNotes.getNotes().get(i) instanceof Deadline) {"
+        "content": "        } else {"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            if (dukeNotes.getNotes().get(i).getIsDone()) {"
+        "content": "            this.oldDate \u003d ((Deadline) dukeNotes.getNotes().get(i)).getTargetDate();"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.printDivider();"
+        "content": ""
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    The task had already been completed.\");"
+        "content": "            NewNoteCommand.checkValidTargetDate(newDate);"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    The date shouldn\u0027t be edited anymore.\");"
+        "content": ""
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            } else {"
+        "content": "            ((Deadline) dukeNotes.getNotes().get(i)).setTargetDate(this.newDate);"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                this.oldDate \u003d ((Deadline) dukeNotes.getNotes().get(i)).getTargetDate();"
+        "content": ""
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": ""
+        "content": "            DukeUI.printDivider();"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                NewNoteCommand.checkValidTargetDate(newDate);"
+        "content": "            System.out.println(\"    Target Date of Note #\" + this.targetNote + \" changed from...\");"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": ""
+        "content": "            DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.oldDate), 66);"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                ((Deadline) dukeNotes.getNotes().get(i)).setTargetDate(this.newDate);"
+        "content": "            System.out.println(\"    to...\");"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": ""
+        "content": "            DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.newDate), 66);"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.printDivider();"
+        "content": "            return true;"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    Target Date of Note #\" + this.targetNote + \" changed from...\");"
+        "content": "        }"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.oldDate), 66);"
+        "content": "    }"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    to...\");"
+        "content": ""
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.newDate), 66);"
+        "content": "    /**"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.autoSaveConfirmation(new SaveCommand().autoSave(dukeNotes, dukeStorage));"
+        "content": "     * This method changes the Start Date of the {@code Note} object."
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.suggestListNotes();"
+        "content": "     *"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            }"
+        "content": "     * @param dukeNotes The {@code DukeList} object that holds the notes managed by {@code Duke}."
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        } else {"
+        "content": "     * @param i The index of the {@code Note} object in the {@code DukeList} object to change."
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            throw new DateException(this.newDate, \"NoTarget\");"
+        "content": "     * @return boolean Whether the change has been successful."
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        }"
+        "content": "     * @exception DateException If there are errors in the formats or substance of {@code Date} objects."
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        break;"
+        "content": "     */"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                    case \"start\":"
+        "content": "    private boolean changeStartDate(DukeList dukeNotes, int i) throws DateException {"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        if(dukeNotes.getNotes().get(i) instanceof Event) {"
+        "content": "        if(!(dukeNotes.getNotes().get(i) instanceof Event)) {"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            if (dukeNotes.getNotes().get(i).getIsDone()) {"
+        "content": "            throw new DateException(this.newDate, \"NoStart\");"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.printDivider();"
+        "content": "        }"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    The event had already concluded.\");"
+        "content": "        if (dukeNotes.getNotes().get(i).getIsDone()) {"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    The date shouldn\u0027t be edited anymore.\");"
+        "content": "            DukeUI.printDivider();"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            } else {"
+        "content": "            System.out.println(\"    The event had already concluded.\");"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                this.oldDate \u003d ((Event) dukeNotes.getNotes().get(i)).getStartDate();"
+        "content": "            System.out.println(\"    The date shouldn\u0027t be edited anymore.\");"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                Date oldEnd \u003d ((Event) dukeNotes.getNotes().get(i)).getEndDate();"
+        "content": "            return false;"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                long durationInMS \u003d ((Event) dukeNotes.getNotes().get(i)).getDurationMinutes() * 60000;"
+        "content": "        } else {"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                Date newEnd \u003d new Date(this.newDate.getTime() + durationInMS);"
+        "content": "            this.oldDate \u003d ((Event) dukeNotes.getNotes().get(i)).getStartDate();"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": ""
+        "content": "            Date oldEnd \u003d ((Event) dukeNotes.getNotes().get(i)).getEndDate();"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                ArrayList\u003cNote\u003e notesLess_i \u003d new ArrayList\u003c\u003e(dukeNotes.getNotes());"
+        "content": "            long durationInMS \u003d ((Event) dukeNotes.getNotes().get(i)).getDurationMinutes() * 60000;"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                notesLess_i.remove(i);"
+        "content": "            Date newEnd \u003d new Date(this.newDate.getTime() + durationInMS);"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                NewNoteCommand.checkForClashes(notesLess_i, this.newDate, newEnd);"
+        "content": ""
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": ""
+        "content": "            ArrayList\u003cNote\u003e notesLess_i \u003d new ArrayList\u003c\u003e(dukeNotes.getNotes());"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                if(this.newDate.after(this.oldDate)) {"
+        "content": "            notesLess_i.remove(i);"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    ((Event) dukeNotes.getNotes().get(i)).setEndDate(newEnd);"
+        "content": "            NewNoteCommand.checkForClashes(notesLess_i, this.newDate, newEnd);"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    ((Event) dukeNotes.getNotes().get(i)).setStartDate(this.newDate);"
+        "content": ""
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                } else {"
+        "content": "            if(this.newDate.after(this.oldDate)) {"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    ((Event) dukeNotes.getNotes().get(i)).setStartDate(this.newDate);"
+        "content": "                ((Event) dukeNotes.getNotes().get(i)).setEndDate(newEnd);"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    ((Event) dukeNotes.getNotes().get(i)).setEndDate(newEnd);"
+        "content": "                ((Event) dukeNotes.getNotes().get(i)).setStartDate(this.newDate);"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                }"
+        "content": "            } else {"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": ""
+        "content": "                ((Event) dukeNotes.getNotes().get(i)).setStartDate(this.newDate);"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.printDivider();"
+        "content": "                ((Event) dukeNotes.getNotes().get(i)).setEndDate(newEnd);"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    Start and End Date of Note #\" + this.targetNote +"
+        "content": "            }"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        \" changed from...\");"
+        "content": ""
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.oldDate) + \" ...and... \" +"
+        "content": "            DukeUI.printDivider();"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        DukeUI.NOTE_TIME.format(oldEnd), 66);"
+        "content": "            System.out.println(\"    Start and End Date of Note #\" + this.targetNote +"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    to...\");"
+        "content": "                    \" changed from...\");"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.newDate) + \" ...and... \" +"
+        "content": "            DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.oldDate) + \" ...and... \" +"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        DukeUI.NOTE_TIME.format(newEnd), 66);"
+        "content": "                    DukeUI.NOTE_TIME.format(oldEnd), 66);"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.autoSaveConfirmation(new SaveCommand().autoSave(dukeNotes, dukeStorage));"
+        "content": "            System.out.println(\"    to...\");"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.suggestListNotes();"
+        "content": "            DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.newDate) + \" ...and... \" +"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            }"
+        "content": "                    DukeUI.NOTE_TIME.format(newEnd), 66);"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        } else {"
+        "content": "            return true;"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            throw new DateException(this.newDate, \"NoStart\");"
+        "content": "        }"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        }"
+        "content": "    }"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        break;"
+        "content": ""
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                    case \"end\":"
+        "content": "    /**"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        if(dukeNotes.getNotes().get(i) instanceof Event) {"
+        "content": "     * This method changes the End Date of the {@code Note} object."
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            if (dukeNotes.getNotes().get(i).getIsDone()) {"
+        "content": "     *"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.printDivider();"
+        "content": "     * @param dukeNotes The {@code DukeList} object that holds the notes managed by {@code Duke}."
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    The event had already concluded.\");"
+        "content": "     * @param i The index of the {@code Note} object in the {@code DukeList} object to change."
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    The date shouldn\u0027t be edited anymore.\");"
+        "content": "     * @return boolean Whether the change has been successful."
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            } else {"
+        "content": "     * @exception DateException If there are errors in the formats or substance of {@code Date} objects."
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                this.oldDate \u003d ((Event) dukeNotes.getNotes().get(i)).getEndDate();"
+        "content": "     */"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                Date oldStart \u003d ((Event) dukeNotes.getNotes().get(i)).getStartDate();"
+        "content": "    private boolean changeEndDate(DukeList dukeNotes, int i) throws DateException {"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": ""
+        "content": "        if(!(dukeNotes.getNotes().get(i) instanceof Event)) {"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                ArrayList\u003cNote\u003e notesLess_i \u003d new ArrayList\u003c\u003e(dukeNotes.getNotes());"
+        "content": "            throw new DateException(this.newDate, \"NoEnd\");"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                notesLess_i.remove(i);"
+        "content": "        }"
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                NewNoteCommand.checkForClashes(notesLess_i, oldStart, newDate);"
+        "content": "        if (dukeNotes.getNotes().get(i).getIsDone()) {"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": ""
+        "content": "            DukeUI.printDivider();"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                ((Event) dukeNotes.getNotes().get(i)).setEndDate(this.newDate);"
+        "content": "            System.out.println(\"    The event had already concluded.\");"
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": ""
+        "content": "            System.out.println(\"    The date shouldn\u0027t be edited anymore.\");"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.printDivider();"
+        "content": "            return false;"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    End Date of Note #\" + this.targetNote + \" changed from...\");"
+        "content": "        } else {"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.oldDate), 66);"
+        "content": "            this.oldDate \u003d ((Event) dukeNotes.getNotes().get(i)).getEndDate();"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                System.out.println(\"    to...\");"
+        "content": "            Date oldStart \u003d ((Event) dukeNotes.getNotes().get(i)).getStartDate();"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.newDate), 66);"
+        "content": ""
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.autoSaveConfirmation(new SaveCommand().autoSave(dukeNotes, dukeStorage));"
+        "content": "            ArrayList\u003cNote\u003e notesLess_i \u003d new ArrayList\u003c\u003e(dukeNotes.getNotes());"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                DukeUI.suggestListNotes();"
+        "content": "            notesLess_i.remove(i);"
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            }"
+        "content": "            NewNoteCommand.checkForClashes(notesLess_i, oldStart, newDate);"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        } else {"
+        "content": ""
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            throw new DateException(this.newDate, \"NoEnd\");"
+        "content": "            ((Event) dukeNotes.getNotes().get(i)).setEndDate(this.newDate);"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        }"
+        "content": ""
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        break;"
+        "content": "            DukeUI.printDivider();"
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                    default:"
+        "content": "            System.out.println(\"    End Date of Note #\" + this.targetNote + \" changed from...\");"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        throw new CommandException(\"The type of date you are trying to edit does not exist.\");"
+        "content": "            DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.oldDate), 66);"
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                }"
+        "content": "            System.out.println(\"    to...\");"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                DukeUI.printDivider();"
+        "content": "            DukeUI.commandWrap(DukeUI.NOTE_TIME.format(this.newDate), 66);"
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                break;"
+        "content": "            return true;"
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "            }"
+        "content": "        }"
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "        }"
+        "content": "    }"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 168,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "     * This method executes the function of the {@code EditDateCommand} object."
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "     * @param dukeNotes The {@code DukeList} object that holds the notes managed by {@code Duke}."
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "     * @param dukeStorage The {@code DukeStorage} object that holds access to the saved files of {@code Duke}."
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "     * @exception CommandException If there are errors in the command input."
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "     * @exception IndexOutOfBoundsException If the note specified does not exist."
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "     * @exception DateException If there are errors in the formats or substance of {@code Date} objects."
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "    public void execute(DukeList dukeNotes, DukeStorage dukeStorage)"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "            throws CommandException, IndexOutOfBoundsException, DateException {"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "        for(int i\u003d0; i\u003cdukeNotes.getNotes().size(); i++) {"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "            if(dukeNotes.getNotes().get(i).getSerialNum() \u003d\u003d this.targetNote) {"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                switch (this.dateToChange) {"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                    case \"target\" -\u003e {"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                        if (changeTargetDate(dukeNotes, i)) {"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                            DukeUI.autoSaveConfirmation(new SaveCommand().autoSave(dukeNotes, dukeStorage));"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                            DukeUI.suggestListNotes();"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                    case \"start\" -\u003e {"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                        if (changeStartDate(dukeNotes, i)) {"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                            DukeUI.autoSaveConfirmation(new SaveCommand().autoSave(dukeNotes, dukeStorage));"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                            DukeUI.suggestListNotes();"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                    case \"end\" -\u003e {"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                        if (changeEndDate(dukeNotes, i)) {"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                            DukeUI.autoSaveConfirmation(new SaveCommand().autoSave(dukeNotes, dukeStorage));"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                            DukeUI.suggestListNotes();"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                    default -\u003e throw new CommandException(\"The type of date you are trying to edit does not exist.\");"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                DukeUI.printDivider();"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "tanqiuyu"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 209,
         "author": {
           "gitId": "tanqiuyu"
         },
@@ -8213,7 +8500,7 @@
       }
     ],
     "authorContributionMap": {
-      "tanqiuyu": 168
+      "tanqiuyu": 209
     }
   },
   {
@@ -13053,465 +13340,451 @@
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "            if(filterByStatus(note)) {"
+        "content": ""
       },
       {
         "lineNumber": 304,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                if(filterByText(note)) {"
+        "content": "            if(!filterByStatus(note)) { continue; }"
       },
       {
         "lineNumber": 305,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                    if(filterByStartTargetDate(note)) {"
+        "content": "            if(!filterByText(note)) { continue; }"
       },
       {
         "lineNumber": 306,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        if(filterByAddedDate(note)) {"
+        "content": "            if(!filterByStartTargetDate(note)) { continue; }"
       },
       {
         "lineNumber": 307,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            if (CmdType.getKey(this.cmdType.toString()).toString().equals(\"LISTBUDGETS\")) {"
+        "content": "            if(!filterByAddedDate(note)) { continue; }"
       },
       {
         "lineNumber": 308,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                if (note.getBudgetObject() !\u003d null) {"
+        "content": ""
       },
       {
         "lineNumber": 309,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    notes.add(note);"
+        "content": "            if (CmdType.getKey(this.cmdType.toString()).toString().equals(\"LISTBUDGETS\")) {"
       },
       {
         "lineNumber": 310,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    selectionSortBudgets(notes);"
+        "content": "                if (note.getBudgetObject() !\u003d null) {"
       },
       {
         "lineNumber": 311,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                }"
+        "content": "                    notes.add(note);"
       },
       {
         "lineNumber": 312,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            } else {"
+        "content": "                    selectionSortBudgets(notes);"
       },
       {
         "lineNumber": 313,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                switch (NoteType.getCONSTRUCTOR(this.noteType.toString())) {"
+        "content": "                }"
       },
       {
         "lineNumber": 314,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    case \"Bill\" -\u003e {"
+        "content": "            } else {"
       },
       {
         "lineNumber": 315,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        if (note instanceof Bill) {"
+        "content": "                switch (NoteType.getCONSTRUCTOR(this.noteType.toString())) {"
       },
       {
         "lineNumber": 316,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            notes.add(note);"
+        "content": "                    case \"Bill\" -\u003e {"
       },
       {
         "lineNumber": 317,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            selectionSortDates(notes);"
+        "content": "                        if (note instanceof Bill) {"
       },
       {
         "lineNumber": 318,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        }"
+        "content": "                            notes.add(note);"
       },
       {
         "lineNumber": 319,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    }"
+        "content": "                            selectionSortDates(notes);"
       },
       {
         "lineNumber": 320,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    case \"Birthday\" -\u003e {"
+        "content": "                        }"
       },
       {
         "lineNumber": 321,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        if (note instanceof Birthday) {"
+        "content": "                    }"
       },
       {
         "lineNumber": 322,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            notes.add(note);"
+        "content": "                    case \"Birthday\" -\u003e {"
       },
       {
         "lineNumber": 323,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            selectionSortDates(notes);"
+        "content": "                        if (note instanceof Birthday) {"
       },
       {
         "lineNumber": 324,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        }"
+        "content": "                            notes.add(note);"
       },
       {
         "lineNumber": 325,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    }"
+        "content": "                            selectionSortDates(notes);"
       },
       {
         "lineNumber": 326,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    case \"Deadline\" -\u003e {"
+        "content": "                        }"
       },
       {
         "lineNumber": 327,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        if (note instanceof Deadline) {"
+        "content": "                    }"
       },
       {
         "lineNumber": 328,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            notes.add(note);"
+        "content": "                    case \"Deadline\" -\u003e {"
       },
       {
         "lineNumber": 329,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            selectionSortDates(notes);"
+        "content": "                        if (note instanceof Deadline) {"
       },
       {
         "lineNumber": 330,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        }"
+        "content": "                            notes.add(note);"
       },
       {
         "lineNumber": 331,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    }"
+        "content": "                            selectionSortDates(notes);"
       },
       {
         "lineNumber": 332,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    case \"Event\" -\u003e {"
+        "content": "                        }"
       },
       {
         "lineNumber": 333,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        if (note instanceof Event) {"
+        "content": "                    }"
       },
       {
         "lineNumber": 334,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            notes.add(note);"
+        "content": "                    case \"Event\" -\u003e {"
       },
       {
         "lineNumber": 335,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            selectionSortDates(notes);"
+        "content": "                        if (note instanceof Event) {"
       },
       {
         "lineNumber": 336,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        }"
+        "content": "                            notes.add(note);"
       },
       {
         "lineNumber": 337,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    }"
+        "content": "                            selectionSortDates(notes);"
       },
       {
         "lineNumber": 338,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    case \"Shoplist\" -\u003e {"
+        "content": "                        }"
       },
       {
         "lineNumber": 339,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        if (note instanceof Shoplist) {"
+        "content": "                    }"
       },
       {
         "lineNumber": 340,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            notes.add(note);"
+        "content": "                    case \"Shoplist\" -\u003e {"
       },
       {
         "lineNumber": 341,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            selectionSortBudgets(notes);"
+        "content": "                        if (note instanceof Shoplist) {"
       },
       {
         "lineNumber": 342,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        }"
+        "content": "                            notes.add(note);"
       },
       {
         "lineNumber": 343,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    }"
+        "content": "                            selectionSortBudgets(notes);"
       },
       {
         "lineNumber": 344,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    case \"Task\" -\u003e {"
+        "content": "                        }"
       },
       {
         "lineNumber": 345,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        if (note instanceof Task) {"
+        "content": "                    }"
       },
       {
         "lineNumber": 346,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            notes.add(note);"
+        "content": "                    case \"Task\" -\u003e {"
       },
       {
         "lineNumber": 347,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        }"
+        "content": "                        if (note instanceof Task) {"
       },
       {
         "lineNumber": 348,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    }"
+        "content": "                            notes.add(note);"
       },
       {
         "lineNumber": 349,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    case \"Wedding\" -\u003e {"
+        "content": "                        }"
       },
       {
         "lineNumber": 350,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        if (note instanceof Wedding) {"
+        "content": "                    }"
       },
       {
         "lineNumber": 351,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            notes.add(note);"
+        "content": "                    case \"Wedding\" -\u003e {"
       },
       {
         "lineNumber": 352,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                            selectionSortDates(notes);"
+        "content": "                        if (note instanceof Wedding) {"
       },
       {
         "lineNumber": 353,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                        }"
+        "content": "                            notes.add(note);"
       },
       {
         "lineNumber": 354,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    }"
+        "content": "                            selectionSortDates(notes);"
       },
       {
         "lineNumber": 355,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                    case \"Note\" -\u003e notes.add(note);"
+        "content": "                        }"
       },
       {
         "lineNumber": 356,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                                }"
+        "content": "                    }"
       },
       {
         "lineNumber": 357,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                            }"
+        "content": "                    case \"Note\" -\u003e notes.add(note);"
       },
       {
         "lineNumber": 358,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                        }"
+        "content": "                }"
       },
       {
         "lineNumber": 359,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                    }"
+        "content": "            }"
       },
       {
         "lineNumber": 360,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "                }"
+        "content": "        }"
       },
       {
         "lineNumber": 361,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "            }"
+        "content": "        this.printResults(notes);"
       },
       {
         "lineNumber": 362,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "        }"
+        "content": "        DukeUI.printDivider();"
       },
       {
         "lineNumber": 363,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "        this.printResults(notes);"
+        "content": "        DukeUI.printCompleted();"
       },
       {
         "lineNumber": 364,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "        DukeUI.printDivider();"
+        "content": "        DukeUI.printOutstanding();"
       },
       {
         "lineNumber": 365,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "        DukeUI.printCompleted();"
+        "content": "        DukeUI.printDivider();"
       },
       {
         "lineNumber": 366,
         "author": {
           "gitId": "tanqiuyu"
         },
-        "content": "        DukeUI.printOutstanding();"
-      },
-      {
-        "lineNumber": 367,
-        "author": {
-          "gitId": "tanqiuyu"
-        },
-        "content": "        DukeUI.printDivider();"
-      },
-      {
-        "lineNumber": 368,
-        "author": {
-          "gitId": "tanqiuyu"
-        },
         "content": "    }"
       },
       {
-        "lineNumber": 369,
+        "lineNumber": 367,
         "author": {
           "gitId": "tanqiuyu"
         },
@@ -13519,7 +13792,7 @@
       }
     ],
     "authorContributionMap": {
-      "tanqiuyu": 369
+      "tanqiuyu": 367
     }
   },
   {

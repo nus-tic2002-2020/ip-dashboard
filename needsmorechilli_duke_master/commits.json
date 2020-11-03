@@ -81,12 +81,39 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-02",
+        "commitResults": [
+          {
+            "hash": "5cf70e0fe37903e4a0e759a6d45799e939a90b70",
+            "messageTitle": "A-Exception",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 3,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "8e35c195af808dfb61e632cdce7e66817a3a8cc5",
+            "messageTitle": "Level-5",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 14,
+                "deletions": 7
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "needsmorechilli": {
-      "java": 175,
+      "java": 185,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -96,7 +123,7 @@
     }
   },
   "authorContributionVariance": {
-    "needsmorechilli": 228.30217
+    "needsmorechilli": 228.29385
   },
   "authorDisplayNameMap": {
     "needsmorechilli": "YEO ..ALIE"

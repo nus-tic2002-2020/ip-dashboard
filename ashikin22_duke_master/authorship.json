@@ -549,273 +549,273 @@
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                String todoDescription \u003d userInput.substring(5);"
+        "content": "                try{"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                listItems[pointer] \u003d new Todo(todoDescription);"
+        "content": "                    String todoDescription \u003d userInput.substring(5);"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                printLine();"
+        "content": "                    CheckEmpty(todoDescription);"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                System.out.println(\"\\tGot it. I\u0027ve added this task:\");"
+        "content": "                    listItems[pointer] \u003d new Todo(todoDescription);"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                System.out.println(\"\\t\" + listItems[pointer].toString());"
+        "content": "                    printLine();"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                System.out.println(\"\\tNow you have \" + (pointer + 1) + \" tasks in the list.\");"
+        "content": "                    System.out.println(\"\\tGot it. I\u0027ve added this task:\");"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                printLine();"
+        "content": "                    System.out.println(\"\\t\" + listItems[pointer].toString());"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                pointer++;"
+        "content": "                    System.out.println(\"\\tNow you have \" + (pointer + 1) + \" tasks in the list.\");"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "            }"
+        "content": "                    printLine();"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "          /*   else{"
+        "content": "                    pointer++;"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                printLine();"
+        "content": "                }"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                listItems \u003d storeUserList (listItems, userInput);"
+        "content": "                catch (StringIndexOutOfBoundsException e) {"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                printLine();"
+        "content": "                    printLine();"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                } */"
+        "content": "                    System.out.println(\"☹ OOPS!!! The description of a todo cannot be empty.\");"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        }"
+        "content": "                    printLine();"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "    }"
+        "content": "                    }"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": ""
+        "content": "            }"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "    //store items in list"
+        "content": ""
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "    public static Task[] storeUserList(Task[] listItems, String input) {"
+        "content": "          /*   else{"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        int counter \u003d 0;"
+        "content": "                printLine();"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "            while(true){"
+        "content": "                listItems \u003d storeUserList (listItems, userInput);"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                if(listItems[counter] \u003d\u003d null){"
+        "content": "                printLine();"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                    listItems[counter] \u003d new Task(input);"
+        "content": "                } */"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                    System.out.println (\"\\tadded: \" + input);"
+        "content": "        }"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                    break;"
+        "content": "    }"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                }"
+        "content": ""
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                counter++;"
+        "content": "    //store items in list"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "            }"
+        "content": "    public static Task[] storeUserList(Task[] listItems, String input) {"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        return listItems;"
+        "content": "        int counter \u003d 0;"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "    }"
+        "content": "            while(true){"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": ""
+        "content": "                if(listItems[counter] \u003d\u003d null){"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        //print items in list"
+        "content": "                    listItems[counter] \u003d new Task(input);"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "    public static void printUserList(Task[] listItems){"
+        "content": "                    System.out.println (\"\\tadded: \" + input);"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        if(listItems[0] \u003d\u003d null){"
+        "content": "                    break;"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "            System.out.println(\"List is empty\");"
+        "content": "                }"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "            return;"
+        "content": "                counter++;"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        }"
+        "content": "            }"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": ""
+        "content": "        return listItems;"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        printLine();"
+        "content": "    }"
       },
       {
         "lineNumber": 103,
@@ -829,56 +829,56 @@
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        for (int i \u003d 1 ; i \u003c\u003d listItems.length ; i++){"
+        "content": "        //print items in list"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "            System.out.println(\"\\t\" + i + \". \" + \"[\" + listItems[i-1].getStatusIcon() + \"]\" + listItems[i-1].description);"
+        "content": "    public static void printUserList(Task[] listItems){"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                if(listItems[i] \u003d\u003d null){"
+        "content": "        if(listItems[0] \u003d\u003d null){"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                    printLine();"
+        "content": "            System.out.println(\"List is empty\");"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                    return;"
+        "content": "            return;"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "                }"
+        "content": "        }"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "            }"
+        "content": ""
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        }"
+        "content": "        printLine();"
       },
       {
         "lineNumber": 112,
@@ -892,70 +892,70 @@
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "    public static Task[] doneMessage(Task[] listItems, String userInput){"
+        "content": "        for (int i \u003d 1 ; i \u003c\u003d listItems.length ; i++){"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": ""
+        "content": "            System.out.println(\"\\t\" + i + \". \" + listItems[i-1].toString());"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": ""
+        "content": "                if(listItems[i] \u003d\u003d null){"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        int filteredNumber \u003d Integer.parseInt(userInput.substring(5));"
+        "content": "                    printLine();"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        listItems[filteredNumber-1].markDone();"
+        "content": "                    return;"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": ""
+        "content": "                }"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        printLine();"
+        "content": "            }"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        System.out.println(\"\\tNice! I\u0027ve marked this task as done:\");"
+        "content": "        }"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        System.out.println(\"\\t\" + listItems[filteredNumber-1].toString());"
+        "content": ""
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        printLine();"
+        "content": ""
       },
       {
         "lineNumber": 123,
@@ -969,164 +969,353 @@
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        return listItems;"
+        "content": "    public static Task[] doneMessage(Task[] listItems, String userInput)   {"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": ""
+        "content": "       try {"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": ""
+        "content": "           int filteredNumber \u003d Integer.parseInt(userInput.substring(5));"
       },
       {
         "lineNumber": 128,
         "author": {
-          "gitId": "-"
+          "gitId": "ashikin22"
         },
-        "content": "    public static void main(String[] args) {"
+        "content": "           listItems[filteredNumber - 1].markDone();"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "      //  String [] ListofItems \u003d new String[100];"
+        "content": ""
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        Task[] listTask \u003d new Task[100];"
+        "content": "           printLine();"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": ""
+        "content": "           System.out.println(\"\\tNice! I\u0027ve marked this task as done:\");"
       },
       {
         "lineNumber": 132,
         "author": {
-          "gitId": "-"
+          "gitId": "ashikin22"
         },
-        "content": "        String logo \u003d \" ____        _        \\n\""
+        "content": "           System.out.println(\"\\t\" + listItems[filteredNumber - 1].toString());"
       },
       {
         "lineNumber": 133,
         "author": {
-          "gitId": "-"
+          "gitId": "ashikin22"
         },
-        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
+        "content": "           printLine();"
       },
       {
         "lineNumber": 134,
         "author": {
-          "gitId": "-"
+          "gitId": "ashikin22"
         },
-        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
+        "content": ""
       },
       {
         "lineNumber": 135,
         "author": {
-          "gitId": "-"
+          "gitId": "ashikin22"
         },
-        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
+        "content": "       }"
       },
       {
         "lineNumber": 136,
         "author": {
-          "gitId": "-"
+          "gitId": "ashikin22"
         },
-        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+        "content": "        catch (NumberFormatException e){"
       },
       {
         "lineNumber": 137,
         "author": {
-          "gitId": "-"
+          "gitId": "ashikin22"
         },
-        "content": "        System.out.println(\"Hello from\\n\" + logo);"
+        "content": "            printLine();"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": ""
+        "content": "            System.out.println(\"\\t☹ OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "            printLine();"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        System.out.println(\"\\tHello! I\u0027m Duke\\n\\tWhat can I do for you?\");"
+        "content": "        }"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "       catch (NullPointerException e){"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        while (true) {"
+        "content": "           printLine();"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "            listTask\u003d printUserInput(listTask);"
+        "content": "           System.out.println(\"\\t☹ OOPS!!! Numbers out of range :-(\");"
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": ""
+        "content": "           printLine();"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "ashikin22"
         },
-        "content": "        }"
+        "content": "       }"
       },
       {
         "lineNumber": 146,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        return listItems;"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    private static void CheckEmpty(String description) throws StringIndexOutOfBoundsException {"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        if (description.isEmpty()){"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "            throw new StringIndexOutOfBoundsException ();"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void main(String[] args) {"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "      //  String [] ListofItems \u003d new String[100];"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        Task[] listTask \u003d new Task[100];"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        String logo \u003d \" ____        _        \\n\""
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        System.out.println(\"Hello from\\n\" + logo);"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        System.out.println(\"\\tHello! I\u0027m Duke\\n\\tWhat can I do for you?\");"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        while (true) {"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "            listTask\u003d printUserInput(listTask);"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 173,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 147,
+        "lineNumber": 174,
         "author": {
           "gitId": "-"
         },
@@ -1134,8 +1323,31 @@
       }
     ],
     "authorContributionMap": {
-      "ashikin22": 137,
+      "ashikin22": 164,
       "-": 10
+    }
+  },
+  {
+    "path": "src/main/java/DukeException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "public class DukeException extends Exception {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "ashikin22": 2
     }
   },
   {
@@ -1257,6 +1469,29 @@
     ],
     "authorContributionMap": {
       "ashikin22": 16
+    }
+  },
+  {
+    "path": "src/main/java/IndexOutOfRangeException.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "package PACKAGE_NAME;public class IndexOutOfRangeException {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "ashikin22": 2
     }
   },
   {
