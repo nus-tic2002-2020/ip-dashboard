@@ -78,6 +78,28 @@
                 "deletions": 17
               }
             }
+          },
+          {
+            "hash": "8faea956faccf561f5b1e7bbf9c002c75206d317",
+            "messageTitle": "Level 6: ArrayList \u0026 Delete",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 42,
+                "deletions": 36
+              }
+            }
+          },
+          {
+            "hash": "78020866e5132717a0a739d27c7454bb40baf7f2",
+            "messageTitle": "Reformat Code",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 39,
+                "deletions": 51
+              }
+            }
           }
         ]
       }
@@ -85,7 +107,7 @@
   },
   "authorFileTypeContributionMap": {
     "ashikin22": {
-      "java": 235,
+      "java": 229,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -95,7 +117,7 @@
     }
   },
   "authorContributionVariance": {
-    "ashikin22": 385.9334
+    "ashikin22": 974.7334
   },
   "authorDisplayNameMap": {
     "ashikin22": "NORM..HANI"

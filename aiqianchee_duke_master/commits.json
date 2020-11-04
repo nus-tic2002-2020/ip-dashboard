@@ -277,22 +277,56 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-03",
+        "commitResults": [
+          {
+            "hash": "734fb15db078a321ed840185f5f914a5e12bc16c",
+            "messageTitle": "level 8 - date and time",
+            "messageBody": "",
+            "tags": [
+              "level-8"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 4,
+                "deletions": 66
+              },
+              "java": {
+                "insertions": 163,
+                "deletions": 127
+              }
+            }
+          },
+          {
+            "hash": "b5e8bfa9b4a038d01694128ae515d822ee6da934",
+            "messageTitle": "no message",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 12,
+                "deletions": 13
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "aiqianchee": {
-      "java": 589,
+      "java": 624,
       "md": 0,
       "fxml": 0,
       "sh": 1,
       "bat": 2,
       "gradle": 0,
-      "txt": 67
+      "txt": 5
     }
   },
   "authorContributionVariance": {
-    "aiqianchee": 7366.567
+    "aiqianchee": 8299.325
   },
   "authorDisplayNameMap": {
     "aiqianchee": "CHEE..QIAN"

@@ -245,22 +245,50 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-03",
+        "commitResults": [
+          {
+            "hash": "a45874421a801aecfa7277b6e5eb662225fa20b7",
+            "messageTitle": "Make Duke more OOP II",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 99,
+                "deletions": 34
+              },
+              "bat": {
+                "insertions": 1,
+                "deletions": 1
+              },
+              "md": {
+                "insertions": 2,
+                "deletions": 2
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "zarifahz": {
-      "java": 615,
-      "md": 0,
+      "java": 682,
+      "md": 2,
       "fxml": 0,
       "sh": 0,
-      "bat": 0,
+      "bat": 1,
       "gradle": 0,
-      "txt": 0
+      "txt": 3
     }
   },
   "authorContributionVariance": {
-    "zarifahz": 9458.072
+    "zarifahz": 9405.331
   },
   "authorDisplayNameMap": {
     "zarifahz": "ZARI..IFLI"

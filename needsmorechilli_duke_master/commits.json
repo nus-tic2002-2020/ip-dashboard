@@ -108,12 +108,28 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-03",
+        "commitResults": [
+          {
+            "hash": "84a1961aeb08478e441211d826ad374acbd55f74",
+            "messageTitle": "Level 6 Delete + A-Collections",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 45,
+                "deletions": 27
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "needsmorechilli": {
-      "java": 185,
+      "java": 203,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -123,7 +139,7 @@
     }
   },
   "authorContributionVariance": {
-    "needsmorechilli": 228.29385
+    "needsmorechilli": 282.94482
   },
   "authorDisplayNameMap": {
     "needsmorechilli": "YEO ..ALIE"
