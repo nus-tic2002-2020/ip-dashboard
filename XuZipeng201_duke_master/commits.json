@@ -107,22 +107,45 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-05",
+        "commitResults": [
+          {
+            "hash": "1a558cd136985e7a4859cc5c5529090eb1672438",
+            "messageTitle": "Level 7: save",
+            "messageBody": "",
+            "tags": [
+              "Level-7"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 6,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 161,
+                "deletions": 12
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "XuZipeng201": {
-      "java": 212,
+      "java": 361,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 12
+      "txt": 18
     }
   },
   "authorContributionVariance": {
-    "XuZipeng201": 761.06177
+    "XuZipeng201": 1066.3197
   },
   "authorDisplayNameMap": {
     "XuZipeng201": "XU Z..PENG"

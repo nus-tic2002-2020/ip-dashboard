@@ -153,12 +153,59 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-04",
+        "commitResults": [
+          {
+            "hash": "09d3139b782033e24afe3ef22db10dbeb0083c94",
+            "messageTitle": "A-MoreOOP",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 258,
+                "deletions": 233
+              }
+            }
+          },
+          {
+            "hash": "4a6fe56b95703725329efd6688349d9ee3f2e395",
+            "messageTitle": "A-Packages",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 62
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-05",
+        "commitResults": [
+          {
+            "hash": "ac1abacb7343771da1d393ab9219d2f8779c0c81",
+            "messageTitle": "A-JavaDoc",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 2,
+                "deletions": 2
+              },
+              "java": {
+                "insertions": 163,
+                "deletions": 76
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "A0194229X": {
-      "java": 398,
+      "java": 451,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -168,7 +215,7 @@
     }
   },
   "authorContributionVariance": {
-    "A0194229X": 2130.6233
+    "A0194229X": 6090.7056
   },
   "authorDisplayNameMap": {
     "A0194229X": "WANG..UWEI"

@@ -218,12 +218,35 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-04",
+        "commitResults": [
+          {
+            "hash": "83e5809bf8343f07f2f8330d22b813672d0d6b9e",
+            "messageTitle": "Level 8. Dates and Times",
+            "messageBody": "",
+            "tags": [
+              "Level-8"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 5,
+                "deletions": 5
+              },
+              "java": {
+                "insertions": 97,
+                "deletions": 12
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "lamyongxian": {
-      "java": 1051,
+      "java": 1136,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -233,7 +256,7 @@
     }
   },
   "authorContributionVariance": {
-    "lamyongxian": 11888.482
+    "lamyongxian": 11857.722
   },
   "authorDisplayNameMap": {
     "lamyongxian": "LAM ..XIAN"

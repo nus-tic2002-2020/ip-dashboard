@@ -161,22 +161,56 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-04",
+        "commitResults": [
+          {
+            "hash": "28226963b2d8c00e6b0cd28954c8220acbf2949a",
+            "messageTitle": "no message",
+            "messageBody": "",
+            "tags": [
+              "v1.00"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 4,
+                "deletions": 2
+              },
+              "java": {
+                "insertions": 55,
+                "deletions": 13
+              }
+            }
+          },
+          {
+            "hash": "0bfc03b12195d60e51ed2deca0fdb5bfc8f17561",
+            "messageTitle": "Added Help function and included JUnits",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 51,
+                "deletions": 3
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "factionsypho": {
-      "java": 771,
+      "java": 861,
       "md": 1,
       "fxml": 0,
       "sh": 0,
       "bat": 1,
       "gradle": 0,
-      "txt": 3
+      "txt": 5
     }
   },
   "authorContributionVariance": {
-    "factionsypho": 5395.872
+    "factionsypho": 5480.7266
   },
   "authorDisplayNameMap": {
     "factionsypho": "CHAN..RETT"

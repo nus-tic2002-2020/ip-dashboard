@@ -4912,49 +4912,49 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "public class Deadline extends Task {"
+        "content": "import java.time.DateTimeException;"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "import java.time.LocalDate;"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    protected String by;"
+        "content": "import java.time.LocalDateTime;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "import java.time.ZoneOffset;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public Deadline() {"
+        "content": "import java.time.format.DateTimeFormatter;"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this(\"\", \"\");"
+        "content": "import java.time.format.DateTimeParseException;"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "import java.time.temporal.ChronoUnit;"
       },
       {
         "lineNumber": 12,
@@ -4968,133 +4968,133 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public Deadline(String description, String by) {"
+        "content": "public class Deadline extends Task {"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        super(description);"
+        "content": ""
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this.by \u003d by;"
+        "content": "    protected LocalDateTime by;"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this.type \u003d TaskType.DEADLINE;"
+        "content": ""
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "    public Deadline() {"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        this(\"\");"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    @Override"
+        "content": "    }"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public String toString() {"
+        "content": ""
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return \"[D]\" + super.toString() + \" (by: \" + by + \")\";"
+        "content": "    public Deadline(String description) {"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "        super(description);"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        this.by \u003d LocalDateTime.now().plus(1, ChronoUnit.DAYS);"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    @Override"
+        "content": "        this.type \u003d TaskType.DEADLINE;"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public String toSavableString() {"
+        "content": "    }"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return String.format(\"%s|%s\", super.toSavableString(), by);"
+        "content": ""
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "    public Deadline(String description, String by) {"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        super(description);"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    @Override"
+        "content": "        this.setBy(by);"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public void fromSavableString(String savableString) throws DukeException {"
+        "content": "        this.type \u003d TaskType.DEADLINE;"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        super.fromSavableString(savableString);"
+        "content": "    }"
       },
       {
         "lineNumber": 32,
@@ -5108,52 +5108,353 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        String[] arrString \u003d savableString.split(\"\\\\\" + separator);"
+        "content": "    public void setBy(LocalDateTime by) {"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        if (arrString.length \u003c 4) {"
+        "content": "        this.by \u003d by;"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            throw new DukeException(\"Rabak Sial, wrong data format for Deadline!\", DukeException.DukeError.WRONG_DATA_FORMAT);"
+        "content": "    }"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "    public void setBy(String by) {"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this.by \u003d arrString[3].trim();"
+        "content": ""
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "        DateTimeFormatter formatter;"
       },
       {
         "lineNumber": 40,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (by.trim().toUpperCase().endsWith(\"PM\") || by.trim().toUpperCase().endsWith(\"AM\")) {"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            formatter \u003d DateTimeFormatter.ofPattern(\"yyyy-MM-dd hh:mm a\");"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            formatter \u003d DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm\");"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            this.by \u003d LocalDateTime.parse(by, formatter);"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        } catch (DateTimeParseException ex) {"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            this.by \u003d LocalDateTime.now();"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return \"[D]\" + super.toString() + \" (by: \" + by.format(DateTimeFormatter.ofPattern(\"d MMM yyyy hh:mm a\")) + \")\";"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public String toSavableString() {"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return String.format(\"%s|%s\", super.toSavableString(), by.toEpochSecond(ZoneOffset.UTC));"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public void fromSavableString(String savableString) throws DukeException {"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        super.fromSavableString(savableString);"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        String[] arrString \u003d savableString.split(\"\\\\\" + separator);"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (arrString.length \u003c 4) {"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            throw new DukeException(\"Rabak Sial, wrong data format for Deadline!\", DukeException.DukeError.WRONG_DATA_FORMAT);"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            long epoch \u003d Long.parseLong(arrString[3].trim());"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            this.by \u003d LocalDateTime.ofEpochSecond(epoch, 0, ZoneOffset.UTC);"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        } catch (NumberFormatException | DateTimeException ex) {"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            throw new DukeException(\"Rabak Sial, wrong data format for Deadline! \" + ex.getMessage(),"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    DukeException.DukeError.WRONG_DATA_FORMAT);"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 83,
         "author": {
           "gitId": "lamyongxian"
         },
@@ -5161,7 +5462,7 @@
       }
     ],
     "authorContributionMap": {
-      "lamyongxian": 40
+      "lamyongxian": 83
     }
   },
   {
@@ -5201,224 +5502,224 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "public class Event extends Task {"
+        "content": "import java.time.DateTimeException;"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "import java.time.LocalDateTime;"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    protected String at;"
+        "content": "import java.time.ZoneOffset;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "import java.time.format.DateTimeFormatter;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public Event() {"
+        "content": "import java.time.format.DateTimeParseException;"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this(\"\", \"\");"
+        "content": "import java.time.temporal.ChronoUnit;"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "public class Event extends Task {"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public Event(String description, String at) {"
+        "content": ""
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        super(description);"
+        "content": "    protected LocalDateTime at;"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this.at \u003d at;"
+        "content": ""
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this.type \u003d TaskType.EVENT;"
+        "content": "    public Event() {"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "        this(\"\");"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    @Override"
+        "content": ""
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public String toString() {"
+        "content": "    public Event(String description) {"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return \"[E]\" + super.toString() + \" (at: \" + at + \")\";"
+        "content": "        super(description);"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "        this.at  \u003d LocalDateTime.now();"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        this.type \u003d TaskType.EVENT;"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    @Override"
+        "content": "    }"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public String toSavableString() {"
+        "content": ""
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return String.format(\"%s|%s\", super.toSavableString(), at);"
+        "content": "    public Event(String description, String at) {"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "        super(description);"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        this.setAt(at);"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    @Override"
+        "content": "        this.type \u003d TaskType.EVENT;"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public void fromSavableString(String savableString) throws DukeException {"
+        "content": "    }"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        super.fromSavableString(savableString);"
+        "content": ""
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "    public void setAt(LocalDateTime at) {"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        String[] arrString \u003d savableString.split(\"\\\\\" + separator);"
+        "content": "        this.at \u003d at;"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        if (arrString.length \u003c 4) {"
+        "content": "    }"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            throw new DukeException(\"Rabak Sial, wrong data format for Event!\", DukeException.DukeError.WRONG_DATA_FORMAT);"
+        "content": ""
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        }"
+        "content": "    public void setAt(String at) {"
       },
       {
         "lineNumber": 37,
@@ -5432,17 +5733,311 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this.at \u003d arrString[3].trim();"
+        "content": "        DateTimeFormatter formatter;"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 40,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (at.trim().endsWith(\"PM\") || at.trim().endsWith(\"AM\")) {"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            formatter \u003d DateTimeFormatter.ofPattern(\"yyyy-MM-dd hh:mm a\");"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            formatter \u003d DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm\");"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            this.at \u003d LocalDateTime.parse(at, formatter);"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        } catch (DateTimeParseException ex) {"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            this.at \u003d LocalDateTime.now();"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public String toString() {"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return \"[E]\" + super.toString() + \" (at: \" + at.format(DateTimeFormatter.ofPattern(\"d MMM yyyy hh:mm a\")) + \")\";"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public String toSavableString() {"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return String.format(\"%s|%s\", super.toSavableString(), at.toEpochSecond(ZoneOffset.UTC));"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public void fromSavableString(String savableString) throws DukeException {"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        super.fromSavableString(savableString);"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        String[] arrString \u003d savableString.split(\"\\\\\" + separator);"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (arrString.length \u003c 4) {"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            throw new DukeException(\"Rabak Sial, wrong data format for Event!\", DukeException.DukeError.WRONG_DATA_FORMAT);"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            long epoch \u003d Long.parseLong(arrString[3].trim());"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            this.at \u003d LocalDateTime.ofEpochSecond(epoch, 0, ZoneOffset.UTC);"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        } catch (NumberFormatException | DateTimeException ex) {"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            throw new DukeException(\"Rabak Sial, wrong data format for Event! \" + ex.getMessage(),"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    DukeException.DukeError.WRONG_DATA_FORMAT);"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 82,
         "author": {
           "gitId": "lamyongxian"
         },
@@ -5450,7 +6045,7 @@
       }
     ],
     "authorContributionMap": {
-      "lamyongxian": 40
+      "lamyongxian": 82
     }
   },
   {
@@ -7549,14 +8144,14 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "deadline return book /by June 6th"
+        "content": "deadline return book /by 2020-06-06 18:00"
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "event project meeting /at Aug 6th 2-4pm"
+        "content": "event project meeting /at 2020-08-06 02:00 PM"
       },
       {
         "lineNumber": 4,
@@ -7591,21 +8186,21 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "deadline return book /by Sunday"
+        "content": "deadline return book /by 2020-12-08 23:59"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "event project meeting /at Mon 2-4pm"
+        "content": "event project meeting /at 2020-12-08 14:00"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "deadline do homework /by no idea :-p"
+        "content": "deadline do homework /by 2020-11-15 23:59"
       },
       {
         "lineNumber": 11,

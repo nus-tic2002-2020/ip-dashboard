@@ -173,22 +173,63 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-05",
+        "commitResults": [
+          {
+            "hash": "0a3b5b62aaceeaccd99c5f5cb821140105d2e2ba",
+            "messageTitle": "level 8 refinement, added junit",
+            "messageBody": "",
+            "tags": [
+              "v1.81"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 2
+              },
+              "java": {
+                "insertions": 78,
+                "deletions": 2
+              }
+            }
+          },
+          {
+            "hash": "ac76146276e37113828cfa1ad751000128d8f4cf",
+            "messageTitle": "added level 9, individual feature (update) \u0026 find",
+            "messageBody": "",
+            "tags": [
+              "v1.9"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 84,
+                "deletions": 2
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "erictongg": {
-      "java": 618,
+      "java": 777,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 9
+      "txt": 7
     }
   },
   "authorContributionVariance": {
-    "erictongg": 5429.1816
+    "erictongg": 5457.6304
   },
   "authorDisplayNameMap": {
     "erictongg": "ERIC.. GUO"
