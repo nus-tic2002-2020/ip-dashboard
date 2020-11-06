@@ -1011,147 +1011,147 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                case \"bye\":"
+        "content": "                case \"find\":"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                    //bye();"
+        "content": "                    command \u003d new FindCommand(args);"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                    command \u003d new ExitCommand();"
+        "content": "                    break;"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                    break;"
+        "content": "                case \"bye\":"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                default:"
+        "content": "                    //bye();"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                    throw new DukeException(\"Sorli, but I dunno what that means :-(\","
+        "content": "                    command \u003d new ExitCommand();"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                            DukeException.DukeError.UNKNOWN_COMMAND);"
+        "content": "                    break;"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            }"
+        "content": "                default:"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        }"
+        "content": "                    throw new DukeException(\"Sorli, but I dunno what that means :-(\","
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return command;"
+        "content": "                            DukeException.DukeError.UNKNOWN_COMMAND);"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "            }"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    private static String readInputParameter(String[] args, String until) {"
+        "content": "        return command;"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        String value \u003d \"\";"
+        "content": "    }"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        int index \u003d args.length;"
+        "content": ""
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        if (until !\u003d null \u0026\u0026 !until.isBlank()) {"
+        "content": "    private static String readInputParameter(String[] args, String until) {"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            int new_index \u003d indexOf(args, until);"
+        "content": "        String value \u003d \"\";"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            index \u003d new_index \u003e\u003d 0 ? new_index : index; // If new_index is negative, revert to use args length"
+        "content": "        int index \u003d args.length;"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        }"
+        "content": "        if (until !\u003d null \u0026\u0026 !until.isBlank()) {"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        for(int i \u003d 1; i \u003c args.length \u0026\u0026 i \u003c index; i++) { // add strings between command to until"
+        "content": "            int new_index \u003d indexOf(args, until);"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            value +\u003d  args[i] + \" \";"
+        "content": "            index \u003d new_index \u003e\u003d 0 ? new_index : index; // If new_index is negative, revert to use args length"
       },
       {
         "lineNumber": 108,
@@ -1165,84 +1165,84 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return value.trim();"
+        "content": "        for(int i \u003d 1; i \u003c args.length \u0026\u0026 i \u003c index; i++) { // add strings between command to until"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "            value +\u003d  args[i] + \" \";"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    private static String readSlashParameter(String[] args, String param) throws DukeException {"
+        "content": "        return value.trim();"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        String value \u003d \"\";"
+        "content": "    }"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        int index \u003d indexOf(args, param);"
+        "content": ""
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        if (index \u003c 0) {"
+        "content": "    private static String readSlashParameter(String[] args, String param) throws DukeException {"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            throw new DukeException(String.format(\"Cannot find required %s in args. (index \u003d %d)!\", param, index),"
+        "content": "        String value \u003d \"\";"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                    DukeException.DukeError.MISSING_ARGUMENT);"
+        "content": "        int index \u003d indexOf(args, param);"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        }"
+        "content": "        if (index \u003c 0) {"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        for(int i \u003d index+1; i \u003c args.length; i++) { // add strings between slash to end of args"
+        "content": "            throw new DukeException(String.format(\"Cannot find required %s in args. (index \u003d %d)!\", param, index),"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            value +\u003d  args[i] + \" \";"
+        "content": "                    DukeException.DukeError.MISSING_ARGUMENT);"
       },
       {
         "lineNumber": 121,
@@ -1256,122 +1256,143 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return value.trim();"
+        "content": "        for(int i \u003d index+1; i \u003c args.length; i++) { // add strings between slash to end of args"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "            value +\u003d  args[i] + \" \";"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    private static int indexOf(Object[] arr, Object o) {"
+        "content": "        return value.trim();"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        int index \u003d -1;"
+        "content": "    }"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        if (arr !\u003d null)  {"
+        "content": ""
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            for(int i \u003d 0; i \u003c arr.length; i++) {"
+        "content": "    private static int indexOf(Object[] arr, Object o) {"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                if(arr[i].equals(o)) {"
+        "content": "        int index \u003d -1;"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                    index \u003d i;"
+        "content": "        if (arr !\u003d null)  {"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                    break;"
+        "content": "            for(int i \u003d 0; i \u003c arr.length; i++) {"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                }"
+        "content": "                if(arr[i].equals(o)) {"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            }"
+        "content": "                    index \u003d i;"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        }"
+        "content": "                    break;"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return index;"
+        "content": "                }"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "            }"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        return index;"
       },
       {
         "lineNumber": 139,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 142,
         "author": {
           "gitId": "lamyongxian"
         },
@@ -1379,7 +1400,7 @@
       }
     ],
     "authorContributionMap": {
-      "lamyongxian": 139
+      "lamyongxian": 142
     }
   },
   {
@@ -1475,129 +1496,136 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    EXIT(new String[] {\"bye\"});"
+        "content": "    EXIT(new String[] {\"bye\"}),"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "    FIND(new String[] {\"find\"});"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    private String[] commands;"
+        "content": ""
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "    private String[] commands;"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    CommandType(String[] commands) {"
+        "content": ""
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this.commands \u003d commands;"
+        "content": "    CommandType(String[] commands) {"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "        this.commands \u003d commands;"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public static CommandType valueofCommand(String command) {"
+        "content": ""
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        for (CommandType t: values()) {"
+        "content": "    public static CommandType valueofCommand(String command) {"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            for (String c: t.commands) {"
+        "content": "        for (CommandType t: values()) {"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                if (c.equals(command)) {"
+        "content": "            for (String c: t.commands) {"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                    return t;"
+        "content": "                if (c.equals(command)) {"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                }"
+        "content": "                    return t;"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            }"
+        "content": "                }"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        }"
+        "content": "            }"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return null;"
+        "content": "        }"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "        return null;"
       },
       {
         "lineNumber": 31,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 32,
         "author": {
           "gitId": "lamyongxian"
         },
@@ -1605,7 +1633,7 @@
       }
     ],
     "authorContributionMap": {
-      "lamyongxian": 31
+      "lamyongxian": 32
     }
   },
   {
@@ -3402,6 +3430,337 @@
     ],
     "authorContributionMap": {
       "lamyongxian": 26
+    }
+  },
+  {
+    "path": "src/main/java/duke/command/FindCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "package duke.command;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "import duke.io.Storage;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "import duke.io.Ui;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "import duke.task.Task;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "import duke.task.TaskManager;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "import java.util.List;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "public class FindCommand extends Command{"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public FindCommand(String[] args) {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        super(args);"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public CommandType getType() {"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return CommandType.FIND;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public boolean isExit() {"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return false;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    public boolean execute(TaskManager taskManager, Ui ui, Storage storage) throws DukeException {"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        if (super.args \u003d\u003d null || super.args.length \u003c 2) { // at least 1 command argument, else error"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            throw new DukeException(\"Must provide keyword for find command leh!\","
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "                    DukeException.DukeError.MISSING_ARGUMENT);"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        String keyword \u003d String.valueOf(super.args[1]);"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        List\u003cTask\u003e tasks \u003d taskManager.findTasks(keyword);"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        ui.echo(\"OK, this is what I found:\");"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        int i \u003d 0;"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        for (Task t: tasks) {"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            ui.echo(String.format(\"%d.%s\", ++i, t.toString()));"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return true;"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "lamyongxian": 46
     }
   },
   {
@@ -6211,14 +6570,14 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public String getStatusIcon() {"
+        "content": "    public String getDescription() {"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return (isDone ? \"\\u2713\" : \"\\u2718\"); //return tick or X symbols"
+        "content": "        return description;"
       },
       {
         "lineNumber": 25,
@@ -6239,14 +6598,14 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public void markAsDone() {"
+        "content": "    public String getStatusIcon() {"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this.isDone \u003d true;"
+        "content": "        return (isDone ? \"\\u2713\" : \"\\u2718\"); //return tick or X symbols"
       },
       {
         "lineNumber": 29,
@@ -6267,276 +6626,304 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    @Override"
+        "content": "    public void markAsDone() {"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public void setSeparator(String separator) {"
+        "content": "        this.isDone \u003d true;"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this.separator \u003d separator;"
+        "content": "    }"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "    @Override"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    @Override"
+        "content": "    public void setSeparator(String separator) {"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public String getSeparator() {"
+        "content": "        this.separator \u003d separator;"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return this.separator;"
+        "content": "    }"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "    @Override"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    @Override"
+        "content": "    public String getSeparator() {"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public String toString() {"
+        "content": "        return this.separator;"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return String.format(\"[%s] %s\", this.getStatusIcon(), this.description);"
+        "content": "    }"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "    @Override"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    @Override"
+        "content": "    public String toString() {"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public String toSavableString() {"
+        "content": "        return String.format(\"[%s] %s\", this.getStatusIcon(), this.description);"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return String.format(\"%s|%d|%s\", this.type.getCode(), isDone ? 1 : 0, this.description);"
+        "content": "    }"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "    @Override"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    @Override"
+        "content": "    public String toSavableString() {"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public void fromSavableString(String savableString) throws DukeException {"
+        "content": "        return String.format(\"%s|%d|%s\", this.type.getCode(), isDone ? 1 : 0, this.description);"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        String[] arrString \u003d savableString.split(\"\\\\\" + separator);"
+        "content": "    }"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        if (arrString.length \u003c 3) {"
+        "content": ""
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            throw new DukeException(String.format(\"Rabak Sial, wrong data format! Length is %d.\", arrString.length),"
+        "content": "    @Override"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                    DukeException.DukeError.WRONG_DATA_FORMAT);"
+        "content": "    public void fromSavableString(String savableString) throws DukeException {"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        }"
+        "content": "        String[] arrString \u003d savableString.split(\"\\\\\" + separator);"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        if (arrString.length \u003c 3) {"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        try {"
+        "content": "            throw new DukeException(String.format(\"Rabak Sial, wrong data format! Length is %d.\", arrString.length),"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            int done \u003d Integer.parseInt(arrString[1]);"
+        "content": "                    DukeException.DukeError.WRONG_DATA_FORMAT);"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            this.isDone \u003d (done \u003e 0);"
+        "content": "        }"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        } catch (NumberFormatException ex) {"
+        "content": ""
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            throw new DukeException(String.format(\"Rabak Sial, wrong data format! %s\", ex.getMessage()),"
+        "content": "        try {"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "                    DukeException.DukeError.WRONG_DATA_FORMAT);"
+        "content": "            int done \u003d Integer.parseInt(arrString[1]);"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        }"
+        "content": "            this.isDone \u003d (done \u003e 0);"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        } catch (NumberFormatException ex) {"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        this.description \u003d arrString[2].strip();"
+        "content": "            throw new DukeException(String.format(\"Rabak Sial, wrong data format! %s\", ex.getMessage()),"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "                    DukeException.DukeError.WRONG_DATA_FORMAT);"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "        }"
       },
       {
         "lineNumber": 70,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        this.description \u003d arrString[2].strip();"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 74,
         "author": {
           "gitId": "lamyongxian"
         },
@@ -6544,7 +6931,7 @@
       }
     ],
     "authorContributionMap": {
-      "lamyongxian": 70
+      "lamyongxian": 74
     }
   },
   {
@@ -7627,101 +8014,178 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    public List\u003cString\u003e getPrintableTasks() {"
+        "content": ""
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        //System.out.println(\"    ____________________________________________________________\");"
+        "content": "    public List\u003cTask\u003e findTasks(String keyword) {"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        ArrayList\u003cString\u003e listString \u003d new ArrayList\u003cString\u003e();"
+        "content": "        ArrayList\u003cTask\u003e foundTasks \u003d new ArrayList\u003cTask\u003e();"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        //System.out.println(\"    Here are the tasks in your list:\");"
+        "content": "        for (Task t: this.tasks) {"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        int intCount \u003d tasks.size();"
+        "content": "            if (t.getDescription().toUpperCase().contains(keyword.toUpperCase())) {"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        for(int i \u003d 0; i \u003c intCount; i++) {"
+        "content": "                foundTasks.add(t);"
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            Task t \u003d tasks.get(i);"
+        "content": "            }"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            //System.out.printf(\"     %d.%s\\n\", i+1, t);"
+        "content": "        }"
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "            listString.add(String.format(\"%d.%s\", i + 1, t));"
+        "content": "        return foundTasks;"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        }"
+        "content": "    }"
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        //System.out.println(\"    ____________________________________________________________\");"
+        "content": ""
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "        return listString;"
+        "content": "    public List\u003cString\u003e getPrintableTasks() {"
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "    }"
+        "content": "        //System.out.println(\"    ____________________________________________________________\");"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": ""
+        "content": "        ArrayList\u003cString\u003e listString \u003d new ArrayList\u003cString\u003e();"
       },
       {
         "lineNumber": 168,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        //System.out.println(\"    Here are the tasks in your list:\");"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        int intCount \u003d tasks.size();"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        for(int i \u003d 0; i \u003c intCount; i++) {"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            Task t \u003d tasks.get(i);"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            //System.out.printf(\"     %d.%s\\n\", i+1, t);"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "            listString.add(String.format(\"%d.%s\", i + 1, t));"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        //System.out.println(\"    ____________________________________________________________\");"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "        return listString;"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 179,
         "author": {
           "gitId": "lamyongxian"
         },
@@ -7729,7 +8193,7 @@
       }
     ],
     "authorContributionMap": {
-      "lamyongxian": 168
+      "lamyongxian": 179
     }
   },
   {
@@ -8207,24 +8671,31 @@
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "delete 3"
+        "content": "find book"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "delete 1 2 3 4 5 6 7"
+        "content": "delete 3"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "lamyongxian"
         },
-        "content": "list"
+        "content": "delete 1 2 3 4 5 6 7"
       },
       {
         "lineNumber": 14,
+        "author": {
+          "gitId": "lamyongxian"
+        },
+        "content": "list"
+      },
+      {
+        "lineNumber": 15,
         "author": {
           "gitId": "lamyongxian"
         },
@@ -8232,7 +8703,7 @@
       }
     ],
     "authorContributionMap": {
-      "lamyongxian": 14
+      "lamyongxian": 15
     }
   },
   {

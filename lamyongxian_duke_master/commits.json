@@ -241,22 +241,45 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-05",
+        "commitResults": [
+          {
+            "hash": "ec0063f60a4338c71974e626d6fc5edb432f43a7",
+            "messageTitle": "Level 9. Find",
+            "messageBody": "",
+            "tags": [
+              "Level-9"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 66,
+                "deletions": 1
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "lamyongxian": {
-      "java": 1136,
+      "java": 1201,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 2,
       "gradle": 0,
-      "txt": 14
+      "txt": 15
     }
   },
   "authorContributionVariance": {
-    "lamyongxian": 11857.722
+    "lamyongxian": 11740.417
   },
   "authorDisplayNameMap": {
     "lamyongxian": "LAM ..XIAN"
