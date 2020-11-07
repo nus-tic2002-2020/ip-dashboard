@@ -51,10 +51,17 @@
           "gitId": "erictongg"
         },
         "content": "E | 1 | do something| 16/11/2020"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "E | 0 | monthly meeting| 8/12/2020"
       }
     ],
     "authorContributionMap": {
-      "erictongg": 7
+      "erictongg": 8
     }
   },
   {
@@ -1256,332 +1263,367 @@
         "author": {
           "gitId": "erictongg"
         },
-        "content": "public abstract class Task {"
+        "content": "import java.time.LocalDate;"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**Variables of task parent class*/"
+        "content": "import java.util.Date;"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    protected String Description;"
+        "content": ""
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    protected Boolean Completed;"
+        "content": "public abstract class Task {"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "    /**Variables of task parent class*/"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "    protected String Description;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Constructor of task parent class"
+        "content": "    protected Boolean Completed;"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": ""
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @param desc Description of task parent class"
+        "content": "    /**"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "     * Constructor of task parent class"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public Task(String desc){"
+        "content": "     *"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        this.Description \u003d desc;"
+        "content": "     * @param desc Description of task parent class"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        Completed \u003d false;"
+        "content": "     */"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "    public Task(String desc){"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "        this.Description \u003d desc;"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public void updateDesc(String new_entry){"
+        "content": "        Completed \u003d false;"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        this.Description \u003d new_entry;"
+        "content": "    }"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "    public void updateDesc(String new_entry){"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "        this.Description \u003d new_entry;"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Return description variable task parent class"
+        "content": "    }"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": ""
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @return Description of task"
+        "content": "    /**"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "     * Return description variable task parent class"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public String getDesc(){"
+        "content": "     *"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        return this.Description;"
+        "content": "     * @return Description of task"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "     */"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "    public String getDesc(){"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "        return this.Description;"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Return completion status of task parent class"
+        "content": "    }"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": ""
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @return completion status of task"
+        "content": "    /**"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "     * Return completion status of task parent class"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public Boolean getStatus(){"
+        "content": "     *"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        return this.Completed;"
+        "content": "     * @return completion status of task"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "     */"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "    public Boolean getStatus(){"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "        return this.Completed;"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Mark a task\u0027s completion status as true"
+        "content": "    }"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": ""
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public void mark_completed(){"
+        "content": "    /**"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        this.Completed \u003d true;"
+        "content": "     * Mark a task\u0027s completion status as true"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "     */"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**Abstract class of task parent class*/"
+        "content": "    public void mark_completed(){"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public abstract char getCat();"
+        "content": "        this.Completed \u003d true;"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public abstract String getTime();"
+        "content": "    }"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public abstract void updateTime(String new_date);"
+        "content": "    /**Abstract class of task parent class*/"
       },
       {
         "lineNumber": 50,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    public abstract char getCat();"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    public abstract String getTime();"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    public abstract LocalDate getDate();"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    public abstract void updateTime(String new_date);"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    public abstract void incrementTime(int days);"
+      },
+      {
+        "lineNumber": 55,
         "author": {
           "gitId": "erictongg"
         },
@@ -1589,7 +1631,7 @@
       }
     ],
     "authorContributionMap": {
-      "erictongg": 50
+      "erictongg": 55
     }
   },
   {
@@ -1615,7 +1657,7 @@
         "author": {
           "gitId": "erictongg"
         },
-        "content": "import java.util.ArrayList;"
+        "content": "import duke.command.IllegalInputException;"
       },
       {
         "lineNumber": 4,
@@ -1629,28 +1671,28 @@
         "author": {
           "gitId": "erictongg"
         },
-        "content": "public class TaskList{"
+        "content": "import java.time.DateTimeException;"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**Variables of TaskList class*/"
+        "content": "import java.time.LocalDate;"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public ArrayList\u003cTask\u003e List;"
+        "content": "import java.util.ArrayList;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    private static int item_count \u003d 0;"
+        "content": "import java.util.Date;"
       },
       {
         "lineNumber": 9,
@@ -1664,931 +1706,931 @@
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "public class TaskList{"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Constructor of TaskList"
+        "content": "    /**Variables of TaskList class*/"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "    public ArrayList\u003cTask\u003e List;"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public TaskList(){"
+        "content": "    private static int item_count \u003d 0;"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        this.List \u003d new ArrayList\u003cTask\u003e();"
+        "content": ""
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "    /**"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "     * Constructor of TaskList"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    //getters"
+        "content": "     */"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "    public TaskList(){"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "        this.List \u003d new ArrayList\u003cTask\u003e();"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Method declared to include a top and bottom line for messaage printed by duke"
+        "content": "    }"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Will be used by other methods"
+        "content": ""
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": "    //getters"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @param message Message to be printed by duke"
+        "content": ""
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "    /**"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public void duke_echo(String message){"
+        "content": "     * Method declared to include a top and bottom line for messaage printed by duke"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "     * Will be used by other methods"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\t\" + message);"
+        "content": "     *"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "     * @param message Message to be printed by duke"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "     */"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "    public void duke_echo(String message){"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Return amount of items in the TaskList"
+        "content": "        System.out.println(\"\\t\" + message);"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @return Amount of items in the TaskList"
+        "content": "    }"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": ""
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public int getItem_count(){"
+        "content": "    /**"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        return this.item_count;"
+        "content": "     * Return amount of items in the TaskList"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "     *"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "     * @return Amount of items in the TaskList"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "     */"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Print all items within the TaskList"
+        "content": "    public int getItem_count(){"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "        return this.item_count;"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public void printList(){"
+        "content": "    }"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        if(this.List.size() \u003d\u003d 0){"
+        "content": ""
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            duke_echo(\"List is empty\");"
+        "content": "    /**"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            return;"
+        "content": "     * Print all items within the TaskList"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }//if end"
+        "content": "     */"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "    public void printList(){"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\tHere are the tasks in your list:\");"
+        "content": "        if(this.List.size() \u003d\u003d 0){"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        for(int i \u003d 1 ; i \u003c\u003d item_count ; i++){"
+        "content": "            duke_echo(\"List is empty\");"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            String tick \u003d (this.List.get(i - 1).getStatus()) ? \"✓\" : \"✗\";"
+        "content": "            return;"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            String to_print \u003d \"[\" + this.List.get(i - 1).getCat() + \"]\" + \"[\" + tick + \"] \" + this.List.get(i - 1).getDesc();"
+        "content": "        }//if end"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            System.out.print(\"\\t\" + i + \". \" + to_print);"
+        "content": "        recurring_checker();"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            if(this.List.get(i - 1).getCat() !\u003d \u0027T\u0027){"
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                String print_line \u003d (this.List.get(i - 1).getCat() \u003d\u003d \u0027D\u0027) ? \"(by: \" : \"(at: \";"
+        "content": "        System.out.println(\"\\tHere are the tasks in your list:\");"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                print_line \u003d print_line + this.List.get(i - 1).getTime() + \")\";"
+        "content": "        for(int i \u003d 1 ; i \u003c\u003d item_count ; i++){"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                System.out.print(print_line);"
+        "content": "            String tick \u003d (this.List.get(i - 1).getStatus()) ? \"✓\" : \"✗\";"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            }"
+        "content": "            String to_print \u003d \"[\" + this.List.get(i - 1).getCat() + \"]\" + \"[\" + tick + \"] \" + this.List.get(i - 1).getDesc();"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            System.out.print(\"\\n\");"
+        "content": "            System.out.print(\"\\t\" + i + \". \" + to_print);"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "            if(this.List.get(i - 1).getCat() !\u003d \u0027T\u0027){"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "                String print_line \u003d (this.List.get(i - 1).getCat() \u003d\u003d \u0027D\u0027) ? \"(by: \" : \"(at: \";"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "                print_line \u003d print_line + this.List.get(i - 1).getTime() + \")\";"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "                System.out.print(print_line);"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "            }"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Print item of the given index number"
+        "content": "            System.out.print(\"\\n\");"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": "        }"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @param index of the Task to be printed"
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "    }"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    private void print_task(int index){"
+        "content": ""
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        String tick \u003d (this.List.get(index - 1).getStatus()) ? \"✓\" : \"✗\";"
+        "content": "    /**"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        String to_print \u003d \"\\t[\" + this.List.get(index - 1).getCat() + \"]\" + \"[\" + tick + \"] \" + this.List.get(index - 1).getDesc();"
+        "content": "     * Print item of the given index number"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        if(this.List.get(index - 1).getCat() !\u003d \u0027T\u0027){"
+        "content": "     *"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            String print_line \u003d (this.List.get(index - 1).getCat() \u003d\u003d \u0027D\u0027) ? \"(by: \" : \"(at \";"
+        "content": "     * @param index of the Task to be printed"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            to_print +\u003d (print_line + this.List.get(index - 1).getTime() + \")\" );"
+        "content": "     */"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "    private void print_task(int index){"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(to_print);"
+        "content": "        String tick \u003d (this.List.get(index - 1).getStatus()) ? \"✓\" : \"✗\";"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "        String to_print \u003d \"\\t[\" + this.List.get(index - 1).getCat() + \"]\" + \"[\" + tick + \"] \" + this.List.get(index - 1).getDesc();"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "        if(this.List.get(index - 1).getCat() !\u003d \u0027T\u0027){"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "            String print_line \u003d (this.List.get(index - 1).getCat() \u003d\u003d \u0027D\u0027) ? \"(by: \" : \"(at \";"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Processing of task details to be saved into .txt file"
+        "content": "            to_print +\u003d (print_line + this.List.get(index - 1).getTime() + \")\" );"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": "        }"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @param index of the Task details to be processed"
+        "content": "        System.out.println(to_print);"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @return processed string of the Task"
+        "content": "    }"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": ""
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public String convert_lineItem(int index){"
+        "content": "    /**"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        String status \u003d (this.List.get(index - 1).getStatus())? \"1\" : \"0\";"
+        "content": "     * Processing of task details to be saved into .txt file"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        String item_line \u003d this.List.get(index - 1).getCat() + \" | \" + status + \" | \""
+        "content": "     *"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                + this.List.get(index - 1).getDesc();"
+        "content": "     * @param index of the Task details to be processed"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        if(this.List.get(index - 1).getCat() !\u003d \u0027T\u0027){"
+        "content": "     * @return processed string of the Task"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            item_line +\u003d (\"| \" + this.List.get(index - 1).getTime());"
+        "content": "     */"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "    public String convert_lineItem(int index){"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        return item_line;"
+        "content": "        String status \u003d (this.List.get(index - 1).getStatus())? \"1\" : \"0\";"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "        String item_line \u003d this.List.get(index - 1).getCat() + \" | \" + status + \" | \""
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "                + this.List.get(index - 1).getDesc();"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public void find(String input){"
+        "content": "        if(this.List.get(index - 1).getCat() !\u003d \u0027T\u0027){"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        String keyword \u003d input.split(\" \", 2)[1].trim();"
+        "content": "            item_line +\u003d (\"| \" + this.List.get(index - 1).getTime());"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        ArrayList\u003cInteger\u003e match \u003d new ArrayList\u003cInteger\u003e();"
+        "content": "        }"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        for(int i \u003d 1 ; i \u003c\u003d this.getItem_count() ; i++){"
+        "content": "        return item_line;"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            if(this.List.get(i - 1).getDesc().contains(keyword)){"
+        "content": "    }"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                match.add(i);"
+        "content": ""
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            }"
+        "content": "    public void find(String input){"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "        String keyword \u003d input.split(\" \", 2)[1].trim();"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        if(match.size() \u003d\u003d 0){"
+        "content": "        ArrayList\u003cInteger\u003e match \u003d new ArrayList\u003cInteger\u003e();"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            duke_echo(\"No match found!\");"
+        "content": "        for(int i \u003d 1 ; i \u003c\u003d this.getItem_count() ; i++){"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            return;"
+        "content": "            if(this.List.get(i - 1).getDesc().contains(keyword)){"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "                match.add(i);"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "            }"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\tHere are the matching tasks in your list:\");"
+        "content": "        }"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        for(int i \u003d 0 ; i \u003c match.size() ; i++){"
+        "content": "        if(match.size() \u003d\u003d 0){"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            String tick \u003d (this.List.get(match.get(i) - 1).getStatus()) ? \"✓\" : \"✗\";"
+        "content": "            duke_echo(\"No match found!\");"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            String to_print \u003d \"[\" + this.List.get(match.get(i) - 1).getCat() + \"]\" + \"[\" + tick + \"] \" + this.List.get(match.get(i) - 1).getDesc();"
+        "content": "            return;"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            System.out.print(\"\\t\" + (i + 1) + \". \" + to_print);"
+        "content": "        }"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            if(this.List.get(match.get(i) - 1).getCat() !\u003d \u0027T\u0027){"
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                String print_line \u003d (this.List.get(match.get(i) - 1).getCat() \u003d\u003d \u0027D\u0027) ? \"(by: \" : \"(at: \";"
+        "content": "        System.out.println(\"\\tHere are the matching tasks in your list:\");"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                print_line \u003d print_line + this.List.get(match.get(i) - 1).getTime() + \")\";"
+        "content": "        for(int i \u003d 0 ; i \u003c match.size() ; i++){"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                System.out.print(print_line);"
+        "content": "            String tick \u003d (this.List.get(match.get(i) - 1).getStatus()) ? \"✓\" : \"✗\";"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            }"
+        "content": "            String to_print \u003d \"[\" + this.List.get(match.get(i) - 1).getCat() + \"]\" + \"[\" + tick + \"] \" + this.List.get(match.get(i) - 1).getDesc();"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            System.out.print(\"\\n\");"
+        "content": "            System.out.print(\"\\t\" + (i + 1) + \". \" + to_print);"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "            if(this.List.get(match.get(i) - 1).getCat() !\u003d \u0027T\u0027){"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "                String print_line \u003d (this.List.get(match.get(i) - 1).getCat() \u003d\u003d \u0027D\u0027) ? \"(by: \" : \"(at: \";"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "                print_line \u003d print_line + this.List.get(match.get(i) - 1).getTime() + \")\";"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "                System.out.print(print_line);"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public void update(String input){"
+        "content": "            }"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        String[] input_split \u003d input.trim().split(\" \", 4);"
+        "content": "            System.out.print(\"\\n\");"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        int index \u003d Integer.parseInt(input_split[1].trim());"
+        "content": "        }"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        if(input.contains(\"desc\")){"
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            this.List.get(index - 1).updateDesc(input_split[3].trim());"
+        "content": "    }"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            System.out.println(\"\\t____________________________________________________________\");"
+        "content": ""
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            System.out.print(\"\\tGot it. I\u0027ve updated this task:\\n\\t\");"
+        "content": "    public void update(String input){"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            print_task(index);"
+        "content": "        String[] input_split \u003d input.trim().split(\" \", 4);"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            System.out.println(\"\\t____________________________________________________________\");"
+        "content": "        int index \u003d Integer.parseInt(input_split[1].trim());"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "        if(input.contains(\"desc\")){"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        else if(input.contains(\"date\")){"
+        "content": "            this.List.get(index - 1).updateDesc(input_split[3].trim());"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            this.List.get(index - 1).updateTime(input_split[3].trim());"
+        "content": "            System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            if(this.List.get(index).getCat() \u003d\u003d \u0027T\u0027){"
+        "content": "            System.out.print(\"\\tGot it. I\u0027ve updated this task:\\n\\t\");"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                duke_echo(\"todo do not have date/time!\");"
+        "content": "            print_task(index);"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            }"
+        "content": "            System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            else{"
+        "content": "        }"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                System.out.println(\"\\t____________________________________________________________\");"
+        "content": "        else if(input.contains(\"date\")){"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                System.out.print(\"\\tGot it. I\u0027ve updated this task:\\n\\t\");"
+        "content": "            this.List.get(index - 1).updateTime(input_split[3].trim());"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                print_task(index);"
+        "content": "            if(this.List.get(index).getCat() \u003d\u003d \u0027T\u0027){"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                System.out.println(\"\\t____________________________________________________________\");"
+        "content": "                duke_echo(\"todo do not have date/time!\");"
       },
       {
         "lineNumber": 143,
@@ -2602,518 +2644,518 @@
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "            else{"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        else{"
+        "content": "                System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            duke_echo(\"Incorrect input. Follow this syntax for update: update \u003cindex\u003e \u003cdesc/date\u003e \u003cnew entry\u003e\");"
+        "content": "                System.out.print(\"\\tGot it. I\u0027ve updated this task:\\n\\t\");"
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "                print_task(index);"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "                System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "            }"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    //setters"
+        "content": "        }"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "        else{"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "            duke_echo(\"Incorrect input. Follow this syntax for update: update \u003cindex\u003e \u003cdesc/date\u003e \u003cnew entry\u003e\");"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Insertion of a task into TaskList"
+        "content": "        }"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": "    }"
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @param input User input from UI class"
+        "content": ""
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "    //setters"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public void insert_item(String input){"
+        "content": ""
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        String[] task_split \u003d input.split(\" \", 2);"
+        "content": "    /**"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        String[] time_split;"
+        "content": "     * Insertion of a task into TaskList"
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        if(task_split[0].equals(\"deadline\") || task_split[0].equals(\"event\")){"
+        "content": "     *"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            time_split \u003d task_split[1].split(\"/\", 2);"
+        "content": "     * @param input User input from UI class"
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "     */"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        switch(task_split[0]){"
+        "content": "    public void insert_item(String input){"
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            case \"todo\":"
+        "content": "        String[] task_split \u003d input.split(\" \", 2);"
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                List.add(new todo(task_split[1]));"
+        "content": "        String[] time_split;"
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                break;"
+        "content": "        if(task_split[0].equals(\"deadline\") || task_split[0].equals(\"event\")){"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            case \"deadline\":"
+        "content": "            time_split \u003d task_split[1].split(\"/\", 2);"
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                time_split \u003d task_split[1].split(\"/\", 2);"
+        "content": "            time_split \u003d time_split[1].split(\" \", 2);"
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                List.add(new deadline(time_split[0], time_split[1].trim()));"
+        "content": "            String[] date_split \u003d time_split[1].split(\"/\", 3);"
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                break;"
+        "content": "            LocalDate input_date \u003d LocalDate.of(Integer.parseInt(date_split[2]), Integer.parseInt(date_split[1]), Integer.parseInt(date_split[0]));"
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            case \"event\":"
+        "content": "            if (input_date.compareTo(LocalDate.now()) \u003c 0){"
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                time_split \u003d task_split[1].split(\"/\", 2);"
+        "content": "                duke_echo(\"Task date shall not be in the past!\");"
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                List.add(new event(time_split[0], time_split[1].trim()));"
+        "content": "                return;"
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                break;"
+        "content": "            }"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }//end switch"
+        "content": "        }"
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        item_count++;"
+        "content": ""
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "        switch(task_split[0]){"
       },
       {
         "lineNumber": 178,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.print(\"\\tGot it. I\u0027ve added this task:\\n\\t\");"
+        "content": "            case \"todo\":"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        print_task(item_count);"
+        "content": "                List.add(new todo(task_split[1]));"
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\tNow you have \" + item_count + \" tasks in the list.\");"
+        "content": "                break;"
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "            case \"deadline\":"
       },
       {
         "lineNumber": 182,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "                time_split \u003d task_split[1].split(\"/\", 2);"
       },
       {
         "lineNumber": 183,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "                List.add(new deadline(time_split[0], time_split[1].trim()));"
       },
       {
         "lineNumber": 184,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "                break;"
       },
       {
         "lineNumber": 185,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Removal of task of given index in the TaskList"
+        "content": "            case \"event\":"
       },
       {
         "lineNumber": 186,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": "                time_split \u003d task_split[1].split(\"/\", 2);"
       },
       {
         "lineNumber": 187,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @param input User input from UI class that contains \"delete\""
+        "content": "                List.add(new event(time_split[0], time_split[1].trim()));"
       },
       {
         "lineNumber": 188,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @throws IndexOutOfBoundsException if index given is out of range"
+        "content": "                break;"
       },
       {
         "lineNumber": 189,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "        }//end switch"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public void delete(String input) throws IndexOutOfBoundsException{"
+        "content": "        item_count++;"
       },
       {
         "lineNumber": 191,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        String[] input_split \u003d input.split(\" \", 2);"
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        int index \u003d Integer.parseInt(input_split[1]);"
+        "content": "        System.out.print(\"\\tGot it. I\u0027ve added this task:\\n\\t\");"
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        if(index \u003e item_count || index \u003c\u003d 0){"
+        "content": "        print_task(item_count);"
       },
       {
         "lineNumber": 194,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            throw new IndexOutOfBoundsException();"
+        "content": "        System.out.println(\"\\tNow you have \" + item_count + \" tasks in the list.\");"
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 196,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        item_count--;"
+        "content": "    }"
       },
       {
         "lineNumber": 197,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": ""
       },
       {
         "lineNumber": 198,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.print(\"\\tNoted. I\u0027ve removed this task:\\n\\t\");"
+        "content": "    /**"
       },
       {
         "lineNumber": 199,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        print_task(index);"
+        "content": "     * Removal of task of given index in the TaskList"
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\tNow you have \" + item_count + \" tasks in the list.\");"
+        "content": "     *"
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        System.out.println(\"\\t____________________________________________________________\");"
+        "content": "     * @param input User input from UI class that contains \"delete\""
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        this.List.remove(index-1);"
+        "content": "     * @throws IndexOutOfBoundsException if index given is out of range"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "     */"
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "    public void delete(String input) throws IndexOutOfBoundsException{"
       },
       {
         "lineNumber": 205,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "        String[] input_split \u003d input.split(\" \", 2);"
       },
       {
         "lineNumber": 206,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *Mark task of the given index in the TaskList as completed"
+        "content": "        int index \u003d Integer.parseInt(input_split[1]);"
       },
       {
         "lineNumber": 207,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": "        if(index \u003e item_count || index \u003c\u003d 0){"
       },
       {
         "lineNumber": 208,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @param input User input from UI class that contains \"done\""
+        "content": "            throw new IndexOutOfBoundsException();"
       },
       {
         "lineNumber": 209,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "        }"
       },
       {
         "lineNumber": 210,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public void mark_completion(String input){"
+        "content": "        item_count--;"
       },
       {
         "lineNumber": 211,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        /*Remove any unwanted characters that are not int*/"
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 212,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        String number \u003d input.substring(input.indexOf(\" \") + 1);"
+        "content": "        System.out.print(\"\\tNoted. I\u0027ve removed this task:\\n\\t\");"
       },
       {
         "lineNumber": 213,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        for(int i \u003d 0 ; i \u003c number.length() ; i++){"
+        "content": "        print_task(index);"
       },
       {
         "lineNumber": 214,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            if(number.charAt(i) \u003c 48 || number.charAt(i) \u003e 57){"
+        "content": "        System.out.println(\"\\tNow you have \" + item_count + \" tasks in the list.\");"
       },
       {
         "lineNumber": 215,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                number \u003d number.substring(0, i);"
+        "content": "        System.out.println(\"\\t____________________________________________________________\");"
       },
       {
         "lineNumber": 216,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            }//end if"
+        "content": "        this.List.remove(index-1);"
       },
       {
         "lineNumber": 217,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }//end for loop"
+        "content": "    }"
       },
       {
         "lineNumber": 218,
@@ -3127,203 +3169,203 @@
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        int index \u003d Integer.parseInt(number); //convert to int"
+        "content": "    /**"
       },
       {
         "lineNumber": 220,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "     *Mark task of the given index in the TaskList as completed"
       },
       {
         "lineNumber": 221,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        /*Check if number is within bound*/"
+        "content": "     *"
       },
       {
         "lineNumber": 222,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        if(index \u003e item_count || index \u003c\u003d 0){"
+        "content": "     * @param input User input from UI class that contains \"done\""
       },
       {
         "lineNumber": 223,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            duke_echo(\"There are only \" + item_count + \" items or the value is out of bound!\");"
+        "content": "     */"
       },
       {
         "lineNumber": 224,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "    public void mark_completion(String input){"
       },
       {
         "lineNumber": 225,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        else if(this.List.get(index - 1).getStatus()){"
+        "content": "        /*Remove any unwanted characters that are not int*/"
       },
       {
         "lineNumber": 226,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            duke_echo(\"\\\"\" + this.List.get(index - 1).getDesc() + \"\\\" was already marked as done\");"
+        "content": "        String number \u003d input.substring(input.indexOf(\" \") + 1);"
       },
       {
         "lineNumber": 227,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "        for(int i \u003d 0 ; i \u003c number.length() ; i++){"
       },
       {
         "lineNumber": 228,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        else{"
+        "content": "            if(number.charAt(i) \u003c 48 || number.charAt(i) \u003e 57){"
       },
       {
         "lineNumber": 229,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            this.List.get(index - 1).mark_completed();"
+        "content": "                number \u003d number.substring(0, i);"
       },
       {
         "lineNumber": 230,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            String tick \u003d (this.List.get(index - 1).getStatus()) ? \"✓\" : \"✗\";"
+        "content": "            }//end if"
       },
       {
         "lineNumber": 231,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            duke_echo(\"Nice! I\u0027ve marked this task as done:\\n\\t[\" + this.List.get(index - 1).getCat() + \"]\""
+        "content": "        }//end for loop"
       },
       {
         "lineNumber": 232,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "                    + \"[\" + tick + \"] \" + this.List.get(index - 1).getDesc());"
+        "content": ""
       },
       {
         "lineNumber": 233,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "        int index \u003d Integer.parseInt(number); //convert to int"
       },
       {
         "lineNumber": 234,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 235,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "        /*Check if number is within bound*/"
       },
       {
         "lineNumber": 236,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "        if(index \u003e item_count || index \u003c\u003d 0){"
       },
       {
         "lineNumber": 237,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Mark all task in the TaskList as completed"
+        "content": "            duke_echo(\"There are only \" + item_count + \" items or the value is out of bound!\");"
       },
       {
         "lineNumber": 238,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "        }"
       },
       {
         "lineNumber": 239,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public void mark_all_complete(){"
+        "content": "        else if(this.List.get(index - 1).getStatus()){"
       },
       {
         "lineNumber": 240,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        if(item_count \u003d\u003d 0){"
+        "content": "            duke_echo(\"\\\"\" + this.List.get(index - 1).getDesc() + \"\\\" was already marked as done\");"
       },
       {
         "lineNumber": 241,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            duke_echo(\"The list is empty!\");"
+        "content": "        }"
       },
       {
         "lineNumber": 242,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            return;"
+        "content": "        else{"
       },
       {
         "lineNumber": 243,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "            this.List.get(index - 1).mark_completed();"
       },
       {
         "lineNumber": 244,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        for(int i \u003d 0 ; i \u003c item_count ; i++){"
+        "content": "            String tick \u003d (this.List.get(index - 1).getStatus()) ? \"✓\" : \"✗\";"
       },
       {
         "lineNumber": 245,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            this.List.get(i).mark_completed();"
+        "content": "            duke_echo(\"Nice! I\u0027ve marked this task as done:\\n\\t[\" + this.List.get(index - 1).getCat() + \"]\""
       },
       {
         "lineNumber": 246,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        }"
+        "content": "                    + \"[\" + tick + \"] \" + this.List.get(index - 1).getDesc());"
       },
       {
         "lineNumber": 247,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        duke_echo(\"All tasks(\" + item_count + \") are marked as done\");"
+        "content": "        }"
       },
       {
         "lineNumber": 248,
@@ -3337,11 +3379,340 @@
         "author": {
           "gitId": "erictongg"
         },
+        "content": ""
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "     * Mark all task in the TaskList as completed"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    public void mark_all_complete(){"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        if(item_count \u003d\u003d 0){"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            duke_echo(\"The list is empty!\");"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            return;"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        for(int i \u003d 0 ; i \u003c item_count ; i++){"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            this.List.get(i).mark_completed();"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        duke_echo(\"All tasks(\" + item_count + \") are marked as done\");"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    private void recurring_task(int index){"
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        String[] freq_list \u003d {\"daily\", \"weekly\", \"monthly\"};"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        for(int i \u003d 0 ; i \u003c freq_list.length ; i++){"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            if(!this.List.get(index).getDesc().contains(freq_list[i])){"
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                continue;"
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            int date_diff \u003d this.List.get(index).getDate().compareTo(LocalDate.now());"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            if(date_diff \u003e 0){"
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                System.out.println(\"Increment of date will occur\");"
+      },
+      {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                return;"
+      },
+      {
+        "lineNumber": 273,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            switch (freq_list[i]){"
+      },
+      {
+        "lineNumber": 275,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                case \"daily\":"
+      },
+      {
+        "lineNumber": 276,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                    this.List.get(index).incrementTime(1);"
+      },
+      {
+        "lineNumber": 277,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 278,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                case \"weekly\":"
+      },
+      {
+        "lineNumber": 279,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                    this.List.get(index).incrementTime(7);"
+      },
+      {
+        "lineNumber": 280,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 281,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                case \"monthly\":"
+      },
+      {
+        "lineNumber": 282,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                    this.List.get(index).incrementTime(30);"
+      },
+      {
+        "lineNumber": 283,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                    break;"
+      },
+      {
+        "lineNumber": 284,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            }//end case"
+      },
+      {
+        "lineNumber": 285,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        }//end for loop"
+      },
+      {
+        "lineNumber": 286,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 287,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 288,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    private void recurring_checker(){"
+      },
+      {
+        "lineNumber": 289,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        for(int i \u003d 0 ; i \u003c item_count ; i++){"
+      },
+      {
+        "lineNumber": 290,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            if(this.List.get(i).getCat() !\u003d \u0027T\u0027){"
+      },
+      {
+        "lineNumber": 291,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "                recurring_task(i);"
+      },
+      {
+        "lineNumber": 292,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 293,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 294,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 295,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 296,
+        "author": {
+          "gitId": "erictongg"
+        },
         "content": "}"
       }
     ],
     "authorContributionMap": {
-      "erictongg": 249
+      "erictongg": 296
     }
   },
   {
@@ -3703,11 +4074,81 @@
         "author": {
           "gitId": "erictongg"
         },
+        "content": "    public void incrementTime(int days){"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        if(days \u003d\u003d 30){"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            this.date \u003d this.date.plusMonths(1);"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            return;"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        this.date \u003d this.date.plusDays(days);"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    public LocalDate getDate(){"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        return date;"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "erictongg"
+        },
         "content": "}"
       }
     ],
     "authorContributionMap": {
-      "erictongg": 51
+      "erictongg": 61
     }
   },
   {
@@ -4062,11 +4503,81 @@
         "author": {
           "gitId": "erictongg"
         },
+        "content": "    public void incrementTime(int days){"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        if(days \u003d\u003d 30){"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            this.date \u003d this.date.plusMonths(1);"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "            return;"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        this.date \u003d this.date.plusDays(days);"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    public LocalDate getDate(){"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        return date;"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "erictongg"
+        },
         "content": "}"
       }
     ],
     "authorContributionMap": {
-      "erictongg": 50
+      "erictongg": 60
     }
   },
   {
@@ -4092,241 +4603,311 @@
         "author": {
           "gitId": "erictongg"
         },
-        "content": "public class todo extends Task{"
+        "content": "import java.time.LocalDate;"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**Variables of todo class*/"
+        "content": "import java.util.Date;"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    private char category;"
+        "content": ""
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "public class todo extends Task{"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "    /**Variables of todo class*/"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Constructor of todo class"
+        "content": "    private char category;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": ""
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @param desc Description of todo"
+        "content": "    /**"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "     * Constructor of todo class"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public todo(String desc){"
+        "content": "     *"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        super(desc);"
+        "content": "     * @param desc Description of todo"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        this.category \u003d \u0027T\u0027;"
+        "content": "     */"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "    public todo(String desc){"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "        super(desc);"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public void updateTime(String new_date){"
+        "content": "        this.category \u003d \u0027T\u0027;"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        return;"
+        "content": "    }"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "erictongg"
         },
-        "content": ""
+        "content": "    public void updateTime(String new_date){"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "        return;"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * Return category of the class"
+        "content": "    }"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": ""
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @return Category"
+        "content": "    /**"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "     * Return category of the class"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public char getCat(){"
+        "content": "     *"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        return this.category;"
+        "content": "     * @return Category"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "     */"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    /**"
+        "content": "    public char getCat(){"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *Return empty string as todo have to time of completion"
+        "content": "        return this.category;"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     *"
+        "content": "    }"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     * @return empty string"
+        "content": "    /**"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "     */"
+        "content": "     *Return empty string as todo have to time of completion"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    public String getTime(){"
+        "content": "     *"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "        return \"\";"
+        "content": "     * @return empty string"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "erictongg"
         },
-        "content": "    }"
+        "content": "     */"
       },
       {
         "lineNumber": 37,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    public String getTime(){"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        return \"\";"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    public void incrementTime(int days){"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        return;"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    public LocalDate getDate(){"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        LocalDate date \u003d LocalDate.now();"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "        return date;"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "erictongg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 47,
         "author": {
           "gitId": "erictongg"
         },
@@ -4334,7 +4915,7 @@
       }
     ],
     "authorContributionMap": {
-      "erictongg": 37
+      "erictongg": 47
     }
   },
   {
@@ -4654,7 +5235,7 @@
         "author": {
           "gitId": "erictongg"
         },
-        "content": "            System.out.println(\"☹ OOPS!!! Date format is incorrect. \");"
+        "content": "            System.out.println(\"☹ OOPS!!! Date format is incorrect or is in the past. \");"
       },
       {
         "lineNumber": 46,

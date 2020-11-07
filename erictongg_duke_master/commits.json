@@ -214,22 +214,45 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-07",
+        "commitResults": [
+          {
+            "hash": "03d7ef8fd115499abfae0b30bf62e61bb1f92e29",
+            "messageTitle": "added level 10, Recurring Task",
+            "messageBody": "",
+            "tags": [
+              "1.10"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 83,
+                "deletions": 1
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "erictongg": {
-      "java": 777,
+      "java": 859,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 7
+      "txt": 8
     }
   },
   "authorContributionVariance": {
-    "erictongg": 5457.6304
+    "erictongg": 5385.8604
   },
   "authorDisplayNameMap": {
     "erictongg": "ERIC.. GUO"

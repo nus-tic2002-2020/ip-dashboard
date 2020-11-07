@@ -102,22 +102,86 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-06",
+        "commitResults": [
+          {
+            "hash": "e4c8805c4297701adf75744e2bce086185844763",
+            "messageTitle": "Level 7",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 5,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 222,
+                "deletions": 51
+              }
+            }
+          },
+          {
+            "hash": "c8390f97e90f2dae95d2d923c82e020932427fc0",
+            "messageTitle": "Delete Todo.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 13
+              }
+            }
+          },
+          {
+            "hash": "7d64a3dd8c4fe3db4cf25f19f0f0f9cdc8ed14dc",
+            "messageTitle": "Delete Deadline.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 13
+              }
+            }
+          },
+          {
+            "hash": "60528cbe6ec5f8826fa6d5ef5f7306d0a9007560",
+            "messageTitle": "Delete Events.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 16
+              }
+            }
+          },
+          {
+            "hash": "1d3b0c792e0bebb6a74d686843776f75e63b7947",
+            "messageTitle": "Delete Task.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 25
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "ashikin22": {
-      "java": 229,
+      "java": 339,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 0
+      "txt": 5
     }
   },
   "authorContributionVariance": {
-    "ashikin22": 974.7334
+    "ashikin22": 2275.949
   },
   "authorDisplayNameMap": {
     "ashikin22": "NORM..HANI"

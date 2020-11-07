@@ -200,12 +200,28 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-07",
+        "commitResults": [
+          {
+            "hash": "c6ec912f44d24832ff30793c7086c7a0aaef3216",
+            "messageTitle": "GUI",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 293,
+                "deletions": 64
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "A0194229X": {
-      "java": 451,
+      "java": 680,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -215,7 +231,7 @@
     }
   },
   "authorContributionVariance": {
-    "A0194229X": 6090.7056
+    "A0194229X": 7261.38
   },
   "authorDisplayNameMap": {
     "A0194229X": "WANG..UWEI"
