@@ -189,22 +189,42 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-07",
+        "commitResults": [
+          {
+            "hash": "2fc1cd34793ea7155f72bc1fb6fe225174ca80ae",
+            "messageTitle": "Implemented Individual Feature 2 (Priority)",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 4,
+                "deletions": 6
+              },
+              "java": {
+                "insertions": 152,
+                "deletions": 36
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "aloysiuswwc": {
-      "java": 1343,
+      "java": 1459,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 6
+      "txt": 4
     }
   },
   "authorContributionVariance": {
-    "aloysiuswwc": 29225.855
+    "aloysiuswwc": 27569.768
   },
   "authorDisplayNameMap": {
     "aloysiuswwc": "WONG..SIUS"

@@ -141,6 +141,7 @@
             "messageBody": "",
             "tags": [
               "Level-6",
+              "C-MassOps",
               "A-Collections"
             ],
             "fileTypesAndContributionMap": {
@@ -264,22 +265,107 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-07",
+        "commitResults": [
+          {
+            "hash": "107ba5d132fe9af6b86004374a117bfb32b5795c",
+            "messageTitle": "View schedules",
+            "messageBody": "",
+            "tags": [
+              "B-ViewSchedules"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 4,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 227,
+                "deletions": 27
+              }
+            }
+          },
+          {
+            "hash": "cf422e69dd268805b54d40e9159da6d4c067d987",
+            "messageTitle": "Setup Gradle",
+            "messageBody": "",
+            "tags": [
+              "A-Gradle"
+            ],
+            "fileTypesAndContributionMap": {
+              "gradle": {
+                "insertions": 3,
+                "deletions": 1
+              }
+            }
+          },
+          {
+            "hash": "03a4a733d5495ebaa2a4452b79da5553df662735",
+            "messageTitle": "Level 10. GUI Initial",
+            "messageBody": "",
+            "tags": [
+              "Level-10"
+            ],
+            "fileTypesAndContributionMap": {
+              "gradle": {
+                "insertions": 15,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 207,
+                "deletions": 1
+              }
+            }
+          },
+          {
+            "hash": "05d38bdd84e08528f9e800c859e5263d5a19e3d9",
+            "messageTitle": "Integrate GUI with Duke",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 55,
+                "deletions": 9
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-08",
+        "commitResults": [
+          {
+            "hash": "b2a17aaa574eac092888f586dfde12fd9f4205c7",
+            "messageTitle": "A-JUnit",
+            "messageBody": "",
+            "tags": [
+              "A-JUnit"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 86,
+                "deletions": 0
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "lamyongxian": {
-      "java": 1201,
+      "java": 1740,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 2,
-      "gradle": 0,
-      "txt": 15
+      "gradle": 18,
+      "txt": 19
     }
   },
   "authorContributionVariance": {
-    "lamyongxian": 11740.417
+    "lamyongxian": 14518.86
   },
   "authorDisplayNameMap": {
     "lamyongxian": "LAM ..XIAN"

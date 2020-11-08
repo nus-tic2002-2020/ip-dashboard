@@ -239,7 +239,7 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        return \"[D]\" + super.getTaskListInfo() + \" by \" + this.getDate() + \" \" + getTiming();"
+        "content": "        return super.getTaskListInfo() + \" by \" + this.getDate() + \" \" + this.getTiming();"
       },
       {
         "lineNumber": 35,
@@ -267,24 +267,31 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "/*    public String formatForFile() {"
+        "content": "    public String formatForFile() {"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        return \"D\" + super.formatForFile() + super.getDescription();"
+        "content": "        return super.formatForFile() + \"|\" + this.getDate() + \"|\" + this.getTiming();"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    }*/"
+        "content": "    }"
       },
       {
         "lineNumber": 41,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 42,
         "author": {
           "gitId": "XuZipeng201"
         },
@@ -292,7 +299,7 @@
       }
     ],
     "authorContributionMap": {
-      "XuZipeng201": 41
+      "XuZipeng201": 42
     }
   },
   {
@@ -822,35 +829,35 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            } else {"
+        "content": "            } else if (input.contains(\"find\")){"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                try {"
+        "content": "                String findKeyword \u003d input.substring(5);"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    addTask(input, inputs, tasks);"
+        "content": ""
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                //ArrayList\u003cString\u003e targets \u003d tasks.findTask(findKeyword);"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    System.out.println(\"Now you have \" + tasks.size() + \" task(s) in the list.\");"
+        "content": "                findTask(tasks,findKeyword);"
       },
       {
         "lineNumber": 80,
@@ -864,35 +871,35 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    try {"
+        "content": "            } else {"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                        updateFile(tasks);"
+        "content": "                try {"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    } catch (IOException exception) {"
+        "content": "                    addTask(input, inputs, tasks);"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                        System.out.println(\"☹ OOPS: \" + exception.getMessage());"
+        "content": ""
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    }"
+        "content": "                    System.out.println(\"Now you have \" + tasks.size() + \" task(s) in the list.\");"
       },
       {
         "lineNumber": 86,
@@ -906,112 +913,112 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                } catch (DukeException exception) {"
+        "content": "                    try {"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    System.out.println(exception);"
+        "content": "                        updateFile(tasks);"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                }"
+        "content": "                    } catch (IOException exception) {"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            }"
+        "content": "                        System.out.println(\"☹ OOPS: \" + exception.getMessage());"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "              input \u003d in.nextLine();"
+        "content": "                    }"
       },
       {
         "lineNumber": 92,
         "author": {
-          "gitId": "-"
+          "gitId": "XuZipeng201"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        System.out.println(\"Bye. Hope to see you again soon!\");"
+        "content": "                } catch (DukeException exception) {"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                    System.out.println(exception);"
       },
       {
         "lineNumber": 95,
         "author": {
-          "gitId": "-"
+          "gitId": "XuZipeng201"
         },
-        "content": "    }"
+        "content": "                }"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            }"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "              input \u003d in.nextLine();"
       },
       {
         "lineNumber": 98,
         "author": {
-          "gitId": "XuZipeng201"
+          "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    public static void updateFile(ArrayList\u003cTask\u003e tasks) throws IOException {"
+        "content": "        System.out.println(\"Bye. Hope to see you again soon!\");"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            FileWriter writer \u003d new FileWriter(\"tasks.txt\");"
+        "content": ""
       },
       {
         "lineNumber": 101,
         "author": {
-          "gitId": "XuZipeng201"
+          "gitId": "-"
         },
-        "content": "            writer.write(tasks.get(0).getTaskListInfo());"
+        "content": "    }"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            writer.close();"
+        "content": ""
       },
       {
         "lineNumber": 103,
@@ -1025,182 +1032,182 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            FileWriter appender \u003d new FileWriter(\"tasks.txt\", true);"
+        "content": ""
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "    public static void updateFile(ArrayList\u003cTask\u003e tasks) throws IOException {"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            for (int i \u003d 1; i \u003c tasks.size(); i++) {"
+        "content": "        FileWriter writer \u003d new FileWriter(\"tasks.txt\",false);"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                appender.write(System.lineSeparator() + tasks.get(i).getTaskListInfo());"
+        "content": ""
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            }"
+        "content": "        if (tasks.size() !\u003d 0) {"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            writer.write(tasks.get(0).formatForFile());"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            appender.close();"
+        "content": "            for (int i \u003d 1; i \u003c tasks.size(); i++) {"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                writer.write(System.lineSeparator() + tasks.get(i).formatForFile());"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    }"
+        "content": "            }"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    public static void loadFile (ArrayList\u003cTask\u003e tasks) throws FileNotFoundException {"
+        "content": ""
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        File file \u003d new File (\"tasks.txt\");"
+        "content": "        writer.close();"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        Scanner readFile \u003d new Scanner (file);"
+        "content": ""
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        while (readFile.hasNext()) {"
+        "content": ""
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String fileInput \u003d readFile.nextLine();"
+        "content": "    public static void loadFile (ArrayList\u003cTask\u003e tasks) throws FileNotFoundException {"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String inputs[] \u003d fileInput.split(\" \\\\| \");"
+        "content": "        File file \u003d new File (\"tasks.txt\");"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String taskType \u003d inputs[0];"
+        "content": "        Scanner readFile \u003d new Scanner (file);"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String isDone \u003d inputs[1];"
+        "content": ""
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String description \u003d inputs[2];"
+        "content": "        while (readFile.hasNext()) {"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            String fileInput \u003d readFile.nextLine();"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            String inputs[] \u003d fileInput.split(\"\\\\|\");"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            switch (taskType){"
+        "content": "            String taskType \u003d inputs[0];"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            case \"E\":"
+        "content": "            String isDone \u003d inputs[1];"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                String eventDate \u003d inputs[3];"
+        "content": "            String description \u003d inputs[2];"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                String eventTime \u003d inputs[4];"
+        "content": ""
       },
       {
         "lineNumber": 130,
@@ -1214,112 +1221,112 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"MMM d yyyy\");"
+        "content": "            switch (taskType){"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                LocalDate localDate \u003d LocalDate.parse(eventDate, formatter);"
+        "content": "            case \"E\":"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                String eventDate \u003d inputs[3];"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                formatter \u003d DateTimeFormatter.ofPattern(\"hh:mm\");"
+        "content": "                String eventTime \u003d inputs[4];"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                LocalTime localTime \u003d LocalTime.parse(eventTime, formatter);"
+        "content": ""
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"MMM d yyyy\");"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                if (isDone.equals(\"0\")) {"
+        "content": "                LocalDate localDate \u003d LocalDate.parse(eventDate, formatter);"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    tasks.add(new Event(description, taskType, localDate, localTime, false));"
+        "content": ""
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                } else {"
+        "content": "                formatter \u003d DateTimeFormatter.ofPattern(\"HH:mm\");"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    tasks.add(new Event(description, taskType, localDate, localTime, true));"
+        "content": "                LocalTime localTime \u003d LocalTime.parse(eventTime, formatter);"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                }"
+        "content": ""
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                if (isDone.equals(\"✘\")) {"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                break;"
+        "content": "                    tasks.add(new Event(description, taskType, localDate, localTime, false));"
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            case \"D\":"
+        "content": "                } else {"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                String deadlineDate \u003d inputs[3];"
+        "content": "                    tasks.add(new Event(description, taskType, localDate, localTime, true));"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                String deadlineTime \u003d inputs[4];"
+        "content": "                }"
       },
       {
         "lineNumber": 147,
@@ -1333,224 +1340,224 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                DateTimeFormatter deadlineFormatter \u003d DateTimeFormatter.ofPattern(\"MMM d yyyy\");"
+        "content": "                break;"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                LocalDate deadlineLocalDate \u003d LocalDate.parse(deadlineDate, deadlineFormatter);"
+        "content": "            case \"D\":"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                String deadlineDate \u003d inputs[3];"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                deadlineFormatter \u003d DateTimeFormatter.ofPattern(\"hh:mm\");"
+        "content": "                String deadlineTime \u003d inputs[4];"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                LocalTime deadlineLocalTime \u003d LocalTime.parse(deadlineTime, deadlineFormatter);"
+        "content": ""
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                DateTimeFormatter deadlineFormatter \u003d DateTimeFormatter.ofPattern(\"MMM d yyyy\");"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                LocalDate deadlineLocalDate \u003d LocalDate.parse(deadlineDate, deadlineFormatter);"
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                if (isDone.equals(\"0\")) {"
+        "content": ""
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    tasks.add(new Deadline(description, taskType, deadlineLocalDate, deadlineLocalTime,false));"
+        "content": "                deadlineFormatter \u003d DateTimeFormatter.ofPattern(\"HH:mm\");"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                } else {"
+        "content": "                LocalTime deadlineLocalTime \u003d LocalTime.parse(deadlineTime, deadlineFormatter);"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    tasks.add(new Deadline(description, taskType, deadlineLocalDate, deadlineLocalTime, true));"
+        "content": ""
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                }"
+        "content": ""
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                if (isDone.equals(\"✘\")) {"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                break;"
+        "content": "                    tasks.add(new Deadline(description, taskType, deadlineLocalDate, deadlineLocalTime,false));"
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            case \"T\":"
+        "content": "                } else {"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                if (isDone.equals(\"0\")) {"
+        "content": "                    tasks.add(new Deadline(description, taskType, deadlineLocalDate, deadlineLocalTime, true));"
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    tasks.add(new ToDo(description, taskType, false));"
+        "content": "                }"
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                } else {"
+        "content": ""
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    tasks.add(new ToDo(description, taskType, true));"
+        "content": "                break;"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                }"
+        "content": "            case \"T\":"
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                break;"
+        "content": "                if (isDone.equals(\"✘\")) {"
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            }"
+        "content": "                    tasks.add(new ToDo(description, taskType, false));"
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                } else {"
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            /*if (taskType.equals(\"D\") || taskType.equals(\"E\")) {"
+        "content": "                    tasks.add(new ToDo(description, taskType, true));"
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                String dateAndTime \u003d inputs[3];"
+        "content": "                }"
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                if (taskType.equals(\"D\")) {"
+        "content": "                break;"
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    tasks.add(new Deadline(description, dateAndTime));"
+        "content": "            }"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                } else {"
+        "content": ""
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                    tasks.add(new Event(description, dateAndTime));"
+        "content": "        }"
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                }"
+        "content": ""
       },
       {
         "lineNumber": 178,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            }*/"
+        "content": ""
       },
       {
         "lineNumber": 180,
@@ -1564,21 +1571,21 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 182,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "    /*Add new Task*/"
       },
       {
         "lineNumber": 183,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    }"
+        "content": "    public static void addTask(String userInput,String[] inputs, ArrayList\u003cTask\u003e tasks) throws DukeException{"
       },
       {
         "lineNumber": 184,
@@ -1592,168 +1599,168 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "        if (inputs[0].startsWith(\"deadline\")) {"
       },
       {
         "lineNumber": 186,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            if (inputs.length \u003d\u003d 1) {"
       },
       {
         "lineNumber": 187,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    /*Add new Task*/"
+        "content": "                throw new DukeException(userInput);"
       },
       {
         "lineNumber": 188,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    public static void addTask(String userInput,String[] inputs, ArrayList\u003cTask\u003e tasks) throws DukeException{"
+        "content": "            } else if (userInput.endsWith(\"/by\")) {"
       },
       {
         "lineNumber": 189,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                throw new DukeException(userInput);"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        if (inputs[0].startsWith(\"deadline\")) {"
+        "content": "            } else if ((inputs.length \u003e 1) \u0026\u0026 (!userInput.contains(\"/by\"))) {"
       },
       {
         "lineNumber": 191,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            if (inputs.length \u003d\u003d 1) {"
+        "content": "                throw new DukeException(userInput);"
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                throw new DukeException(userInput);"
+        "content": "            }"
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            } else if (userInput.endsWith(\"/by\")) {"
+        "content": ""
       },
       {
         "lineNumber": 194,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                throw new DukeException(userInput);"
+        "content": "            int findPosition \u003d userInput.indexOf(\"/by\");"
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            } else if ((inputs.length \u003e 1) \u0026\u0026 (!userInput.contains(\"/by\"))) {"
+        "content": "            String taskName \u003d userInput.substring(9, findPosition);"
       },
       {
         "lineNumber": 196,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                throw new DukeException(userInput);"
+        "content": "            String taskTime \u003d userInput.substring(findPosition + 4, userInput.length());"
       },
       {
         "lineNumber": 197,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            }"
+        "content": ""
       },
       {
         "lineNumber": 198,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            String deadlineDate \u003d taskTime.substring(0, 10);"
       },
       {
         "lineNumber": 199,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            int findPosition \u003d userInput.indexOf(\"/by\");"
+        "content": "            String deadlineTime \u003d taskTime.substring(11, 16);"
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String taskName \u003d userInput.substring(9, findPosition);"
+        "content": ""
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String taskTime \u003d userInput.substring(findPosition + 4, userInput.length());"
+        "content": ""
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            LocalDate date \u003d LocalDate.parse(deadlineDate);"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String deadlineDate \u003d taskTime.substring(0, 10);"
+        "content": "            LocalTime timing \u003d LocalTime.parse(deadlineTime);"
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String deadlineTime \u003d taskTime.substring(11, 16);"
+        "content": ""
       },
       {
         "lineNumber": 205,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "//            if (taskTime.equals(\" \")) {"
       },
       {
         "lineNumber": 206,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "//                throw new DukeException(\"  ☹ OOPS!!! Please input a timing for this task\");"
       },
       {
         "lineNumber": 207,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            LocalDate date \u003d LocalDate.parse(deadlineDate);"
+        "content": "//            }"
       },
       {
         "lineNumber": 208,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            LocalTime timing \u003d LocalTime.parse(deadlineTime);"
+        "content": "            tasks.add(new Deadline(taskName, \"D\", date, timing));"
       },
       {
         "lineNumber": 209,
@@ -1767,91 +1774,91 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "//            if (taskTime.equals(\" \")) {"
+        "content": "        } else if (inputs[0].startsWith(\"event\")) {"
       },
       {
         "lineNumber": 211,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "//                throw new DukeException(\"  ☹ OOPS!!! Please input a timing for this task\");"
+        "content": "            if (inputs.length \u003d\u003d 1){"
       },
       {
         "lineNumber": 212,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "//            }"
+        "content": "                throw new DukeException(userInput);"
       },
       {
         "lineNumber": 213,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            tasks.add(new Deadline(taskName, \"D\", date, timing));"
+        "content": "            } else if (userInput.endsWith(\"/at\")) {"
       },
       {
         "lineNumber": 214,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                throw new DukeException(userInput);"
       },
       {
         "lineNumber": 215,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        } else if (inputs[0].startsWith(\"event\")) {"
+        "content": "            } else if ((inputs.length \u003e 1) \u0026\u0026 (!userInput.contains(\"/at\"))) {"
       },
       {
         "lineNumber": 216,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            if (inputs.length \u003d\u003d 1){"
+        "content": "                throw new DukeException(userInput);"
       },
       {
         "lineNumber": 217,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                throw new DukeException(userInput);"
+        "content": "            }"
       },
       {
         "lineNumber": 218,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            } else if (userInput.endsWith(\"/at\")) {"
+        "content": ""
       },
       {
         "lineNumber": 219,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                throw new DukeException(userInput);"
+        "content": "            int findPosition \u003d userInput.indexOf(\"/at\");"
       },
       {
         "lineNumber": 220,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            } else if ((inputs.length \u003e 1) \u0026\u0026 (!userInput.contains(\"/at\"))) {"
+        "content": ""
       },
       {
         "lineNumber": 221,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                throw new DukeException(userInput);"
+        "content": "            String taskName \u003d userInput.substring(6, findPosition);"
       },
       {
         "lineNumber": 222,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            }"
+        "content": "            String taskTime \u003d userInput.substring(findPosition + 4, userInput.length());"
       },
       {
         "lineNumber": 223,
@@ -1865,49 +1872,49 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            int findPosition \u003d userInput.indexOf(\"/at\");"
+        "content": "            String eventDate \u003d taskTime.substring(0, 10);"
       },
       {
         "lineNumber": 225,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            String eventTime \u003d taskTime.substring(11, 16);"
       },
       {
         "lineNumber": 226,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String taskName \u003d userInput.substring(6, findPosition);"
+        "content": ""
       },
       {
         "lineNumber": 227,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String taskTime \u003d userInput.substring(findPosition + 4, userInput.length());"
+        "content": "            LocalDate date \u003d LocalDate.parse(eventDate);"
       },
       {
         "lineNumber": 228,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            LocalTime timing \u003d LocalTime.parse(eventTime);"
       },
       {
         "lineNumber": 229,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String eventDate \u003d taskTime.substring(0, 10);"
+        "content": ""
       },
       {
         "lineNumber": 230,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String eventTime \u003d taskTime.substring(11, 16);"
+        "content": "            tasks.add(new Event(taskName, \"E\", date, timing));"
       },
       {
         "lineNumber": 231,
@@ -1921,98 +1928,98 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            LocalDate date \u003d LocalDate.parse(eventDate);"
+        "content": "        } else if (inputs[0].startsWith(\"todo\")) {"
       },
       {
         "lineNumber": 233,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            LocalTime timing \u003d LocalTime.parse(eventTime);"
+        "content": "            if (inputs.length \u003d\u003d 1) {"
       },
       {
         "lineNumber": 234,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                throw new DukeException(userInput);"
       },
       {
         "lineNumber": 235,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            tasks.add(new Event(taskName, \"E\", date, timing));"
+        "content": "            }"
       },
       {
         "lineNumber": 236,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            String taskName \u003d userInput.substring(5);"
       },
       {
         "lineNumber": 237,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        } else if (inputs[0].startsWith(\"todo\")) {"
+        "content": "            tasks.add(new ToDo(taskName,\"T\"));"
       },
       {
         "lineNumber": 238,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            if (inputs.length \u003d\u003d 1) {"
+        "content": "        } else {"
       },
       {
         "lineNumber": 239,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "                throw new DukeException(userInput);"
+        "content": "            throw new DukeException(userInput);"
       },
       {
         "lineNumber": 240,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            }"
+        "content": "        }"
       },
       {
         "lineNumber": 241,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            String taskName \u003d userInput.substring(5);"
+        "content": ""
       },
       {
         "lineNumber": 242,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            tasks.add(new ToDo(taskName,\"T\"));"
+        "content": "        System.out.println(\"Got it. I\u0027ve added this task:\");"
       },
       {
         "lineNumber": 243,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        } else {"
+        "content": "        System.out.println(\"  \" + tasks.get(tasks.size() - 1).getTaskListInfo());"
       },
       {
         "lineNumber": 244,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            throw new DukeException(userInput);"
+        "content": ""
       },
       {
         "lineNumber": 245,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        }"
+        "content": "    }"
       },
       {
         "lineNumber": 246,
@@ -2026,105 +2033,105 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        System.out.println(\"Got it. I\u0027ve added this task:\");"
+        "content": "    public static void findTask(ArrayList\u003cTask\u003e tasks, String keyword) {"
       },
       {
         "lineNumber": 248,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        System.out.println(\"  \" + tasks.get(tasks.size() - 1).getTaskListInfo());"
+        "content": "        ArrayList\u003cTask\u003e results \u003d new ArrayList\u003cTask\u003e();"
       },
       {
         "lineNumber": 249,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "        for (Task task: tasks) {"
       },
       {
         "lineNumber": 250,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    }"
+        "content": "            if (task.getDescription().contains(keyword)) {"
       },
       {
         "lineNumber": 251,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "                results.add(task);"
       },
       {
         "lineNumber": 252,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            }"
       },
       {
         "lineNumber": 253,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    /*print out the user input from the list*/"
+        "content": "        }"
       },
       {
         "lineNumber": 254,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    public static void printList(ArrayList\u003cTask\u003e tasks) {"
+        "content": "        printFoundKeyword(results);"
       },
       {
         "lineNumber": 255,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        System.out.println(\"Here are the tasks in your list:\");"
+        "content": ""
       },
       {
         "lineNumber": 256,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        if (tasks.size() \u003d\u003d 0){"
+        "content": "    }"
       },
       {
         "lineNumber": 257,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            System.out.println(\"Currently your list is empty.\");"
+        "content": ""
       },
       {
         "lineNumber": 258,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        }"
+        "content": "    public static void printFoundKeyword(ArrayList\u003cTask\u003e results) {"
       },
       {
         "lineNumber": 259,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "        System.out.println(\"Here are the matching tasks in your list:\");"
       },
       {
         "lineNumber": 260,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        for (int i \u003d 0; i \u003c tasks.size(); i++ ) {"
+        "content": "        if (results.size() \u003d\u003d 0){"
       },
       {
         "lineNumber": 261,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "            System.out.println((i + 1) + \". \" + tasks.get(i).getTaskListInfo());"
+        "content": "            System.out.println(\"☹ OOPS!!!, No record found!\");"
       },
       {
         "lineNumber": 262,
@@ -2138,24 +2145,157 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 264,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "        for (int i \u003d 0; i \u003c results.size(); i++) {"
       },
       {
         "lineNumber": 265,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "            if (results.get(i) !\u003d null) {"
       },
       {
         "lineNumber": 266,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "                System.out.println((i + 1) + \". \" + results.get(i).getTaskListInfo());"
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "    /*print out the user input from the list*/"
+      },
+      {
+        "lineNumber": 273,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "    public static void printList(ArrayList\u003cTask\u003e tasks) {"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "        System.out.println(\"Here are the tasks in your list:\");"
+      },
+      {
+        "lineNumber": 275,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "        if (tasks.size() \u003d\u003d 0){"
+      },
+      {
+        "lineNumber": 276,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "            System.out.println(\"Currently your list is empty.\");"
+      },
+      {
+        "lineNumber": 277,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 278,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 279,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "        for (int i \u003d 0; i \u003c tasks.size(); i++ ) {"
+      },
+      {
+        "lineNumber": 280,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "            System.out.println((i + 1) + \". \" + tasks.get(i).getTaskListInfo());"
+      },
+      {
+        "lineNumber": 281,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 282,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 283,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 284,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 285,
         "author": {
           "gitId": "-"
         },
@@ -2163,7 +2303,7 @@
       }
     ],
     "authorContributionMap": {
-      "XuZipeng201": 258,
+      "XuZipeng201": 277,
       "-": 8
     }
   },
@@ -2584,7 +2724,7 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        return \"[E]\" + super.getTaskListInfo() + \" at \" + this.getDate() + \" \" + getTiming();"
+        "content": "        return super.getTaskListInfo() + \" at \" + this.getDate() + \" \" + this.getTiming();"
       },
       {
         "lineNumber": 35,
@@ -2612,21 +2752,21 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "   /* public String formatForFile() {"
+        "content": "    public String formatForFile() {"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        return \"E\" + super.formatForFile() + super.getDescription();"
+        "content": "        return super.formatForFile() + \"|\" + this.getDate() + \"|\" + this.getTiming();"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    }*/"
+        "content": "    }"
       },
       {
         "lineNumber": 41,
@@ -2915,66 +3055,45 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "        return \"[\" + this.getTaskType() + \"][\" + this.getStatusIcon() + \"] \" + this.getDescription();"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        return \"[\" + this.getStatusIcon() + \"] \" + getDescription();"
+        "content": "    }"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "    public String formatForFile() {"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    public String formatForFile() {"
+        "content": "        return this.getTaskType() + \"|\" + this.getStatusIcon() + \"|\" + this.getDescription();"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        Integer intIsDone \u003d isDone ? 1 : 0;"
-      },
-      {
-        "lineNumber": 44,
-        "author": {
-          "gitId": "XuZipeng201"
-        },
-        "content": "        return \" | \" + intIsDone + \" | \";"
-      },
-      {
-        "lineNumber": 45,
-        "author": {
-          "gitId": "XuZipeng201"
-        },
-        "content": "        //return \"|\" + this.getStatusIcon() + \"|\" + this.getDescription();"
-      },
-      {
-        "lineNumber": 46,
-        "author": {
-          "gitId": "XuZipeng201"
-        },
         "content": "    }"
       },
       {
-        "lineNumber": 47,
+        "lineNumber": 44,
         "author": {
           "gitId": "XuZipeng201"
         },
@@ -2982,7 +3101,7 @@
       }
     ],
     "authorContributionMap": {
-      "XuZipeng201": 47
+      "XuZipeng201": 44
     }
   },
   {
@@ -3071,7 +3190,7 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "        return \"[T]\" + super.getTaskListInfo();"
+        "content": "        return super.getTaskListInfo();"
       },
       {
         "lineNumber": 13,
@@ -3092,7 +3211,7 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "    public String formatForFile() {"
+        "content": "    /*public String formatForFile() {"
       },
       {
         "lineNumber": 16,
@@ -3113,7 +3232,7 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": ""
+        "content": "*/"
       },
       {
         "lineNumber": 19,
@@ -3136,25 +3255,53 @@
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "[E][✓] new year  at Dec 31 2020 23:59"
+        "content": "E|✘|New Year |Dec 31 2020|23:59"
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "[T][✘] swimming"
+        "content": "D|✘|exam is coming |Dec 1 2020|09:00"
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "XuZipeng201"
         },
-        "content": "[D][✘] testing  by Jan 2 2020 12:00"
+        "content": "T|✓|study"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "E|✘|go to city |Oct 11 2000|12:10"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "D|✓|closing |Jan 1 2000|01:10"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "T|✘|study math"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "XuZipeng201"
+        },
+        "content": "E|✘|math test |Dec 12 2019|12:00"
       }
     ],
     "authorContributionMap": {
-      "XuZipeng201": 3
+      "XuZipeng201": 7
     }
   },
   {

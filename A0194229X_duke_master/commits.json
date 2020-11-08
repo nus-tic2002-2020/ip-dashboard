@@ -214,6 +214,37 @@
                 "deletions": 64
               }
             }
+          },
+          {
+            "hash": "2b9547c3ed4e26fa3268f303274b13c179b6ada1",
+            "messageTitle": "A-JUnit",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 16,
+                "deletions": 19
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-08",
+        "commitResults": [
+          {
+            "hash": "b9e7d9b748dc5ab9a842a01c1b9a76aa220bcf67",
+            "messageTitle": "B-DetectAnomalies",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 4,
+                "deletions": 3
+              },
+              "java": {
+                "insertions": 91,
+                "deletions": 56
+              }
+            }
           }
         ]
       }
@@ -221,17 +252,17 @@
   },
   "authorFileTypeContributionMap": {
     "A0194229X": {
-      "java": 680,
+      "java": 712,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 3
+      "txt": 4
     }
   },
   "authorContributionVariance": {
-    "A0194229X": 7261.38
+    "A0194229X": 7652.1113
   },
   "authorDisplayNameMap": {
     "A0194229X": "WANG..UWEI"

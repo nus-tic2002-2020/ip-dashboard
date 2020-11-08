@@ -187,22 +187,150 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-10-30",
+        "commitResults": [
+          {
+            "hash": "32bf620402dc811b72ef0a1a65ad84ef5b87f035",
+            "messageTitle": "Refactoring the classes into better OOP. The storage,ui etc. So far, everything shouldn\u0027t be working yet. This refactor into better OOP was previously from Level 7. Some of the classes are in Packages.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 18,
+                "deletions": 275
+              }
+            }
+          },
+          {
+            "hash": "7cef86667ba75e43c12648978fcba097c3f7a4fb",
+            "messageTitle": "Still in the process of refactoring. Seems to be better. Need to refactor commands class and parser class more. UI and Storage class is almost done",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 24,
+                "deletions": 28
+              }
+            }
+          },
+          {
+            "hash": "47d6aa2d7cf32b09860afb407b651bcbe4fd633c",
+            "messageTitle": "Somehow the last 2 commits didn\u0027t include the new files.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 429,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "8967482724e880bcc8ec1180bf6eb91c964f0190",
+            "messageTitle": "Still refactoring stuff. Mainly looking at Parser and Command Class",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 86,
+                "deletions": 69
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-10-31",
+        "commitResults": [
+          {
+            "hash": "37b92ba65ec145f847ae7e54c7145781c3ea37f6",
+            "messageTitle": "The refactoring seems to be almost done. Probably 70-85% done. Will be focusing on the Command and TaskList classes refactoring. Haven\u0027t start debugging yet. So far Refactoring and packages ok",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 87,
+                "deletions": 52
+              }
+            }
+          },
+          {
+            "hash": "1f449facce2f4eb728d30ab0e217f11cd8d2cb95",
+            "messageTitle": "Refactoring is pretty much complete. Only portions for the techdebt are to refactor Exceptions. Afterwards will be doing JDOC, JUnit testingand regression testing",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 73,
+                "deletions": 56
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-05",
+        "commitResults": [
+          {
+            "hash": "076f2f4eaef0b60b343acaa5f11c77b11b9d6967",
+            "messageTitle": "Working on Java Docs. Packages and Refactoring are complete.Exceptions are mostly done, but I\u0027ll probably relook them again later. After Java Docs will be JUnit Testing and Regression Testing. Then the 2 Individual features, hopefully by friday.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 269,
+                "deletions": 137
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-06",
+        "commitResults": [
+          {
+            "hash": "97ec877e2efe7e92234659ac1952ffc269888602",
+            "messageTitle": "More or less completed JavaDoc. Only left JUnit Testing and Regression Testing before individual features",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 293,
+                "deletions": 35
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-07",
+        "commitResults": [
+          {
+            "hash": "533f737841aad39c16c8706ae386899b70a6acb5",
+            "messageTitle": "Added 3 JUnit Testing. Will probably add more after the 2 individual features. I think techdebt1 is done.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 72,
+                "deletions": 12
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "zcnmashleu95": {
-      "java": 436,
+      "java": 1129,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 2,
       "gradle": 0,
-      "txt": 5
+      "txt": 6
     }
   },
   "authorContributionVariance": {
-    "zcnmashleu95": 780.479
+    "zcnmashleu95": 13876.641
   },
   "authorDisplayNameMap": {
     "zcnmashleu95": "LAM ..CHUN"

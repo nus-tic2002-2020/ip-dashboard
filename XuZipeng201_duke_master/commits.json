@@ -151,6 +151,42 @@
                 "deletions": 26
               }
             }
+          },
+          {
+            "hash": "a1927f28f9f250405fca084d3d3b701ae7141f6f",
+            "messageTitle": "Level 7 fix a bug when loading file contents",
+            "messageBody": "",
+            "tags": [
+              "level-7-bugFix"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 5,
+                "deletions": 3
+              },
+              "java": {
+                "insertions": 27,
+                "deletions": 40
+              }
+            }
+          },
+          {
+            "hash": "661e657a40b3fd9a2306de4e9d8457bc57a1a602",
+            "messageTitle": "Level 9: find",
+            "messageBody": "",
+            "tags": [
+              "Level-9"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 31,
+                "deletions": 1
+              }
+            }
           }
         ]
       }
@@ -158,17 +194,17 @@
   },
   "authorFileTypeContributionMap": {
     "XuZipeng201": {
-      "java": 431,
+      "java": 448,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 15
+      "txt": 19
     }
   },
   "authorContributionVariance": {
-    "XuZipeng201": 1220.27
+    "XuZipeng201": 1679.6238
   },
   "authorDisplayNameMap": {
     "XuZipeng201": "XU Z..PENG"

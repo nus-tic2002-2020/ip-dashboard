@@ -8,46 +8,32 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "T | X | this"
+        "content": "T | ✓ | this | NA"
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "D | X | this | 10/10/1010, 10:10"
+        "content": "D | ✓ | this | 10/10/2020, 10:10 | LOW"
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "T | X | that"
+        "content": "E | ✓ | this | 10/10/2020, 10:10 | MEDIUM"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "D | X | lalala | 10/10/1010, 10:10"
-      },
-      {
-        "lineNumber": 5,
-        "author": {
-          "gitId": "aloysiuswwc"
-        },
-        "content": "E | X | tatata | 10/10/1010, 10:10"
-      },
-      {
-        "lineNumber": 6,
-        "author": {
-          "gitId": "aloysiuswwc"
-        },
-        "content": "W | X | lalala | 10/10/1010, 10:10 - 10/10/1010, 10:10"
+        "content": "W | ✗ | this | 10/10/2020, 10:10 - 10/10/2020, 10:10 | NA"
       }
     ],
     "authorContributionMap": {
-      "aloysiuswwc": 6
+      "aloysiuswwc": 4
     }
   },
   {
@@ -416,7 +402,7 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    case WITHIN: {"
+        "content": "                    case WITHIN:"
       },
       {
         "lineNumber": 53,
@@ -535,14 +521,14 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": ""
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    case LIST: {"
+        "content": "                    case LIST:"
       },
       {
         "lineNumber": 71,
@@ -563,14 +549,14 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": ""
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    case FIND: {"
+        "content": "                    case FIND:"
       },
       {
         "lineNumber": 75,
@@ -619,14 +605,14 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": ""
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    case DAY: {"
+        "content": "                    case DAY:"
       },
       {
         "lineNumber": 83,
@@ -689,14 +675,14 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": ""
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    case MONTH: {"
+        "content": "                    case MONTH:"
       },
       {
         "lineNumber": 93,
@@ -759,14 +745,14 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": ""
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    case YEAR: {"
+        "content": "                    case YEAR:"
       },
       {
         "lineNumber": 103,
@@ -829,14 +815,14 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": ""
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    case DELETE: {"
+        "content": "                    case DELETE:"
       },
       {
         "lineNumber": 113,
@@ -941,14 +927,14 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": ""
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    case DONE: {"
+        "content": "                    case DONE:"
       },
       {
         "lineNumber": 129,
@@ -962,241 +948,381 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            tasks.setDone(input);"
+        "content": "                            if (tasks.getStore().size() \u003d\u003d 0) {"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            ui.printDoneMessage();"
+        "content": "                                ui.printEmptyListMessage();"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        } catch (NumberFormatException | NullPointerException | IndexOutOfBoundsException e) {"
+        "content": "                                break;"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            ui.showInvalidNumberError();"
+        "content": "                            }"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        } catch (TooManySpacesException e) {"
+        "content": "                            tasks.setDone(input);"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            ui.showTooManySpacesError();"
+        "content": "                            storage.setDone(input);"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "                            ui.printDoneMessage();"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        break;"
+        "content": "                        } catch (NumberFormatException | NullPointerException | IndexOutOfBoundsException e) {"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                            ui.showInvalidNumberError();"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    case HELP: {"
+        "content": "                        } catch (TooManySpacesException e) {"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        ui.printCmdList();"
+        "content": "                            ui.showTooManySpacesError();"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        break;"
+        "content": "                        }"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                        break;"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    case BYE: {"
+        "content": ""
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        ui.printByeMessage();"
+        "content": "                    case PRIORITY:"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        break;"
+        "content": "                        try {"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                            if (tasks.getStore().size() \u003d\u003d 0) {"
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                }"
+        "content": "                                ui.printEmptyListMessage();"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            } catch (IllegalArgumentException e) {"
+        "content": "                                break;"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                ui.showIllegalArgumentError();"
+        "content": "                            }"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            }"
+        "content": "                            tasks.setPriority(input);"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                            storage.setPriority(input);"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                            ui.printPriorityMessage();"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "                        } catch (IllegalArgumentException e) {"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "                            ui.showIncorrectPriorityError();"
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Main function"
+        "content": "                        } catch (TooManySpacesException e) {"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     *"
+        "content": "                            ui.showTooManySpacesError();"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param args"
+        "content": "                        }"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @throws Exception All self-created errors. Refer to Exception class for specifics."
+        "content": "                        break;"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @throws IOException Error for input-output."
+        "content": ""
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "                    case HELP:"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public static void main(String[] args) throws Exception, IOException {"
+        "content": "                        ui.printCmdList();"
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        new Lisa(\"data/task_list.txt\").run();"
+        "content": "                        break;"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 164,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    case BYE:"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        ui.printByeMessage();"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        break;"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            } catch (IllegalArgumentException e) {"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                ui.showIllegalArgumentError();"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     * Main function"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     * @param args"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     * @throws Exception All self-created errors. Refer to Exception class for specifics."
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     * @throws IOException Error for input-output."
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public static void main(String[] args) throws Exception, IOException {"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        new Lisa(\"data/task_list.txt\").run();"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 184,
         "author": {
           "gitId": "aloysiuswwc"
         },
@@ -1204,7 +1330,7 @@
       }
     ],
     "authorContributionMap": {
-      "aloysiuswwc": 164
+      "aloysiuswwc": 184
     }
   },
   {
@@ -1258,7 +1384,7 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    TODO, DEADLINE, EVENT, WITHIN, LIST, DELETE, DONE, BYE, DAY, MONTH, YEAR, HELP, FIND"
+        "content": "    TODO, DEADLINE, EVENT, WITHIN, LIST, DELETE, DONE, BYE, DAY, MONTH, YEAR, HELP, FIND, PRIORITY"
       },
       {
         "lineNumber": 8,
@@ -1270,6 +1396,50 @@
     ],
     "authorContributionMap": {
       "aloysiuswwc": 8
+    }
+  },
+  {
+    "path": "src/main/java/enumerations/PriorityEnum.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "package enumerations;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "public enum PriorityEnum {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    HIGH, MEDIUM, LOW, NA"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "aloysiuswwc": 5
     }
   },
   {
@@ -1947,7 +2117,7 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            if (scanner.hasNextLine()) {"
+        "content": "            else {"
       },
       {
         "lineNumber": 64,
@@ -2017,234 +2187,605 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "    public void setDone(String input) throws IOException {"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Access task_list.txt to facilitate insertion of task"
+        "content": "        int index \u003d Integer.parseInt(input.substring(5));"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     *"
+        "content": "        int counter \u003d 1;"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param task Task-object to be inserted"
+        "content": "        Files.copy(Paths.get(\"data/task_list.txt\"), Paths.get(\"data/temp.txt\"));"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @throws IOException Error for input-output"
+        "content": "        FileWriter fw \u003d new FileWriter(\"data/task_list.txt\");"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "        Scanner scanner \u003d new Scanner(new File(\"data/temp.txt\"));"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void insert(Task task) throws IOException {"
+        "content": "        while (scanner.hasNextLine()) {"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        FileWriter fw \u003d new FileWriter(\"data/task_list.txt\", true);"
+        "content": "            if (counter \u003d\u003d index ) {"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String function \u003d task.getSymbol();"
+        "content": "                fw.write(scanner.nextLine().replaceAll(\"✗\", \"✓\") + \"\\n\");"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        switch (function) {"
+        "content": "            }"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case \"[T]\":"
+        "content": "            else {"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                fw.write(\"T | X | \" + task.getDescription() + \"\\n\");"
+        "content": "                fw.write(scanner.nextLine() + \"\\n\");"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                break;"
+        "content": "            }"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case \"[D]\":"
+        "content": "            counter++;"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                fw.write(\"D | X | \" + task.getDescription() + \" | \" + task.getDateAndTime().getDayOfMonth()"
+        "content": "        }"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        + \"/\" + task.getDateAndTime().getMonthValue() + \"/\" + task.getDateAndTime().getYear() + \", \""
+        "content": "        fw.close();"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        + task.getDateAndTime().getHour() + \":\" + task.getDateAndTime().getMinute() + \"\\n\");"
+        "content": "        scanner.close();"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                break;"
+        "content": "        Files.delete(Paths.get(\"data/temp.txt\"));"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case \"[E]\":"
+        "content": "    }"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                fw.write(\"E | X | \" + task.getDescription() + \" | \" + task.getDateAndTime().getDayOfMonth()"
+        "content": ""
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        + \"/\" + task.getDateAndTime().getMonthValue() + \"/\" + task.getDateAndTime().getYear() + \", \""
+        "content": "    public void setPriority(String input) throws IOException {"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        + task.getDateAndTime().getHour() + \":\" + task.getDateAndTime().getMinute() + \"\\n\");"
+        "content": "        int index \u003d Integer.parseInt(input.substring(9, 10));"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                break;"
+        "content": "        int counter \u003d 1;"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case \"[W]\":"
+        "content": "        int counter2 \u003d 0;"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                fw.write(\"W | X | \" + task.getDescription() + \" | \" + task.getStart().getDayOfMonth()"
+        "content": "        Files.copy(Paths.get(\"data/task_list.txt\"), Paths.get(\"data/temp.txt\"));"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        + \"/\" + task.getStart().getMonthValue() + \"/\" + task.getStart().getYear() + \", \""
+        "content": "        FileWriter fw \u003d new FileWriter(\"data/task_list.txt\");"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        + task.getStart().getHour() + \":\" + task.getStart().getMinute() + \" - \" + task.getEnd().getDayOfMonth()"
+        "content": "        Scanner scanner \u003d new Scanner(new File(\"data/temp.txt\"));"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        + \"/\" + task.getEnd().getMonthValue() + \"/\" + task.getEnd().getYear() + \", \""
+        "content": "        while (scanner.hasNextLine()) {"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        + task.getEnd().getHour() + \":\" + task.getEnd().getMinute() + \"\\n\");"
+        "content": "            if (counter \u003d\u003d index ) {"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                break;"
+        "content": "                String editLine[] \u003d scanner.nextLine().split(\"\\\\|\");"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                editLine[editLine.length - 1]  \u003d \" \" + input.substring(11).toUpperCase();"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        fw.close();"
+        "content": "                for (String part : editLine) {"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                    fw.write(part);"
       },
       {
         "lineNumber": 106,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    counter2++;"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    if (counter2 !\u003d editLine.length) {"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        fw.write(\"|\");"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                fw.write(\"\\n\");"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            else {"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                fw.write(scanner.nextLine() + \"\\n\");"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            counter++;"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        fw.close();"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        scanner.close();"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        Files.delete(Paths.get(\"data/temp.txt\"));"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     * Access task_list.txt to facilitate insertion of task"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     * @param task Task-object to be inserted"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     * @throws IOException Error for input-output"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public void insert(Task task) throws IOException {"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        FileWriter fw \u003d new FileWriter(\"data/task_list.txt\", true);"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        String function \u003d task.getSymbol();"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        switch (function) {"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            case \"[T]\":"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                fw.write(\"T | ✗ | \" + task.getDescription() + \" | \" + task.getPriority() + \"\\n\");"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            case \"[D]\":"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                fw.write(\"D | ✗ | \" + task.getDescription() + \" | \" + task.getDateAndTime().getDayOfMonth()"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        + \"/\" + task.getDateAndTime().getMonthValue() + \"/\" + task.getDateAndTime().getYear() + \", \""
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        + task.getDateAndTime().getHour() + \":\" + task.getDateAndTime().getMinute()"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        + \" | \" + task.getPriority() + \"\\n\");"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            case \"[E]\":"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                fw.write(\"E | ✗ | \" + task.getDescription() + \" | \" + task.getDateAndTime().getDayOfMonth()"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        + \"/\" + task.getDateAndTime().getMonthValue() + \"/\" + task.getDateAndTime().getYear() + \", \""
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        + task.getDateAndTime().getHour() + \":\" + task.getDateAndTime().getMinute()"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        + \" | \" + task.getPriority() + \"\\n\");"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            case \"[W]\":"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                fw.write(\"W | ✗ | \" + task.getDescription() + \" | \" + task.getStart().getDayOfMonth()"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        + \"/\" + task.getStart().getMonthValue() + \"/\" + task.getStart().getYear() + \", \""
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        + task.getStart().getHour() + \":\" + task.getStart().getMinute() + \" - \" + task.getEnd().getDayOfMonth()"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        + \"/\" + task.getEnd().getMonthValue() + \"/\" + task.getEnd().getYear() + \", \""
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        + task.getEnd().getHour() + \":\" + task.getEnd().getMinute()"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                        + \" | \" + task.getPriority() + \"\\n\");"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        fw.close();"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 159,
         "author": {
           "gitId": "aloysiuswwc"
         },
@@ -2252,7 +2793,7 @@
       }
     ],
     "authorContributionMap": {
-      "aloysiuswwc": 106
+      "aloysiuswwc": 159
     }
   },
   {
@@ -3518,528 +4059,605 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "import java.time.LocalDateTime;"
+        "content": "import enumerations.PriorityEnum;"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "import java.time.LocalDateTime;"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "/**"
+        "content": ""
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": " * Task-superclass. Has 3 subclass -\u003e Todo, Deadline \u0026 Event"
+        "content": "/**"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": " */"
+        "content": " * Task-superclass. Has 3 subclass -\u003e Todo, Deadline \u0026 Event"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "public abstract class Task {"
+        "content": " */"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    protected String description;"
+        "content": "public abstract class Task {"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    protected boolean isDone;"
+        "content": "    protected PriorityEnum priority;"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    protected String symbol;"
+        "content": "    protected String description;"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "    protected boolean isDone;"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "    protected String symbol;"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Constructs Task-class object. Not allowed by itself, has to be implemented through subclass constructors"
+        "content": ""
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     *"
+        "content": "    /**"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param description Description of task as a string"
+        "content": "     * Constructs Task-class object. Not allowed by itself, has to be implemented through subclass constructors"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "     *"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public Task(String description) {"
+        "content": "     * @param description Description of task as a string"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        setDescription(description);"
+        "content": "     */"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        this.isDone \u003d false;"
+        "content": "    public Task(String description) {"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "        setDescription(description);"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "        this.isDone \u003d false;"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "        priority \u003d PriorityEnum.valueOf(\"NA\");"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @return Returns done-value of task as a string, either [✗] or [✓]"
+        "content": "    }"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": ""
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public String getDone() {"
+        "content": "    public void setPriority(String priority) {"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (!isDone) {"
+        "content": "        this.priority \u003d PriorityEnum.valueOf(priority.toUpperCase());"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            return (\"[✗]\");"
+        "content": "    }"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            return (\"[✓]\");"
+        "content": "    public PriorityEnum getPriority() {"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "        return this.priority;"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Sets the description parameter using a string input"
+        "content": "    /**"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     *"
+        "content": "     * @return Returns done-value of task as a string, either [✗] or [✓]"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param description Description of task"
+        "content": "     */"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "    public String getDone() {"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void setDescription(String description) {"
+        "content": "        if (!isDone) {"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        this.description \u003d description;"
+        "content": "            return (\"[✗]\");"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "        }"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "            return (\"[✓]\");"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "    }"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @return Returns the description of task"
+        "content": ""
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "    /**"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public String getDescription() {"
+        "content": "     * Sets the description parameter using a string input"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        return(description);"
+        "content": "     *"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "     * @param description Description of task"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "     */"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "    public void setDescription(String description) {"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Sets done parameter to true"
+        "content": "        this.description \u003d description;"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "    }"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void setDone() {"
+        "content": ""
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        this.isDone \u003d true;"
+        "content": "    /**"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "     * @return Returns the description of task"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "     */"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "    public String getDescription() {"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Empty methods utilized for subclass-overriding"
+        "content": "        return(description);"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     *"
+        "content": "    }"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @return Empty return"
+        "content": ""
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "    /**"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public LocalDateTime getDateAndTime() {"
+        "content": "     * Sets done parameter to true"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        return null;"
+        "content": "     */"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    };"
+        "content": "    public void setDone() {"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "        this.isDone \u003d true;"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public LocalDateTime getStart() {"
+        "content": "    }"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        return null;"
+        "content": ""
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "    /**"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "     * Empty methods utilized for subclass-overriding"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public LocalDateTime getEnd() {"
+        "content": "     *"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        return null;"
+        "content": "     * @return Empty return"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "     */"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "    public LocalDateTime getDateAndTime() {"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "        return null;"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Abstract. Actual in subclasses."
+        "content": "    };"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": ""
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public abstract String getSymbol();"
+        "content": "    public LocalDateTime getStart() {"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "        return null;"
       },
       {
         "lineNumber": 78,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public LocalDateTime getEnd() {"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        return null;"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     * Abstract. Actual in subclasses."
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public abstract String getSymbol();"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 89,
         "author": {
           "gitId": "aloysiuswwc"
         },
@@ -4047,7 +4665,7 @@
       }
     ],
     "authorContributionMap": {
-      "aloysiuswwc": 78
+      "aloysiuswwc": 89
     }
   },
   {
@@ -4968,140 +5586,140 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "                    store.get(store.size()-1).setPriority(splitSections[3].trim());"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"D\":"
+        "content": "                    break;"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    store.add(new Deadline(splitSections[2].trim(), splitSections[3].trim()));"
+        "content": "                case \"D\":"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "                    store.add(new Deadline(splitSections[2].trim(), splitSections[3].trim()));"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"E\":"
+        "content": "                    store.get(store.size()-1).setPriority(splitSections[4].trim());"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    store.add(new Event(splitSections[2].trim(), splitSections[3].trim()));"
+        "content": "                    break;"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "                case \"E\":"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"W\":"
+        "content": "                    store.add(new Event(splitSections[2].trim(), splitSections[3].trim()));"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    String[] startEnd \u003d splitSections[3].split(\"-\");"
+        "content": "                    store.get(store.size()-1).setPriority(splitSections[4].trim());"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    store.add(new Within(splitSections[2].trim(), startEnd[0].trim(), startEnd[1].trim()));"
+        "content": "                    break;"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "                case \"W\":"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            }"
+        "content": "                    String[] startEnd \u003d splitSections[3].split(\"-\");"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                    store.add(new Within(splitSections[2].trim(), startEnd[0].trim(), startEnd[1].trim()));"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                    store.get(store.size()-1).setPriority(splitSections[4].trim());"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "                    break;"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "            }"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @return Returns the ArrayList"
+        "content": "            if (splitSections[1].trim().equals(\"✓\")) {"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "                store.get(store.size()-1).setDone();"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public ArrayList\u003cTask\u003e getStore() {"
+        "content": "            }"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        return store;"
+        "content": "        }"
       },
       {
         "lineNumber": 51,
@@ -5129,497 +5747,497 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Helper method, used by add-method to identify user-input errors."
+        "content": "     * @return Returns the ArrayList"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     *"
+        "content": "     */"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param input User-input"
+        "content": "    public ArrayList\u003cTask\u003e getStore() {"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @return"
+        "content": "        return store;"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "    }"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public static boolean catcher(String input) { // exception helper method"
+        "content": ""
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String[] splitDescription \u003d input.split(\" \");"
+        "content": "    /**"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        return input.trim().length() \u003d\u003d splitDescription[0].length();"
+        "content": "     * Helper method, used by add-method to identify user-input errors."
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "     *"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "     * @param input User-input"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "     * @return"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Sets the done status of the selected task to true by calling method in task-class"
+        "content": "     */"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     *"
+        "content": "    public static boolean catcher(String input) { // exception helper method"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param input User-input"
+        "content": "        String[] splitDescription \u003d input.split(\" \");"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "        return input.trim().length() \u003d\u003d splitDescription[0].length();"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void setDone(String input) throws TooManySpacesException{"
+        "content": "    }"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (input.contains(\"  \")) {"
+        "content": ""
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            throw new TooManySpacesException();"
+        "content": "    /**"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "     * Sets the done status of the selected task to true by calling method in task-class"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String[] splitIndex \u003d input.split(\" \");"
+        "content": "     *"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        int index \u003d Integer.parseInt(splitIndex[1]) - 1;"
+        "content": "     * @param input User-input"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        store.get(index).setDone();"
+        "content": "     */"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "    public void setDone(String input) throws TooManySpacesException {"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "        if (input.contains(\"  \")) {"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "            throw new TooManySpacesException();"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Deletes the selected task from the ArrayList"
+        "content": "        }"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     *"
+        "content": "        String[] splitIndex \u003d input.split(\" \");"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param input User-input"
+        "content": "        int index \u003d Integer.parseInt(splitIndex[1]) - 1;"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @throws Exception Error when invalid task index number is inputted or when input format is wrong"
+        "content": "        store.get(index).setDone();"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "    }"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void delete(String input) throws TooManySpacesException {"
+        "content": ""
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (input.contains(\"  \")) {"
+        "content": "    public void setPriority(String input) throws TooManySpacesException {"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            throw new TooManySpacesException();"
+        "content": "        if (input.contains(\"  \")) {"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "            throw new TooManySpacesException();"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String[] splitIndex \u003d input.split(\" \");"
+        "content": "        }"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        store.remove(Integer.parseInt(splitIndex[1]) - 1);"
+        "content": "        String[] splitIndex \u003d input.split(\" \");"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "        int index \u003d Integer.parseInt(splitIndex[1]) - 1;"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "        store.get(index).setPriority(splitIndex[2]);"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "    }"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Adds the task to the ArrayList. Catches the first alphabet of the input to determine type of task. Calls"
+        "content": ""
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * constructor of that task"
+        "content": "    /**"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     *"
+        "content": "     * Deletes the selected task from the ArrayList"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param input User-input"
+        "content": "     *"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @throws Exception Error when input format is wrong or missing information"
+        "content": "     * @param input User-input"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "     * @throws Exception Error when invalid task index number is inputted or when input format is wrong"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void add(String input) throws Exception {"
+        "content": "     */"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        int function \u003d 0;"
+        "content": "    public void delete(String input) throws TooManySpacesException {"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (input.toLowerCase().startsWith(\"t\")) { function \u003d 1; }"
+        "content": "        if (input.contains(\"  \")) {"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (input.toLowerCase().startsWith(\"d\")) { function \u003d 2; }"
+        "content": "            throw new TooManySpacesException();"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (input.toLowerCase().startsWith(\"e\")) { function \u003d 3; }"
+        "content": "        }"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (input.toLowerCase().startsWith(\"w\")) { function \u003d 4; }"
+        "content": "        String[] splitIndex \u003d input.split(\" \");"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        switch (function) {"
+        "content": "        store.remove(Integer.parseInt(splitIndex[1]) - 1);"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case 1:"
+        "content": "    }"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                if (catcher(input)) {"
+        "content": ""
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    throw new NoDescriptionException();"
+        "content": "    /**"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                }"
+        "content": "     * Adds the task to the ArrayList. Catches the first alphabet of the input to determine type of task. Calls"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                if (input.contains(\"  \")) {"
+        "content": "     * constructor of that task"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    throw new TooManySpacesException();"
+        "content": "     *"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                }"
+        "content": "     * @param input User-input"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                store.add(new ToDo(input.substring(4).trim()));"
+        "content": "     * @throws Exception Error when input format is wrong or missing information"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                break;"
+        "content": "     */"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case 2:"
+        "content": "    public void add(String input) throws Exception {"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                if (catcher(input)) {"
+        "content": "        int function \u003d 0;"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    throw new NoDescriptionException();"
+        "content": "        if (input.toLowerCase().startsWith(\"t\")) { function \u003d 1; }"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                }"
+        "content": "        if (input.toLowerCase().startsWith(\"d\")) { function \u003d 2; }"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                if (input.contains(\"  \")) {"
+        "content": "        if (input.toLowerCase().startsWith(\"e\")) { function \u003d 3; }"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    throw new TooManySpacesException();"
+        "content": "        if (input.toLowerCase().startsWith(\"w\")) { function \u003d 4; }"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                }"
+        "content": "        switch (function) {"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                String[] splitBy \u003d input.split(\"/by\");"
+        "content": "            case 1:"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                if (catcher(splitBy[1])) {"
+        "content": "                if (catcher(input)) {"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    throw new NoTimeframeException();"
+        "content": "                    throw new NoDescriptionException();"
       },
       {
         "lineNumber": 125,
@@ -5633,56 +6251,56 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                store.add(new Deadline(splitBy[0].substring(8).trim(), splitBy[1].trim()));"
+        "content": "                if (input.contains(\"  \")) {"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                break;"
+        "content": "                    throw new TooManySpacesException();"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case 3:"
+        "content": "                }"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                if (catcher(input)) {"
+        "content": "                store.add(new ToDo(input.substring(4).trim()));"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    throw new NoDescriptionException();"
+        "content": "                break;"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                }"
+        "content": "            case 2:"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                if (input.contains(\"  \")) {"
+        "content": "                if (catcher(input)) {"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    throw new TooManySpacesException();"
+        "content": "                    throw new NoDescriptionException();"
       },
       {
         "lineNumber": 134,
@@ -5696,84 +6314,84 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                String[] splitAt \u003d input.split(\"/at\");"
+        "content": "                if (input.contains(\"  \")) {"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                if (catcher(splitAt[1])) {"
+        "content": "                    throw new TooManySpacesException();"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    throw new NoTimeframeException();"
+        "content": "                }"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                }"
+        "content": "                String[] splitBy \u003d input.split(\"/by\");"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                store.add(new Event(splitAt[0].substring(5).trim(), splitAt[1].trim()));"
+        "content": "                if (catcher(splitBy[1])) {"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                break;"
+        "content": "                    throw new NoTimeframeException();"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case 4:"
+        "content": "                }"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                if (catcher(input)) {"
+        "content": "                store.add(new Deadline(splitBy[0].substring(8).trim(), splitBy[1].trim()));"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    throw new NoDescriptionException();"
+        "content": "                break;"
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                }"
+        "content": "            case 3:"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                if (input.contains(\"  \")) {"
+        "content": "                if (catcher(input)) {"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    throw new TooManySpacesException();"
+        "content": "                    throw new NoDescriptionException();"
       },
       {
         "lineNumber": 147,
@@ -5787,66 +6405,178 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                String[] splitFromTo \u003d input.split(\"/from\");"
+        "content": "                if (input.contains(\"  \")) {"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                String[] dates \u003d splitFromTo[1].split(\"/to\");"
+        "content": "                    throw new TooManySpacesException();"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                if (catcher(dates[0]) || catcher(dates[1])) {"
+        "content": "                }"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    throw new NoTimeframeException();"
+        "content": "                String[] splitAt \u003d input.split(\"/at\");"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                }"
+        "content": "                if (catcher(splitAt[1])) {"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                store.add(new Within(splitFromTo[0].substring(6).trim(), dates[0].trim(), dates[1].trim()));"
+        "content": "                    throw new NoTimeframeException();"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                break;"
+        "content": "                }"
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                store.add(new Event(splitAt[0].substring(5).trim(), splitAt[1].trim()));"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                break;"
       },
       {
         "lineNumber": 157,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "            case 4:"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                if (catcher(input)) {"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    throw new NoDescriptionException();"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                if (input.contains(\"  \")) {"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    throw new TooManySpacesException();"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                String[] splitFromTo \u003d input.split(\"/from\");"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                String[] dates \u003d splitFromTo[1].split(\"/to\");"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                if (catcher(dates[0]) || catcher(dates[1])) {"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                    throw new NoTimeframeException();"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                store.add(new Within(splitFromTo[0].substring(6).trim(), dates[0].trim(), dates[1].trim()));"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "                break;"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 173,
         "author": {
           "gitId": "aloysiuswwc"
         },
@@ -5854,7 +6584,7 @@
       }
     ],
     "authorContributionMap": {
-      "aloysiuswwc": 157
+      "aloysiuswwc": 173
     }
   },
   {
@@ -6433,721 +7163,721 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "    public void printPriorityMessage() {"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints error message when marker \"/by\" or \"/at\" is incorrectly inputted. Relevant methods will not work"
+        "content": "        System.out.println(\"Roger. I\u0027ve set the priority of this task as such.\");"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * in this case"
+        "content": "    }"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": ""
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void showIndexError() {"
+        "content": "    /**"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"Make sure you typed identifier \\\"/by\\\", \\\"/at\\\", \\\"/from\\\" and/or \\\"/to\\\" correctly!\"); }"
+        "content": "     * Prints error message when marker \"/by\" or \"/at\" is incorrectly inputted. Relevant methods will not work"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "     * in this case"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "     */"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints error message when date format is wrong (used when adding task)"
+        "content": "    public void showIndexError() {"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "        System.out.println(\"Make sure you typed identifier \\\"/by\\\", \\\"/at\\\", \\\"/from\\\" and/or \\\"/to\\\" correctly!\"); }"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void showDateFormatError1() {"
+        "content": ""
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"Date format is wrong. Use dd/mm/yyyy hh:mm.\");"
+        "content": "    /**"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "     * Prints error message when date format is wrong (used when adding task)"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "     */"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "    public void showDateFormatError1() {"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints error message when date format is wrong (used when searching for tasks in that day)"
+        "content": "        System.out.println(\"Date format is wrong. Use dd/mm/yyyy hh:mm.\");"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "    }"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void showDateFormatError2() {"
+        "content": ""
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"Date format is wrong. Use dd/mm/yyyy\");"
+        "content": "    /**"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "     * Prints error message when date format is wrong (used when searching for tasks in that day)"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "     */"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "    public void showDateFormatError2() {"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints error message when date format is wrong (used when searching for tasks in that month)"
+        "content": "        System.out.println(\"Date format is wrong. Use dd/mm/yyyy\");"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "    }"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void showDateFormatError3() {"
+        "content": ""
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"Date format is wrong. Use mm/yyyy\");"
+        "content": "    /**"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "     * Prints error message when date format is wrong (used when searching for tasks in that month)"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "     */"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "    public void showDateFormatError3() {"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints error message when date format is wrong (used when searching for tasks in that year)"
+        "content": "        System.out.println(\"Date format is wrong. Use mm/yyyy\");"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "    }"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void showDateFormatError4() {"
+        "content": ""
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"Date format is wrong. Use yyyy\");"
+        "content": "    /**"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "     * Prints error message when date format is wrong (used when searching for tasks in that year)"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "     */"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void printCmdList() {"
+        "content": "    public void showDateFormatError4() {"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"-ToDo description\\n\" +"
+        "content": "        System.out.println(\"Date format is wrong. Use yyyy\");"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                \"-Deadline description /by dd/mm/yyyy hh:mm\\n\" +"
+        "content": "    }"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                \"-Event description /at dd/mm/yyyy hh:mm\\n\" +"
+        "content": ""
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                \"-Within description /from dd/mm/yyyy hh:mm /to dd/mm/yyyy hh:mm\" +"
+        "content": "    public void showIncorrectPriorityError() {"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                \"-List\\n\" +"
+        "content": "        System.out.println(\"Invalid priority setting. Use either NA, LOW, MEDIUM or HIGH\");"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                \"-Day dd/mm/yyyy\\n\" +"
+        "content": "    }"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                \"-Month mm/yyyy\\n\" +"
+        "content": ""
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                \"-Year yyyy\\n\" +"
+        "content": "    public void printCmdList() {"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                \"-Delete (item number)\\n\" +"
+        "content": "        System.out.println(\"-ToDo description\\n\" +"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                \"-Done (item number)\\n\" +"
+        "content": "                \"-Deadline description /by dd/mm/yyyy hh:mm\\n\" +"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                \"-Bye\");"
+        "content": "                \"-Event description /at dd/mm/yyyy hh:mm\\n\" +"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                \"-Within description /from dd/mm/yyyy hh:mm /to dd/mm/yyyy hh:mm\" +"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "                \"-List\\n\" +"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "                \"-Day dd/mm/yyyy\\n\" +"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints error message when command inputted is incorrect"
+        "content": "                \"-Month mm/yyyy\\n\" +"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "                \"-Year yyyy\\n\" +"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void showIllegalArgumentError() {"
+        "content": "                \"-Delete (item number)\\n\" +"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"Invalid input :( Please try again and follow the template closely!\");"
+        "content": "                \"-Done (item number)\\n\" +"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        printCmdList();"
+        "content": "                \"-Priority (item number) (priority level)\\n\" +"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                \"-Bye\");"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    private void printTodo(Task task) {"
+        "content": ""
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"[T]\" + task.getDone() + \" \" + task.getDescription());"
+        "content": "    /**"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "     * Prints error message when command inputted is incorrect"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "     */"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    private void printDeadline(Task task) {"
+        "content": "    public void showIllegalArgumentError() {"
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"[D]\" + task.getDone() + \" \" + task.getDescription() + \" (by: \" +"
+        "content": "        System.out.println(\"Invalid input :( Please try again and follow the template closely!\");"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                task.getDateAndTime().getDayOfMonth() + \" \" + task.getDateAndTime().getMonth() + \" \""
+        "content": "        printCmdList();"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                + task.getDateAndTime().getYear() + \", \" + task.getDateAndTime().getHour() + \":\""
+        "content": "    }"
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                + task.getDateAndTime().getMinute() + \")\");"
+        "content": ""
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "    private void printTodo(Task task) {"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "        System.out.println(\"[T]\" + task.getDone() + \" \" + task.getDescription() + \" (Priority: \" + task.getPriority() + \")\");"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    private void printEvent(Task task) {"
+        "content": "    }"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"[E]\" + task.getDone() + \" \" + task.getDescription() + \" (at: \" +"
+        "content": ""
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                task.getDateAndTime().getDayOfMonth() + \" \" + task.getDateAndTime().getMonth() + \" \""
+        "content": "    private void printDeadline(Task task) {"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                + task.getDateAndTime().getYear() + \", \" + task.getDateAndTime().getHour() + \":\""
+        "content": "        System.out.println(\"[D]\" + task.getDone() + \" \" + task.getDescription() + \" (by: \" +"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                + task.getDateAndTime().getMinute() + \")\");"
+        "content": "                task.getDateAndTime().getDayOfMonth() + \" \" + task.getDateAndTime().getMonth() + \" \""
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                + task.getDateAndTime().getYear() + \", \" + task.getDateAndTime().getHour() + \":\""
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "                + task.getDateAndTime().getMinute() + \") (Priority: \" + task.getPriority() + \")\");"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    private void printWithin(Task task) {"
+        "content": "    }"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"[W]\" + task.getDone() + \" \" + task.getDescription() + \" (within: \""
+        "content": ""
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                + task.getStart().getDayOfMonth() + \" \" + task.getStart().getMonth() + \" \""
+        "content": "    private void printEvent(Task task) {"
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                + task.getStart().getYear() + \", \" + task.getStart().getHour() + \":\" + task.getStart().getMinute()"
+        "content": "        System.out.println(\"[E]\" + task.getDone() + \" \" + task.getDescription() + \" (at: \" +"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                + \" to \" + task.getEnd().getDayOfMonth() + \" \" + task.getEnd().getMonth() + \" \""
+        "content": "                task.getDateAndTime().getDayOfMonth() + \" \" + task.getDateAndTime().getMonth() + \" \""
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                + task.getEnd().getYear() + \", \" + task.getEnd().getHour() + \":\" + task.getEnd().getMinute() + \")\");"
+        "content": "                + task.getDateAndTime().getYear() + \", \" + task.getDateAndTime().getHour() + \":\""
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                + task.getDateAndTime().getMinute() + \") (Priority: \" + task.getPriority() + \")\");"
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints message when addition of task is successful"
+        "content": "    private void printWithin(Task task) {"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     *"
+        "content": "        System.out.println(\"[W]\" + task.getDone() + \" \" + task.getDescription() + \" (within: \""
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param task The added Task-object"
+        "content": "                + task.getStart().getDayOfMonth() + \" \" + task.getStart().getMonth() + \" \""
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "                + task.getStart().getYear() + \", \" + task.getStart().getHour() + \":\" + task.getStart().getMinute()"
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void printAddMessage(Task task) {"
+        "content": "                + \" to \" + task.getEnd().getDayOfMonth() + \" \" + task.getEnd().getMonth() + \" \""
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"Got it. I\u0027ve added this task:\");"
+        "content": "                + task.getEnd().getYear() + \", \" + task.getEnd().getHour() + \":\" + task.getEnd().getMinute() + \") (Priority: \" + task.getPriority() + \")\");"
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String function \u003d task.getSymbol().toUpperCase();"
+        "content": "    }"
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        switch (function) {"
+        "content": ""
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case \"[T]\":"
+        "content": "    /**"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                printTodo(task);"
+        "content": "     * Prints message when addition of task is successful"
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                break;"
+        "content": "     *"
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case \"[D]\":"
+        "content": "     * @param task The added Task-object"
       },
       {
         "lineNumber": 178,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                printDeadline(task);"
+        "content": "     */"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                break;"
+        "content": "    public void printAddMessage(Task task) {"
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case \"[E]\":"
+        "content": "        System.out.println(\"Got it. I\u0027ve added this task:\");"
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                printEvent(task);"
+        "content": "        String function \u003d task.getSymbol().toUpperCase();"
       },
       {
         "lineNumber": 182,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                break;"
+        "content": "        switch (function) {"
       },
       {
         "lineNumber": 183,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            case \"[W]\":"
+        "content": "            case \"[T]\":"
       },
       {
         "lineNumber": 184,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                printWithin(task);"
+        "content": "                printTodo(task);"
       },
       {
         "lineNumber": 185,
@@ -7161,1351 +7891,1351 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "            case \"[D]\":"
       },
       {
         "lineNumber": 187,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                printDeadline(task);"
       },
       {
         "lineNumber": 188,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "                break;"
       },
       {
         "lineNumber": 189,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "            case \"[E]\":"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints all the task whose description contains the search query"
+        "content": "                printEvent(task);"
       },
       {
         "lineNumber": 191,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param input Input by user"
+        "content": "                break;"
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param taskList TaskList class containing the store of tasks"
+        "content": "            case \"[W]\":"
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @throws TooManySpacesException"
+        "content": "                printWithin(task);"
       },
       {
         "lineNumber": 194,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "                break;"
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void find(String input, TaskList taskList) throws TooManySpacesException {"
+        "content": "        }"
       },
       {
         "lineNumber": 196,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (input.contains(\"  \")) { throw new TooManySpacesException(); }"
+        "content": "    }"
       },
       {
         "lineNumber": 197,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (taskList.getStore().size() \u003d\u003d 0) {"
+        "content": ""
       },
       {
         "lineNumber": 198,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            System.out.println(\"There are no tasks in your list\");"
+        "content": "    /**"
       },
       {
         "lineNumber": 199,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            return;"
+        "content": "     * Prints all the task whose description contains the search query"
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "     * @param input Input by user"
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String[] headers \u003d new String[2];"
+        "content": "     * @param taskList TaskList class containing the store of tasks"
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        headers[0] \u003d \"There are no matching tasks\";"
+        "content": "     * @throws TooManySpacesException"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        headers[1] \u003d \"Here are the matching tasks in your list:\";"
+        "content": "     */"
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        int index \u003d 1;"
+        "content": "    public void find(String input, TaskList taskList) throws TooManySpacesException {"
       },
       {
         "lineNumber": 205,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String[] query \u003d input.split(\" \");"
+        "content": "        if (input.contains(\"  \")) { throw new TooManySpacesException(); }"
       },
       {
         "lineNumber": 206,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        for (Task task : taskList.getStore()) {"
+        "content": "        if (taskList.getStore().size() \u003d\u003d 0) {"
       },
       {
         "lineNumber": 207,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            String symbol \u003d task.getSymbol();"
+        "content": "            System.out.println(\"There are no tasks in your list\");"
       },
       {
         "lineNumber": 208,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            switch (symbol) {"
+        "content": "            return;"
       },
       {
         "lineNumber": 209,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[T]\":"
+        "content": "        }"
       },
       {
         "lineNumber": 210,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getDescription().contains(query[1].trim())) {"
+        "content": "        String[] headers \u003d new String[2];"
       },
       {
         "lineNumber": 211,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        if (index \u003d\u003d 1) {"
+        "content": "        headers[0] \u003d \"There are no matching tasks\";"
       },
       {
         "lineNumber": 212,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            System.out.println (headers[1]);"
+        "content": "        headers[1] \u003d \"Here are the matching tasks in your list:\";"
       },
       {
         "lineNumber": 213,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "        int index \u003d 1;"
       },
       {
         "lineNumber": 214,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        System.out.print(index + \". \");"
+        "content": "        String[] query \u003d input.split(\" \");"
       },
       {
         "lineNumber": 215,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printTodo(task);"
+        "content": "        for (Task task : taskList.getStore()) {"
       },
       {
         "lineNumber": 216,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        index++;"
+        "content": "            String symbol \u003d task.getSymbol();"
       },
       {
         "lineNumber": 217,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        break;"
+        "content": "            switch (symbol) {"
       },
       {
         "lineNumber": 218,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                case \"[T]\":"
       },
       {
         "lineNumber": 219,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[D]\":"
+        "content": "                    if (task.getDescription().contains(query[1].trim())) {"
       },
       {
         "lineNumber": 220,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getDescription().contains(query[1].trim())) {"
+        "content": "                        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 221,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        if (index \u003d\u003d 1) {"
+        "content": "                            System.out.println (headers[1]);"
       },
       {
         "lineNumber": 222,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            System.out.println (headers[1]);"
+        "content": "                        }"
       },
       {
         "lineNumber": 223,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "                        System.out.print(index + \". \");"
       },
       {
         "lineNumber": 224,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        System.out.print(index + \". \");"
+        "content": "                        printTodo(task);"
       },
       {
         "lineNumber": 225,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printDeadline(task);"
+        "content": "                        index++;"
       },
       {
         "lineNumber": 226,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        index++;"
+        "content": "                        break;"
       },
       {
         "lineNumber": 227,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        break;"
+        "content": "                    }"
       },
       {
         "lineNumber": 228,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                case \"[D]\":"
       },
       {
         "lineNumber": 229,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[E]\":"
+        "content": "                    if (task.getDescription().contains(query[1].trim())) {"
       },
       {
         "lineNumber": 230,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getDescription().contains(query[1].trim())) {"
+        "content": "                        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 231,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        if (index \u003d\u003d 1) {"
+        "content": "                            System.out.println (headers[1]);"
       },
       {
         "lineNumber": 232,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            System.out.println (headers[1]);"
+        "content": "                        }"
       },
       {
         "lineNumber": 233,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "                        System.out.print(index + \". \");"
       },
       {
         "lineNumber": 234,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        System.out.print(index + \". \");"
+        "content": "                        printDeadline(task);"
       },
       {
         "lineNumber": 235,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printEvent(task);"
+        "content": "                        index++;"
       },
       {
         "lineNumber": 236,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        index++;"
+        "content": "                        break;"
       },
       {
         "lineNumber": 237,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        break;"
+        "content": "                    }"
       },
       {
         "lineNumber": 238,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                case \"[E]\":"
       },
       {
         "lineNumber": 239,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[W]\":"
+        "content": "                    if (task.getDescription().contains(query[1].trim())) {"
       },
       {
         "lineNumber": 240,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getDescription().contains(query[1].trim())) {"
+        "content": "                        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 241,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        if (index \u003d\u003d 1) {"
+        "content": "                            System.out.println (headers[1]);"
       },
       {
         "lineNumber": 242,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            System.out.println (headers[1]);"
+        "content": "                        }"
       },
       {
         "lineNumber": 243,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "                        System.out.print(index + \". \");"
       },
       {
         "lineNumber": 244,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        System.out.print(index + \". \");"
+        "content": "                        printEvent(task);"
       },
       {
         "lineNumber": 245,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printWithin(task);"
+        "content": "                        index++;"
       },
       {
         "lineNumber": 246,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        index++;"
+        "content": "                        break;"
       },
       {
         "lineNumber": 247,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        break;"
+        "content": "                    }"
       },
       {
         "lineNumber": 248,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                case \"[W]\":"
       },
       {
         "lineNumber": 249,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            }"
+        "content": "                    if (task.getDescription().contains(query[1].trim())) {"
       },
       {
         "lineNumber": 250,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 251,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (index \u003d\u003d 1) {"
+        "content": "                            System.out.println (headers[1]);"
       },
       {
         "lineNumber": 252,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            System.out.println (headers[0]);"
+        "content": "                        }"
       },
       {
         "lineNumber": 253,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                        System.out.print(index + \". \");"
       },
       {
         "lineNumber": 254,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                        printWithin(task);"
       },
       {
         "lineNumber": 255,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "                        index++;"
       },
       {
         "lineNumber": 256,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "                        break;"
       },
       {
         "lineNumber": 257,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints out the ArrayList of tasks to the terminal"
+        "content": "                    }"
       },
       {
         "lineNumber": 258,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "            }"
       },
       {
         "lineNumber": 259,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void list(TaskList taskList) {"
+        "content": "        }"
       },
       {
         "lineNumber": 260,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (taskList.getStore().size() \u003d\u003d 0) {"
+        "content": "        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 261,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            System.out.println(\"There are no tasks in your list\");"
+        "content": "            System.out.println (headers[0]);"
       },
       {
         "lineNumber": 262,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            return;"
+        "content": "        }"
       },
       {
         "lineNumber": 263,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "    }"
       },
       {
         "lineNumber": 264,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        System.out.println(\"Here are the tasks in your list:\");"
+        "content": ""
       },
       {
         "lineNumber": 265,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        int index \u003d 1;"
+        "content": "    /**"
       },
       {
         "lineNumber": 266,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        for (Task task : taskList.getStore()) {"
+        "content": "     * Prints out the ArrayList of tasks to the terminal"
       },
       {
         "lineNumber": 267,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            String symbol \u003d task.getSymbol();"
+        "content": "     */"
       },
       {
         "lineNumber": 268,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            switch (symbol) {"
+        "content": "    public void list(TaskList taskList) {"
       },
       {
         "lineNumber": 269,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[T]\":"
+        "content": "        if (taskList.getStore().size() \u003d\u003d 0) {"
       },
       {
         "lineNumber": 270,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    System.out.print(index + \". \");"
+        "content": "            System.out.println(\"There are no tasks in your list\");"
       },
       {
         "lineNumber": 271,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    printTodo(task);"
+        "content": "            return;"
       },
       {
         "lineNumber": 272,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    index++;"
+        "content": "        }"
       },
       {
         "lineNumber": 273,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "        System.out.println(\"Here are the tasks in your list:\");"
       },
       {
         "lineNumber": 274,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[D]\":"
+        "content": "        int index \u003d 1;"
       },
       {
         "lineNumber": 275,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    System.out.print(index + \". \");"
+        "content": "        for (Task task : taskList.getStore()) {"
       },
       {
         "lineNumber": 276,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    printDeadline(task);"
+        "content": "            String symbol \u003d task.getSymbol();"
       },
       {
         "lineNumber": 277,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    index++;"
+        "content": "            switch (symbol) {"
       },
       {
         "lineNumber": 278,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "                case \"[T]\":"
       },
       {
         "lineNumber": 279,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[E]\":"
+        "content": "                    System.out.print(index + \". \");"
       },
       {
         "lineNumber": 280,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    System.out.print(index + \". \");"
+        "content": "                    printTodo(task);"
       },
       {
         "lineNumber": 281,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    printEvent(task);"
+        "content": "                    index++;"
       },
       {
         "lineNumber": 282,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    index++;"
+        "content": "                    break;"
       },
       {
         "lineNumber": 283,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "                case \"[D]\":"
       },
       {
         "lineNumber": 284,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[W]\":"
+        "content": "                    System.out.print(index + \". \");"
       },
       {
         "lineNumber": 285,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    System.out.print(index + \". \");"
+        "content": "                    printDeadline(task);"
       },
       {
         "lineNumber": 286,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    printWithin(task);"
+        "content": "                    index++;"
       },
       {
         "lineNumber": 287,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    index++;"
+        "content": "                    break;"
       },
       {
         "lineNumber": 288,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "                case \"[E]\":"
       },
       {
         "lineNumber": 289,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            }"
+        "content": "                    System.out.print(index + \". \");"
       },
       {
         "lineNumber": 290,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                    printEvent(task);"
       },
       {
         "lineNumber": 291,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                    index++;"
       },
       {
         "lineNumber": 292,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "                    break;"
       },
       {
         "lineNumber": 293,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "                case \"[W]\":"
       },
       {
         "lineNumber": 294,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints out the tasks for the selected day"
+        "content": "                    System.out.print(index + \". \");"
       },
       {
         "lineNumber": 295,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param input User-input, includes the day"
+        "content": "                    printWithin(task);"
       },
       {
         "lineNumber": 296,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param taskList ArrayList of tasks"
+        "content": "                    index++;"
       },
       {
         "lineNumber": 297,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "                    break;"
       },
       {
         "lineNumber": 298,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void listByDay (String input, TaskList taskList) throws TooManySpacesException {"
+        "content": "            }"
       },
       {
         "lineNumber": 299,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (input.contains(\"  \")) { throw new TooManySpacesException(); }"
+        "content": "        }"
       },
       {
         "lineNumber": 300,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String[] headers \u003d new String[2];"
+        "content": "    }"
       },
       {
         "lineNumber": 301,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        headers[0] \u003d \"There are no tasks for that day\";"
+        "content": ""
       },
       {
         "lineNumber": 302,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        headers[1] \u003d \"Here are the tasks for that day:\";"
+        "content": "    /**"
       },
       {
         "lineNumber": 303,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String dateString \u003d input.substring(3).trim();"
+        "content": "     * Prints out the tasks for the selected day"
       },
       {
         "lineNumber": 304,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"d/M/yyyy\");"
+        "content": "     * @param input User-input, includes the day"
       },
       {
         "lineNumber": 305,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        LocalDate date \u003d LocalDate.parse(dateString, formatter);"
+        "content": "     * @param taskList ArrayList of tasks"
       },
       {
         "lineNumber": 306,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        int index \u003d 1;"
+        "content": "     */"
       },
       {
         "lineNumber": 307,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        for (Task task : taskList.getStore()) {"
+        "content": "    public void listByDay (String input, TaskList taskList) throws TooManySpacesException {"
       },
       {
         "lineNumber": 308,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            String symbol \u003d task.getSymbol();"
+        "content": "        if (input.contains(\"  \")) { throw new TooManySpacesException(); }"
       },
       {
         "lineNumber": 309,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            switch (symbol) {"
+        "content": "        String[] headers \u003d new String[2];"
       },
       {
         "lineNumber": 310,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[D]\":"
+        "content": "        headers[0] \u003d \"There are no tasks for that day\";"
       },
       {
         "lineNumber": 311,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getDateAndTime().getDayOfYear() \u003d\u003d date.getDayOfYear()"
+        "content": "        headers[1] \u003d \"Here are the tasks for that day:\";"
       },
       {
         "lineNumber": 312,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            \u0026\u0026 task.getDateAndTime().getYear() \u003d\u003d date.getYear()) {"
+        "content": "        String dateString \u003d input.substring(3).trim();"
       },
       {
         "lineNumber": 313,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        if (index \u003d\u003d 1) {"
+        "content": "        DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"d/M/yyyy\");"
       },
       {
         "lineNumber": 314,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            System.out.println (headers[1]);"
+        "content": "        LocalDate date \u003d LocalDate.parse(dateString, formatter);"
       },
       {
         "lineNumber": 315,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "        int index \u003d 1;"
       },
       {
         "lineNumber": 316,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        System.out.print(index + \". \");"
+        "content": "        for (Task task : taskList.getStore()) {"
       },
       {
         "lineNumber": 317,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printDeadline(task);"
+        "content": "            String symbol \u003d task.getSymbol();"
       },
       {
         "lineNumber": 318,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        index++;"
+        "content": "            switch (symbol) {"
       },
       {
         "lineNumber": 319,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                case \"[D]\":"
       },
       {
         "lineNumber": 320,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "                    if (task.getDateAndTime().getDayOfYear() \u003d\u003d date.getDayOfYear()"
       },
       {
         "lineNumber": 321,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[E]\":"
+        "content": "                            \u0026\u0026 task.getDateAndTime().getYear() \u003d\u003d date.getYear()) {"
       },
       {
         "lineNumber": 322,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getDateAndTime().getDayOfYear() \u003d\u003d date.getDayOfYear()"
+        "content": "                        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 323,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            \u0026\u0026 task.getDateAndTime().getYear() \u003d\u003d date.getYear()) {"
+        "content": "                            System.out.println (headers[1]);"
       },
       {
         "lineNumber": 324,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        if (index \u003d\u003d 1) {"
+        "content": "                        }"
       },
       {
         "lineNumber": 325,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            System.out.println (headers[1]);"
+        "content": "                        System.out.print(index + \". \");"
       },
       {
         "lineNumber": 326,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "                        printDeadline(task);"
       },
       {
         "lineNumber": 327,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        System.out.print(index + \". \");"
+        "content": "                        index++;"
       },
       {
         "lineNumber": 328,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printEvent(task);"
+        "content": "                    }"
       },
       {
         "lineNumber": 329,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        index++;"
+        "content": "                    break;"
       },
       {
         "lineNumber": 330,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                case \"[E]\":"
       },
       {
         "lineNumber": 331,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "                    if (task.getDateAndTime().getDayOfYear() \u003d\u003d date.getDayOfYear()"
       },
       {
         "lineNumber": 332,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[W]\":"
+        "content": "                            \u0026\u0026 task.getDateAndTime().getYear() \u003d\u003d date.getYear()) {"
       },
       {
         "lineNumber": 333,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getDateAndTime().getDayOfYear() \u003d\u003d date.getDayOfYear()"
+        "content": "                        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 334,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            \u0026\u0026 task.getDateAndTime().getYear() \u003d\u003d date.getYear()) {"
+        "content": "                            System.out.println (headers[1]);"
       },
       {
         "lineNumber": 335,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        if (index \u003d\u003d 1) {"
+        "content": "                        }"
       },
       {
         "lineNumber": 336,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            System.out.println (headers[1]);"
+        "content": "                        System.out.print(index + \". \");"
       },
       {
         "lineNumber": 337,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "                        printEvent(task);"
       },
       {
         "lineNumber": 338,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        System.out.print(index + \". \");"
+        "content": "                        index++;"
       },
       {
         "lineNumber": 339,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printWithin(task);"
+        "content": "                    }"
       },
       {
         "lineNumber": 340,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        index++;"
+        "content": "                    break;"
       },
       {
         "lineNumber": 341,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                case \"[W]\":"
       },
       {
         "lineNumber": 342,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "                    if (task.getStart().getDayOfYear() \u003c\u003d date.getDayOfYear()"
       },
       {
         "lineNumber": 343,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            }"
+        "content": "                            \u0026\u0026 task.getEnd().getDayOfYear() \u003e\u003d date.getDayOfYear()"
       },
       {
         "lineNumber": 344,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                            \u0026\u0026 task.getStart().getYear() \u003d\u003d date.getYear()"
       },
       {
         "lineNumber": 345,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (index \u003d\u003d 1) {"
+        "content": "                            \u0026\u0026 task.getEnd().getYear() \u003d\u003d date.getYear()) {"
       },
       {
         "lineNumber": 346,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            System.out.println (headers[0]);"
+        "content": "                        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 347,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                            System.out.println (headers[1]);"
       },
       {
         "lineNumber": 348,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                        }"
       },
       {
         "lineNumber": 349,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "                        System.out.print(index + \". \");"
       },
       {
         "lineNumber": 350,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "                        printWithin(task);"
       },
       {
         "lineNumber": 351,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints out the tasks for the selected month"
+        "content": "                        index++;"
       },
       {
         "lineNumber": 352,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param input User-input, includes the month"
+        "content": "                    }"
       },
       {
         "lineNumber": 353,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param taskList ArrayList of tasks"
+        "content": "                    break;"
       },
       {
         "lineNumber": 354,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "            }"
       },
       {
         "lineNumber": 355,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void listByMonth (String input, TaskList taskList) throws TooManySpacesException {"
+        "content": "        }"
       },
       {
         "lineNumber": 356,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (input.contains(\"  \")) { throw new TooManySpacesException(); }"
+        "content": "        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 357,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String[] headers \u003d new String[2];"
+        "content": "            System.out.println (headers[0]);"
       },
       {
         "lineNumber": 358,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        headers[0] \u003d \"There are no tasks for that month\";"
+        "content": "        }"
       },
       {
         "lineNumber": 359,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        headers[1] \u003d \"Here are the tasks for that month:\";"
+        "content": "    }"
       },
       {
         "lineNumber": 360,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String monthString \u003d input.substring(5).trim();"
+        "content": ""
       },
       {
         "lineNumber": 361,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"M/yyyy\");"
+        "content": "    /**"
       },
       {
         "lineNumber": 362,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        YearMonth yearMonth \u003d YearMonth.parse(monthString, formatter);"
+        "content": "     * Prints out the tasks for the selected month"
       },
       {
         "lineNumber": 363,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        int index \u003d 1;"
+        "content": "     * @param input User-input, includes the month"
       },
       {
         "lineNumber": 364,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        for (Task task : taskList.getStore()) {"
+        "content": "     * @param taskList ArrayList of tasks"
       },
       {
         "lineNumber": 365,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            String symbol \u003d task.getSymbol();"
+        "content": "     */"
       },
       {
         "lineNumber": 366,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            switch (symbol) {"
+        "content": "    public void listByMonth (String input, TaskList taskList) throws TooManySpacesException {"
       },
       {
         "lineNumber": 367,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[D]\":"
+        "content": "        if (input.contains(\"  \")) { throw new TooManySpacesException(); }"
       },
       {
         "lineNumber": 368,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getDateAndTime().getMonth() \u003d\u003d yearMonth.getMonth()"
+        "content": "        String[] headers \u003d new String[2];"
       },
       {
         "lineNumber": 369,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            \u0026\u0026 yearMonth.getYear() \u003d\u003d (task.getDateAndTime().getYear())) {"
+        "content": "        headers[0] \u003d \"There are no tasks for that month\";"
       },
       {
         "lineNumber": 370,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        if (index \u003d\u003d 1) {"
+        "content": "        headers[1] \u003d \"Here are the tasks for that month:\";"
       },
       {
         "lineNumber": 371,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            System.out.println (headers[1]);"
+        "content": "        String monthString \u003d input.substring(5).trim();"
       },
       {
         "lineNumber": 372,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "        DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"M/yyyy\");"
       },
       {
         "lineNumber": 373,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        System.out.print(index + \". \");"
+        "content": "        YearMonth yearMonth \u003d YearMonth.parse(monthString, formatter);"
       },
       {
         "lineNumber": 374,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printDeadline(task);"
+        "content": "        int index \u003d 1;"
       },
       {
         "lineNumber": 375,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        index++;"
+        "content": "        for (Task task : taskList.getStore()) {"
       },
       {
         "lineNumber": 376,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "            String symbol \u003d task.getSymbol();"
       },
       {
         "lineNumber": 377,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "            switch (symbol) {"
       },
       {
         "lineNumber": 378,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[E]\":"
+        "content": "                case \"[D]\":"
       },
       {
         "lineNumber": 379,
@@ -8554,7 +9284,7 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printEvent(task);"
+        "content": "                        printDeadline(task);"
       },
       {
         "lineNumber": 386,
@@ -8582,63 +9312,63 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[W]\":"
+        "content": "                case \"[E]\":"
       },
       {
         "lineNumber": 390,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    int situationOfYear \u003d 0;"
+        "content": "                    if (task.getDateAndTime().getMonth() \u003d\u003d yearMonth.getMonth()"
       },
       {
         "lineNumber": 391,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getStart().getYear() \u003d\u003d yearMonth.getYear() \u0026\u0026"
+        "content": "                            \u0026\u0026 yearMonth.getYear() \u003d\u003d (task.getDateAndTime().getYear())) {"
       },
       {
         "lineNumber": 392,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            task.getEnd().getYear() \u003d\u003d yearMonth.getYear()) {"
+        "content": "                        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 393,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        situationOfYear \u003d 1;"
+        "content": "                            System.out.println (headers[1]);"
       },
       {
         "lineNumber": 394,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                        }"
       },
       {
         "lineNumber": 395,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getStart().getYear() \u003c yearMonth.getYear() \u0026\u0026"
+        "content": "                        System.out.print(index + \". \");"
       },
       {
         "lineNumber": 396,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            task.getEnd().getYear() \u003d\u003d yearMonth.getYear()) {"
+        "content": "                        printEvent(task);"
       },
       {
         "lineNumber": 397,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        situationOfYear \u003d 2;"
+        "content": "                        index++;"
       },
       {
         "lineNumber": 398,
@@ -8652,714 +9382,714 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getStart().getYear() \u003d\u003d yearMonth.getYear() \u0026\u0026"
+        "content": "                    break;"
       },
       {
         "lineNumber": 400,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            task.getEnd().getYear() \u003e yearMonth.getYear()) {"
+        "content": "                case \"[W]\":"
       },
       {
         "lineNumber": 401,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        situationOfYear \u003d 3;"
+        "content": "                    int situationOfYear \u003d 0;"
       },
       {
         "lineNumber": 402,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                    if (task.getStart().getYear() \u003d\u003d yearMonth.getYear() \u0026\u0026"
       },
       {
         "lineNumber": 403,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getStart().getYear() \u003c yearMonth.getYear() \u0026\u0026"
+        "content": "                            task.getEnd().getYear() \u003d\u003d yearMonth.getYear()) {"
       },
       {
         "lineNumber": 404,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            task.getEnd().getYear() \u003e yearMonth.getYear()) {"
+        "content": "                        situationOfYear \u003d 1;"
       },
       {
         "lineNumber": 405,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        situationOfYear \u003d 4;"
+        "content": "                    }"
       },
       {
         "lineNumber": 406,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                    if (task.getStart().getYear() \u003c yearMonth.getYear() \u0026\u0026"
       },
       {
         "lineNumber": 407,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    switch (situationOfYear) {"
+        "content": "                            task.getEnd().getYear() \u003d\u003d yearMonth.getYear()) {"
       },
       {
         "lineNumber": 408,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        case 1:"
+        "content": "                        situationOfYear \u003d 2;"
       },
       {
         "lineNumber": 409,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            if (task.getStart().getMonthValue() \u003c\u003d yearMonth.getMonthValue() \u0026\u0026"
+        "content": "                    }"
       },
       {
         "lineNumber": 410,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                    task.getEnd().getMonthValue() \u003e\u003d yearMonth.getMonthValue() ) {"
+        "content": "                    if (task.getStart().getYear() \u003d\u003d yearMonth.getYear() \u0026\u0026"
       },
       {
         "lineNumber": 411,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                if (index \u003d\u003d 1) {"
+        "content": "                            task.getEnd().getYear() \u003e yearMonth.getYear()) {"
       },
       {
         "lineNumber": 412,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                    System.out.println (headers[1]);"
+        "content": "                        situationOfYear \u003d 3;"
       },
       {
         "lineNumber": 413,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                }"
+        "content": "                    }"
       },
       {
         "lineNumber": 414,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                System.out.print(index + \". \");"
+        "content": "                    if (task.getStart().getYear() \u003c yearMonth.getYear() \u0026\u0026"
       },
       {
         "lineNumber": 415,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                printWithin(task);"
+        "content": "                            task.getEnd().getYear() \u003e yearMonth.getYear()) {"
       },
       {
         "lineNumber": 416,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                index++;"
+        "content": "                        situationOfYear \u003d 4;"
       },
       {
         "lineNumber": 417,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            }"
+        "content": "                    }"
       },
       {
         "lineNumber": 418,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            break;"
+        "content": "                    switch (situationOfYear) {"
       },
       {
         "lineNumber": 419,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        case 2:"
+        "content": "                        case 1:"
       },
       {
         "lineNumber": 420,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            if (task.getEnd().getMonthValue() \u003e\u003d yearMonth.getMonthValue()) {"
+        "content": "                            if (task.getStart().getMonthValue() \u003c\u003d yearMonth.getMonthValue() \u0026\u0026"
       },
       {
         "lineNumber": 421,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                if (index \u003d\u003d 1) {"
+        "content": "                                    task.getEnd().getMonthValue() \u003e\u003d yearMonth.getMonthValue() ) {"
       },
       {
         "lineNumber": 422,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                    System.out.println (headers[1]);"
+        "content": "                                if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 423,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                }"
+        "content": "                                    System.out.println (headers[1]);"
       },
       {
         "lineNumber": 424,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                System.out.print(index + \". \");"
+        "content": "                                }"
       },
       {
         "lineNumber": 425,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                printWithin(task);"
+        "content": "                                System.out.print(index + \". \");"
       },
       {
         "lineNumber": 426,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                index++;"
+        "content": "                                printWithin(task);"
       },
       {
         "lineNumber": 427,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            }"
+        "content": "                                index++;"
       },
       {
         "lineNumber": 428,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            break;"
+        "content": "                            }"
       },
       {
         "lineNumber": 429,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        case 3:"
+        "content": "                            break;"
       },
       {
         "lineNumber": 430,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            if (task.getStart().getMonthValue() \u003c\u003d yearMonth.getMonthValue()) {"
+        "content": "                        case 2:"
       },
       {
         "lineNumber": 431,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                if (index \u003d\u003d 1) {"
+        "content": "                            if (task.getEnd().getMonthValue() \u003e\u003d yearMonth.getMonthValue()) {"
       },
       {
         "lineNumber": 432,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                    System.out.println (headers[1]);"
+        "content": "                                if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 433,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                }"
+        "content": "                                    System.out.println (headers[1]);"
       },
       {
         "lineNumber": 434,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                System.out.print(index + \". \");"
+        "content": "                                }"
       },
       {
         "lineNumber": 435,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                printWithin(task);"
+        "content": "                                System.out.print(index + \". \");"
       },
       {
         "lineNumber": 436,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                index++;"
+        "content": "                                printWithin(task);"
       },
       {
         "lineNumber": 437,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            }"
+        "content": "                                index++;"
       },
       {
         "lineNumber": 438,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            break;"
+        "content": "                            }"
       },
       {
         "lineNumber": 439,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        case 4:"
+        "content": "                            break;"
       },
       {
         "lineNumber": 440,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            if (index \u003d\u003d 1) {"
+        "content": "                        case 3:"
       },
       {
         "lineNumber": 441,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                System.out.println (headers[1]);"
+        "content": "                            if (task.getStart().getMonthValue() \u003c\u003d yearMonth.getMonthValue()) {"
       },
       {
         "lineNumber": 442,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            }"
+        "content": "                                if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 443,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                System.out.print(index + \". \");"
+        "content": "                                    System.out.println (headers[1]);"
       },
       {
         "lineNumber": 444,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                printWithin(task);"
+        "content": "                                }"
       },
       {
         "lineNumber": 445,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                                index++;"
+        "content": "                                System.out.print(index + \". \");"
       },
       {
         "lineNumber": 446,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            break;"
+        "content": "                                printWithin(task);"
       },
       {
         "lineNumber": 447,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                                index++;"
       },
       {
         "lineNumber": 448,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            }"
+        "content": "                            }"
       },
       {
         "lineNumber": 449,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                            break;"
       },
       {
         "lineNumber": 450,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (index \u003d\u003d 1) {"
+        "content": "                        case 4:"
       },
       {
         "lineNumber": 451,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            System.out.println (headers[0]);"
+        "content": "                            if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 452,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                                System.out.println (headers[1]);"
       },
       {
         "lineNumber": 453,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                            }"
       },
       {
         "lineNumber": 454,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "                                System.out.print(index + \". \");"
       },
       {
         "lineNumber": 455,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "                                printWithin(task);"
       },
       {
         "lineNumber": 456,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Prints out the tasks for the selected year"
+        "content": "                                index++;"
       },
       {
         "lineNumber": 457,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param input User-input, includes the year"
+        "content": "                            break;"
       },
       {
         "lineNumber": 458,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @param taskList ArrayList of tasks"
+        "content": "                    }"
       },
       {
         "lineNumber": 459,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "            }"
       },
       {
         "lineNumber": 460,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public void listByYear (String input, TaskList taskList) throws TooManySpacesException {"
+        "content": "        }"
       },
       {
         "lineNumber": 461,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (input.contains(\"  \")) { throw new TooManySpacesException(); }"
+        "content": "        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 462,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String[] headers \u003d new String[2];"
+        "content": "            System.out.println (headers[0]);"
       },
       {
         "lineNumber": 463,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        headers[0] \u003d \"There are no tasks for that year\";"
+        "content": "        }"
       },
       {
         "lineNumber": 464,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        headers[1] \u003d \"Here are the tasks for that year:\";"
+        "content": "    }"
       },
       {
         "lineNumber": 465,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        String yearString \u003d input.substring(4).trim();"
+        "content": ""
       },
       {
         "lineNumber": 466,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"yyyy\");"
+        "content": "    /**"
       },
       {
         "lineNumber": 467,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        Year year \u003d Year.parse(yearString, formatter);"
+        "content": "     * Prints out the tasks for the selected year"
       },
       {
         "lineNumber": 468,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        int index \u003d 1;"
+        "content": "     * @param input User-input, includes the year"
       },
       {
         "lineNumber": 469,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        for (Task task : taskList.getStore()) {"
+        "content": "     * @param taskList ArrayList of tasks"
       },
       {
         "lineNumber": 470,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            String symbol \u003d task.getSymbol();"
+        "content": "     */"
       },
       {
         "lineNumber": 471,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            switch (symbol) {"
+        "content": "    public void listByYear (String input, TaskList taskList) throws TooManySpacesException {"
       },
       {
         "lineNumber": 472,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[D]\":"
+        "content": "        if (input.contains(\"  \")) { throw new TooManySpacesException(); }"
       },
       {
         "lineNumber": 473,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (year.getValue() \u003d\u003d (task.getDateAndTime().getYear())) {"
+        "content": "        String[] headers \u003d new String[2];"
       },
       {
         "lineNumber": 474,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        if (index \u003d\u003d 1) {"
+        "content": "        headers[0] \u003d \"There are no tasks for that year\";"
       },
       {
         "lineNumber": 475,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            System.out.println (headers[1]);"
+        "content": "        headers[1] \u003d \"Here are the tasks for that year:\";"
       },
       {
         "lineNumber": 476,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "        String yearString \u003d input.substring(4).trim();"
       },
       {
         "lineNumber": 477,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        System.out.print(index + \". \");"
+        "content": "        DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"yyyy\");"
       },
       {
         "lineNumber": 478,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printDeadline(task);"
+        "content": "        Year year \u003d Year.parse(yearString, formatter);"
       },
       {
         "lineNumber": 479,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        index++;"
+        "content": "        int index \u003d 1;"
       },
       {
         "lineNumber": 480,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "        for (Task task : taskList.getStore()) {"
       },
       {
         "lineNumber": 481,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "            String symbol \u003d task.getSymbol();"
       },
       {
         "lineNumber": 482,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[E]\":"
+        "content": "            switch (symbol) {"
       },
       {
         "lineNumber": 483,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (year.getValue() \u003d\u003d (task.getDateAndTime().getYear())) {"
+        "content": "                case \"[D]\":"
       },
       {
         "lineNumber": 484,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        if (index \u003d\u003d 1) {"
+        "content": "                    if (year.getValue() \u003d\u003d (task.getDateAndTime().getYear())) {"
       },
       {
         "lineNumber": 485,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            System.out.println (headers[1]);"
+        "content": "                        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 486,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "                            System.out.println (headers[1]);"
       },
       {
         "lineNumber": 487,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        System.out.print(index + \". \");"
+        "content": "                        }"
       },
       {
         "lineNumber": 488,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printEvent(task);"
+        "content": "                        System.out.print(index + \". \");"
       },
       {
         "lineNumber": 489,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        index++;"
+        "content": "                        printDeadline(task);"
       },
       {
         "lineNumber": 490,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                        index++;"
       },
       {
         "lineNumber": 491,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    break;"
+        "content": "                    }"
       },
       {
         "lineNumber": 492,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                case \"[W]\":"
+        "content": "                    break;"
       },
       {
         "lineNumber": 493,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    boolean isYearWithin \u003d false;"
+        "content": "                case \"[E]\":"
       },
       {
         "lineNumber": 494,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getStart().getYear() \u003d\u003d year.getValue() \u0026\u0026"
+        "content": "                    if (year.getValue() \u003d\u003d (task.getDateAndTime().getYear())) {"
       },
       {
         "lineNumber": 495,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            task.getEnd().getYear() \u003d\u003d year.getValue()) {"
+        "content": "                        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 496,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        isYearWithin \u003d true;"
+        "content": "                            System.out.println (headers[1]);"
       },
       {
         "lineNumber": 497,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                        }"
       },
       {
         "lineNumber": 498,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getStart().getYear() \u003c year.getValue() \u0026\u0026"
+        "content": "                        System.out.print(index + \". \");"
       },
       {
         "lineNumber": 499,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            task.getEnd().getYear() \u003d\u003d year.getValue()) {"
+        "content": "                        printEvent(task);"
       },
       {
         "lineNumber": 500,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        isYearWithin \u003d true;"
+        "content": "                        index++;"
       },
       {
         "lineNumber": 501,
@@ -9373,227 +10103,304 @@
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getStart().getYear() \u003d\u003d year.getValue() \u0026\u0026"
+        "content": "                    break;"
       },
       {
         "lineNumber": 503,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            task.getEnd().getYear() \u003e year.getValue()) {"
+        "content": "                case \"[W]\":"
       },
       {
         "lineNumber": 504,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        isYearWithin \u003d true;"
+        "content": "                    boolean isYearWithin \u003d false;"
       },
       {
         "lineNumber": 505,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                    if (task.getStart().getYear() \u003d\u003d year.getValue() \u0026\u0026"
       },
       {
         "lineNumber": 506,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (task.getStart().getYear() \u003c year.getValue() \u0026\u0026"
+        "content": "                            task.getEnd().getYear() \u003d\u003d year.getValue()) {"
       },
       {
         "lineNumber": 507,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            task.getEnd().getYear() \u003e year.getValue()) {"
+        "content": "                        isYearWithin \u003d true;"
       },
       {
         "lineNumber": 508,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        isYearWithin \u003d true;"
+        "content": "                    }"
       },
       {
         "lineNumber": 509,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                    if (task.getStart().getYear() \u003c year.getValue() \u0026\u0026"
       },
       {
         "lineNumber": 510,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    if (isYearWithin) {"
+        "content": "                            task.getEnd().getYear() \u003d\u003d year.getValue()) {"
       },
       {
         "lineNumber": 511,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        if (index \u003d\u003d 1) {"
+        "content": "                        isYearWithin \u003d true;"
       },
       {
         "lineNumber": 512,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                            System.out.println (headers[1]);"
+        "content": "                    }"
       },
       {
         "lineNumber": 513,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        }"
+        "content": "                    if (task.getStart().getYear() \u003d\u003d year.getValue() \u0026\u0026"
       },
       {
         "lineNumber": 514,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        System.out.print(index + \". \");"
+        "content": "                            task.getEnd().getYear() \u003e year.getValue()) {"
       },
       {
         "lineNumber": 515,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        printWithin(task);"
+        "content": "                        isYearWithin \u003d true;"
       },
       {
         "lineNumber": 516,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        index++;"
+        "content": "                    }"
       },
       {
         "lineNumber": 517,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                        break;"
+        "content": "                    if (task.getStart().getYear() \u003c year.getValue() \u0026\u0026"
       },
       {
         "lineNumber": 518,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "                    }"
+        "content": "                            task.getEnd().getYear() \u003e year.getValue()) {"
       },
       {
         "lineNumber": 519,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            }"
+        "content": "                        isYearWithin \u003d true;"
       },
       {
         "lineNumber": 520,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                    }"
       },
       {
         "lineNumber": 521,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        if (index \u003d\u003d 1) {"
+        "content": "                    if (isYearWithin) {"
       },
       {
         "lineNumber": 522,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "            System.out.println (headers[0]);"
+        "content": "                        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 523,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        }"
+        "content": "                            System.out.println (headers[1]);"
       },
       {
         "lineNumber": 524,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "                        }"
       },
       {
         "lineNumber": 525,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": ""
+        "content": "                        System.out.print(index + \". \");"
       },
       {
         "lineNumber": 526,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    /**"
+        "content": "                        printWithin(task);"
       },
       {
         "lineNumber": 527,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * Method to allow programme to receive user-input"
+        "content": "                        index++;"
       },
       {
         "lineNumber": 528,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     * @return Returns the user-input as a string"
+        "content": "                        break;"
       },
       {
         "lineNumber": 529,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "     */"
+        "content": "                    }"
       },
       {
         "lineNumber": 530,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    public String receive() {"
+        "content": "            }"
       },
       {
         "lineNumber": 531,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        Scanner in \u003d new Scanner(System.in);"
+        "content": "        }"
       },
       {
         "lineNumber": 532,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "        return in.nextLine();"
+        "content": "        if (index \u003d\u003d 1) {"
       },
       {
         "lineNumber": 533,
         "author": {
           "gitId": "aloysiuswwc"
         },
-        "content": "    }"
+        "content": "            System.out.println (headers[0]);"
       },
       {
         "lineNumber": 534,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 535,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 536,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 537,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 538,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     * Method to allow programme to receive user-input"
+      },
+      {
+        "lineNumber": 539,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     * @return Returns the user-input as a string"
+      },
+      {
+        "lineNumber": 540,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 541,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    public String receive() {"
+      },
+      {
+        "lineNumber": 542,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        Scanner in \u003d new Scanner(System.in);"
+      },
+      {
+        "lineNumber": 543,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "        return in.nextLine();"
+      },
+      {
+        "lineNumber": 544,
+        "author": {
+          "gitId": "aloysiuswwc"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 545,
         "author": {
           "gitId": "aloysiuswwc"
         },
@@ -9601,7 +10408,7 @@
       }
     ],
     "authorContributionMap": {
-      "aloysiuswwc": 534
+      "aloysiuswwc": 545
     }
   }
 ]
