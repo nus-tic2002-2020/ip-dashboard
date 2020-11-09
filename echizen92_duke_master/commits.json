@@ -272,22 +272,296 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-01",
+        "commitResults": [
+          {
+            "hash": "f1dff8363f252dca476a9b16f99ee6df3d2dd9ae",
+            "messageTitle": "this is old level 7 attempt",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 234,
+                "deletions": 139
+              }
+            }
+          },
+          {
+            "hash": "ee361be5697184ecc38b09a96afdc6a6c655d9be",
+            "messageTitle": "Level-7 with oop",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 42,
+                "deletions": 36
+              }
+            }
+          },
+          {
+            "hash": "3d9534d8d372fe6f884128481774809238c81c18",
+            "messageTitle": "Level-7 with oop with storage not working",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-02",
+        "commitResults": [
+          {
+            "hash": "99cb02758b3b635d60beeab135934fa21b3d0f0a",
+            "messageTitle": "level 7 with more oop working build",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 14,
+                "deletions": 17
+              }
+            }
+          },
+          {
+            "hash": "47ea27d7bb855eca248bbf1d06142ecb4a02ba02",
+            "messageTitle": "level 7 with OOP implements fixed global variable issue",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 6,
+                "deletions": 5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-03",
+        "commitResults": [
+          {
+            "hash": "3c2bdcb01ca4402a01aab6fd7821aaf599cbb335",
+            "messageTitle": "level 8 with JavaDoc, load saved task does not pass",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 110,
+                "deletions": 46
+              }
+            }
+          },
+          {
+            "hash": "65894ebe2b3efd2e494dddd8190cdb7ac223bfbc",
+            "messageTitle": "level 9 implement, loadtask throws error, jUnit only one test case, find not implemented yet",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 64,
+                "deletions": 15
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-04",
+        "commitResults": [
+          {
+            "hash": "c407a9a98c1af8d2dfb91974f3e92db4f09b0125",
+            "messageTitle": "level 9 implement find and individual feature added,, loadtask throws error, jUnit only one test case",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 37,
+                "deletions": 5
+              }
+            }
+          },
+          {
+            "hash": "03a6b37db71ca6830ba0bdd249a14787da58838b",
+            "messageTitle": "jUnit, duke.txt",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 2,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 40,
+                "deletions": 3
+              }
+            }
+          },
+          {
+            "hash": "2964c995f14b16d0821510971635325b7dbb4e7f",
+            "messageTitle": "deleted echocommand in duke.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 2
+              }
+            }
+          },
+          {
+            "hash": "dbb51067047a3da2f5b7b83fdfcffb79b1a41891",
+            "messageTitle": "added find exception",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 2,
+                "deletions": 4
+              }
+            }
+          },
+          {
+            "hash": "2f9fedbf4657974aa7bfeb825b2a418e349b9962",
+            "messageTitle": "jUnit 1 test case",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 7,
+                "deletions": 6
+              }
+            }
+          },
+          {
+            "hash": "01543e29713e1582c85889416115d4158239f696",
+            "messageTitle": "junit",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-05",
+        "commitResults": [
+          {
+            "hash": "f64baca121802f58da6e0db1724a6d1df3101e7b",
+            "messageTitle": "assertions added",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 5,
+                "deletions": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-07",
+        "commitResults": [
+          {
+            "hash": "11a5d3bac133905fd12d5300162e8154126b68a5",
+            "messageTitle": "fixed issue where saved tasklist was not loaded",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 20,
+                "deletions": 24
+              }
+            }
+          },
+          {
+            "hash": "2d7fec58eab36ec817ebbda4a5b6a178b690965f",
+            "messageTitle": "jUnit",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 21,
+                "deletions": 2
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-08",
+        "commitResults": [
+          {
+            "hash": "1a734363b1e51daa344ba129dd6f35943c0a481c",
+            "messageTitle": "passed testing",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 83,
+                "deletions": 17
+              }
+            }
+          },
+          {
+            "hash": "25984bfcfe1e5e15be2c222d9e6db9cf9da69c4d",
+            "messageTitle": "code cleanup",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 6
+              }
+            }
+          },
+          {
+            "hash": "0393693211b11af945ea36c098e73c6bceed6b52",
+            "messageTitle": "removed debugging print statements",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 2
+              }
+            }
+          },
+          {
+            "hash": "75d2875575c33d97ed526f576dd3cfee211748d1",
+            "messageTitle": "code cleanup",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          },
+          {
+            "hash": "0c3a9559a863ae96dbc5b239ab94361cf86d8a49",
+            "messageTitle": "code review and clean up",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 1,
+                "deletions": 3
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "echizen92": {
-      "java": 235,
+      "java": 586,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 0
+      "txt": 2
     }
   },
   "authorContributionVariance": {
-    "echizen92": 909.0525
+    "echizen92": 3850.8994
   },
   "authorDisplayNameMap": {
     "echizen92": "MOHA..SHID"

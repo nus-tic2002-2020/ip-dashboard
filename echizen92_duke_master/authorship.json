@@ -1,5 +1,28 @@
 [
   {
+    "path": "duke.txt",
+    "fileType": "txt",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "[T] | ✘ | buy pen|  "
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "[T] | ✘ | sell pen|  "
+      }
+    ],
+    "authorContributionMap": {
+      "echizen92": 2
+    }
+  },
+  {
     "path": "src/main/java/Duke.java",
     "fileType": "java",
     "lines": [
@@ -29,63 +52,63 @@
         "author": {
           "gitId": "echizen92"
         },
-        "content": "import java.util.regex.Matcher;"
-      },
-      {
-        "lineNumber": 5,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "import java.util.regex.Pattern;"
-      },
-      {
-        "lineNumber": 6,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "import java.util.ArrayList;"
-      },
-      {
-        "lineNumber": 7,
-        "author": {
-          "gitId": "echizen92"
-        },
         "content": ""
       },
       {
-        "lineNumber": 8,
+        "lineNumber": 5,
         "author": {
           "gitId": "-"
         },
         "content": "public class Duke {"
       },
       {
-        "lineNumber": 9,
+        "lineNumber": 6,
         "author": {
           "gitId": "echizen92"
         },
         "content": ""
       },
       {
-        "lineNumber": 10,
+        "lineNumber": 7,
         "author": {
           "gitId": "echizen92"
         },
         "content": "    public static String humanName;"
       },
       {
-        "lineNumber": 11,
+        "lineNumber": 8,
         "author": {
           "gitId": "echizen92"
         },
         "content": "    public static int taskNumber;"
       },
       {
-        "lineNumber": 12,
+        "lineNumber": 9,
         "author": {
           "gitId": "echizen92"
         },
         "content": "    public static int numberOftask \u003d 0;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    private Storage storage;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    private TaskList tasks;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    private Ui ui;"
       },
       {
         "lineNumber": 13,
@@ -99,140 +122,140 @@
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "    public Duke(String filepath) {"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "        storage  \u003d new Storage(filepath);"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "        tasks \u003d new TaskList();"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "// Storing userSentence into list"
+        "content": "        this.ui \u003d new Ui(tasks, storage);"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "// storage"
+        "content": "        storage.load(ui);"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    public static ArrayList\u003cTask\u003e storeList(ArrayList\u003cTask\u003e listOfThings, String input) throws IllegalInputException { //listOfThings should be array class task?"
+        "content": ""
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "    public void run(){"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "        while (true) {"
+        "content": ""
       },
       {
         "lineNumber": 23,
         "author": {
-          "gitId": "echizen92"
+          "gitId": "-"
         },
-        "content": "        // here task/categorization assignment is being done by task.java"
+        "content": "        String logo \u003d \" ____        _        \\n\""
       },
       {
         "lineNumber": 24,
         "author": {
-          "gitId": "echizen92"
+          "gitId": "-"
         },
-        "content": ""
+        "content": "                + \"|  _ \\\\ _   _| | _____ \\n\""
       },
       {
         "lineNumber": 25,
         "author": {
-          "gitId": "echizen92"
+          "gitId": "-"
         },
-        "content": "        listOfThings.add(new Task (input));"
+        "content": "                + \"| | | | | | | |/ / _ \\\\\\n\""
       },
       {
         "lineNumber": 26,
         "author": {
-          "gitId": "echizen92"
+          "gitId": "-"
         },
-        "content": "        System.out.println(\"\\tGot it. I\u0027ve added this task: \");"
+        "content": "                + \"| |_| | |_| |   \u003c  __/\\n\""
       },
       {
         "lineNumber": 27,
         "author": {
-          "gitId": "echizen92"
+          "gitId": "-"
         },
-        "content": "        System.out.println(\"\\t\" + listOfThings.get(numberOftask).getTag() + \"[\" + listOfThings.get(numberOftask).getStatusIcon() + \"] \" + listOfThings.get(numberOftask).description +  listOfThings.get(numberOftask).timeDate);"
+        "content": "                + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
       },
       {
         "lineNumber": 28,
         "author": {
-          "gitId": "echizen92"
+          "gitId": "-"
         },
-        "content": "        System.out.println(\"\\tNow you have \" + (numberOftask+1) +\" task in the list \");"
+        "content": "        System.out.println(\"Hello from\\n\" + logo);"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "        System.out.println(\"\\tHello! I\u0027m Duke\\n\\tWhat is your name?\");"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "            numberOftask++;"
+        "content": "        DateTimeFormatter dtf \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy HH:mm:ss\");"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "            break;"
+        "content": "        LocalDateTime now \u003d LocalDateTime.now();"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "        Scanner in \u003d new Scanner(System.in);"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "        }//end while loop"
+        "content": "        humanName \u003d in.nextLine();"
       },
       {
         "lineNumber": 34,
@@ -246,14 +269,14 @@
         "author": {
           "gitId": "echizen92"
         },
-        "content": "        return listOfThings;"
+        "content": "        System.out.println(humanName + \" today is: \" + (dtf.format(now)));"
       },
       {
         "lineNumber": 36,
         "author": {
-          "gitId": "-"
+          "gitId": "echizen92"
         },
-        "content": "    }"
+        "content": "        System.out.println(\"What can I do for you?\\n\");"
       },
       {
         "lineNumber": 37,
@@ -267,843 +290,66 @@
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    //print list"
+        "content": "        while (true) {"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    public static void printListOfThings(ArrayList\u003cTask\u003e listOfThings) {"
+        "content": "            ui.readInput();"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "        if(listOfThings.size() \u003d\u003d 0) {"
+        "content": "        }"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "            System.out.println(humanName + \"\\tthe list is empty!\");"
+        "content": ""
       },
       {
         "lineNumber": 42,
         "author": {
-          "gitId": "echizen92"
+          "gitId": "-"
         },
-        "content": "            return;"
+        "content": "    }"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "        }"
+        "content": "        public static void main(String[] args) {"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "        System.out.println(\"\\tHere are the tasks in your list: \");"
+        "content": "        new Duke(\"duke.txt\").run();"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "//        for (int i \u003d 1; i \u003c\u003d listOfThings.length; i++) {"
+        "content": "    }//end main"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "//"
+        "content": ""
       },
       {
         "lineNumber": 47,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//            System.out.println(\"\\t\" + i + \". \" + listOfThings[i-1].getTag() +  \"[\" + listOfThings[i-1].getStatusIcon() + \"] \" + listOfThings[i - 1].description );"
-      },
-      {
-        "lineNumber": 48,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//           // String lineItem \u003d listOfThings[i-1].getTag() +  \" | \" + listOfThings[i-1].getStatusIcon()  + \" | \" + listOfThings[i - 1].description;"
-      },
-      {
-        "lineNumber": 49,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//"
-      },
-      {
-        "lineNumber": 50,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//            if (listOfThings[i] \u003d\u003d null) {"
-      },
-      {
-        "lineNumber": 51,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//                System.out.println(\"\\tOk that\u0027s about everything!\");"
-      },
-      {
-        "lineNumber": 52,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//                return;"
-      },
-      {
-        "lineNumber": 53,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//            }"
-      },
-      {
-        "lineNumber": 54,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//        }"
-      },
-      {
-        "lineNumber": 55,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        for(int i \u003d 1 ; i \u003c\u003d numberOftask ; i++) {"
-      },
-      {
-        "lineNumber": 56,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            System.out.println(\"\\t\" + i+\". \"  + listOfThings.get(i-1).getTag() + \"[\" + listOfThings.get(i-1).getStatusIcon() + \"] \" + listOfThings.get(i-1).description );"
-      },
-      {
-        "lineNumber": 57,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 58,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 59,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//        for (Task temp: listOfThings){"
-      },
-      {
-        "lineNumber": 60,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//            int i \u003d 1;"
-      },
-      {
-        "lineNumber": 61,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//            System.out.println(\"\\t\" + i+\". \"  + temp.getTag() + \"[\" + temp.getStatusIcon() + \"] \" + temp.description );"
-      },
-      {
-        "lineNumber": 62,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//            i++;"
-      },
-      {
-        "lineNumber": 63,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//        }"
-      },
-      {
-        "lineNumber": 64,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 65,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 66,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "//UI"
-      },
-      {
-        "lineNumber": 67,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "    public static ArrayList\u003cTask\u003e echoCommands(ArrayList\u003cTask\u003e listOfThings) throws IllegalInputException {"
-      },
-      {
-        "lineNumber": 68,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 69,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        //int taskNumber;"
-      },
-      {
-        "lineNumber": 70,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 71,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        String userSentence;"
-      },
-      {
-        "lineNumber": 72,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        Scanner input \u003d new Scanner(System.in);"
-      },
-      {
-        "lineNumber": 73,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        userSentence \u003d input.nextLine();"
-      },
-      {
-        "lineNumber": 74,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 75,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        Pattern pattern1 \u003d Pattern.compile((\".*\" + \"bye\" + \".*\"), Pattern.CASE_INSENSITIVE);"
-      },
-      {
-        "lineNumber": 76,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        Matcher matcher1 \u003d pattern1.matcher(userSentence);"
-      },
-      {
-        "lineNumber": 77,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        if (matcher1.find()) {"
-      },
-      {
-        "lineNumber": 78,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            System.out.println(\"\\tBye! Hope to see you again soon \" + humanName);"
-      },
-      {
-        "lineNumber": 79,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            System.exit(0);"
-      },
-      {
-        "lineNumber": 80,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 81,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 82,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        Pattern pattern2 \u003d Pattern.compile((\".*\" + \"list\" + \".*\"), Pattern.CASE_INSENSITIVE);"
-      },
-      {
-        "lineNumber": 83,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        Matcher matcher2 \u003d pattern2.matcher(userSentence);"
-      },
-      {
-        "lineNumber": 84,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        Pattern pattern3 \u003d Pattern.compile((\".*\" + \"done\" + \".*\"), Pattern.CASE_INSENSITIVE);"
-      },
-      {
-        "lineNumber": 85,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        Matcher matcher3 \u003d pattern3.matcher(userSentence);"
-      },
-      {
-        "lineNumber": 86,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        Pattern pattern4 \u003d Pattern.compile((\".*\" + \"delete\" + \".*\"), Pattern.CASE_INSENSITIVE);"
-      },
-      {
-        "lineNumber": 87,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        Matcher matcher4 \u003d pattern4.matcher(userSentence);"
-      },
-      {
-        "lineNumber": 88,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        if (matcher2.find()) {"
-      },
-      {
-        "lineNumber": 89,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            printListOfThings(listOfThings); //"
-      },
-      {
-        "lineNumber": 90,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 91,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        else if (matcher3.find()){"
-      },
-      {
-        "lineNumber": 92,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            Pattern pattern \u003d Pattern.compile(\"[^0-9]\");"
-      },
-      {
-        "lineNumber": 93,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            String numberOnly \u003d pattern.matcher(userSentence).replaceAll(\"\");"
-      },
-      {
-        "lineNumber": 94,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            taskNumber \u003d Integer.parseInt(numberOnly);"
-      },
-      {
-        "lineNumber": 95,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            System.out.println(\"\\tNice! I\u0027ve marked this task as done: \");"
-      },
-      {
-        "lineNumber": 96,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            listOfThings.get(taskNumber-1).isDone \u003d true; // this might just access not modify"
-      },
-      {
-        "lineNumber": 97,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            System.out.println(listOfThings.get(taskNumber-1).getTag()+\" [\"+listOfThings.get(taskNumber-1).getStatusIcon()+\"] \"+ listOfThings.get(taskNumber - 1).description );"
-      },
-      {
-        "lineNumber": 98,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 99,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        //handling delete"
-      },
-      {
-        "lineNumber": 100,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        else if (matcher4.find()){"
-      },
-      {
-        "lineNumber": 101,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            Pattern pattern \u003d Pattern.compile(\"[^0-9]\");"
-      },
-      {
-        "lineNumber": 102,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            String numberOnly \u003d pattern.matcher(userSentence).replaceAll(\"\");"
-      },
-      {
-        "lineNumber": 103,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            taskNumber \u003d Integer.parseInt(numberOnly);"
-      },
-      {
-        "lineNumber": 104,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            numberOftask--;"
-      },
-      {
-        "lineNumber": 105,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            System.out.println(\"\\tNoted. I\u0027ve removed this task: \");"
-      },
-      {
-        "lineNumber": 106,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            System.out.println(listOfThings.get(taskNumber-1).getTag()+\" [\"+listOfThings.get(taskNumber-1).getStatusIcon()+\"] \"+ listOfThings.get(taskNumber-1).description );"
-      },
-      {
-        "lineNumber": 107,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        // add delete logic here by modifying listOfThings"
-      },
-      {
-        "lineNumber": 108,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            listOfThings.remove(taskNumber-1);"
-      },
-      {
-        "lineNumber": 109,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 110,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 111,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        else{"
-      },
-      {
-        "lineNumber": 112,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            listOfThings \u003d storeList(listOfThings, userSentence);"
-      },
-      {
-        "lineNumber": 113,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 114,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 115,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 116,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            return listOfThings;"
-      },
-      {
-        "lineNumber": 117,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 118,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 119,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 120,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 121,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 122,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "        public static void main (String[] args) throws IllegalInputException {"
-      },
-      {
-        "lineNumber": 123,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            ArrayList\u003cTask\u003e List \u003d new ArrayList\u003cTask\u003e() ;"
-      },
-      {
-        "lineNumber": 124,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 125,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 126,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 127,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            String logo \u003d \" ____        _        \\n\""
-      },
-      {
-        "lineNumber": 128,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                    + \"|  _ \\\\ _   _| | _____ \\n\""
-      },
-      {
-        "lineNumber": 129,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                    + \"| | | | | | | |/ / _ \\\\\\n\""
-      },
-      {
-        "lineNumber": 130,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                    + \"| |_| | |_| |   \u003c  __/\\n\""
-      },
-      {
-        "lineNumber": 131,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                    + \"|____/ \\\\__,_|_|\\\\_\\\\___|\\n\";"
-      },
-      {
-        "lineNumber": 132,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            System.out.println(\"Hello from\\n\" + logo);"
-      },
-      {
-        "lineNumber": 133,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 134,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            //yyyy/MM/dd"
-      },
-      {
-        "lineNumber": 135,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            System.out.println(\"\\tHello! I\u0027m Duke\\n\\tWhat is your name?\");"
-      },
-      {
-        "lineNumber": 136,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 137,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 138,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            DateTimeFormatter dtf \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy HH:mm:ss\");"
-      },
-      {
-        "lineNumber": 139,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            LocalDateTime now \u003d LocalDateTime.now();"
-      },
-      {
-        "lineNumber": 140,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 141,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            //String humanName;"
-      },
-      {
-        "lineNumber": 142,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            Scanner in \u003d new Scanner(System.in);"
-      },
-      {
-        "lineNumber": 143,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            System.out.println(\"What is your name?\\n\");"
-      },
-      {
-        "lineNumber": 144,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            humanName \u003d in.nextLine();"
-      },
-      {
-        "lineNumber": 145,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 146,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            System.out.println(humanName + \" today is: \" + (dtf.format(now)));"
-      },
-      {
-        "lineNumber": 147,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            System.out.println(\"What can I do for you?\\n\");"
-      },
-      {
-        "lineNumber": 148,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            //Maybe list out supported commands?"
-      },
-      {
-        "lineNumber": 149,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 150,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            while (true) {"
-      },
-      {
-        "lineNumber": 151,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "                //echoCommands();"
-      },
-      {
-        "lineNumber": 152,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "                List \u003d echoCommands(List);"
-      },
-      {
-        "lineNumber": 153,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "            }"
-      },
-      {
-        "lineNumber": 154,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 155,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 156,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 157,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 158,
         "author": {
           "gitId": "-"
         },
@@ -1111,8 +357,8 @@
       }
     ],
     "authorContributionMap": {
-      "echizen92": 148,
-      "-": 10
+      "echizen92": 38,
+      "-": 9
     }
   },
   {
@@ -1160,29 +406,6 @@
     }
   },
   {
-    "path": "src/main/java/Parser.java",
-    "fileType": "java",
-    "lines": [
-      {
-        "lineNumber": 1,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "package PACKAGE_NAME;public class Parser {"
-      },
-      {
-        "lineNumber": 2,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "}"
-      }
-    ],
-    "authorContributionMap": {
-      "echizen92": 2
-    }
-  },
-  {
     "path": "src/main/java/Storage.java",
     "fileType": "java",
     "lines": [
@@ -1191,79 +414,56 @@
         "author": {
           "gitId": "echizen92"
         },
-        "content": "package PACKAGE_NAME;public class Storage {"
+        "content": ""
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "}"
-      }
-    ],
-    "authorContributionMap": {
-      "echizen92": 2
-    }
-  },
-  {
-    "path": "src/main/java/Task.java",
-    "fileType": "java",
-    "lines": [
-      {
-        "lineNumber": 1,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "import java.util.regex.Matcher;"
-      },
-      {
-        "lineNumber": 2,
-        "author": {
-          "gitId": "echizen92"
-        },
-        "content": "import java.util.regex.Pattern;"
+        "content": "import java.io.File;"
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "import java.io.FileNotFoundException;"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "public class Task {"
+        "content": "import java.io.FileWriter;"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    protected String description;"
+        "content": "import java.io.IOException;"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    protected boolean isDone;"
+        "content": "import java.util.Scanner;"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    protected String whatTag;"
+        "content": "import java.time.*;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    protected String timeDate;"
+        "content": "import java.time.format.*;"
       },
       {
         "lineNumber": 9,
@@ -1277,21 +477,828 @@
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "public class Storage  {"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "    //variable"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    public Task(String description) throws IllegalInputException {"
+        "content": "    private String pathname;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    private String userSentence;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    private CharSequence charDate;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    private LocalDate formattedDate;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    //constructor"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public Storage(String path){"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        this.pathname \u003d path;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    //accessor and modifier"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * loads saved task list"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public void load(Ui ui) { //saved tasklist was not loaded."
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        File f \u003d new File(pathname);"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            Scanner s \u003d new Scanner(f);"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            int counter \u003d 0;"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            while (s.hasNext()) {"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                userSentence \u003d s.nextLine();"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                String[] splitSentence \u003d userSentence.split(\"\\\\|\", 4);"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                switch (splitSentence[0].trim()) {"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    case \"[T]\":"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        userSentence \u003d \"todo \" + splitSentence[2].trim();"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        break;"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    case \"[D]\":"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        String temp;"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        String[] tempArray;"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        temp \u003d splitSentence[3];"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        tempArray \u003d temp.split(\"by:\",2);"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        temp\u003dtempArray[1];"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        tempArray \u003d temp.split(\"\\\\)\",2);"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        temp \u003d tempArray[0];"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        charDate \u003d temp;"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\" MMM dd yyyy\");"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        formattedDate \u003d LocalDate.parse(charDate, formatter);"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        temp \u003d formattedDate.format(DateTimeFormatter.ofPattern(\"dd/MM/yyyy\"));"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        userSentence \u003d \"deadline \" + splitSentence[2].trim() + \" /by \"+temp;"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        break;"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    case \"[E]\":"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        String temp2;"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        String[] tempArray2;"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        temp2 \u003d splitSentence[3];"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        tempArray2 \u003d temp2.split(\"at:\",2);"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        temp2\u003dtempArray2[1];"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        tempArray2 \u003d temp2.split(\"\\\\)\",2);"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        temp2 \u003d tempArray2[0];"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        charDate \u003d temp2;"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        DateTimeFormatter formatter2 \u003d DateTimeFormatter.ofPattern(\" MMM dd yyyy\");"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        formattedDate \u003d LocalDate.parse(charDate, formatter2);"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        temp \u003d formattedDate.format(DateTimeFormatter.ofPattern(\"dd/MM/yyyy\"));"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        userSentence \u003d \"event \" + splitSentence[2].trim() + \" /at \"+temp;"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                        break;"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                ui.response(userSentence);"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                counter++;"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                if (splitSentence[1].trim().equals(\"\\u2713\")) {"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    userSentence \u003d \"done \" + counter;"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    ui.response(userSentence);"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        catch (FileNotFoundException | IllegalInputException e) {"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(\"Error loading saved file\");"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * invokes saving call"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * If unable to save it will throw exception"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public void save(TaskList currentList){"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        File taskFile \u003d new File(pathname);"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        if(taskFile.exists() \u003d\u003d false){"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            try{"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                taskFile.createNewFile();"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                saveList(currentList);"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            catch(IOException e){"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                System.out.println(\"Error creating file\");"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        else{"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            try{"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                saveList(currentList);"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            catch(IOException e){"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                System.out.println(\"Error writing to file\");"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * Does the write to file"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    private void saveList(TaskList currentList) throws IOException{"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        FileWriter fw \u003d new FileWriter(pathname);"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        for(int i \u003d 1 ; i \u003c\u003d Duke.numberOftask ; i++){"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            fw.write(currentList.processtoTextfile(i) + System.lineSeparator());"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        fw.close();"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "echizen92": 114
+    }
+  },
+  {
+    "path": "src/main/java/Task.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.time.*;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.time.format.*;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.util.regex.Matcher;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.util.regex.Pattern;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "public class Task {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public String description;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public boolean isDone;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public String whatTag;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public String timeDate;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public CharSequence charDate;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public LocalDate formattedDate;"
       },
       {
         "lineNumber": 13,
@@ -1305,315 +1312,315 @@
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "    /**"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         this.isDone \u003d false;"
+        "content": "     *Handles parsing of user input based on todo, deadline and event"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         Pattern pattern \u003d Pattern.compile((\".*\" + \"todo\" + \".*\"), Pattern.CASE_INSENSITIVE);"
+        "content": "     *"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         Matcher matcher \u003d pattern.matcher(description);"
+        "content": "     * uses pattern matching and used in TaskList.java"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         Pattern pattern2 \u003d Pattern.compile((\".*\" + \"deadline\" + \".*\"), Pattern.CASE_INSENSITIVE);"
+        "content": "     */"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         Matcher matcher2 \u003d pattern2.matcher(description);"
+        "content": ""
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         Pattern pattern3 \u003d Pattern.compile((\".*\" + \"Event\" + \".*\"), Pattern.CASE_INSENSITIVE);"
+        "content": "    public Task(String description) throws IllegalInputException {"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         Matcher matcher3 \u003d pattern3.matcher(description);"
+        "content": ""
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         if (matcher.find()) {"
+        "content": ""
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             //todo"
+        "content": "         this.isDone \u003d false;"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "            //implement a split"
+        "content": "         Pattern pattern \u003d Pattern.compile((\".*\" + \"todo\" + \".*\"), Pattern.CASE_INSENSITIVE);"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             String[] temp;"
+        "content": "         Matcher matcher \u003d pattern.matcher(description);"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             temp \u003d description.split(\"\\\\s\",2);"
+        "content": "         Pattern pattern2 \u003d Pattern.compile((\".*\" + \"deadline\" + \".*\"), Pattern.CASE_INSENSITIVE);"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             if (temp.length \u003d\u003d 1){"
+        "content": "         Matcher matcher2 \u003d pattern2.matcher(description);"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "                 System.out.println(\"Description cannot be empty\");"
+        "content": "         Pattern pattern3 \u003d Pattern.compile((\".*\" + \"Event\" + \".*\"), Pattern.CASE_INSENSITIVE);"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "                 throw new IllegalInputException();"
+        "content": "         Matcher matcher3 \u003d pattern3.matcher(description);"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             }"
+        "content": "         if (matcher.find()) { //todo"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.description \u003d temp[1];"
+        "content": "             String[] temp;"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.whatTag \u003d \"[T]\";"
+        "content": "             temp \u003d description.split(\"\\\\s\",2);"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.timeDate \u003d\"\";"
+        "content": "             if (temp.length \u003d\u003d 1){"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             if (this.description.isBlank() \u003d\u003d true){"
+        "content": "                 System.out.println(\"Description cannot be empty\");"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "                 System.out.println(\"☹ OOPS!!! The description of a todo cannot be empty.\");"
+        "content": "                 throw new IllegalInputException();"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "                 throw new IllegalInputException();"
+        "content": "             }"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             }"
+        "content": "             this.description \u003d temp[1];"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         }"
+        "content": "             this.whatTag \u003d \"[T]\";"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "        else if (matcher2.find()) {"
+        "content": "             this.timeDate \u003d\" \";"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "            //deadline"
+        "content": ""
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             String[] temp;"
+        "content": "             if (this.description.isBlank()){"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             temp \u003d description.split(\"\\\\s\",2);"
+        "content": "                 System.out.println(\"☹ OOPS!!! The description of a todo cannot be empty.\");"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.description \u003d temp[1];"
+        "content": "                 throw new IllegalInputException();"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.whatTag \u003d \"[D]\";"
+        "content": "             }"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             temp \u003d this.description.split(\"/by\",2);"
+        "content": "         }"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.description \u003d temp[0];"
+        "content": "        else if (matcher2.find()) { //deadline"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.timeDate\u003dtemp[1];"
+        "content": "             String[] temp;"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.timeDate\u003d\"(by:\"+this.timeDate+\")\";"
+        "content": "             temp \u003d description.split(\"\\\\s\",2);"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         }"
+        "content": "             this.description \u003d temp[1];"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         else if (matcher3.find()) { //event"
+        "content": "             this.whatTag \u003d \"[D]\";"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             String[] temp;"
+        "content": "             temp \u003d this.description.split(\"/by\",2);"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             temp \u003d description.split(\"\\\\s\",2);"
+        "content": "             this.description \u003d temp[0];"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.description \u003d temp[1];"
+        "content": "             this.timeDate\u003dtemp[1];"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.whatTag \u003d \"[E]\";"
+        "content": "             charDate \u003d this.timeDate;"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             temp \u003d this.description.split(\"/at\",2);"
+        "content": "             DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\" dd/MM/yyyy\");"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.description \u003d temp[0];"
+        "content": "             formattedDate \u003d LocalDate.parse(charDate, formatter);"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.timeDate\u003dtemp[1];"
+        "content": "             this.timeDate \u003d\"(by: \"+formattedDate.format(DateTimeFormatter.ofPattern(\"MMM dd yyyy\"))+\")\";"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             this.timeDate\u003d\"(at:\"+this.timeDate+\")\";"
+        "content": ""
       },
       {
         "lineNumber": 59,
@@ -1627,91 +1634,1810 @@
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         else {"
+        "content": "         else if (matcher3.find()) { //event"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             System.out.println(\"☹ OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
+        "content": "             String[] temp;"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "             throw new IllegalInputException();"
+        "content": "             temp \u003d description.split(\"\\\\s\",2);"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "         }"
+        "content": "             this.description \u003d temp[1];"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    }"
+        "content": "             this.whatTag \u003d \"[E]\";"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "             temp \u003d this.description.split(\"/at\",2);"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "echizen92"
         },
-        "content": ""
+        "content": "             this.description \u003d temp[0];"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    public String getStatusIcon() {"
+        "content": "             this.timeDate\u003dtemp[1];"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "        return (isDone ? \"\\u2713\" : \"\\u2718\"); //return tick or X symbols"
+        "content": "             charDate \u003d this.timeDate;"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    }"
+        "content": "             DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\" dd/MM/yyyy\");"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "    public String getTag(){"
+        "content": "             formattedDate \u003d LocalDate.parse(charDate, formatter);"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "echizen92"
         },
-        "content": "        return (whatTag);"
+        "content": "             this.timeDate \u003d\"(at: \"+formattedDate.format(DateTimeFormatter.ofPattern(\"MMM dd yyyy\"))+\")\";"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "echizen92"
         },
+        "content": "         }"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "         else {"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "             System.out.println(\"☹ OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "             throw new IllegalInputException();"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "         }"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "echizen92"
+        },
         "content": "    }"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     *Return tick or cross to denote done or not done"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * @return tick or cross symbols"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public String getStatusIcon() {"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        return (isDone ? \"\\u2713\" : \"\\u2718\");"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     *Categorises user input \u0027T\u0027, \u0027D\u0027, \u0027E\u0027"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * @return Completion time of deadline"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public String getTag(){"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        return (whatTag);"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     *Return completion time of a for events"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * @return Completion time"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public String getTimeDate(){"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        return (timeDate);"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "echizen92": 105
+    }
+  },
+  {
+    "path": "src/main/java/TaskList.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.time.LocalDate;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.time.format.DateTimeFormatter;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.util.regex.Matcher;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.util.regex.Pattern;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "public class TaskList {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public ArrayList\u003cTask\u003e tasks;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public TaskList(){"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        this.tasks \u003d new ArrayList\u003cTask\u003e();"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * Stores user input as taskList, categorisation is done by task.java"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * Successful addition will output added task massage if not exception is thrown."
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public void storeList (String input) throws IllegalInputException {"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        while (true) {"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            // here task/categorization assignment is being done by task.java"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            this.tasks.add(new Task(input));"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(\"\\tGot it. I\u0027ve added this task: \");"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(\"\\t\" + tasks.get(Duke.numberOftask).getTag() + \"[\" + tasks.get(Duke.numberOftask).getStatusIcon() + \"] \" + tasks.get(Duke.numberOftask).description +  tasks.get(Duke.numberOftask).getTimeDate());"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(\"\\tNow you have \" + (Duke.numberOftask+1) +\" task in the list \");"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            Duke.numberOftask++;"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            assert Duke.numberOftask \u003e\u003d 0 : \"number of task must be more than 0\";"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            break;"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }//end while loop"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * Processing of task details to save in text file"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * used in storage.java"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * @param index of the Task details to be processed"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * @return string in format to be saved"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public String processtoTextfile(int index){"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        String status \u003d (this.tasks.get(index - 1).getStatusIcon());"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        String lineItem \u003d this.tasks.get(index - 1).getTag() + \" | \" + status + \" | \" + this.tasks.get(index - 1).description;"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        if(this.tasks.get(index - 1).getTag() !\u003d \"T\"){"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            lineItem +\u003d (\"| \" + this.tasks.get(index - 1).timeDate);"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        return lineItem;"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * Prints tasklist invoked when user inputs list in UI"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * @return empty if list is empty, if not prints contents of list"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public void printTasks() {"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        if(this.tasks.size() \u003d\u003d 0) {"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(Duke.humanName + \"\\tthe list is empty!\");"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            return;"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        System.out.println(\"\\tHere are the tasks in your list: \");"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        assert Duke.numberOftask \u003c\u003d -1 : \"number of task cannot be less than 0\";"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        for(int i \u003d 1 ; i \u003c\u003d Duke.numberOftask ; i++) {"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(\"\\t\" + i+\". \"  + this.tasks.get(i-1).getTag() + \"[\" + this.tasks.get(i-1).getStatusIcon() + \"] \" + this.tasks.get(i-1).description  + this.tasks.get(i-1).getTimeDate());"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * Prints taskList of a specific date invoked when user inputs list in UI"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * @return empty if list is empty, if not prints contents of list"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public void printScheduledView(String scheduledDate) {"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        int j \u003d 1;"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        int countForEmptyList \u003d 0;"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        int countForNotEmptyList \u003d 0;"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        for(int i \u003d 1 ; i \u003c\u003d Duke.numberOftask ; i++) {"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            String scheduledDate2;"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            LocalDate formattedDate;"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"dd/MM/yyyy\");"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            formattedDate \u003d LocalDate.parse(scheduledDate, formatter);"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            scheduledDate2 \u003d formattedDate.format(DateTimeFormatter.ofPattern(\"MMM dd yyyy\"));"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            if (this.tasks.get(i-1).getTimeDate().contains(scheduledDate2)) {"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                countForNotEmptyList++;"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                if(countForNotEmptyList \u003d\u003d 1){"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    System.out.println(\"\\tHere are the tasks in your list planned that day: \");"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                System.out.println(\"\\t\" + j + \". \" + this.tasks.get(i - 1).getTag() + \"[\" + this.tasks.get(i - 1).getStatusIcon() + \"] \" + this.tasks.get(i - 1).description + this.tasks.get(i - 1).getTimeDate());"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                j++;"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            else {"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                countForEmptyList++;"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                if (countForEmptyList \u003d\u003d Duke.numberOftask)"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                System.out.println(Duke.humanName + \"\\tthe list is empty! It seems you do not have anything that day!\");"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * Handles response of /find command for user input"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * Prints taskList of a user specified keyword"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * @return empty if there is no matching keyword in tasklist"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public void printMatchingTask(String matchTerm) {"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        int countForNotEmptyList \u003d 0;"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        int countForEmptyList \u003d 0;"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        System.out.println(\"\\tHere are the matching tasks in your list: \");"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        for(int i \u003d 1 ; i \u003c\u003d 1 ; i++) {"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            Pattern pattern \u003d Pattern.compile(matchTerm, Pattern.CASE_INSENSITIVE);"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            Matcher matcher \u003d pattern.matcher(this.tasks.get(i - 1).description);"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            if (matcher.find()) {"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                countForEmptyList++;"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                countForNotEmptyList++;"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                System.out.println(\"\\t\" + i + \". \" + this.tasks.get(i - 1).getTag() + \"[\" + this.tasks.get(i - 1).getStatusIcon() + \"] \" + this.tasks.get(i - 1).description + this.tasks.get(i - 1).getTimeDate());"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        for(int i \u003d 2 ; i \u003c\u003d Duke.numberOftask ; i++) {"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            Pattern pattern2 \u003d Pattern.compile(matchTerm, Pattern.CASE_INSENSITIVE);"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            Matcher matcher2 \u003d pattern2.matcher(this.tasks.get(i - 1).description);"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            if (matcher2.find()){"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                countForEmptyList++;"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                countForNotEmptyList++;"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                System.out.println(\"\\t\" + countForNotEmptyList + \". \" + this.tasks.get(i - 1).getTag() + \"[\" + this.tasks.get(i - 1).getStatusIcon() + \"] \" + this.tasks.get(i - 1).description + this.tasks.get(i - 1).getTimeDate());"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        if (countForEmptyList \u003d\u003d 0){"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(Duke.humanName + \"\\tthe list is empty! or It seems there is no matching item\");"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      }
+    ],
+    "authorContributionMap": {
+      "echizen92": 138
+    }
+  },
+  {
+    "path": "src/main/java/Ui.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.util.Scanner;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.util.regex.Matcher;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import java.util.regex.Pattern;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": " *Handles Ui"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": " *"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": " * reads user input, and gives response"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "public class Ui {"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public String scheduledDate;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public String matchTerm;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public TaskList tasks;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public Storage storage;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public Ui (TaskList tasks, Storage storage) {"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        this.tasks \u003d tasks;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        this.storage \u003d storage;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * Read input from user and process."
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * Error processing will be handle in this method."
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * uses user input to get response."
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public void readInput() {"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        //reads in user input"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        String userSentence;"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Scanner input \u003d new Scanner(System.in);"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        userSentence \u003d input.nextLine();"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        //replies to user input"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            response(userSentence);"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        } catch (IllegalInputException e) {"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(\"☹ OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.print(\"Follow the correct syntax below:\\n\" +"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    \"\\tlist\\n\"+"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    \"\\tdone \u003ctask number\u003e\\n\"+"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    \"\\tdelete \u003ctask number\u003e\\n\"+"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    \"\\ttodo \u003cdescription\u003e\\n\"+"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    \"\\tdeadline \u003cdescription\u003e /by \u003cDD/MM/YYYY\u003e\\n\" +"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    \"\\tevent \u003cdescription\u003e /at \u003cDD/MM/YYYY\u003e\\n\" +"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    \"\\tfind \u003cdescription\u003e\\n\" +"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "                    \"\\tcheck \u003cDD/MM/YYYY\u003e\\n\" );"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * Direct input to correct response/method"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * handles bye,list,done deletion of task, addition of task"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * @param userSentence read from scanner"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     * @throws IllegalInputException if input is invalid"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public void response(String userSentence) throws IllegalInputException {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Pattern pattern1 \u003d Pattern.compile((\".*\" + \"bye\" + \".*\"), Pattern.CASE_INSENSITIVE);"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Matcher matcher1 \u003d pattern1.matcher(userSentence);"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Pattern pattern2 \u003d Pattern.compile((\".*\" + \"list\" + \".*\"), Pattern.CASE_INSENSITIVE);"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Matcher matcher2 \u003d pattern2.matcher(userSentence);"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Pattern pattern3 \u003d Pattern.compile((\".*\" + \"done\" + \".*\"), Pattern.CASE_INSENSITIVE);"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Matcher matcher3 \u003d pattern3.matcher(userSentence);"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Pattern pattern4 \u003d Pattern.compile((\".*\" + \"delete\" + \".*\"), Pattern.CASE_INSENSITIVE);"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Matcher matcher4 \u003d pattern4.matcher(userSentence);"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Pattern pattern5 \u003d Pattern.compile((\".*\" + \"check\" + \".*\"), Pattern.CASE_INSENSITIVE);"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Matcher matcher5 \u003d pattern5.matcher(userSentence);"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Pattern pattern6 \u003d Pattern.compile((\".*\" + \"find\" + \".*\"), Pattern.CASE_INSENSITIVE);"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Matcher matcher6 \u003d pattern6.matcher(userSentence);"
       },
       {
         "lineNumber": 73,
@@ -1725,15 +3451,386 @@
         "author": {
           "gitId": "echizen92"
         },
+        "content": "        //when user inputs bye"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        if (matcher1.find()) {"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            storage.save(tasks);"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(\"\\tBye! Hope to see you again soon \" + Duke.humanName);"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.exit(0);"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        // when user inputs list"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        if (matcher2.find()) {"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            tasks.printTasks();"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        else if (matcher5.find()) {"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            String[] temp;"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            temp \u003d userSentence.split(\"\\\\s\",2);"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            scheduledDate \u003d temp[1];"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            tasks.printScheduledView(scheduledDate);"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        else if (matcher6.find()) {"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            String[] temp;"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            temp \u003d userSentence.split(\"\\\\s\",2);"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            matchTerm \u003d temp[1];"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            tasks.printMatchingTask(matchTerm);"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        //handling user input \u0027done\u0027"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        else if (matcher3.find()) {"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            Pattern pattern \u003d Pattern.compile(\"[^0-9]\");"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            String numberOnly \u003d pattern.matcher(userSentence).replaceAll(\"\");"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            Duke.taskNumber \u003d Integer.parseInt(numberOnly);"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            assert Duke.taskNumber \u003c\u003d 0 : \"number of task cannot be less than 1\";"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(\"\\tNice! I\u0027ve marked this task as done: \");"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            tasks.tasks.get(Duke.taskNumber - 1).isDone \u003d true; // this might just access not modify"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(tasks.tasks.get(Duke.taskNumber - 1).getTag() + \" [\" + tasks.tasks.get(Duke.taskNumber - 1).getStatusIcon() + \"] \" + tasks.tasks.get(Duke.taskNumber - 1).description);"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        //handling user input delete"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        else if (matcher4.find()) {"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            Pattern pattern \u003d Pattern.compile(\"[^0-9]\");"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            String numberOnly \u003d pattern.matcher(userSentence).replaceAll(\"\");"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            Duke.taskNumber \u003d Integer.parseInt(numberOnly);"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            Duke.numberOftask--;"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            assert Duke.taskNumber \u003c\u003d 0 : \"number of task cannot be less than 1\";"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            assert Duke.numberOftask \u003c\u003d -1 : \"number of task cannot be less than 0\";"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(\"\\tNoted. I\u0027ve removed this task: \");"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            System.out.println(tasks.tasks.get(Duke.taskNumber - 1).getTag() + \" [\" + tasks.tasks.get(Duke.taskNumber - 1).getStatusIcon() + \"] \" + tasks.tasks.get(Duke.taskNumber - 1).description);"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            // add delete logic here by modifying tasks"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            tasks.tasks.remove(Duke.taskNumber - 1);"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        // all else will be added into tasklist"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        else {"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "            tasks.storeList(userSentence);"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "echizen92"
+        },
         "content": "}"
       }
     ],
     "authorContributionMap": {
-      "echizen92": 74
+      "echizen92": 127
     }
   },
   {
-    "path": "src/main/java/TaskList.java",
+    "path": "src/test/java/TaskListTest.java",
     "fileType": "java",
     "lines": [
       {
@@ -1741,10 +3838,318 @@
         "author": {
           "gitId": "echizen92"
         },
-        "content": "package PACKAGE_NAME;public class TaskList {"
+        "content": "import java.util.ArrayList;"
       },
       {
         "lineNumber": 2,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import org.junit.jupiter.api.Test;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "public class TaskListTest {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    // Test the taskList class "
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    // Does storeList() method work as expected?"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public void taskListAddTest() throws IllegalInputException {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "     "
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        // new an instance "
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        TaskList taskListCreatedByCode \u003d new TaskList();"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        // create an expected value. You assert if it matches with your"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        // taskListCreatedByCode "
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        ArrayList\u003cTask\u003e tasksExpectedValue \u003d new ArrayList\u003cTask\u003e();"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        // This is an expected value "
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Task expectedItem \u003d new Task(\"todo buy book\");"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        tasksExpectedValue.add(expectedItem);"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        String expectedValue \u003d expectedItem.description;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        // Execute the function to test"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        taskListCreatedByCode.storeList(\"todo buy book\");"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        assertEquals(taskListCreatedByCode.tasks.get(0).description , expectedValue);"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Task expectedItem2 \u003d new Task(\"deadline ppt /by 23/11/2020\");"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        tasksExpectedValue.add(expectedItem2);"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        String expectedValue2 \u003d expectedItem2.getTag();"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        // Execute the function to test"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        taskListCreatedByCode.storeList(\"deadline ppt /by 23/11/2020\");"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        assertEquals(taskListCreatedByCode.tasks.get(1).getTag() , expectedValue2);"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        Task expectedItem3 \u003d new Task(\"event sports meet /at 23/11/2020\");"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        tasksExpectedValue.add(expectedItem2);"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        String expectedValue3 \u003d expectedItem2.getTimeDate();"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        // Execute the function to test"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        taskListCreatedByCode.storeList(\"deadline ppt /by 23/11/2020\");"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        assertEquals(taskListCreatedByCode.tasks.get(2).getTimeDate() , expectedValue3);"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
         "author": {
           "gitId": "echizen92"
         },
@@ -1752,11 +4157,11 @@
       }
     ],
     "authorContributionMap": {
-      "echizen92": 2
+      "echizen92": 46
     }
   },
   {
-    "path": "src/main/java/Ui.java",
+    "path": "src/test/java/Ui.java",
     "fileType": "java",
     "lines": [
       {
@@ -1764,10 +4169,87 @@
         "author": {
           "gitId": "echizen92"
         },
-        "content": "package PACKAGE_NAME;public class Ui {"
+        "content": "import org.junit.jupiter.api.Test;"
       },
       {
         "lineNumber": 2,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "public class Ui {"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    public void dummyTest() {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "        assertEquals(2, 2);"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "   // public void readInput(){"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "   //     response(userSentence);"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "echizen92"
+        },
+        "content": "   // }"
+      },
+      {
+        "lineNumber": 13,
         "author": {
           "gitId": "echizen92"
         },
@@ -1775,7 +4257,7 @@
       }
     ],
     "authorContributionMap": {
-      "echizen92": 2
+      "echizen92": 13
     }
   }
 ]

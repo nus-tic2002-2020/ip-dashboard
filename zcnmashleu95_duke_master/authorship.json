@@ -101,70 +101,70 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "//TODO: Exceptions - Probably could double check more, Add more JUnit Testing"
+        "content": "//TODO: JAssertion"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "//TODO: Nice to Have: AddTask(Check for copies),"
+        "content": "//TODO: Exceptions - Probably could double check more, Add more JUnit Testing, Work on Individual Features"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "//TODO: Nice to Have: AddTask(Check for copies),"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "//TODO: Level 9 Individual Feature 1 and 2, Coding Standard and Coding Quality"
+        "content": "//"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "//TODO: Better Search - e.g., find items even if the keyword matches the item only partially."
+        "content": ""
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "//TODO: Snooze - Provide a way to easily snooze/postpone/reschedule tasks."
+        "content": "// Individual Features:"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "//TODO: Maybe JavaFX?"
+        "content": "//Better Search - e.g., find items even if the keyword matches the item only partially."
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "//TODO: JAssertion"
+        "content": "// Snooze - Provide a way to easily snooze/postpone/reschedule tasks."
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "// \u0027Do within a period\u0027 task - Provide support for managing tasks that need to be done within a certain period e.g., collect certificate between Jan 15 and 25th."
       },
       {
         "lineNumber": 21,
         "author": {
-          "gitId": "-"
+          "gitId": "zcnmashleu95"
         },
-        "content": "public class Duke {"
+        "content": ""
       },
       {
         "lineNumber": 22,
@@ -176,170 +176,170 @@
       {
         "lineNumber": 23,
         "author": {
-          "gitId": "zcnmashleu95"
+          "gitId": "-"
         },
-        "content": "    private Storage storage;"
+        "content": "public class Duke {"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    private TaskList tasks;"
+        "content": ""
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    private Ui ui;"
+        "content": "    private Storage storage;"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    private TaskList tasks;"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    private Ui ui;"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * Used to create a new Duke Instance. Initialise the ui,storage and tasks."
+        "content": ""
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * tasks will load from the storage. If there is an error, it will initialise on its own."
+        "content": "    /**"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @param filePath The String filePath to storage"
+        "content": "     * Used to create a new Duke Instance. Initialise the ui,storage and tasks."
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @throws DukeException, IOException"
+        "content": "     * tasks will load from the storage. If there is an error, it will initialise on its own."
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     */"
+        "content": "     * @param filePath The String filePath to storage"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "     * @throws DukeException, IOException"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public Duke(String filePath) throws DukeException, IOException {"
+        "content": "     */"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        ui \u003d new Ui();"
+        "content": ""
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        storage \u003d new Storage(filePath);"
+        "content": "    public Duke(String filePath) throws DukeException, IOException {"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        try {"
+        "content": "        ui \u003d new Ui();"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            tasks \u003d new TaskList(storage.load());"
+        "content": "        storage \u003d new Storage(filePath);"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        } catch (DukeException e) {"
+        "content": "        try {"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            ui.showLoadingError();"
+        "content": "            tasks \u003d new TaskList(storage.load());"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            tasks \u003d new TaskList();"
+        "content": "        } catch (DukeException e) {"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": "            ui.showLoadingError();"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": "            tasks \u003d new TaskList();"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 47,
@@ -353,161 +353,161 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * Used to keep the Duke Chat bot running. Scan for input then Parse the input into a command"
+        "content": ""
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * Afterwards, execute the command. The process will keep running until the user types \"bye\""
+        "content": "    /**"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @throws IOException"
+        "content": "     * Used to keep the Duke Chat bot running. Scan for input then Parse the input into a command"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     */"
+        "content": "     * Afterwards, execute the command. The process will keep running until the user types \"bye\""
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public void run() throws IOException {"
+        "content": "     * @throws IOException"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        ui.printIntro();"
+        "content": "     */"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        boolean isRunning \u003d true;"
+        "content": "    public void run() throws IOException {"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        while (isRunning) {"
+        "content": "        ui.printIntro();"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            try {"
+        "content": "        boolean isRunning \u003d true;"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                String input \u003d ui.scanForInput();"
+        "content": "        while (isRunning) {"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                ui.showLine(); // show the divider line (\"_______\")"
+        "content": "            try {"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                Command c \u003d Parser.parse(input);"
+        "content": "                String input \u003d ui.scanForInput();"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                c.execute(tasks, ui, storage);"
+        "content": "                ui.showLine(); // show the divider line (\"_______\")"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                isRunning \u003d c.isRunning();"
+        "content": "                Command c \u003d Parser.parse(input);"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            } catch (DukeException e) {"
+        "content": "                c.execute(tasks, ui, storage);"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                ui.showError(e.getErrorMessage());"
+        "content": "                isRunning \u003d c.isRunning();"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            } finally {"
+        "content": "            } catch (DukeException e) {"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                ui.showLine();"
+        "content": "                ui.showError(e.getErrorMessage());"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            }"
+        "content": "            } finally {"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": "                ui.showLine();"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            }"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        ui.printBye();"
+        "content": "        }"
       },
       {
         "lineNumber": 71,
@@ -521,7 +521,7 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": "        ui.printBye();"
       },
       {
         "lineNumber": 73,
@@ -535,31 +535,45 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public static void main(String[] args) throws IOException, DukeException {"
+        "content": ""
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        new Duke(\"data/tasks_list.txt\").run();"
+        "content": ""
       },
       {
         "lineNumber": 77,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    public static void main(String[] args) throws IOException, DukeException {"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        new Duke(\"data/tasks_list.txt\").run();"
+      },
+      {
+        "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 78,
+        "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
@@ -568,7 +582,7 @@
     ],
     "authorContributionMap": {
       "-": 3,
-      "zcnmashleu95": 75
+      "zcnmashleu95": 77
     }
   },
   {
@@ -928,6 +942,330 @@
     ],
     "authorContributionMap": {
       "zcnmashleu95": 50
+    }
+  },
+  {
+    "path": "src/main/java/commands/ChangeDoneCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "package commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "import exceptions.DukeException;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "import storage.Storage;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "import ui.Ui;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "import tasks.*;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": " * This represents the done command. It is used to change the task from the task list to its"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": " * done \"state\"."
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "public class ChangeDoneCommand extends Command{"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    private int option \u003d 0;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    private boolean isDone \u003d false;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     * This is the constructor of the DoneCommand."
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     * @param option indicates the Task option that the user wants to change"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    public ChangeDoneCommand(int option, boolean isDone){"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        this.option \u003d option;"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     * This executes the DoneCommand."
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     * @param tasks This is the Task List that contains the list of tasks."
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     * @param ui This is the ui, to be used for scanning and printing"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     * @param storage This is the storage, used to read and write over the file."
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     * @throws DukeException when option is not within the range of 1 and TaskList Size"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        if(option \u003c\u003d tasks.getSize() \u0026\u0026 option \u003e\u003d 1){"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "            tasks.get(option - 1).changeDoneTo(isDone);"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "            System.out.println(System.lineSeparator() + \"Nice! I\u0027ve marked this task as done:\" + System.lineSeparator() + tasks.get(option - 1).toString());"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        }else{"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "            throw new DukeException(\"Option for Done Command invalid\");"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        return;"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "zcnmashleu95": 45
     }
   },
   {
@@ -1457,309 +1795,6 @@
     ],
     "authorContributionMap": {
       "zcnmashleu95": 38
-    }
-  },
-  {
-    "path": "src/main/java/commands/DoneCommand.java",
-    "fileType": "java",
-    "lines": [
-      {
-        "lineNumber": 1,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "package commands;"
-      },
-      {
-        "lineNumber": 2,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 3,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "import exceptions.DukeException;"
-      },
-      {
-        "lineNumber": 4,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "import storage.Storage;"
-      },
-      {
-        "lineNumber": 5,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "import ui.Ui;"
-      },
-      {
-        "lineNumber": 6,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "import tasks.*;"
-      },
-      {
-        "lineNumber": 7,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 8,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 9,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "/**"
-      },
-      {
-        "lineNumber": 10,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": " * This represents the done command. It is used to change the task from the task list to its"
-      },
-      {
-        "lineNumber": 11,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": " * done \"state\"."
-      },
-      {
-        "lineNumber": 12,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": " */"
-      },
-      {
-        "lineNumber": 13,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 14,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "public class DoneCommand extends Command{"
-      },
-      {
-        "lineNumber": 15,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "    private int option \u003d 0;"
-      },
-      {
-        "lineNumber": 16,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "    /**"
-      },
-      {
-        "lineNumber": 17,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "     * This is the constructor of the DoneCommand."
-      },
-      {
-        "lineNumber": 18,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "     * @param option indicates the Task option that the user wants to change"
-      },
-      {
-        "lineNumber": 19,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "     */"
-      },
-      {
-        "lineNumber": 20,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "    public DoneCommand(int option){"
-      },
-      {
-        "lineNumber": 21,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "        this.option \u003d option;"
-      },
-      {
-        "lineNumber": 22,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 23,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 24,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "    /**"
-      },
-      {
-        "lineNumber": 25,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "     * This executes the DoneCommand."
-      },
-      {
-        "lineNumber": 26,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "     * @param tasks This is the Task List that contains the list of tasks."
-      },
-      {
-        "lineNumber": 27,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "     * @param ui This is the ui, to be used for scanning and printing"
-      },
-      {
-        "lineNumber": 28,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "     * @param storage This is the storage, used to read and write over the file."
-      },
-      {
-        "lineNumber": 29,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "     * @throws DukeException when option is not within the range of 1 and TaskList Size"
-      },
-      {
-        "lineNumber": 30,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "     */"
-      },
-      {
-        "lineNumber": 31,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "    @Override"
-      },
-      {
-        "lineNumber": 32,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "    public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {"
-      },
-      {
-        "lineNumber": 33,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "        if(option \u003c\u003d tasks.getSize() \u0026\u0026 option \u003e\u003d 1){"
-      },
-      {
-        "lineNumber": 34,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "            tasks.get(option - 1).changeDoneTo(true);"
-      },
-      {
-        "lineNumber": 35,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "            System.out.println(System.lineSeparator() + \"Nice! I\u0027ve marked this task as done:\" + System.lineSeparator() + tasks.get(option - 1).toString());"
-      },
-      {
-        "lineNumber": 36,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 37,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "        }else{"
-      },
-      {
-        "lineNumber": 38,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "            throw new DukeException(\"Option for Done Command invalid\");"
-      },
-      {
-        "lineNumber": 39,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 40,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "        return;"
-      },
-      {
-        "lineNumber": 41,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 42,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
-        "content": "}"
-      }
-    ],
-    "authorContributionMap": {
-      "zcnmashleu95": 42
     }
   },
   {
@@ -2504,6 +2539,295 @@
     }
   },
   {
+    "path": "src/main/java/commands/RescheduleCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "package commands;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "import exceptions.DukeException;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "import storage.Storage;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "import tasks.TaskList;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "import tasks.Deadline;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "import ui.Ui;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "import java.io.IOException;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "import java.time.format.DateTimeParseException;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "public class RescheduleCommand extends Command{"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    String newBy;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    int option \u003d 0;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    public RescheduleCommand(int option, String newBy){"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        this.newBy \u003d newBy;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        this.option \u003d option;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    public void execute(TaskList tasks, Ui ui, Storage storage) throws DateTimeParseException, IndexOutOfBoundsException {"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        try{"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "            if(tasks.get(this.option-1) instanceof Deadline){"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "                ((Deadline) (tasks.get(this.option-1))).rescheduleBy(this.newBy);"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "                System.out.println(\"Rescheduled Date time: \" + tasks.get(this.option-1).toString());"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        }catch(DateTimeParseException e){"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "            System.out.println(\"Invalid Date Time set for /by. It will be set to the current \" +"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "                    \"time. Format should be \\\"dd MMM yyyy H:m:s\\\" \");"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "            throw e;"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        }catch(IndexOutOfBoundsException e){"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "            System.out.println(\"Index out of bounds\");"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "            throw e;"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "zcnmashleu95": 40
+    }
+  },
+  {
     "path": "src/main/java/exceptions/DukeException.java",
     "fileType": "java",
     "lines": [
@@ -2941,7 +3265,7 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public static Command parse(String input) throws DukeException {"
+        "content": "    public static Command parse(String input) throws DukeException, NumberFormatException {"
       },
       {
         "lineNumber": 35,
@@ -3109,14 +3433,14 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                option \u003d Integer.parseInt(input.replace(\"done\", \"\").trim());"
+        "content": "                option \u003d Integer.parseInt(input.replaceFirst(\"done\", \"\").trim());"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new DoneCommand(option);"
+        "content": "                return new ChangeDoneCommand(option, true);"
       },
       {
         "lineNumber": 60,
@@ -3130,105 +3454,105 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"todo\":"
+        "content": "            case \"undone\":"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d input.replaceFirst(\"todo\", \"\").stripLeading();"
+        "content": "                option \u003d Integer.parseInt(input.replaceFirst(\"undone\", \"\").trim());"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                if(input.isEmpty() \u003d\u003d true) {"
+        "content": "                return new ChangeDoneCommand(option,false);"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                    System.out.println(\"☹ OOPS!!! The description of a Todo cannot be empty.\");"
+        "content": ""
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                }"
+        "content": "            case \"todo\":"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new AddCommand(\"todo\", description, secPart);"
+        "content": "                description \u003d input.replaceFirst(\"todo\", \"\").stripLeading();"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                if(input.isEmpty() \u003d\u003d true) {"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"event\":"
+        "content": "                    System.out.println(\"☹ OOPS!!! The description of a Todo cannot be empty.\");"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                index \u003d input.indexOf(\"/at\");"
+        "content": "                }"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                secPart \u003d input.substring(index);"
+        "content": "                return new AddCommand(\"todo\", description, secPart);"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                secPart \u003d secPart.replaceFirst( \"/at\", \"\").stripLeading();"
+        "content": ""
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            case \"event\":"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d input.substring(0,index - 1);"
+        "content": "                index \u003d input.indexOf(\"/at\");"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d description.replaceFirst(\"event\", \"\").stripLeading();"
+        "content": "                secPart \u003d input.substring(index);"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new AddCommand(\"event\", description, secPart);"
+        "content": "                secPart \u003d secPart.replaceFirst( \"/at\", \"\").stripLeading();"
       },
       {
         "lineNumber": 76,
@@ -3242,56 +3566,56 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"deadline\":"
+        "content": "                description \u003d input.substring(0,index - 1);"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                index \u003d input.indexOf(\"/by\");"
+        "content": "                description \u003d description.replaceFirst(\"event\", \"\").stripLeading();"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                secPart \u003d input.substring(index);"
+        "content": "                return new AddCommand(\"event\", description, secPart);"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                secPart \u003d secPart.replaceFirst( \"/by\", \"\").stripLeading();"
+        "content": ""
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            case \"deadline\":"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d input.substring(0,index - 1);"
+        "content": "                index \u003d input.indexOf(\"/by\");"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d description.replaceFirst(\"deadline\", \"\").stripLeading();"
+        "content": "                secPart \u003d input.substring(index);"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new AddCommand(\"deadline\", description, secPart);"
+        "content": "                secPart \u003d secPart.replaceFirst( \"/by\", \"\").stripLeading();"
       },
       {
         "lineNumber": 85,
@@ -3305,21 +3629,21 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"delete\":"
+        "content": "                description \u003d input.substring(0,index - 1);"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                option \u003d Integer.parseInt(input.replace(\"delete\", \"\").trim());"
+        "content": "                description \u003d description.replaceFirst(\"deadline\", \"\").stripLeading();"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new DeleteCommand(option);"
+        "content": "                return new AddCommand(\"deadline\", description, secPart);"
       },
       {
         "lineNumber": 89,
@@ -3333,21 +3657,21 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"find\":"
+        "content": "            case \"delete\":"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                keyword \u003d input.replaceFirst( \"find\", \"\").stripLeading();"
+        "content": "                option \u003d Integer.parseInt(input.replace(\"delete\", \"\").trim());"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new FindCommand(keyword);"
+        "content": "                return new DeleteCommand(option);"
       },
       {
         "lineNumber": 93,
@@ -3361,21 +3685,21 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            default:"
+        "content": "            case \"find\":"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d input;"
+        "content": "                keyword \u003d input.replaceFirst( \"find\", \"\").stripLeading();"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new AddCommand(\"task\", description, secPart);"
+        "content": "                return new FindCommand(keyword);"
       },
       {
         "lineNumber": 97,
@@ -3389,24 +3713,115 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": "            case \"reschedule\":"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": "                index \u003d input.indexOf(\"/by\");"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                secPart \u003d input.substring(index);"
       },
       {
         "lineNumber": 101,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "                secPart \u003d secPart.replaceFirst( \"/by\", \"\").stripLeading();"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "                option \u003d Integer.parseInt"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "                        (input.substring(0,index - 1).replaceFirst(\"reschedule\", \"\").trim());"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "                return new RescheduleCommand(option,secPart);"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "            default:"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "                description \u003d input;"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "                return new AddCommand(\"task\", description, secPart);"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 114,
         "author": {
           "gitId": "zcnmashleu95"
         },
@@ -3414,7 +3829,7 @@
       }
     ],
     "authorContributionMap": {
-      "zcnmashleu95": 101
+      "zcnmashleu95": 114
     }
   },
   {
@@ -4282,210 +4697,210 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "import java.time.LocalDateTime;"
+        "content": "import exceptions.DukeException;"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "import java.time.format.DateTimeFormatter;"
+        "content": ""
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "import java.time.format.DateTimeParseException;"
+        "content": "import java.time.LocalDateTime;"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "import java.time.format.DateTimeFormatter;"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "import java.time.format.DateTimeParseException;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "/**"
+        "content": ""
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": " * This represents a Deadline Task. It has a LocalDateTime by object."
+        "content": ""
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": " * The \"by\" object will represent the time which the Deadline is supposed to finish."
+        "content": "/**"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": " * The local date time format is in \"YYYY"
+        "content": " * This represents a Deadline Task. It has a LocalDateTime by object."
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": " */"
+        "content": " * The \"by\" object will represent the time which the Deadline is supposed to finish."
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": " * The local date time format is in \"YYYY"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "public class Deadline extends Task {"
+        "content": " */"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    private LocalDateTime by;"
+        "content": ""
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "public class Deadline extends Task {"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    /**"
+        "content": "    private LocalDateTime by;"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * This is a constructor for the Deadline class"
+        "content": ""
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @param description This describe the task for the deadline"
+        "content": "    /**"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @param by This represents the date and time of the deadline"
+        "content": "     * This is a constructor for the Deadline class"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     */"
+        "content": "     * @param description This describe the task for the deadline"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public Deadline(String description, String by) {"
+        "content": "     * @param by This represents the date and time of the deadline"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        super(description);"
+        "content": "     */"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        try{"
+        "content": "    public Deadline(String description, String by) {"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            this.by \u003d LocalDateTime.parse(by, DateTimeFormatter.ofPattern(\"dd MMM yyyy H:m:s\"));"
+        "content": "        super(description);"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }catch(DateTimeParseException e){"
+        "content": "        try{"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            this.by \u003d LocalDateTime.now();"
+        "content": "            this.by \u003d LocalDateTime.parse(by, DateTimeFormatter.ofPattern(\"dd MMM yyyy H:m:s\"));"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            System.out.println(\"Invalid Date Time set for /by. It will be set to the current \" +"
+        "content": "        }catch(DateTimeParseException e){"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                    \"time. Format should be \\\"dd MMM yyyy H:m:s\\\" \");"
+        "content": "            this.by \u003d LocalDateTime.now();"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": "            System.out.println(\"Invalid Date Time set for /by. It will be set to the current \" +"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                    \"time. Format should be \\\"dd MMM yyyy H:m:s\\\" \");"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": "        }"
       },
       {
         "lineNumber": 33,
@@ -4499,115 +4914,199 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    /**"
+        "content": "    }"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * This is an accessor of the \"by\" object which represents the date and time of the dateline"
+        "content": ""
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @return the dateline of the task"
+        "content": "    /**"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     */"
+        "content": "     * This is an accessor of the \"by\" object which represents the date and time of the dateline"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public String getBy(){"
+        "content": "     * @return the dateline of the task"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        return this.by.format(DateTimeFormatter.ofPattern(\"dd MMM yyyy H:m:s\"));"
+        "content": "     */"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": "    public String getBy(){"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "        return this.by.format(DateTimeFormatter.ofPattern(\"dd MMM yyyy H:m:s\"));"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * This converts the Deadline to a String object for printing."
+        "content": ""
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @return the deadline written as a String"
+        "content": "    public void rescheduleBy(String by){"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     */"
+        "content": "        try{"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public String toString(){"
+        "content": "            this.by \u003d LocalDateTime.parse(by, DateTimeFormatter.ofPattern(\"dd MMM yyyy H:m:s\"));"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        return \"[D]\" + super.toString() + \" (by: \" + this.getBy() + \")\";"
+        "content": "        }catch(DateTimeParseException e){"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": "            this.by \u003d LocalDateTime.now();"
       },
       {
         "lineNumber": 50,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "            System.out.println(\"Invalid Date Time set for /by. It will be set to the current \" +"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "                    \"time. Format should be \\\"dd MMM yyyy H:m:s\\\" \");"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     * This converts the Deadline to a String object for printing."
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     * @return the deadline written as a String"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    public String toString(){"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "        return \"[D]\" + super.toString() + \" (by: \" + this.getBy() + \")\";"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 62,
         "author": {
           "gitId": "zcnmashleu95"
         },
@@ -4615,7 +5114,7 @@
       }
     ],
     "authorContributionMap": {
-      "zcnmashleu95": 50
+      "zcnmashleu95": 62
     }
   },
   {
@@ -6129,336 +6628,336 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    //throws exceptions.DukeException"
+        "content": "    public void deleteFromList(int index) throws IndexOutOfBoundsException {"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public void deleteFromList(int index) throws IndexOutOfBoundsException {"
+        "content": "        if(index \u003c 0 || index \u003e\u003d tasks.size()){"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        if(index \u003c 0 || index \u003e\u003d tasks.size()){"
+        "content": "            throw new IndexOutOfBoundsException();"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            throw new IndexOutOfBoundsException();"
+        "content": "        }"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": "        this.tasks.remove(index);"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        this.tasks.remove(index);"
+        "content": "    }"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    /**"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    /**"
+        "content": "     * This is to add a Task to the Task List. The type of task will depend on the taskType parameter"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * This is to add a Task to the Task List. The type of task will depend on the taskType parameter"
+        "content": "     *"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     *"
+        "content": "     * @param taskType This is meant for the different task subclasses"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @param taskType This is meant for the different task subclasses"
+        "content": "     * @param description This is meant for the description/activity of the task"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @param description This is meant for the description/activity of the task"
+        "content": "     * @param secondPart This is meant for Deadlines and Events tasks."
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @param secondPart This is meant for Deadlines and Events tasks."
+        "content": "     * @throws DukeException This happens when the taskType is not one of the subclasses."
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @throws DukeException This happens when the taskType is not one of the subclasses."
+        "content": "     */"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     */"
+        "content": "    //TODO: Need to check for copies"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    //TODO: Need to check for copies"
+        "content": "    public void addTask(String taskType, String description, String secondPart) throws DukeException {"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public void addTask(String taskType, String description, String secondPart) throws DukeException {"
+        "content": "        int index \u003d 0;"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        int index \u003d 0;"
+        "content": "        int size \u003d 0;"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        int size \u003d 0;"
+        "content": ""
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "        //if(memo.contains(tasks.Task(input)) \u003d\u003d true){"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        //if(memo.contains(tasks.Task(input)) \u003d\u003d true){"
+        "content": "        //System.out.println(\"Your task is already in the memory.\");"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        //System.out.println(\"Your task is already in the memory.\");"
+        "content": "        //return;"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        //return;"
+        "content": "        //}"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        //}"
+        "content": ""
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "        switch(taskType){"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        switch(taskType){"
+        "content": "            case \"task\":"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"task\":"
+        "content": "                this.tasks.add( new Task (description) );"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                this.tasks.add( new Task (description) );"
+        "content": "                break;"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                break;"
+        "content": ""
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            case \"todo\":"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"todo\":"
+        "content": "                this.tasks.add(new ToDo(description) );"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                this.tasks.add(new ToDo(description) );"
+        "content": "                break;"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                break;"
+        "content": ""
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            case \"event\":"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"event\":"
+        "content": "                this.tasks.add( new Event(description, secondPart) );"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                this.tasks.add( new Event(description, secondPart) );"
+        "content": "                break;"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                break;"
+        "content": ""
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            case \"deadline\":"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"deadline\":"
+        "content": "                this.tasks.add(new Deadline(description, secondPart) );"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                this.tasks.add(new Deadline(description, secondPart) );"
+        "content": "                break;"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                break;"
+        "content": ""
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            default:"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            default:"
+        "content": "                throw new DukeException(\"Error: Incorrect Task Type in addToList Method\");"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                throw new DukeException(\"Error: Incorrect Task Type in addToList Method\");"
+        "content": "        }"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 146,
@@ -6472,126 +6971,126 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    /**"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    /**"
+        "content": "     * This is to find Tasks that contain the keyword from the Task List"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * This is to find Tasks that contain the keyword from the Task List"
+        "content": "     * @param keyword This is the keyword which the Task List will search for containing the keyword"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * @param keyword This is the keyword which the Task List will search for containing the keyword"
+        "content": "     */"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     */"
+        "content": "    public void findList(String keyword){"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public void findList(String keyword){"
+        "content": "        int size \u003d this.tasks.size();"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        int size \u003d this.tasks.size();"
+        "content": "        int total \u003d 0;"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        int total \u003d 0;"
+        "content": ""
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "        System.out.println(System.lineSeparator() + \"Tasks that contain the keyword \\\"\" + keyword + \"\\\":\");"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        System.out.println(System.lineSeparator() + \"Tasks that contain the keyword \\\"\" + keyword + \"\\\":\");"
+        "content": "        for(int i \u003d 0; i \u003c size; i ++){"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        for(int i \u003d 0; i \u003c size; i ++){"
+        "content": ""
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            if(this.tasks.get(i).toString().contains(keyword)){"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            if(this.tasks.get(i).toString().contains(keyword)){"
+        "content": "                System.out.println(System.lineSeparator() + (total+1) + \".\" + this.tasks.get(i).toString());"
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                System.out.println(System.lineSeparator() + (total+1) + \".\" + this.tasks.get(i).toString());"
+        "content": "            }"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            }"
+        "content": ""
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": "    }"
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 165,
@@ -6605,133 +7104,133 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    /**"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    /**"
+        "content": "     *  This prints the Tasks in the Task List"
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     *  This prints the Tasks in the Task List"
+        "content": "     *"
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     *"
+        "content": "     */"
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     */"
+        "content": "    public void printList() {"
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public void printList() {"
+        "content": "        int size \u003d 0;"
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        int size \u003d 0;"
+        "content": "        size \u003d this.tasks.size();"
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        size \u003d this.tasks.size();"
+        "content": "        if(size \u003d\u003d 0){"
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        if(size \u003d\u003d 0){"
+        "content": "            System.out.println(System.lineSeparator() + \"Task List is empty.\");"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            System.out.println(System.lineSeparator() + \"Task List is empty.\");"
+        "content": "            return;"
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            return;"
+        "content": "        }"
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 178,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "        System.out.println(System.lineSeparator() + \"Task List:\");"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        System.out.println(System.lineSeparator() + \"Task List:\");"
+        "content": "        for(int i \u003d 0; i \u003c size; i ++){"
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        for(int i \u003d 0; i \u003c size; i ++){"
+        "content": "            System.out.println(System.lineSeparator() + (i+1) + \".\" + this.tasks.get(i).toString());"
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            System.out.println(System.lineSeparator() + (i+1) + \".\" + this.tasks.get(i).toString());"
+        "content": "        }"
       },
       {
         "lineNumber": 182,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 183,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 184,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 185,
@@ -6745,129 +7244,122 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    /**"
       },
       {
         "lineNumber": 187,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    /**"
+        "content": "     * This prints the total number of tasks in the task list"
       },
       {
         "lineNumber": 188,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * This prints the total number of tasks in the task list"
+        "content": "     *"
       },
       {
         "lineNumber": 189,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     *"
+        "content": "     */"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     */"
+        "content": "    public void printTotalTasks(){"
       },
       {
         "lineNumber": 191,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public void printTotalTasks(){"
+        "content": "        int total \u003d tasks.size();"
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        int total \u003d tasks.size();"
+        "content": "        String ending;"
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        String ending;"
+        "content": "        if(total !\u003d 1){"
       },
       {
         "lineNumber": 194,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        if(total !\u003d 1){"
+        "content": "            ending \u003d \" tasks in the list.\";"
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            ending \u003d \" tasks in the list.\";"
+        "content": "        }else{"
       },
       {
         "lineNumber": 196,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }else{"
+        "content": "            ending \u003d \" task in the list\";"
       },
       {
         "lineNumber": 197,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            ending \u003d \" task in the list\";"
+        "content": "        }"
       },
       {
         "lineNumber": 198,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 199,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "        System.out.println(\"Now you have \" + total + ending);"
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        System.out.println(\"Now you have \" + total + ending);"
+        "content": ""
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 203,
-        "author": {
-          "gitId": "zcnmashleu95"
-        },
         "content": ""
       },
       {
-        "lineNumber": 204,
+        "lineNumber": 203,
         "author": {
           "gitId": "zcnmashleu95"
         },
@@ -6875,7 +7367,7 @@
       }
     ],
     "authorContributionMap": {
-      "zcnmashleu95": 204
+      "zcnmashleu95": 203
     }
   },
   {

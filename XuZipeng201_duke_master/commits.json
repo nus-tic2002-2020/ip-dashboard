@@ -189,12 +189,31 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-09",
+        "commitResults": [
+          {
+            "hash": "33d995c9a255ab1e8f598918b9bbf3b39095d584",
+            "messageTitle": "A - MoreOOP (incomplete with some bug)",
+            "messageBody": "",
+            "tags": [
+              "A-moreOOP-Incomplete"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 402,
+                "deletions": 216
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "XuZipeng201": {
-      "java": 448,
+      "java": 638,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -204,7 +223,7 @@
     }
   },
   "authorContributionVariance": {
-    "XuZipeng201": 1679.6238
+    "XuZipeng201": 5807.8066
   },
   "authorDisplayNameMap": {
     "XuZipeng201": "XU Z..PENG"

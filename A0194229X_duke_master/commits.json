@@ -245,6 +245,42 @@
                 "deletions": 56
               }
             }
+          },
+          {
+            "hash": "b3214a6375eda9b8b710e392c2d2e53d495dc4be",
+            "messageTitle": "A-CodingStandard",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 315,
+                "deletions": 318
+              }
+            }
+          },
+          {
+            "hash": "5bc2c87c1bd8a6898fabc10f3682c58480b6b419",
+            "messageTitle": "C-MassOps (delete)",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 58,
+                "deletions": 36
+              }
+            }
+          },
+          {
+            "hash": "00ed4c68cc7b21d73973ac687632ffa2b940c1b3",
+            "messageTitle": "A-Assertions",
+            "messageBody": "",
+            "tags": [
+              "v0.1"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 25,
+                "deletions": 18
+              }
+            }
           }
         ]
       }
@@ -252,7 +288,7 @@
   },
   "authorFileTypeContributionMap": {
     "A0194229X": {
-      "java": 712,
+      "java": 738,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -262,7 +298,7 @@
     }
   },
   "authorContributionVariance": {
-    "A0194229X": 7652.1113
+    "A0194229X": 16663.42
   },
   "authorDisplayNameMap": {
     "A0194229X": "WANG..UWEI"
