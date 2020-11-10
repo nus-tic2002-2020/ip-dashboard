@@ -342,12 +342,28 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-09",
+        "commitResults": [
+          {
+            "hash": "28a4395eb7f50d1d4c859a10fa0600149b495c40",
+            "messageTitle": "added JavaDoc and JUnit testing",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 272,
+                "deletions": 32
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "aiqianchee": {
-      "java": 642,
+      "java": 882,
       "md": 0,
       "fxml": 0,
       "sh": 1,
@@ -357,7 +373,7 @@
     }
   },
   "authorContributionVariance": {
-    "aiqianchee": 8858.247
+    "aiqianchee": 9261.655
   },
   "authorDisplayNameMap": {
     "aiqianchee": "CHEE..QIAN"

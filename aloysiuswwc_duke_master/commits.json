@@ -209,22 +209,68 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-09",
+        "commitResults": [
+          {
+            "hash": "6b22111788e70d7c7829cbc4e00aa55b3dea0812",
+            "messageTitle": "Improved code quality overall. Implemented Search-by-priority and Change-priority methods. Added assertions. Improved Javadoc comments.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 4
+              },
+              "java": {
+                "insertions": 1179,
+                "deletions": 294
+              }
+            }
+          },
+          {
+            "hash": "7b18ec08b1b8a549523e6c3840ae5fc02ed8e34a",
+            "messageTitle": "Changed title",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "716d7f0917fbfc6c7731d6c89a0c0a72272eeae8",
+            "messageTitle": "Moved all test class to test folder",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 29,
+                "deletions": 13
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "aloysiuswwc": {
-      "java": 1459,
+      "java": 2360,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 4
+      "txt": 0
     }
   },
   "authorContributionVariance": {
-    "aloysiuswwc": 27569.768
+    "aloysiuswwc": 51638.25
   },
   "authorDisplayNameMap": {
     "aloysiuswwc": "WONG..SIUS"

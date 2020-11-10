@@ -546,12 +546,53 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-09",
+        "commitResults": [
+          {
+            "hash": "0955088e2cfa6b32350e5e244e7d6c73541291fa",
+            "messageTitle": "final code to be jarred",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 4,
+                "deletions": 6
+              }
+            }
+          },
+          {
+            "hash": "7369d410dd1d98c3c370edfb773c59015f703a76",
+            "messageTitle": "final for jar",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          },
+          {
+            "hash": "f4fda33199e02d7ae7e092fca3c4ab19e66af29c",
+            "messageTitle": "unintended change typo",
+            "messageBody": "",
+            "tags": [
+              "1.0.0"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 1,
+                "deletions": 1
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "echizen92": {
-      "java": 586,
+      "java": 584,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -561,7 +602,7 @@
     }
   },
   "authorContributionVariance": {
-    "echizen92": 3850.8994
+    "echizen92": 3807.3865
   },
   "authorDisplayNameMap": {
     "echizen92": "MOHA..SHID"

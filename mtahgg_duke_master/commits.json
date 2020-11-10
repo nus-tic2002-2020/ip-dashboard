@@ -167,22 +167,42 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-09",
+        "commitResults": [
+          {
+            "hash": "1f955940791d7113bcaf3fc53f5e4c1130c5e7f8",
+            "messageTitle": "update 09/11/2020",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 6,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 119,
+                "deletions": 41
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "mtahgg": {
-      "java": 1275,
+      "java": 1353,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 1
+      "txt": 6
     }
   },
   "authorContributionVariance": {
-    "mtahgg": 20425.445
+    "mtahgg": 20416.62
   },
   "authorDisplayNameMap": {
     "mtahgg": "ZHAN..TONG"

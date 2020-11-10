@@ -237,22 +237,45 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-10",
+        "commitResults": [
+          {
+            "hash": "66f8dc03ff85d8cb17a382868161ac87cff2ac2d",
+            "messageTitle": "refinement made to the code",
+            "messageBody": "",
+            "tags": [
+              "v1.10.1"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 2,
+                "deletions": 8
+              },
+              "java": {
+                "insertions": 134,
+                "deletions": 183
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "erictongg": {
-      "java": 859,
+      "java": 810,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 8
+      "txt": 2
     }
   },
   "authorContributionVariance": {
-    "erictongg": 5385.8604
+    "erictongg": 6269.1094
   },
   "authorDisplayNameMap": {
     "erictongg": "ERIC.. GUO"
