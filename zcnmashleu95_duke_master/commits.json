@@ -331,12 +331,44 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-09",
+        "commitResults": [
+          {
+            "hash": "74a5a52aee149ad99a910ed9a01f92dadc3e63ef",
+            "messageTitle": "Added 1 assertion. Need to add 1 more",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 8,
+                "deletions": 5
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-10",
+        "commitResults": [
+          {
+            "hash": "37e89bc9a67eaf63713649cf8c68a96053fa0b37",
+            "messageTitle": "Added 2nd JAssertion",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 7,
+                "deletions": 7
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "zcnmashleu95": {
-      "java": 1198,
+      "java": 1201,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -346,7 +378,7 @@
     }
   },
   "authorContributionVariance": {
-    "zcnmashleu95": 13763.202
+    "zcnmashleu95": 13461.487
   },
   "authorDisplayNameMap": {
     "zcnmashleu95": "LAM ..CHUN"

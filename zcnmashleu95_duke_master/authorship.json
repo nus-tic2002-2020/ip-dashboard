@@ -101,28 +101,28 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "//TODO: JAssertion"
+        "content": "//TODO: CLEAN UP!"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "//TODO: Exceptions - Probably could double check more, Add more JUnit Testing, Work on Individual Features"
+        "content": "//TODO: Exceptions - Probably could double check more, Add more JUnit Testing, Work on Individual Features more"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "//TODO: Nice to Have: AddTask(Check for copies),"
+        "content": "//TODO: Nice to Have: AddTask(Check for copies)?, add help command (prints commands)"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "//"
+        "content": "//TODO: Empty/Delete all (Delete all tasks in the list)"
       },
       {
         "lineNumber": 16,
@@ -888,21 +888,21 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        System.out.println(System.lineSeparator() + \"Got it. I\u0027ve added this task:\" +"
+        "content": "        assert size \u003e 0: \"Size should be more than 0 after adding a task\";"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                System.lineSeparator() + tasks.get(size - 1).toString());"
+        "content": "        System.out.println(System.lineSeparator() + \"Got it. I\u0027ve added this task:\" +"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                System.lineSeparator() + tasks.get(size - 1).toString());"
       },
       {
         "lineNumber": 46,
@@ -916,24 +916,31 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        tasks.printTotalTasks();"
+        "content": ""
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": "        tasks.printTotalTasks();"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 50,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 51,
         "author": {
           "gitId": "zcnmashleu95"
         },
@@ -941,7 +948,7 @@
       }
     ],
     "authorContributionMap": {
-      "zcnmashleu95": 50
+      "zcnmashleu95": 51
     }
   },
   {
@@ -1685,7 +1692,7 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "     * This executes the DeleteCommand. It will call the deleteFromList method."
+        "content": "     * This executes the DeleteCommand. It will call the deleteTask method."
       },
       {
         "lineNumber": 24,
@@ -1748,7 +1755,7 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            tasks.deleteFromList(option -1);"
+        "content": "            tasks.deleteTask(option - 1);"
       },
       {
         "lineNumber": 33,
@@ -2785,7 +2792,7 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            System.out.println(\"Index out of bounds\");"
+        "content": "            System.out.println(\"Index out of bounds error\");"
       },
       {
         "lineNumber": 36,
@@ -3321,507 +3328,521 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        if(input.equals(\"blah\")){"
+        "content": "        assert !(commandWord.equals(null)) : \"commandWord should not be null\";"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            throw new DukeException(\"☹ OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
+        "content": ""
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": "        if(input.equals(\"blah\")){"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            throw new DukeException(\"☹ OOPS!!! I\u0027m sorry, but I don\u0027t know what that means :-(\");"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        if(input.strip().equals(\"\")){"
+        "content": "        }"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            throw new DukeException(\"☹ OOPS!!! You did not enter any command\");"
+        "content": ""
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": "        if(input.strip().equals(\"\")){"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            throw new DukeException(\"☹ OOPS!!! You did not enter any command\");"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        switch(commandWord){"
+        "content": "        }"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"list\":"
+        "content": ""
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new ListCommand();"
+        "content": "        switch(commandWord){"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            case \"list\":"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"bye\":"
+        "content": "                return new ListCommand();"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new ExitCommand();"
+        "content": ""
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "            case \"bye\":"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"done\":"
+        "content": "                return new ExitCommand();"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                option \u003d Integer.parseInt(input.replaceFirst(\"done\", \"\").trim());"
+        "content": ""
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new ChangeDoneCommand(option, true);"
+        "content": "            case \"done\":"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                option \u003d Integer.parseInt(input.replaceFirst(\"done\", \"\").trim());"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"undone\":"
+        "content": "                return new ChangeDoneCommand(option, true);"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                option \u003d Integer.parseInt(input.replaceFirst(\"undone\", \"\").trim());"
+        "content": ""
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new ChangeDoneCommand(option,false);"
+        "content": "            case \"undone\":"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                option \u003d Integer.parseInt(input.replaceFirst(\"undone\", \"\").trim());"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"todo\":"
+        "content": "                return new ChangeDoneCommand(option,false);"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d input.replaceFirst(\"todo\", \"\").stripLeading();"
+        "content": ""
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                if(input.isEmpty() \u003d\u003d true) {"
+        "content": "            case \"todo\":"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                    System.out.println(\"☹ OOPS!!! The description of a Todo cannot be empty.\");"
+        "content": "                description \u003d input.replaceFirst(\"todo\", \"\").stripLeading();"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                }"
+        "content": "                if(input.isEmpty() \u003d\u003d true) {"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new AddCommand(\"todo\", description, secPart);"
+        "content": "                    System.out.println(\"☹ OOPS!!! The description of a Todo cannot be empty.\");"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                }"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"event\":"
+        "content": "                return new AddCommand(\"todo\", description, secPart);"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                index \u003d input.indexOf(\"/at\");"
+        "content": ""
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                secPart \u003d input.substring(index);"
+        "content": "            case \"event\":"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                secPart \u003d secPart.replaceFirst( \"/at\", \"\").stripLeading();"
+        "content": "                index \u003d input.indexOf(\"/at\");"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                secPart \u003d input.substring(index);"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d input.substring(0,index - 1);"
+        "content": "                secPart \u003d secPart.replaceFirst( \"/at\", \"\").stripLeading();"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d description.replaceFirst(\"event\", \"\").stripLeading();"
+        "content": ""
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new AddCommand(\"event\", description, secPart);"
+        "content": "                description \u003d input.substring(0,index - 1);"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                description \u003d description.replaceFirst(\"event\", \"\").stripLeading();"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"deadline\":"
+        "content": "                return new AddCommand(\"event\", description, secPart);"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                index \u003d input.indexOf(\"/by\");"
+        "content": ""
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                secPart \u003d input.substring(index);"
+        "content": "            case \"deadline\":"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                secPart \u003d secPart.replaceFirst( \"/by\", \"\").stripLeading();"
+        "content": "                index \u003d input.indexOf(\"/by\");"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                secPart \u003d input.substring(index);"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d input.substring(0,index - 1);"
+        "content": "                secPart \u003d secPart.replaceFirst( \"/by\", \"\").stripLeading();"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d description.replaceFirst(\"deadline\", \"\").stripLeading();"
+        "content": ""
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new AddCommand(\"deadline\", description, secPart);"
+        "content": "                description \u003d input.substring(0,index - 1);"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                description \u003d description.replaceFirst(\"deadline\", \"\").stripLeading();"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"delete\":"
+        "content": "                return new AddCommand(\"deadline\", description, secPart);"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                option \u003d Integer.parseInt(input.replace(\"delete\", \"\").trim());"
+        "content": ""
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new DeleteCommand(option);"
+        "content": "            case \"delete\":"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                option \u003d Integer.parseInt(input.replace(\"delete\", \"\").trim());"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"find\":"
+        "content": "                return new DeleteCommand(option);"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                keyword \u003d input.replaceFirst( \"find\", \"\").stripLeading();"
+        "content": ""
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new FindCommand(keyword);"
+        "content": "            case \"find\":"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                keyword \u003d input.replaceFirst( \"find\", \"\").stripLeading();"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            case \"reschedule\":"
+        "content": "                return new FindCommand(keyword);"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                index \u003d input.indexOf(\"/by\");"
+        "content": ""
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                secPart \u003d input.substring(index);"
+        "content": "            case \"reschedule\":"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                secPart \u003d secPart.replaceFirst( \"/by\", \"\").stripLeading();"
+        "content": "                index \u003d input.indexOf(\"/by\");"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                secPart \u003d input.substring(index);"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                option \u003d Integer.parseInt"
+        "content": "                secPart \u003d secPart.replaceFirst( \"/by\", \"\").stripLeading();"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                        (input.substring(0,index - 1).replaceFirst(\"reschedule\", \"\").trim());"
+        "content": ""
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new RescheduleCommand(option,secPart);"
+        "content": "                option \u003d Integer.parseInt"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                        (input.substring(0,index - 1).replaceFirst(\"reschedule\", \"\").trim());"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "            default:"
+        "content": "                return new RescheduleCommand(option,secPart);"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                description \u003d input;"
+        "content": ""
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                return new AddCommand(\"task\", description, secPart);"
+        "content": "            default:"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "                description \u003d input;"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "        }"
+        "content": "                return new AddCommand(\"task\", description, secPart);"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 114,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "zcnmashleu95"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 116,
         "author": {
           "gitId": "zcnmashleu95"
         },
@@ -3829,7 +3850,7 @@
       }
     ],
     "authorContributionMap": {
-      "zcnmashleu95": 114
+      "zcnmashleu95": 116
     }
   },
   {
@@ -4429,14 +4450,14 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                    System.out.println(\"Can\u0027t get Class from Task List\");"
+        "content": "                    System.out.println(\"Did not get Class from Task List:\" + tasks.get(i).toString());"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "                    return;"
+        "content": "                    continue;"
       },
       {
         "lineNumber": 87,
@@ -6628,7 +6649,7 @@
         "author": {
           "gitId": "zcnmashleu95"
         },
-        "content": "    public void deleteFromList(int index) throws IndexOutOfBoundsException {"
+        "content": "    public void deleteTask(int index) throws IndexOutOfBoundsException {"
       },
       {
         "lineNumber": 99,
