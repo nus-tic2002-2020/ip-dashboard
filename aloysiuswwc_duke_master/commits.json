@@ -255,22 +255,42 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-11",
+        "commitResults": [
+          {
+            "hash": "bd25dc8873b267705c0ba4c72f2fcd0726e405cf",
+            "messageTitle": "Changes to \"done\" status symbol. CMD prompt unable to read symbol form my previous JAR.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 5,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 46,
+                "deletions": 19
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "aloysiuswwc": {
-      "java": 2360,
+      "java": 2387,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 0
+      "txt": 5
     }
   },
   "authorContributionVariance": {
-    "aloysiuswwc": 51638.25
+    "aloysiuswwc": 50527.312
   },
   "authorDisplayNameMap": {
     "aloysiuswwc": "WONG..SIUS"

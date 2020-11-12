@@ -65,22 +65,45 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-11",
+        "commitResults": [
+          {
+            "hash": "61b1b297a51a715b3a3dffe3c08c64e1889d9894",
+            "messageTitle": "final",
+            "messageBody": "",
+            "tags": [
+              "v0.1"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 8,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 769,
+                "deletions": 187
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "darrenwzw": {
-      "java": 178,
+      "java": 769,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 0
+      "txt": 8
     }
   },
   "authorContributionVariance": {
-    "darrenwzw": 880.4848
+    "darrenwzw": 10511.921
   },
   "authorDisplayNameMap": {
     "darrenwzw": "WANG..RREN"

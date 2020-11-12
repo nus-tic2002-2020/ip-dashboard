@@ -358,12 +358,70 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-11",
+        "commitResults": [
+          {
+            "hash": "b62c5fc5edfc1a988de99630b88f041cd5e7443b",
+            "messageTitle": "added individual feature 1-B viewSchedules",
+            "messageBody": "",
+            "tags": [
+              "individualFeature1-viewSchedules"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 94,
+                "deletions": 2
+              }
+            }
+          },
+          {
+            "hash": "4a12dd4d5ad394a8acce2feb52e5157cc1322497",
+            "messageTitle": "added find command, coding standard, code quality and more JavaDoc",
+            "messageBody": "",
+            "tags": [
+              "level-9"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 315,
+                "deletions": 191
+              }
+            }
+          },
+          {
+            "hash": "2706ead6d76ecfee65408d290edc377e0eb58930",
+            "messageTitle": "added package seeedu.duke.base",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 41,
+                "deletions": 18
+              }
+            }
+          },
+          {
+            "hash": "8adb7c6cab89231d6f96c1a264fe113f67a0e74f",
+            "messageTitle": "gradle is working",
+            "messageBody": "",
+            "tags": [
+              "1.0"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 3
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "aiqianchee": {
-      "java": 882,
+      "java": 1118,
       "md": 0,
       "fxml": 0,
       "sh": 1,
@@ -373,7 +431,7 @@
     }
   },
   "authorContributionVariance": {
-    "aiqianchee": 9261.655
+    "aiqianchee": 13519.172
   },
   "authorDisplayNameMap": {
     "aiqianchee": "CHEE..QIAN"
