@@ -274,22 +274,60 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-13",
+        "commitResults": [
+          {
+            "hash": "f3c31f33e8aaa5b8f7948691c513a39fea0becbc",
+            "messageTitle": "Level-10",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 24,
+                "deletions": 33
+              },
+              "java": {
+                "insertions": 299,
+                "deletions": 255
+              }
+            }
+          },
+          {
+            "hash": "06397b2c9a69d801640d1c26ccf988b357add388",
+            "messageTitle": "Added java docs and codes refine",
+            "messageBody": "",
+            "tags": [
+              "v1.0"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 221,
+                "deletions": 11
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "Jayde-issexy": {
-      "java": 847,
+      "java": 1101,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 63
+      "txt": 57
     }
   },
   "authorContributionVariance": {
-    "Jayde-issexy": 9145.338
+    "Jayde-issexy": 15953.412
   },
   "authorDisplayNameMap": {
     "Jayde-issexy": "TAN .. MIN"

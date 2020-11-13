@@ -416,22 +416,46 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-13",
+        "commitResults": [
+          {
+            "hash": "95984ae7a7e345e3c29bb5645c56a9502f579c8d",
+            "messageTitle": "added GUI-undone",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "gradle": {
+                "insertions": 14,
+                "deletions": 2
+              },
+              "fxml": {
+                "insertions": 35,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 383,
+                "deletions": 166
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "aiqianchee": {
-      "java": 1118,
+      "java": 1335,
       "md": 0,
-      "fxml": 0,
+      "fxml": 35,
       "sh": 1,
       "bat": 2,
-      "gradle": 0,
+      "gradle": 14,
       "txt": 1
     }
   },
   "authorContributionVariance": {
-    "aiqianchee": 13519.172
+    "aiqianchee": 16682.889
   },
   "authorDisplayNameMap": {
     "aiqianchee": "CHEE..QIAN"

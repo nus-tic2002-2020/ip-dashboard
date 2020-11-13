@@ -166,12 +166,99 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-12",
+        "commitResults": [
+          {
+            "hash": "2cc2bc579ed5b15bd195e0f677ad3a44072d5401",
+            "messageTitle": "Add TaskList",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 61,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "ed8d591b5b519cde06c2b5cf659467f074c795f2",
+            "messageTitle": "Level 7 more OOP Level 8 Date \u0026 Time Level 9 Find",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 102,
+                "deletions": 166
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-13",
+        "commitResults": [
+          {
+            "hash": "805748c26cc90d864eeb7b617f863f32c525054e",
+            "messageTitle": "More OOP",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 17,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "d022c5c87962f9e1886ad8a31ab6b8203da4c41a",
+            "messageTitle": "Add files via upload",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 317,
+                "deletions": 78
+              }
+            }
+          },
+          {
+            "hash": "e0e03e93462ccaab829e7590b58101ea1efc04bc",
+            "messageTitle": "Delete Storage.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 25
+              }
+            }
+          },
+          {
+            "hash": "9139837f5f5a2736da3d93f328e59d250ca90fb4",
+            "messageTitle": "Delete IndexOutOfRangeException.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 2
+              }
+            }
+          },
+          {
+            "hash": "510addac71550d2118e1338f87dace3d7ca64008",
+            "messageTitle": "Delete DukeException.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 2
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "ashikin22": {
-      "java": 339,
+      "java": 563,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -181,7 +268,7 @@
     }
   },
   "authorContributionVariance": {
-    "ashikin22": 2275.949
+    "ashikin22": 5173.248
   },
   "authorDisplayNameMap": {
     "ashikin22": "NORM..HANI"
