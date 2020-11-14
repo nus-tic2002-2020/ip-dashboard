@@ -2114,98 +2114,98 @@
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        try {"
+        "content": "        if (details.trim().isEmpty()) {"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            String findTask \u003d \"\";"
+        "content": "            return ui.showFindError();"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            int counter \u003d 0;"
+        "content": "        }"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            for (Task task : taskList.taskList) {"
+        "content": "        else {"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "                if (task.getDescription().contains(details)) {"
+        "content": "            String findTask \u003d \"\";"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "                    findTask +\u003d (counter + 1) + \".\" + task.toString() + \"\\n\";"
+        "content": "            int counter \u003d 0;"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "                }"
+        "content": "            for (Task task : taskList.taskList) {"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "                counter++;"
+        "content": "                if (task.getDescription().contains(details)) {"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            }"
+        "content": "                    findTask +\u003d (counter + 1) + \".\" + task.toString() + \"\\n\";"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            System.out.println(findTask);"
+        "content": "                }"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            return findTask;"
+        "content": "                counter++;"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        }"
+        "content": "            }"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        catch(Exception e) {"
+        "content": "            System.out.println(findTask);"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            return ui.showFindError();"
+        "content": "            return findTask;"
       },
       {
         "lineNumber": 29,
@@ -2263,21 +2263,21 @@
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "    private int priority;"
+        "content": "    private String details;"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "    public FindPriorityCommand(int priority) {"
+        "content": "    public FindPriorityCommand(String details) {"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        this.priority \u003d priority;"
+        "content": "        this.details \u003d details;"
       },
       {
         "lineNumber": 7,
@@ -2291,154 +2291,471 @@
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "     * Execution of the find priority command. Finds all task of certain priority."
+        "content": "    /**"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "     * @param taskList overall taskList object"
+        "content": "     * Execution of the find priority command. Finds all task of certain priority."
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "     * @param ui       overall ui object"
+        "content": "     * @param taskList overall taskList object"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "     * @param storage  overall storage object"
+        "content": "     * @param ui       overall ui object"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "     */"
+        "content": "     * @param storage  overall storage object"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "    public String execute(TaskList taskList, Ui ui, Storage storage) {"
+        "content": "     */"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        try {"
+        "content": "    public String execute(TaskList taskList, Ui ui, Storage storage) {"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            String findTask \u003d \"\";"
+        "content": "        if (details.trim().isEmpty() || isInteger(details)\u003d\u003dfalse) {"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            int counter \u003d 0;"
+        "content": "            return ui.showFindPriorityError();"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            for (Task task : taskList.taskList) {"
+        "content": "        }"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "                if (task.getPriority() \u003d\u003d priority) {"
+        "content": "        else {"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "                    findTask +\u003d (counter + 1) + \".\" + task.toString() + \"\\n\";"
+        "content": "            int priority \u003d Integer.parseInt(details);"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "                }"
+        "content": "            String findTask \u003d \"\";"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "                counter++;"
+        "content": "            int counter \u003d 0;"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            }"
+        "content": "            for (Task task : taskList.taskList) {"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            System.out.println(findTask);"
+        "content": "                if (task.getPriority() \u003d\u003d priority) {"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            return findTask;"
+        "content": "                    findTask +\u003d (counter + 1) + \".\" + task.toString() + \"\\n\";"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        }"
+        "content": "                }"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        catch(Exception e) {"
+        "content": "                counter++;"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            return ui.showFindError();"
+        "content": "            }"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "darrenwzw"
         },
+        "content": "            System.out.println(findTask);"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            return findTask;"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "darrenwzw"
+        },
         "content": "        }"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public boolean isInteger(String s) {"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            Integer.parseInt(s);"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        } catch(NumberFormatException e) {"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            return false;"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        } catch(NullPointerException e) {"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            return false;"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        return true;"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "darrenwzw": 44
+    }
+  },
+  {
+    "path": "src/main/java/Duke/HelpCommand.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "package Duke;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "public class HelpCommand extends Command {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    HelpCommand(){"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "       ;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "     * Execution of the any wrong command."
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "     * @param taskList overall taskList object"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "     * @param ui       overall ui object"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "     * @param storage  overall storage object"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public String execute(TaskList taskList, Ui ui, Storage storage) {"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        String commandMessage \u003d \"Command List\\n\\r\"+"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                \"todo        Adds a Todo task. Usage: todo \u003cDescription\u003e\\n\\r\"+"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                \"event       Adds an Event task. Usage: event \u003cDescription\u003e /at \u003cYYYY-MM-DD HH:MM\u003e\\n\\r\"+"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                \"deadline    Adds a Deadline task. Usage: deadline \u003cDescription\u003e /by \u003cYYYY-MM-DD HH:MM\u003e\\n\\r\"+"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                \"delete      Deletes a task. Usage: delete \u003ctask number\u003e\\n\\r\"+"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                \"list        List all current task\\n\\r\"+"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                \"done        Marks task as done Usage: done \u003ctask number\u003e\\n\\r\"+"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                \"find        Find task(s) that matches a description. Usage: find \u003cdescription\u003e\\n\\r\"+"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                \"priority    Sets priority of task. Usage: priority \u003ctask number\u003e \u003cpriority\u003e\\n\\r\"+"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                \"findp       Find task(s) of a certain priority. Usage: findp \u003cpriority\u003e\\n\\r\"+"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                \"bye         Quits duke and save Task list to file test.txt\\n\\r\"+"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "                \"help        Shows all available commands\";"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        System.out.println(commandMessage);"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        return commandMessage;"
       },
       {
         "lineNumber": 30,
@@ -2813,38 +3130,52 @@
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "                    return new FindPriorityCommand(Integer.parseInt(argStr));"
+        "content": "                    return new FindPriorityCommand(argStr);"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "                default:"
+        "content": "                case \"help\":"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "                    return new WrongCommand(commandStr);"
+        "content": "                    return new HelpCommand();"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            }"
+        "content": "                default:"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "    }"
+        "content": "                    return new WrongCommand(commandStr);"
       },
       {
         "lineNumber": 40,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 42,
         "author": {
           "gitId": "darrenwzw"
         },
@@ -2852,7 +3183,7 @@
       }
     ],
     "authorContributionMap": {
-      "darrenwzw": 40
+      "darrenwzw": 42
     }
   },
   {
@@ -4116,84 +4447,84 @@
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            currTask.isDone \u003d true;"
+        "content": "            String doneMsg\u003d\"\";"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            String doneMsg \u003d \"Task marked as done: \\r\\n\" + currTask.toString();"
+        "content": "            if (currTask.isDone\u003d\u003dfalse) {"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            System.out.println(doneMsg);"
+        "content": "                currTask.isDone \u003d true;"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "            return doneMsg;"
+        "content": "                doneMsg \u003d \"Task marked as done: \\r\\n\" + currTask.toString();"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": ""
+        "content": "                System.out.println(doneMsg);"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "    }"
+        "content": "            }"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "    public String assignPriority(int option, int priority) {"
+        "content": "            else {"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        Task currTask \u003d taskList.get(option);"
+        "content": "                currTask.isDone \u003d false;"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        currTask.priority \u003d priority;"
+        "content": "                doneMsg \u003d \"Task undone: \\r\\n\" + currTask.toString();"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        String doneMsg \u003d \"Priority: \" + priority + \" assigned to task.\" + \"\\r\\n\" + currTask.toString();"
+        "content": "                System.out.println(doneMsg);"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        System.out.println(doneMsg);"
+        "content": "            }"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        return doneMsg;"
+        "content": "            return doneMsg;"
       },
       {
         "lineNumber": 60,
@@ -4207,10 +4538,73 @@
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 62,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    public String assignPriority(int option, int priority) {"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        Task currTask \u003d taskList.get(option);"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        currTask.priority \u003d priority;"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        String doneMsg \u003d \"Priority: \" + priority + \" assigned to task.\" + \"\\r\\n\" + currTask.toString();"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        System.out.println(doneMsg);"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "        return doneMsg;"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "darrenwzw"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 71,
         "author": {
           "gitId": "darrenwzw"
         },
@@ -4218,7 +4612,7 @@
       }
     ],
     "authorContributionMap": {
-      "darrenwzw": 62
+      "darrenwzw": 71
     }
   },
   {
@@ -5081,14 +5475,14 @@
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "    public static String noSuchCommand() {"
+        "content": "    public String showFindPriorityError() {"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "darrenwzw"
         },
-        "content": "        String errorMessage \u003d \"Command does not exists!\";"
+        "content": "        String errorMessage \u003d \"Keyword cannot be empty and must be an integer\";"
       },
       {
         "lineNumber": 76,

@@ -281,6 +281,9 @@
             "hash": "4f866c389bd0b29eb287e443649b834dc0285f15",
             "messageTitle": "A-Assertions",
             "messageBody": "",
+            "tags": [
+              "V0.1"
+            ],
             "fileTypesAndContributionMap": {
               "txt": {
                 "insertions": 0,

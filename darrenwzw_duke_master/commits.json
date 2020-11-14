@@ -88,12 +88,43 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-13",
+        "commitResults": [
+          {
+            "hash": "4814e57f9b19e6111fdab0fb82fbaa1eebede2dc",
+            "messageTitle": "final changes",
+            "messageBody": "",
+            "tags": [
+              "v0.3",
+              "v0.2"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 46,
+                "deletions": 9
+              }
+            }
+          },
+          {
+            "hash": "ded84207836f621de6fb73550068724d9ee8f261",
+            "messageTitle": "final version",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 29,
+                "deletions": 11
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "darrenwzw": {
-      "java": 769,
+      "java": 824,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -103,7 +134,7 @@
     }
   },
   "authorContributionVariance": {
-    "darrenwzw": 10511.921
+    "darrenwzw": 10357.714
   },
   "authorDisplayNameMap": {
     "darrenwzw": "WANG..RREN"

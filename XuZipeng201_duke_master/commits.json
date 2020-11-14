@@ -208,22 +208,45 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-14",
+        "commitResults": [
+          {
+            "hash": "932b27fe96288b9972793d9cb59a2ca30cf6cd6f",
+            "messageTitle": " Add individual feature",
+            "messageBody": "",
+            "tags": [
+              "add_individual_feature"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 6,
+                "deletions": 7
+              },
+              "java": {
+                "insertions": 77,
+                "deletions": 6
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "XuZipeng201": {
-      "java": 638,
+      "java": 709,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 19
+      "txt": 18
     }
   },
   "authorContributionVariance": {
-    "XuZipeng201": 5807.8066
+    "XuZipeng201": 5575.353
   },
   "authorDisplayNameMap": {
     "XuZipeng201": "XU Z..PENG"

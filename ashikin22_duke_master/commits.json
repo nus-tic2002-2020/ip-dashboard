@@ -253,12 +253,94 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-14",
+        "commitResults": [
+          {
+            "hash": "d367af07cc12d7d61856746a37d8b6ff63a7c1c0",
+            "messageTitle": "Add Individual  feature + JavaDoc",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 472,
+                "deletions": 4
+              }
+            }
+          },
+          {
+            "hash": "57cd0e28af31a3146ba87cb40ce522a1ee5c28da",
+            "messageTitle": "Javadoc",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 8,
+                "deletions": 14
+              }
+            }
+          },
+          {
+            "hash": "a63a2c1eb29ba14f967a29c5a838380fd55f8d7d",
+            "messageTitle": "Delete Storage.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 97
+              }
+            }
+          },
+          {
+            "hash": "3bcb783720dbbfeb843ab64a50cf476ffd4062b3",
+            "messageTitle": "Delete UI.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 78
+              }
+            }
+          },
+          {
+            "hash": "3eccea2782fc880011c22611838f8b2b59935935",
+            "messageTitle": "Delete command.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 142
+              }
+            }
+          },
+          {
+            "hash": "4fcfaf3c3dc7809014b0ac4497858c06cfcb0cba",
+            "messageTitle": "Delete TaskList.java",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 61
+              }
+            }
+          },
+          {
+            "hash": "e9f407cf8a82e391556b8c9fa7ec48f79107cc75",
+            "messageTitle": "Re format code",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 33,
+                "deletions": 30
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "ashikin22": {
-      "java": 563,
+      "java": 821,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -268,7 +350,7 @@
     }
   },
   "authorContributionVariance": {
-    "ashikin22": 5173.248
+    "ashikin22": 14145.104
   },
   "authorDisplayNameMap": {
     "ashikin22": "NORM..HANI"
