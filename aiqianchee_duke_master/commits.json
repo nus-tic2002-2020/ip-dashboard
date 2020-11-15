@@ -440,22 +440,42 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-15",
+        "commitResults": [
+          {
+            "hash": "6fea5bf6d89c40265aaa9e131d9ca4714e878601",
+            "messageTitle": "solved list printing issue for find, list and schedule command",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "gradle": {
+                "insertions": 3,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 179,
+                "deletions": 95
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "aiqianchee": {
-      "java": 1335,
+      "java": 1419,
       "md": 0,
       "fxml": 35,
       "sh": 1,
       "bat": 2,
-      "gradle": 14,
+      "gradle": 17,
       "txt": 1
     }
   },
   "authorContributionVariance": {
-    "aiqianchee": 16682.889
+    "aiqianchee": 16937.71
   },
   "authorDisplayNameMap": {
     "aiqianchee": "CHEE..QIAN"

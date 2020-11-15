@@ -5982,5 +5982,459 @@
     "authorContributionMap": {
       "ashikin22": 28
     }
+  },
+  {
+    "path": "src/test/java/tasklist/DeadlineTest.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "package tasklist;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "import org.junit.jupiter.api.Test;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "import java.time.LocalDateTime;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "import java.time.format.DateTimeFormatter;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "public class DeadlineTest {"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    void testDeadline(){"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        Task tester \u003d new Deadline(\"Duke\", LocalDateTime.parse(\"20/12/2020 1200\", DateTimeFormatter.ofPattern(\"dd/MM/yyyy HHmm\")));"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        assertEquals(\"[D][\" + tester.getStatusIcon() + \"]Duke (by: 20/12/2020 1200)\", tester.toString());"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    void testToSaveFormat() {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        Task tester \u003d new Deadline(\"Duke\", LocalDateTime.parse(\"12 12 2020 12:00\", DateTimeFormatter.ofPattern(\"MM dd yyyy HH:mm\")));"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        assertEquals(\"D|0|Duke|12 12 2020 12:00\", tester.saveFormat());"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "ashikin22": 20
+    }
+  },
+  {
+    "path": "src/test/java/tasklist/TaskTest.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "package tasklist;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "import org.junit.jupiter.api.Test;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertFalse;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "public class TaskTest {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    void testgetStatusIcon(){"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        Task tester \u003d new Task(\"Duke\");"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        assertFalse(false, \"\\u2718\");"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    void testToString() {"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        Task tester \u003d new Task(\"Duke\");"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        assertEquals(\"[\" + tester.getStatusIcon() + \"]Duke\", tester.toString());"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    void testToSaveFormat() {"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        Task tester \u003d new Task(\"Duke\");"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        assertEquals(\"|0|Duke\", tester.saveFormat());"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "ashikin22": 23
+    }
+  },
+  {
+    "path": "src/test/java/tasklist/TodoTest.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "package tasklist;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "import org.junit.jupiter.api.Test;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "public class TodoTest {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    void testToString() {"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        Task tester \u003d new Todo(\"Duke\");"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        assertEquals(\"[T][\" + tester.getStatusIcon() + \"]Duke\", tester.toString());"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    void testToSaveFormat() {"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        Task tester \u003d new Todo(\"Duke\");"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "        assertEquals(\"T|0|Duke\", tester.saveFormat());"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "ashikin22"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "ashikin22": 18
+    }
   }
 ]

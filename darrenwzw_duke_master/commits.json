@@ -111,6 +111,9 @@
             "hash": "ded84207836f621de6fb73550068724d9ee8f261",
             "messageTitle": "final version",
             "messageBody": "",
+            "tags": [
+              "v0.4"
+            ],
             "fileTypesAndContributionMap": {
               "java": {
                 "insertions": 29,

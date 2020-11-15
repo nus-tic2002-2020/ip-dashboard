@@ -229,6 +229,52 @@
                 "deletions": 6
               }
             }
+          },
+          {
+            "hash": "43f3b93d300b0680ceb8afed86e5299f4e1196af",
+            "messageTitle": "More OOP(fix and add other exceptions)",
+            "messageBody": "",
+            "tags": [
+              "MoreOOP(fix_and_add_other_exceptions)"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 26,
+                "deletions": 10
+              }
+            }
+          },
+          {
+            "hash": "8409ccadd7345765cf2c81ecb32bdf3728f7af87",
+            "messageTitle": "A-Packages",
+            "messageBody": "",
+            "tags": [
+              "Organize_in_package"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 4,
+                "deletions": 2
+              },
+              "java": {
+                "insertions": 46,
+                "deletions": 10
+              }
+            }
+          },
+          {
+            "hash": "91348479f612591d3e664f36dae4bcfb455afe4c",
+            "messageTitle": "A-JUnit",
+            "messageBody": "",
+            "tags": [
+              "JUnit_Testing"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 97,
+                "deletions": 2
+              }
+            }
           }
         ]
       }
@@ -236,17 +282,17 @@
   },
   "authorFileTypeContributionMap": {
     "XuZipeng201": {
-      "java": 709,
+      "java": 856,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 18
+      "txt": 20
     }
   },
   "authorContributionVariance": {
-    "XuZipeng201": 5575.353
+    "XuZipeng201": 6326.318
   },
   "authorDisplayNameMap": {
     "XuZipeng201": "XU Z..PENG"

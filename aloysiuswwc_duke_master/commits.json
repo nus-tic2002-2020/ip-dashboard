@@ -275,22 +275,53 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-14",
+        "commitResults": [
+          {
+            "hash": "9f672c393d42334493a2ae5f6b38f7a7f84dd93f",
+            "messageTitle": "Final version",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 5
+              },
+              "java": {
+                "insertions": 69,
+                "deletions": 38
+              }
+            }
+          },
+          {
+            "hash": "3fe6c77fdf43df2c960e17235e855fa2a67a640e",
+            "messageTitle": "Final version2.0",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 8,
+                "deletions": 8
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "aloysiuswwc": {
-      "java": 2387,
+      "java": 2418,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 5
+      "txt": 0
     }
   },
   "authorContributionVariance": {
-    "aloysiuswwc": 50527.312
+    "aloysiuswwc": 49019.824
   },
   "authorDisplayNameMap": {
     "aloysiuswwc": "WONG..SIUS"
