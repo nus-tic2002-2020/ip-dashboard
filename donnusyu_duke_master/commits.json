@@ -185,12 +185,88 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-14",
+        "commitResults": [
+          {
+            "hash": "044ee722a0d80a78570a0007c9f10ff75a2430a8",
+            "messageTitle": "add packages",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 18,
+                "deletions": 3
+              }
+            }
+          },
+          {
+            "hash": "68d824a7962de1f15c34e1ae01ed9e40296d4382",
+            "messageTitle": "add TaskList class",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 108,
+                "deletions": 102
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-15",
+        "commitResults": [
+          {
+            "hash": "adc6506240ebd1c76aba9a4f04c83f6e31c601cf",
+            "messageTitle": "added Command classes",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 36,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "f34152cace4df791ea62dadcf692fca4c60e99ea",
+            "messageTitle": "added Ui class",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 56,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "9728f572cc54e98dac2f2e17b6198afe5b42c818",
+            "messageTitle": "Add some OOP",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 38,
+                "deletions": 29
+              }
+            }
+          },
+          {
+            "hash": "e3720a7d426617ebbc6b1c7e8971cd63c4e23d6a",
+            "messageTitle": "added some javadoc comments",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 11,
+                "deletions": 0
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "donnusyu": {
-      "java": 194,
+      "java": 326,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -200,7 +276,7 @@
     }
   },
   "authorContributionVariance": {
-    "donnusyu": 313.98486
+    "donnusyu": 1080.1298
   },
   "authorDisplayNameMap": {
     "donnusyu": "YU H.. HUI"

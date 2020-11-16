@@ -346,12 +346,53 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-15",
+        "commitResults": [
+          {
+            "hash": "d2a377759f51a6eb3f34af23a98f4330818b20f7",
+            "messageTitle": "A-Assertion",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 21,
+                "deletions": 13
+              }
+            }
+          },
+          {
+            "hash": "2d87a96e2a9820822802ab095caab6261cb16210",
+            "messageTitle": "Remove deadline Task. Package in tasklist.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 13
+              }
+            }
+          },
+          {
+            "hash": "c510600d1a6138a1908a861733526d6ccb5d1cda",
+            "messageTitle": "Delete to package tasklist and storage respectively",
+            "messageBody": "",
+            "tags": [
+              "v0.1"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 0,
+                "deletions": 79
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "ashikin22": {
-      "java": 882,
+      "java": 798,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -361,7 +402,7 @@
     }
   },
   "authorContributionVariance": {
-    "ashikin22": 15380.197
+    "ashikin22": 15316.997
   },
   "authorDisplayNameMap": {
     "ashikin22": "NORM..HANI"

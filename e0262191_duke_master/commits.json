@@ -1,10 +1,31 @@
 {
   "authorDailyContributionsMap": {
-    "e0262191": []
+    "e0262191": [
+      {
+        "date": "2020-11-15",
+        "commitResults": [
+          {
+            "hash": "167cbf76e48c663898f5fd00f3ceacf7d2e6f683",
+            "messageTitle": "commit to self repo",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 133,
+                "deletions": 6
+              }
+            }
+          }
+        ]
+      }
+    ]
   },
   "authorFileTypeContributionMap": {
     "e0262191": {
-      "java": 0,
+      "java": 131,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -14,7 +35,7 @@
     }
   },
   "authorContributionVariance": {
-    "e0262191": 0.0
+    "e0262191": 203.35593
   },
   "authorDisplayNameMap": {
     "e0262191": "TAN ..RICK"

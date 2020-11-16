@@ -277,22 +277,98 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-15",
+        "commitResults": [
+          {
+            "hash": "5fc6cea9ead6398b1d30d525c179bdd4c82174c1",
+            "messageTitle": "Gradle \u0026 Code Standard Compliance",
+            "messageBody": "",
+            "tags": [
+              "v.01",
+              "Code-Compliance"
+            ],
+            "fileTypesAndContributionMap": {
+              "gradle": {
+                "insertions": 46,
+                "deletions": 0
+              },
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 39,
+                "deletions": 2
+              },
+              "bat": {
+                "insertions": 117,
+                "deletions": 16
+              },
+              "sh": {
+                "insertions": 11,
+                "deletions": 26
+              },
+              "md": {
+                "insertions": 97,
+                "deletions": 18
+              }
+            }
+          },
+          {
+            "hash": "07422e3d707e0968c1120d4072517cb5d4192da2",
+            "messageTitle": "Revision to LocalDate",
+            "messageBody": "",
+            "tags": [
+              "LocalDate-Revision"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 34,
+                "deletions": 160
+              }
+            }
+          },
+          {
+            "hash": "d7c748680119033d8b504d1d8c77a0d9b9a8fcde",
+            "messageTitle": "Final Touches",
+            "messageBody": "",
+            "tags": [
+              "FT"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 3
+              },
+              "java": {
+                "insertions": 2,
+                "deletions": 10
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "roshankumar1991": {
-      "java": 1024,
-      "md": 0,
+      "java": 917,
+      "md": 97,
       "fxml": 0,
-      "sh": 0,
-      "bat": 0,
-      "gradle": 0,
-      "txt": 0
+      "sh": 10,
+      "bat": 117,
+      "gradle": 46,
+      "txt": 1
     }
   },
   "authorContributionVariance": {
-    "roshankumar1991": 13500.679
+    "roshankumar1991": 9415.709
   },
   "authorDisplayNameMap": {
     "roshankumar1991": "ROSH..UMAR"

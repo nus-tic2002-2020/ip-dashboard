@@ -361,6 +361,154 @@
                 "deletions": 7
               }
             }
+          },
+          {
+            "hash": "7b59285eebde8e6704b1bc5a2f83ed63ff4e5ba5",
+            "messageTitle": "Added Help Command, will be cleaning up the other code as well.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 103,
+                "deletions": 7
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-11",
+        "commitResults": [
+          {
+            "hash": "d6d2451d4ef031c7ce429ac3da53fc121c836331",
+            "messageTitle": "Started Parser Tests. Will focus on JUnit Testing for Parser and Tasklist more. Comments could be brushed up a bit more. Help Command could be brushed up as well.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 41,
+                "deletions": 7
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-14",
+        "commitResults": [
+          {
+            "hash": "5414c5f2c634b5a6e385e15729aaf718007ea07d",
+            "messageTitle": "Probbaly finish by tomorrow",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 120,
+                "deletions": 28
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-15",
+        "commitResults": [
+          {
+            "hash": "bc59077c23a1797a70dc51f42c3668338c1ad5db",
+            "messageTitle": "More cleanup. Events also have Date and time now.",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 156,
+                "deletions": 87
+              }
+            }
+          },
+          {
+            "hash": "9aaf5f81d7a85fb318db14525281391fc17c949e",
+            "messageTitle": "Finished Cleanup",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 32,
+                "deletions": 7
+              },
+              "java": {
+                "insertions": 328,
+                "deletions": 314
+              }
+            }
+          },
+          {
+            "hash": "313b77f8f5611d804f1fed750bd50e06f1543411",
+            "messageTitle": "going to try releasing",
+            "messageBody": "",
+            "tags": [
+              "v1.0"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 52,
+                "deletions": 48
+              }
+            }
+          },
+          {
+            "hash": "df992ab8445e43656da550ca27fa470a78aff34f",
+            "messageTitle": "Changed the Checks and Crosses to Plus and Minus for done and undone",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 3,
+                "deletions": 3
+              }
+            }
+          },
+          {
+            "hash": "3a179c404c8fbb52de93bb7b5d904cb7c1a634ad",
+            "messageTitle": "Just some printed bugs",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 12,
+                "deletions": 3
+              }
+            }
+          },
+          {
+            "hash": "a7d36a82b7198c7668e1a74b5f5d9b99449eec0a",
+            "messageTitle": "finished",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 6,
+                "deletions": 13
+              },
+              "bat": {
+                "insertions": 1,
+                "deletions": 0
+              }
+            }
+          },
+          {
+            "hash": "0bda7f4fab90ad8bb35b6c7b414ae3b5e3699b84",
+            "messageTitle": "Ready for release 1.01",
+            "messageBody": "",
+            "tags": [
+              "v1.011",
+              "v1.01"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 6,
+                "deletions": 0
+              }
+            }
           }
         ]
       }
@@ -368,17 +516,17 @@
   },
   "authorFileTypeContributionMap": {
     "zcnmashleu95": {
-      "java": 1201,
+      "java": 1519,
       "md": 0,
       "fxml": 0,
       "sh": 0,
-      "bat": 2,
+      "bat": 3,
       "gradle": 0,
-      "txt": 6
+      "txt": 32
     }
   },
   "authorContributionVariance": {
-    "zcnmashleu95": 13461.487
+    "zcnmashleu95": 24456.586
   },
   "authorDisplayNameMap": {
     "zcnmashleu95": "LAM ..CHUN"

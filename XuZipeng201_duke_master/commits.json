@@ -277,22 +277,86 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-15",
+        "commitResults": [
+          {
+            "hash": "b028e08c7c812819f0b89eff1fd4a9601d383499",
+            "messageTitle": "A-Assertions and A-CodingStandard",
+            "messageBody": "",
+            "tags": [
+              "AssertionsAndCodeQuality"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 2,
+                "deletions": 2
+              },
+              "java": {
+                "insertions": 75,
+                "deletions": 113
+              }
+            }
+          },
+          {
+            "hash": "71f390502e687458bcaea65630b219ee76e9285b",
+            "messageTitle": "A-JavaDoc and Snooze/Postpone task.",
+            "messageBody": "",
+            "tags": [
+              "A-JavaDoc-and-SnoozePostponeTask"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 8
+              },
+              "java": {
+                "insertions": 474,
+                "deletions": 12
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-16",
+        "commitResults": [
+          {
+            "hash": "688f3d1a20753811e47d42dcdeb4b5b36b3ec2bb",
+            "messageTitle": "fix a bug after create Jar file and change Unicode.",
+            "messageBody": "",
+            "tags": [
+              "bugFix_ChangeUnicode"
+            ],
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 4,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 73,
+                "deletions": 28
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "XuZipeng201": {
-      "java": 856,
+      "java": 1325,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 20
+      "txt": 16
     }
   },
   "authorContributionVariance": {
-    "XuZipeng201": 6326.318
+    "XuZipeng201": 10902.057
   },
   "authorDisplayNameMap": {
     "XuZipeng201": "XU Z..PENG"

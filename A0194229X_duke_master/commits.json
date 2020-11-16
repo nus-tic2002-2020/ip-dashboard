@@ -302,22 +302,53 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-15",
+        "commitResults": [
+          {
+            "hash": "cd1921296b383171f67e405fd0066c148e05c84c",
+            "messageTitle": "final",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 23,
+                "deletions": 10
+              }
+            }
+          },
+          {
+            "hash": "f45eb0f84d70fc4efb9855d273ec26457ec65eb5",
+            "messageTitle": "final final",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 4
+              },
+              "java": {
+                "insertions": 12,
+                "deletions": 1
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "A0194229X": {
-      "java": 728,
+      "java": 752,
       "md": 0,
       "fxml": 0,
       "sh": 0,
       "bat": 0,
       "gradle": 0,
-      "txt": 4
+      "txt": 3
     }
   },
   "authorContributionVariance": {
-    "A0194229X": 16506.406
+    "A0194229X": 15518.481
   },
   "authorDisplayNameMap": {
     "A0194229X": "WANG..UWEI"

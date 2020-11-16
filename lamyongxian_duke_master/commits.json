@@ -187,6 +187,9 @@
             "hash": "b02fac5be9a3e22470fb3dde1473bdf9d1e72dd5",
             "messageTitle": "Add OOP Change",
             "messageBody": "",
+            "tags": [
+              "A-Enums"
+            ],
             "fileTypesAndContributionMap": {
               "java": {
                 "insertions": 688,
@@ -292,6 +295,7 @@
             "messageTitle": "Setup Gradle",
             "messageBody": "",
             "tags": [
+              "A-Jar",
               "A-Gradle"
             ],
             "fileTypesAndContributionMap": {
@@ -350,22 +354,105 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-15",
+        "commitResults": [
+          {
+            "hash": "7d6efc9f8a30f12f1fde833ab77b5353cb7b003d",
+            "messageTitle": "Fix Launcher",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 9,
+                "deletions": 2
+              }
+            }
+          },
+          {
+            "hash": "9ba28728cb2d04613d7354cdf8fb29f172a6450c",
+            "messageTitle": "Fix GUI welcome message",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 16,
+                "deletions": 9
+              }
+            }
+          },
+          {
+            "hash": "26c545a90f30823fc9363f6605c37ded30115231",
+            "messageTitle": "Add Assertions",
+            "messageBody": "",
+            "tags": [
+              "A-Assertions"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 45,
+                "deletions": 6
+              }
+            }
+          },
+          {
+            "hash": "dd49b98e6e60627928c650fb96c1cf061d387935",
+            "messageTitle": "Add JavaDoc comments",
+            "messageBody": "",
+            "tags": [
+              "v1.0",
+              "A-JavaDoc",
+              "A-CodingStandard"
+            ],
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 745,
+                "deletions": 142
+              }
+            }
+          },
+          {
+            "hash": "f7251fa23c44d3ff9d4dd2c0db0cdaa0d984b956",
+            "messageTitle": "Fix ScheduleCommand args validation",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "gradle": {
+                "insertions": 9,
+                "deletions": 1
+              },
+              "java": {
+                "insertions": 5,
+                "deletions": 2
+              }
+            }
+          },
+          {
+            "hash": "f6728a9462c9851e8e0ad0f1150707f825ac8bd3",
+            "messageTitle": "Update readme",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "md": {
+                "insertions": 42,
+                "deletions": 13
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "lamyongxian": {
-      "java": 1740,
-      "md": 0,
+      "java": 2399,
+      "md": 42,
       "fxml": 0,
       "sh": 0,
       "bat": 2,
-      "gradle": 18,
+      "gradle": 26,
       "txt": 19
     }
   },
   "authorContributionVariance": {
-    "lamyongxian": 14518.86
+    "lamyongxian": 24397.654
   },
   "authorDisplayNameMap": {
     "lamyongxian": "LAM ..XIAN"
