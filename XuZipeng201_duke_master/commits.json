@@ -327,6 +327,7 @@
             "messageTitle": "fix a bug after create Jar file and change Unicode.",
             "messageBody": "",
             "tags": [
+              "v1.0.0",
               "bugFix_ChangeUnicode"
             ],
             "fileTypesAndContributionMap": {
