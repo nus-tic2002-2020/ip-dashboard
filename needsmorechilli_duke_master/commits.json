@@ -124,12 +124,104 @@
             }
           }
         ]
+      },
+      {
+        "date": "2020-11-18",
+        "commitResults": [
+          {
+            "hash": "47913ac63dac8496fc773aeb76d86a53ed559282",
+            "messageTitle": "level 7 + MoreOOP",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 3,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 300,
+                "deletions": 116
+              }
+            }
+          },
+          {
+            "hash": "17e0d170b51d5157876a95d7a7fd97b685b2e164",
+            "messageTitle": "added Packages",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 28,
+                "deletions": 1
+              }
+            }
+          },
+          {
+            "hash": "d7097f154f1c32a84b30aa05f193f2b873253b37",
+            "messageTitle": "Java-doc",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "java": {
+                "insertions": 147,
+                "deletions": 24
+              }
+            }
+          },
+          {
+            "hash": "5152bbc0625c7f5deb818ea13bb1ec2041e4a2a4",
+            "messageTitle": "level-8",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 3
+              },
+              "java": {
+                "insertions": 28,
+                "deletions": 10
+              }
+            }
+          },
+          {
+            "hash": "67c764dea1af590ca1b41594bb3336fa3c2e3225",
+            "messageTitle": "J-unit tests",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 1,
+                "deletions": 0
+              },
+              "java": {
+                "insertions": 73,
+                "deletions": 1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "date": "2020-11-19",
+        "commitResults": [
+          {
+            "hash": "897685674fbbd8eb4a7c3126c6a5b3d7cf773145",
+            "messageTitle": "C-DetectDuplicates",
+            "messageBody": "",
+            "fileTypesAndContributionMap": {
+              "txt": {
+                "insertions": 0,
+                "deletions": 2
+              },
+              "java": {
+                "insertions": 73,
+                "deletions": 21
+              }
+            }
+          }
+        ]
       }
     ]
   },
   "authorFileTypeContributionMap": {
     "needsmorechilli": {
-      "java": 203,
+      "java": 682,
       "md": 0,
       "fxml": 0,
       "sh": 0,
@@ -139,7 +231,7 @@
     }
   },
   "authorContributionVariance": {
-    "needsmorechilli": 282.94482
+    "needsmorechilli": 5734.3047
   },
   "authorDisplayNameMap": {
     "needsmorechilli": "YEO ..ALIE"
